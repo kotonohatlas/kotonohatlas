@@ -1,0 +1,887 @@
+{
+  "schema": 1,
+  "description": "Curated display metadata for the language atlas. config/locales.json distinguishes localized Atlas interface locales from recognized-only languages. Language-family grouping and UI-localization scope are Atlas-owned; speaker estimates and country relevance are generated from the pinned linguistic and LocaleAccess data.",
+  "map_ui_localization": {
+    "locales": [
+      "ja",
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "de",
+      "fr",
+      "es",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "it",
+      "ru",
+      "ar",
+      "id",
+      "tr",
+      "pl",
+      "vi",
+      "nl",
+      "cs",
+      "uk",
+      "hi",
+      "th",
+      "sv",
+      "ro",
+      "hu",
+      "fi",
+      "da",
+      "nb",
+      "nn",
+      "ca",
+      "fa",
+      "he",
+      "bg",
+      "el",
+      "hr",
+      "bs",
+      "sk",
+      "sl",
+      "sr",
+      "et",
+      "lv",
+      "lt",
+      "ms",
+      "la",
+      "eo",
+      "is",
+      "be",
+      "gl",
+      "eu",
+      "af",
+      "sq",
+      "az",
+      "hy",
+      "rm",
+      "cy",
+      "mk",
+      "ht"
+    ],
+    "description": "Map controls, legends, and contextual UI labels are localized for the explicitly listed locales. Other localized Atlas locales use the general locale fallback graph while retaining localized place and taxonomy names."
+  },
+  "representative_core_regions": {
+    "af": [
+      "ZA",
+      "NA"
+    ],
+    "ak": [
+      "GH"
+    ],
+    "aoc": [
+      "VE"
+    ],
+    "ar": [
+      "EG",
+      "SA",
+      "DZ",
+      "MA"
+    ],
+    "arn": [
+      "CL",
+      "AR"
+    ],
+    "az": [
+      "AZ"
+    ],
+    "az-Arab": [
+      "IR"
+    ],
+    "az-Cyrl": [
+      "RU"
+    ],
+    "bi": [
+      "VU"
+    ],
+    "bho-Deva": [
+      "IN",
+      "NP"
+    ],
+    "bm-Latn-ML": [
+      "ML"
+    ],
+    "bs": [
+      "BA",
+      "ME",
+      "RS"
+    ],
+    "ca": [
+      "ES",
+      "AD",
+      "FR",
+      "IT"
+    ],
+    "ckb": [
+      "IQ",
+      "IR"
+    ],
+    "cni": [
+      "PE"
+    ],
+    "cnr": [
+      "ME"
+    ],
+    "crs": [
+      "SC"
+    ],
+    "da": [
+      "DK",
+      "FO",
+      "GL"
+    ],
+    "de": [
+      "DE",
+      "AT",
+      "CH"
+    ],
+    "el": [
+      "GR",
+      "CY"
+    ],
+    "en": [
+      "US",
+      "GB",
+      "CA",
+      "AU",
+      "NZ"
+    ],
+    "es": [
+      "ES",
+      "MX",
+      "AR",
+      "CO",
+      "PE"
+    ],
+    "eu": [
+      "ES",
+      "FR"
+    ],
+    "fa-AF": [
+      "AF"
+    ],
+    "fa-IR": [
+      "IR"
+    ],
+    "ff-Latn-SN": [
+      "SN",
+      "GN",
+      "CM",
+      "MR"
+    ],
+    "fi": [
+      "FI",
+      "AX",
+      "SE"
+    ],
+    "fit": [
+      "SE"
+    ],
+    "frp": [
+      "FR",
+      "IT",
+      "CH"
+    ],
+    "fr": [
+      "FR",
+      "CD",
+      "CA",
+      "BE",
+      "CH"
+    ],
+    "gcr": [
+      "GF"
+    ],
+    "ga": [
+      "IE",
+      "GB"
+    ],
+    "guc": [
+      "CO",
+      "VE"
+    ],
+    "ha": [
+      "NG",
+      "NE",
+      "BJ",
+      "BF",
+      "CM",
+      "GH",
+      "TD",
+      "SD",
+      "TG"
+    ],
+    "hr": [
+      "HR",
+      "BA",
+      "ME",
+      "RS"
+    ],
+    "hu": [
+      "HU",
+      "RO",
+      "SK",
+      "RS"
+    ],
+    "ig": [
+      "NG"
+    ],
+    "ilo-PH": [
+      "PH"
+    ],
+    "icr": [
+      "CO"
+    ],
+    "it": [
+      "IT",
+      "CH",
+      "SM",
+      "VA"
+    ],
+    "jiv": [
+      "EC"
+    ],
+    "kk": [
+      "KZ",
+      "CN"
+    ],
+    "kmr": [
+      "TR",
+      "SY",
+      "IQ",
+      "IR"
+    ],
+    "ko": [
+      "KR",
+      "KP",
+      "CN"
+    ],
+    "kri": [
+      "SL"
+    ],
+    "ky": [
+      "KG",
+      "CN"
+    ],
+    "lb": [
+      "LU"
+    ],
+    "lg-UG": [
+      "UG"
+    ],
+    "mn": [
+      "MN",
+      "CN"
+    ],
+    "ms": [
+      "MY",
+      "BN",
+      "SG"
+    ],
+    "mfe": [
+      "MU"
+    ],
+    "nl": [
+      "NL",
+      "BE"
+    ],
+    "ny": [
+      "MW",
+      "ZM",
+      "MZ",
+      "ZW"
+    ],
+    "mos": [
+      "BF"
+    ],
+    "kea": [
+      "CV"
+    ],
+    "arq": [
+      "DZ"
+    ],
+    "chk": [
+      "FM"
+    ],
+    "man": [
+      "GM",
+      "GN"
+    ],
+    "ch": [
+      "GU",
+      "MP"
+    ],
+    "gv": [
+      "IM"
+    ],
+    "jam": [
+      "JM"
+    ],
+    "gil": [
+      "KI"
+    ],
+    "kpe": [
+      "LR",
+      "GN"
+    ],
+    "ary": [
+      "MA"
+    ],
+    "mh": [
+      "MH"
+    ],
+    "na": [
+      "NR"
+    ],
+    "niu": [
+      "NU"
+    ],
+    "pau": [
+      "PW"
+    ],
+    "pis": [
+      "SB"
+    ],
+    "nus": [
+      "SS"
+    ],
+    "vic": [
+      "SX",
+      "VI"
+    ],
+    "apc": [
+      "SY",
+      "JO",
+      "LB",
+      "PS"
+    ],
+    "tkl": [
+      "TK"
+    ],
+    "aeb": [
+      "TN"
+    ],
+    "to": [
+      "TO"
+    ],
+    "tvl": [
+      "TV"
+    ],
+    "swb": [
+      "YT"
+    ],
+    "pap-AW": [
+      "AW"
+    ],
+    "pap-CW": [
+      "CW",
+      "BQ"
+    ],
+    "pbb": [
+      "CO"
+    ],
+    "pt-BR": [
+      "BR"
+    ],
+    "pt-PT": [
+      "PT",
+      "AO",
+      "MZ",
+      "CV"
+    ],
+    "pnt": [
+      "GR",
+      "TR"
+    ],
+    "qug": [
+      "EC"
+    ],
+    "ro": [
+      "RO",
+      "MD",
+      "RS"
+    ],
+    "rom": [
+      "RO",
+      "BG",
+      "HU",
+      "SK",
+      "RS"
+    ],
+    "rsk": [
+      "RS",
+      "HR"
+    ],
+    "ru": [
+      "RU",
+      "BY",
+      "KZ",
+      "UA"
+    ],
+    "sd": [
+      "PK",
+      "IN"
+    ],
+    "sdh": [
+      "IR",
+      "IQ"
+    ],
+    "shp": [
+      "PE"
+    ],
+    "sl": [
+      "SI",
+      "AT",
+      "IT"
+    ],
+    "so": [
+      "SO",
+      "ET",
+      "DJ"
+    ],
+    "sq": [
+      "AL",
+      "XK",
+      "MK",
+      "ME"
+    ],
+    "sr": [
+      "RS",
+      "BA",
+      "ME",
+      "XK"
+    ],
+    "srn": [
+      "SR"
+    ],
+    "stq": [
+      "DE"
+    ],
+    "sv": [
+      "SE",
+      "FI",
+      "AX"
+    ],
+    "sw": [
+      "TZ",
+      "KE",
+      "UG",
+      "CD"
+    ],
+    "ta": [
+      "IN",
+      "LK",
+      "SG",
+      "MY"
+    ],
+    "tk": [
+      "TM",
+      "AF",
+      "IR",
+      "UZ"
+    ],
+    "tpi-PG": [
+      "PG"
+    ],
+    "tr": [
+      "TR",
+      "CY",
+      "BG",
+      "IQ",
+      "GR"
+    ],
+    "tt-Cyrl-RU": [
+      "RU"
+    ],
+    "ur": [
+      "PK",
+      "IN",
+      "MU"
+    ],
+    "vec": [
+      "IT",
+      "BR",
+      "HR",
+      "SI"
+    ],
+    "wba": [
+      "VE"
+    ],
+    "wo-SN": [
+      "SN",
+      "MR"
+    ],
+    "yi": [
+      "IL",
+      "US",
+      "RU",
+      "PL",
+      "UA"
+    ],
+    "yue-Hant-HK": [
+      "HK",
+      "CN",
+      "MO"
+    ],
+    "yo": [
+      "NG",
+      "BJ"
+    ],
+    "zgh-Tfng-MA": [
+      "MA"
+    ],
+    "zh-Hans": [
+      "CN",
+      "SG"
+    ],
+    "zh-Hant": [
+      "TW",
+      "HK",
+      "MO"
+    ]
+  },
+  "language_families": [
+    {
+      "id": "japonic",
+      "taxonomy": "Japonic",
+      "members": [
+        "ja"
+      ]
+    },
+    {
+      "id": "indo-european-germanic",
+      "taxonomy": "Indo-European › Germanic",
+      "members": [
+        "en",
+        "af",
+        "da_DK",
+        "de_DE",
+        "is_IS",
+        "nl_NL",
+        "nb_NO",
+        "nn_NO",
+        "sv_SE"
+      ]
+    },
+    {
+      "id": "afro-asiatic-semitic",
+      "taxonomy": "Afro-Asiatic › Semitic",
+      "members": [
+        "am",
+        "ar",
+        "he_IL",
+        "mt",
+        "ti"
+      ]
+    },
+    {
+      "id": "turkic",
+      "taxonomy": "Turkic",
+      "members": [
+        "az",
+        "kk",
+        "ky",
+        "tk",
+        "tr_TR",
+        "ug",
+        "uz_UZ"
+      ]
+    },
+    {
+      "id": "indo-european-slavic",
+      "taxonomy": "Indo-European › Slavic",
+      "members": [
+        "be",
+        "bg_BG",
+        "bs",
+        "cs_CZ",
+        "hr",
+        "mk_MK",
+        "pl_PL",
+        "ru_RU",
+        "sk_SK",
+        "sl_SI",
+        "sr_RS",
+        "uk"
+      ]
+    },
+    {
+      "id": "indo-european-romance",
+      "taxonomy": "Indo-European › Italic › Romance",
+      "members": [
+        "ca",
+        "es_ES",
+        "fr_FR",
+        "gl",
+        "it_IT",
+        "pt_BR",
+        "pt_PT",
+        "rm",
+        "ro_RO"
+      ]
+    },
+    {
+      "id": "indo-european-latin",
+      "taxonomy": "Indo-European › Italic › Latin",
+      "members": [
+        "la"
+      ]
+    },
+    {
+      "id": "indo-european-celtic",
+      "taxonomy": "Indo-European › Celtic",
+      "members": [
+        "cy",
+        "ga"
+      ]
+    },
+    {
+      "id": "indo-european-iranian",
+      "taxonomy": "Indo-European › Iranian",
+      "members": [
+        "ckb",
+        "fa_IR",
+        "kmr",
+        "ps",
+        "tg"
+      ]
+    },
+    {
+      "id": "indo-european-indo-aryan",
+      "taxonomy": "Indo-European › Indo-Aryan",
+      "members": [
+        "as_IN",
+        "bn_BD",
+        "gu",
+        "hi_IN",
+        "kok",
+        "ks",
+        "mai",
+        "mr",
+        "ne_NP",
+        "or_IN",
+        "pa_IN",
+        "pa_PK",
+        "sd",
+        "si_LK",
+        "ur"
+      ]
+    },
+    {
+      "id": "indo-european-hellenic",
+      "taxonomy": "Indo-European › Hellenic",
+      "members": [
+        "el"
+      ]
+    },
+    {
+      "id": "indo-european-armenian",
+      "taxonomy": "Indo-European › Armenian",
+      "members": [
+        "hy"
+      ]
+    },
+    {
+      "id": "indo-european-albanian",
+      "taxonomy": "Indo-European › Albanian",
+      "members": [
+        "sq"
+      ]
+    },
+    {
+      "id": "indo-european-baltic",
+      "taxonomy": "Indo-European › Baltic",
+      "members": [
+        "lt_LT",
+        "lv"
+      ]
+    },
+    {
+      "id": "uralic",
+      "taxonomy": "Uralic",
+      "members": [
+        "et",
+        "fi",
+        "hu_HU"
+      ]
+    },
+    {
+      "id": "basque-isolate",
+      "taxonomy": "Language isolate",
+      "members": [
+        "eu"
+      ]
+    },
+    {
+      "id": "austronesian",
+      "taxonomy": "Austronesian",
+      "members": [
+        "ceb",
+        "id_ID",
+        "jv",
+        "mg",
+        "mi",
+        "ms_MY",
+        "su",
+        "tet",
+        "tl"
+      ]
+    },
+    {
+      "id": "tupian",
+      "taxonomy": "Tupian",
+      "members": [
+        "gn"
+      ]
+    },
+    {
+      "id": "dravidian",
+      "taxonomy": "Dravidian",
+      "members": [
+        "kn",
+        "ml_IN",
+        "ta_IN",
+        "te"
+      ]
+    },
+    {
+      "id": "afro-asiatic-chadic",
+      "taxonomy": "Afro-Asiatic › Chadic",
+      "members": [
+        "ha"
+      ]
+    },
+    {
+      "id": "afro-asiatic-cushitic",
+      "taxonomy": "Afro-Asiatic › Cushitic",
+      "members": [
+        "om",
+        "so"
+      ]
+    },
+    {
+      "id": "niger-congo-bantu",
+      "taxonomy": "Niger-Congo › Bantu",
+      "members": [
+        "ln",
+        "nr",
+        "nso",
+        "rn",
+        "rw",
+        "sn",
+        "ss",
+        "st",
+        "sw",
+        "tn",
+        "ts",
+        "ve",
+        "xh",
+        "zu"
+      ]
+    },
+    {
+      "id": "niger-congo-other",
+      "taxonomy": "Niger-Congo",
+      "members": [
+        "ig",
+        "yo"
+      ]
+    },
+    {
+      "id": "ubangian",
+      "taxonomy": "Ubangian",
+      "members": [
+        "sg"
+      ]
+    },
+    {
+      "id": "austroasiatic",
+      "taxonomy": "Austroasiatic",
+      "members": [
+        "km",
+        "vi"
+      ]
+    },
+    {
+      "id": "austroasiatic-munda",
+      "taxonomy": "Austroasiatic › Munda",
+      "members": [
+        "sat"
+      ]
+    },
+    {
+      "id": "aymaran",
+      "taxonomy": "Aymaran",
+      "members": [
+        "ay"
+      ]
+    },
+    {
+      "id": "quechuan",
+      "taxonomy": "Quechuan",
+      "members": [
+        "qu"
+      ]
+    },
+    {
+      "id": "kartvelian",
+      "taxonomy": "Kartvelian",
+      "members": [
+        "ka_GE"
+      ]
+    },
+    {
+      "id": "sino-tibetan-sinitic",
+      "taxonomy": "Sino-Tibetan › Sinitic",
+      "members": [
+        "zh_Hans",
+        "zh_Hant"
+      ]
+    },
+    {
+      "id": "sino-tibetan",
+      "taxonomy": "Sino-Tibetan",
+      "members": [
+        "my_MM"
+      ]
+    },
+    {
+      "id": "koreanic",
+      "taxonomy": "Koreanic",
+      "members": [
+        "ko_KR"
+      ]
+    },
+    {
+      "id": "kra-dai",
+      "taxonomy": "Kra-Dai",
+      "members": [
+        "lo",
+        "th"
+      ]
+    },
+    {
+      "id": "mongolic",
+      "taxonomy": "Mongolic",
+      "members": [
+        "mn"
+      ]
+    },
+    {
+      "id": "constructed",
+      "taxonomy": "Constructed language",
+      "members": [
+        "eo"
+      ]
+    },
+    {
+      "id": "french-creole",
+      "taxonomy": "French-based creole",
+      "members": [
+        "ht"
+      ]
+    }
+  ]
+}

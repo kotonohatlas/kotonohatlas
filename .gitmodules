@@ -1,0 +1,4 @@
+[submodule "vendor/cldr-json"]
+	path = vendor/cldr-json
+	url = https://github.com/unicode-org/cldr-json.git
+	shallow = true

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kotonohatlas map renderer benchmark PoC</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #17213f; background: #f5f7fc; }
+    body { margin: 0; padding: 24px; }
+    h1 { margin: 0 0 6px; font-size: 24px; }
+    p { margin: 6px 0 18px; color: #5d6882; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 16px; }
+    button, select { font: inherit; padding: 8px 12px; border: 1px solid #cfd6e7; border-radius: 8px; background: white; }
+    button { cursor: pointer; background: #4259bf; color: white; border-color: #4259bf; font-weight: 700; }
+    button:disabled { opacity: .55; cursor: wait; }
+    #status { font-variant-numeric: tabular-nums; color: #43506d; }
+    .views { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .view { position: relative; min-height: 250px; border: 1px solid #dbe1ef; border-radius: 12px; background: #eaf6fb; overflow: hidden; }
+    .view h2 { position: absolute; z-index: 5; left: 9px; top: 8px; margin: 0; padding: 4px 7px; border-radius: 6px; background: rgb(255 255 255 / .88); font-size: 13px; }
+    .surface, .labels { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .labels { pointer-events: none; overflow: visible; }
+    .labels text { font-size: 10px; font-weight: 650; fill: #202c4b; paint-order: stroke; stroke: white; stroke-width: 3px; stroke-linejoin: round; }
+    .labels circle { fill: #d7515b; stroke: white; stroke-width: 1px; }
+    table { width: 100%; margin-top: 18px; border-collapse: collapse; background: white; font-size: 13px; }
+    th, td { padding: 7px 9px; border: 1px solid #dbe1ef; text-align: right; font-variant-numeric: tabular-nums; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+    th { position: sticky; top: 0; background: #edf1fb; }
+    .winner { background: #e4f6ec; font-weight: 700; }
+    details { margin-top: 16px; }
+    pre { max-height: 360px; overflow: auto; background: #111827; color: #dce5ff; padding: 12px; border-radius: 8px; font-size: 11px; }
+    @media (max-width: 1000px) { .views { grid-template-columns: 1fr; } .view { min-height: 320px; } }
+  </style>
+</head>
+<body>
+  <h1>Map renderer performance PoC</h1>
+  <p>Isolated benchmark: current-style SVG, retained/cached SVG, Canvas2D hybrid, and WebGL2.</p>
+  <div class="toolbar">
+    <button id="run" type="button">Run fixed benchmark</button>
+    <select id="detail">
+      <option value="110m">110m interaction geometry</option>
+      <option value="10m">10m detailed geometry</option>
+    </select>
+    <span id="status">Loading dependencies…</span>
+  </div>
+  <section class="views">
+    <article class="view"><h2>SVG retained</h2><svg id="svg-surface" class="surface"></svg></article>
+    <article class="view"><h2>Canvas2D + SVG labels</h2><canvas id="canvas-surface" class="surface"></canvas><svg id="canvas-labels" class="labels"></svg></article>
+    <article class="view"><h2>WebGL2 + SVG labels</h2><canvas id="webgl-surface" class="surface"></canvas><svg id="webgl-labels" class="labels"></svg></article>
+  </section>
+  <table id="results">
+    <thead><tr><th>Scenario</th><th>Renderer / phase</th><th>p50 ms</th><th>p95 ms</th><th>max ms</th><th>&gt;16.7</th><th>&gt;50</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  <details><summary>Raw JSON</summary><pre id="raw"></pre></details>
+  <script type="module" src="./benchmark.js"></script>
+</body>
+</html>

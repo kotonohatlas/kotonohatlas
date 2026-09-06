@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "version": 1,
+  "base": "unicode-cldr-json",
+  "legacy_source": "https://unicode.org/cldr/charts/49/supplemental/language_territory_information.html",
+  "territory_scopes": {
+    "fa_AF": {
+      "territory": "AF",
+      "language": "fa"
+    }
+  },
+  "estimates": {
+    "aoc": 30000,
+    "cni": 120000,
+    "cnr": 230000,
+    "eo": null,
+    "icr": 20000,
+    "jiv": 50000,
+    "kmr": 7214784,
+    "la": null,
+    "pbb": 60000,
+    "rom": 3500000,
+    "rsk": 20000,
+    "shp": 35000,
+    "wba": 35000
+  }
+}

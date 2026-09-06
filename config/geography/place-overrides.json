@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "description": "Country-specific label priorities used when Natural Earth display ranks do not match the intended map reading order.",
+  "countries": {
+    "AR": {
+      "budget": 8,
+      "broad_label_floor": 2,
+      "priority": ["Buenos Aires", "Ushuaia", "Córdoba", "Rosario", "Mendoza", "Salta", "Tucumán", "Mar del Plata"],
+      "minimum_zoom": {"Ushuaia": 2.3}
+    },
+    "AT": {
+      "budget": 5,
+      "priority": ["Vienna", "Salzburg", "Innsbruck", "Graz", "Linz"],
+      "minimum_zoom": {"Salzburg": 4.0, "Innsbruck": 4.3, "Graz": 4.0}
+    },
+    "AU": {
+      "budget": 8,
+      "broad_label_floor": 3,
+      "priority": ["Canberra", "Sydney", "Darwin", "Melbourne", "Brisbane", "Perth", "Adelaide", "Hobart"],
+      "minimum_zoom": {"Darwin": 2.3}
+    },
+    "BY": {
+      "budget": 6,
+      "priority": ["Minsk", "Homyel", "Brest", "Hrodna", "Vitsyebsk", "Mahilyow"],
+      "minimum_zoom": {"Homyel": 4.3, "Brest": 4.3, "Hrodna": 4.5, "Vitsyebsk": 4.5}
+    },
+    "CA": {
+      "candidate_limit": 45,
+      "budget": 15,
+      "broad_label_floor": 7,
+      "selected_label_floor": 14,
+      "prefer_place_labels_when_selected": true,
+      "priority": ["Ottawa", "Toronto", "Vancouver", "Montréal", "Calgary", "Edmonton", "Winnipeg", "Whitehorse", "Yellowknife", "Iqaluit", "Québec", "Halifax", "Prince Rupert", "Fort McMurray", "Churchill", "Victoria", "Saskatoon", "Regina", "Thunder Bay", "Prince George", "St. John's", "Charlottetown", "Fredericton", "Inuvik", "Rankin Inlet", "Cambridge Bay", "Resolute"],
+      "minimum_zoom": {"Whitehorse": 2.8, "Yellowknife": 2.8, "Iqaluit": 3.0, "Prince Rupert": 4.0, "Fort McMurray": 4.2, "Churchill": 3.3, "Inuvik": 3.6, "Rankin Inlet": 4.2, "Cambridge Bay": 4.2, "Resolute": 4.3}
+    },
+    "CD": {
+      "budget": 5,
+      "priority": ["Kinshasa", "Lubumbashi", "Mbuji-Mayi", "Kisangani", "Kananga"]
+    },
+    "CH": {
+      "budget": 4,
+      "priority": ["Zürich", "Bern", "Geneva", "Basel"],
+      "minimum_zoom": {"Zürich": 3.7}
+    },
+    "CZ": {
+      "budget": 3,
+      "priority": ["Prague", "Brno", "Ostrava"],
+      "minimum_zoom": {"Brno": 4.3}
+    },
+    "DE": {
+      "budget": 9,
+      "priority": ["Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne", "Dresden", "Leipzig", "Stuttgart", "Düsseldorf"],
+      "minimum_zoom": {"Munich": 3.7, "Dresden": 4.3, "Leipzig": 4.7}
+    },
+    "ET": {
+      "budget": 4,
+      "priority": ["Addis Ababa", "Dire Dawa", "Gondar", "Bahir Dar"]
+    },
+    "FR": {
+      "budget": 9,
+      "priority": ["Paris", "Lyon", "Marseille", "Toulouse", "Bordeaux", "Strasbourg", "Lille", "Nice", "Nantes"],
+      "minimum_zoom": {"Toulouse": 4.2, "Bordeaux": 4.2, "Strasbourg": 4.2}
+    },
+    "GB": {
+      "budget": 8,
+      "priority": ["London", "Edinburgh", "Belfast", "Cardiff", "Manchester", "Birmingham", "Glasgow", "Liverpool"],
+      "minimum_zoom": {"Edinburgh": 3.7, "Belfast": 4.0, "Cardiff": 4.2}
+    },
+    "IT": {
+      "budget": 8,
+      "priority": ["Rome", "Milan", "Naples", "Venice", "Florence", "Turin", "Bologna", "Bari"],
+      "minimum_zoom": {"Milan": 3.7, "Naples": 3.7, "Venice": 3.7}
+    },
+    "JP": {
+      "budget": 20,
+      "broad_label_floor": 7,
+      "minimum_zoom": {
+        "Ōsaka": 2.3,
+        "Nagoya": 2.4,
+        "Sapporo": 2.7,
+        "Fukuoka": 2.7,
+        "Sendai": 2.8,
+        "Naha": 2.8,
+        "Hiroshima": 3.6,
+        "Niigata": 3.6,
+        "Akita": 3.6,
+        "Kagoshima": 3.6,
+        "Kanazawa": 3.6,
+        "Miyazaki": 3.6
+      },
+      "priority": [
+        "Tokyo",
+        "Ōsaka",
+        "Nagoya",
+        "Sapporo",
+        "Fukuoka",
+        "Sendai",
+        "Naha",
+        "Hiroshima",
+        "Niigata",
+        "Akita",
+        "Kagoshima",
+        "Kanazawa",
+        "Miyazaki",
+        "Yokohama",
+        "Kyoto",
+        "Kōbe",
+        "Hamamatsu",
+        "Shizuoka",
+        "Okayama",
+        "Kumamoto",
+        "Nagano"
+      ]
+    },
+    "MM": {
+      "representative_place": "Yangon",
+      "priority": ["Yangon", "Mandalay", "Naypyidaw"],
+      "minimum_zoom": {"Yangon": 2.7}
+    },
+    "PL": {
+      "budget": 7,
+      "priority": ["Warsaw", "Kraków", "Gdańsk", "Wrocław", "Poznań", "Łódź", "Szczecin"],
+      "minimum_zoom": {"Wrocław": 4.3, "Poznań": 4.3, "Łódź": 4.5, "Szczecin": 4.5}
+    },
+    "RU": {
+      "candidate_limit": 40,
+      "budget": 18,
+      "broad_label_floor": 7,
+      "prefer_place_labels_when_selected": true,
+      "priority": ["Moscow", "St.  Petersburg", "Yekaterinburg", "Novosibirsk", "Kazan", "Samara", "Omsk", "Ufa", "Chelyabinsk", "Perm", "Nizhny Novgorod", "Volgograd", "Krasnoyarsk", "Irkutsk", "Vladivostok", "Khabarovsk", "Yakutsk", "Tomsk", "Tyumen", "Barnaul", "Orenburg", "Saratov", "Voronezh", "Rostov", "Krasnodar", "Murmansk", "Archangel", "Chita", "Ulan-Ude", "Surgut"],
+      "minimum_zoom": {"Yekaterinburg": 3.2, "Novosibirsk": 3.2, "Kazan": 3.5, "Krasnoyarsk": 3.5, "Vladivostok": 2.8, "Khabarovsk": 3.6, "Yakutsk": 3.5, "Tyumen": 4.2, "Barnaul": 4.2, "Chita": 4.2, "Ulan-Ude": 4.3}
+    },
+    "SA": {
+      "budget": 4,
+      "priority": ["Riyadh", "Jeddah", "Medina", "Makkah"]
+    },
+    "SO": {
+      "budget": 3,
+      "priority": ["Mogadishu", "Hargeisa", "Kismaayo"]
+    },
+    "SK": {
+      "budget": 2,
+      "priority": ["Bratislava", "Košice"]
+    },
+    "TR": {
+      "budget": 10,
+      "priority": ["Istanbul", "Ankara", "İzmir", "Bursa", "Antalya", "Adana", "Gaziantep", "Diyarbakır", "Trabzon", "Erzurum"],
+      "minimum_zoom": {"Antalya": 4.5, "Gaziantep": 4.7, "Diyarbakır": 4.8, "Trabzon": 4.8, "Erzurum": 5.0}
+    },
+    "US": {
+      "candidate_limit": 70,
+      "budget": 32,
+      "broad_label_floor": 11,
+      "selected_label_floor": 18,
+      "prefer_place_labels_when_selected": true,
+      "priority": ["Washington,  D.C.", "New York", "Los Angeles", "Chicago", "Houston", "Denver", "Minneapolis", "Kansas City", "Seattle", "San Francisco", "Dallas", "St. Louis", "Anchorage", "Oklahoma City", "Omaha", "Fairbanks", "Juneau", "Milwaukee", "Indianapolis", "Atlanta", "Miami", "Phoenix", "Boston", "Detroit", "Philadelphia", "New Orleans", "Salt Lake City", "San Diego", "Nashville", "Cleveland", "Portland", "Tampa", "Columbus", "Cincinnati", "Memphis", "Louisville", "Tulsa", "Albuquerque", "Austin", "San Antonio", "Las Vegas", "Pittsburgh", "Baltimore", "Charlotte", "Raleigh", "Buffalo", "Jacksonville", "Orlando", "Sacramento", "Honolulu", "Nome", "Utqiaġvik", "El Paso", "Boise", "Wichita", "Des Moines", "Fargo", "Sioux Falls"],
+      "minimum_zoom": {"Chicago": 2.7, "Dallas": 3.2, "Denver": 3.1, "Minneapolis": 3.2, "Kansas City": 3.2, "St. Louis": 3.5, "New Orleans": 3.7, "Salt Lake City": 3.8, "Oklahoma City": 3.8, "Nashville": 3.6, "Milwaukee": 4.1, "Indianapolis": 4.1, "Columbus": 4.2, "Cincinnati": 4.2, "Memphis": 4.2, "Omaha": 4.0, "Louisville": 4.4, "Tulsa": 4.4, "Albuquerque": 4.2, "Wichita": 4.6, "Des Moines": 4.5, "Fargo": 4.8, "Sioux Falls": 4.8, "Anchorage": 2.8, "Fairbanks": 3.4, "Juneau": 3.5, "Nome": 4.1, "Utqiaġvik": 4.1}
+    },
+    "UA": {
+      "budget": 7,
+      "priority": ["Kyiv", "Lviv", "Odessa", "Kharkiv", "Dnipro", "Zaporizhzhya", "Donetsk"],
+      "minimum_zoom": {"Lviv": 4.0, "Odessa": 4.0, "Kharkiv": 4.2, "Dnipro": 4.3}
+    },
+    "TN": {
+      "priority": ["Tunis"],
+      "minimum_zoom": {"Tunis": 2.8}
+    },
+    "ZA": {
+      "budget": 7,
+      "broad_label_floor": 3,
+      "priority": ["Pretoria", "Cape Town", "Bloemfontein", "Johannesburg", "Durban", "Port Elizabeth", "Pietermaritzburg"],
+      "minimum_zoom": {"Pretoria": 2.7, "Bloemfontein": 2.9}
+    }
+  }
+}

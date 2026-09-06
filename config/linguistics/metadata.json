@@ -1,0 +1,410 @@
+{
+  "schema": 1,
+  "description": "Curated display metadata for languages that appear in Kotonohatlas through country relationships but do not yet have a translation locale profile. Family groups are based on Glottolog 5.3 and are used to make fallback descriptions informative rather than merely restating a map role. Individual profiles override the grouped fallback where a language needs more specific context.",
+  "family_source": {
+    "title": "Glottolog 5.3",
+    "url": "https://doi.org/10.5281/zenodo.596479"
+  },
+  "family_code_source": {
+    "title": "ISO 639-5",
+    "authority": "Library of Congress",
+    "url": "https://id.loc.gov/vocabulary/iso639-5.html"
+  },
+  "family_iso_639_5": {
+    "Afro-Asiatic": "afa",
+    "Albanian": "sqj",
+    "Algic": "aql",
+    "Armenian": "hyx",
+    "Arawakan": "awd",
+    "Athabaskan-Eyak-Tlingit": "xnd",
+    "Austroasiatic": "aav",
+    "Austronesian": "map",
+    "Baltic": "bat",
+    "Bantu": "bnt",
+    "Berber": "ber",
+    "Celtic": "cel",
+    "Chadic": "cdc",
+    "Constructed language": "art",
+    "Cushitic": "cus",
+    "Dravidian": "dra",
+    "English-based creole": "cpe",
+    "Eskaleut": "esx",
+    "French-based creole": "cpf",
+    "Germanic": "gem",
+    "Hellenic": "grk",
+    "Indo-Aryan": "inc",
+    "Indo-European": "ine",
+    "Iranian": "ira",
+    "Italic": "itc",
+    "Japonic": "jpx",
+    "Kartvelian": "ccs",
+    "Mande": "dmn",
+    "Mayan": "myn",
+    "Mongolic": "xgn",
+    "Munda": "mun",
+    "Niger-Congo": "nic",
+    "Nilo-Saharan": "ssa",
+    "Portuguese-based creole": "cpp",
+    "Quechuan": "qwe",
+    "Romance": "roa",
+    "Semitic": "sem",
+    "Sinitic": "zhx",
+    "Sino-Tibetan": "sit",
+    "Slavic": "sla",
+    "Songhay": "son",
+    "Tupian": "tup",
+    "Turkic": "trk",
+    "Uralic": "urj"
+  },
+  "family_groups": {
+    "Abkhaz-Adyge": [
+      "ady",
+      "ab",
+      "kbd"
+    ],
+    "Afro-Asiatic": [
+      "mey",
+      "rif-Tfng",
+      "shi-Latn",
+      "apd",
+      "arz",
+      "kab",
+      "cop",
+      "ssy",
+      "sid",
+      "shi",
+      "tmh",
+      "tig",
+      "ars",
+      "bej",
+      "rif",
+      "tzm"
+    ],
+    "Algic": [
+      "crk"
+    ],
+    "Athabaskan-Eyak-Tlingit": [
+      "gwi",
+      "den",
+      "chp",
+      "dgr"
+    ],
+    "Austroasiatic": [
+      "kjg",
+      "kha"
+    ],
+    "Austronesian": [
+      "buc",
+      "fud",
+      "mdh",
+      "mfa",
+      "tsg",
+      "uli",
+      "wls",
+      "kos",
+      "ty",
+      "pag",
+      "bik",
+      "hil",
+      "pon",
+      "mad",
+      "ms-Arab",
+      "min",
+      "yap",
+      "war"
+    ],
+    "Constructed language": [
+      "nqo"
+    ],
+    "Eskaleut › Inuit": [
+      "iu-Latn"
+    ],
+    "English-based creole": [
+      "pcm"
+    ],
+    "French-based creole": [
+      "rcf"
+    ],
+    "Indo-European": [
+      "gos",
+      "haz",
+      "jml",
+      "lld",
+      "rkt",
+      "skr",
+      "syl",
+      "ast",
+      "yi",
+      "os",
+      "oc",
+      "csb",
+      "glk",
+      "kw",
+      "co",
+      "sc",
+      "sd-Deva",
+      "gsw",
+      "gd",
+      "tly",
+      "no",
+      "bar",
+      "bal",
+      "hif",
+      "fur",
+      "br",
+      "mzn",
+      "vmf",
+      "mwl",
+      "ltg",
+      "lah",
+      "li",
+      "lmo",
+      "wa",
+      "hsb",
+      "vls",
+      "fy",
+      "dsb",
+      "nds",
+      "frr"
+    ],
+    "Kartvelian": [
+      "xmf"
+    ],
+    "Khoe-Kwadi": [
+      "naq"
+    ],
+    "Kra-Dai": [
+      "tts",
+      "nod",
+      "sou",
+      "shn",
+      "za"
+    ],
+    "Mande": [
+      "dnj",
+      "mwk",
+      "man-Nkoo",
+      "dyu",
+      "sus",
+      "snk",
+      "men"
+    ],
+    "Mayan": [
+      "quc"
+    ],
+    "Mongolic": [
+      "mn-Mong"
+    ],
+    "Nakh-Daghestanian": [
+      "lbe",
+      "av",
+      "inh",
+      "ce",
+      "lez"
+    ],
+    "Niger-Congo": [
+      "abr",
+      "bjt",
+      "bci",
+      "bsc",
+      "bvb",
+      "sef",
+      "fuq",
+      "kck",
+      "ngl",
+      "ffm",
+      "mfv",
+      "knf",
+      "mxc",
+      "tnr",
+      "ndc",
+      "wni",
+      "zdj",
+      "fuv",
+      "snf",
+      "nse",
+      "puu",
+      "rng",
+      "sav",
+      "toi",
+      "ada",
+      "ee",
+      "ewo",
+      "kam",
+      "gaa",
+      "ki",
+      "kmb",
+      "guz",
+      "kj",
+      "kg",
+      "dyo",
+      "suk",
+      "seh",
+      "srr",
+      "xog",
+      "cgg",
+      "tem",
+      "tum",
+      "nym",
+      "nyn",
+      "fan",
+      "fon",
+      "gur",
+      "bum",
+      "hz",
+      "bem",
+      "mgh",
+      "vmw",
+      "umb",
+      "mer",
+      "lua",
+      "luy",
+      "loz",
+      "ng",
+      "nd"
+    ],
+    "Nilotic": [
+      "laj",
+      "ach",
+      "kln",
+      "teo",
+      "luo"
+    ],
+    "Pidgin": [
+      "ho"
+    ],
+    "Sino-Tibetan": [
+      "hak-Hant",
+      "nan-Hant",
+      "tsj",
+      "new",
+      "wuu",
+      "yue-Hans"
+    ],
+    "Songhay": [
+      "ses",
+      "dje"
+    ],
+    "Turkic": [
+      "az-Arab",
+      "az-Cyrl",
+      "uz-Arab",
+      "uz-Cyrl",
+      "gag",
+      "krc",
+      "kum",
+      "sah",
+      "tyv",
+      "ba"
+    ],
+    "Uralic": [
+      "fkv",
+      "smn",
+      "vro",
+      "udm",
+      "myv",
+      "koi",
+      "kv",
+      "sms",
+      "mdf",
+      "smj",
+      "sma",
+      "se"
+    ]
+  },
+  "profiles": {
+    "fkv": {
+      "english_name": "Kven",
+      "native_name": "kvääni",
+      "family_en": "Uralic › Finnic",
+      "source_urls": [
+        "https://www.regjeringen.no/no/dokumenter/handlingsplan-for-kvensk-sprak-2026-2031/id3160616/?ch=4",
+        "https://www.kvenskinstitutt.no/sprak/"
+      ]
+    },
+    "se": {
+      "native_name": "davvisámegiella"
+    },
+    "sma": {
+      "native_name": "åarjelsaemien gïele"
+    },
+    "smj": {
+      "native_name": "julevsámegiella"
+    },
+    "smn": {
+      "native_name": "anarâškielâ"
+    },
+    "sms": {
+      "native_name": "sääʹmǩiõll"
+    },
+    "az-Arab": {
+      "native_name": "آذربایجان دیلی"
+    },
+    "az-Cyrl": {
+      "native_name": "Азәрбајҹан дили"
+    },
+    "mn-Mong": {
+      "native_name": "ᠮᠣᠩᠭᠣᠯ",
+      "source_urls": [
+        "https://www.unicode.org/cldr/charts/43/delta/mn_Mong.html"
+      ]
+    },
+    "ba": {
+      "english_name": "Bashkir",
+      "native_name": "башҡорт",
+      "family_en": "Turkic",
+      "source_urls": [
+        "https://www.unicode.org/cldr/charts/49/summary/ba.html",
+        "https://www.unicode.org/cldr/charts/49/supplemental/territory_language_information.html"
+      ]
+    },
+    "rif": {
+      "english_name": "Riffian",
+      "native_name": "Tarifit",
+      "family_en": "Afro-Asiatic › Berber",
+      "source_urls": [
+        "https://www.unicode.org/cldr/charts/49/summary/rif.html",
+        "https://www.unicode.org/cldr/charts/49/supplemental/territory_language_information.html"
+      ]
+    },
+    "rif-Tfng": {
+      "english_name": "Riffian (Tifinagh)",
+      "native_name": "ⵜⴰⵔⵉⴼⵉⵜ",
+      "family_en": "Afro-Asiatic › Berber",
+      "source_urls": [
+        "https://www.unicode.org/notes/tn59/utn59_Tfng-2.pdf",
+        "https://www.unicode.org/cldr/charts/49/supplemental/territory_language_information.html"
+      ]
+    },
+    "shi": {
+      "english_name": "Tachelhit",
+      "native_name": "ⵜⴰⵛⵍⵃⵉⵜ",
+      "family_en": "Afro-Asiatic › Berber",
+      "source_urls": [
+        "https://www.unicode.org/cldr/charts/49/supplemental/locale_coverage.html",
+        "https://www.unicode.org/cldr/charts/49/supplemental/territory_language_information.html"
+      ]
+    },
+    "shi-Latn": {
+      "english_name": "Tachelhit (Latin)",
+      "native_name": "Tashelḥiyt",
+      "family_en": "Afro-Asiatic › Berber",
+      "source_urls": [
+        "https://www.unicode.org/cldr/charts/49/summary/shi_Latn.html",
+        "https://www.unicode.org/cldr/charts/49/supplemental/territory_language_information.html"
+      ]
+    },
+    "yue-Hans": {
+      "english_name": "Cantonese (Simplified)",
+      "native_name": "粤语（简体）"
+    },
+    "yi": {
+      "english_name": "Yiddish",
+      "native_name": "ייִדיש",
+      "source_urls": [
+        "https://rm.coe.int/november-2022-revised-table-languages-covered-english-/1680a8fef4",
+        "https://constitution.garant.ru/region/ustav_evreis/chapter/8b7b3c1c76e91f88d33c08b3736aa67a/"
+      ]
+    }
+  }
+}

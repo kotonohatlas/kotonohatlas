@@ -1,0 +1,1657 @@
+{
+  "schema": 3,
+  "version": 1,
+  "locales": [
+    {
+      "id": "ja",
+      "label": "日本語"
+    },
+    {
+      "id": "en",
+      "label": "English"
+    },
+    {
+      "id": "zh-Hans",
+      "label": "简体中文"
+    },
+    {
+      "id": "zh-Hant",
+      "label": "繁體中文"
+    },
+    {
+      "id": "de",
+      "label": "Deutsch"
+    },
+    {
+      "id": "fr",
+      "label": "Français"
+    },
+    {
+      "id": "es",
+      "label": "Español"
+    },
+    {
+      "id": "ko",
+      "label": "한국어"
+    },
+    {
+      "id": "pt-BR",
+      "label": "Português (Brasil)"
+    },
+    {
+      "id": "pt-PT",
+      "label": "Português (Portugal)"
+    },
+    {
+      "id": "it",
+      "label": "Italiano"
+    },
+    {
+      "id": "ru",
+      "label": "Русский"
+    },
+    {
+      "id": "ar",
+      "label": "العربية",
+      "direction": "rtl"
+    },
+    {
+      "id": "id",
+      "label": "Bahasa Indonesia"
+    },
+    {
+      "id": "tr",
+      "label": "Türkçe"
+    },
+    {
+      "id": "pl",
+      "label": "Polski"
+    },
+    {
+      "id": "vi",
+      "label": "Tiếng Việt"
+    },
+    {
+      "id": "nl",
+      "label": "Nederlands"
+    },
+    {
+      "id": "cs",
+      "label": "Čeština"
+    },
+    {
+      "id": "uk",
+      "label": "Українська"
+    },
+    {
+      "id": "hi",
+      "label": "हिन्दी"
+    },
+    {
+      "id": "th",
+      "label": "ไทย"
+    },
+    {
+      "id": "sv",
+      "label": "Svenska"
+    },
+    {
+      "id": "ro",
+      "label": "Română"
+    },
+    {
+      "id": "hu",
+      "label": "Magyar"
+    },
+    {
+      "id": "fi",
+      "label": "Suomi"
+    },
+    {
+      "id": "da",
+      "label": "Dansk"
+    },
+    {
+      "id": "nb",
+      "label": "Norsk bokmål"
+    },
+    {
+      "id": "nn",
+      "label": "Norsk nynorsk"
+    },
+    {
+      "id": "ca",
+      "label": "Català"
+    },
+    {
+      "id": "fa",
+      "label": "فارسی",
+      "direction": "rtl"
+    },
+    {
+      "id": "he",
+      "label": "עברית",
+      "direction": "rtl"
+    },
+    {
+      "id": "bg",
+      "label": "Български"
+    },
+    {
+      "id": "el",
+      "label": "Ελληνικά"
+    },
+    {
+      "id": "hr",
+      "label": "Hrvatski"
+    },
+    {
+      "id": "bs",
+      "label": "Bosanski"
+    },
+    {
+      "id": "sk",
+      "label": "Slovenčina"
+    },
+    {
+      "id": "sl",
+      "label": "Slovenščina"
+    },
+    {
+      "id": "sr",
+      "label": "Српски"
+    },
+    {
+      "id": "et",
+      "label": "Eesti"
+    },
+    {
+      "id": "lv",
+      "label": "Latviešu"
+    },
+    {
+      "id": "lt",
+      "label": "Lietuvių"
+    },
+    {
+      "id": "ms",
+      "label": "Bahasa Melayu"
+    },
+    {
+      "id": "la",
+      "label": "Latina"
+    },
+    {
+      "id": "eo",
+      "label": "Esperanto"
+    },
+    {
+      "id": "is",
+      "label": "Íslenska"
+    },
+    {
+      "id": "be",
+      "label": "Беларуская"
+    },
+    {
+      "id": "gl",
+      "label": "Galego"
+    },
+    {
+      "id": "eu",
+      "label": "Euskara"
+    },
+    {
+      "id": "fil",
+      "label": "Filipino"
+    },
+    {
+      "id": "af",
+      "label": "Afrikaans"
+    },
+    {
+      "id": "sq",
+      "label": "Shqip"
+    },
+    {
+      "id": "az",
+      "label": "Azərbaycan dili"
+    },
+    {
+      "id": "hy",
+      "label": "Հայերեն"
+    },
+    {
+      "id": "ka",
+      "label": "ქართული"
+    },
+    {
+      "id": "rm",
+      "label": "Rumantsch"
+    },
+    {
+      "id": "cy",
+      "label": "Cymraeg"
+    },
+    {
+      "id": "ga",
+      "label": "Gaeilge"
+    },
+    {
+      "id": "bn",
+      "label": "বাংলা"
+    },
+    {
+      "id": "ta",
+      "label": "தமிழ்"
+    },
+    {
+      "id": "te",
+      "label": "తెలుగు"
+    },
+    {
+      "id": "mr",
+      "label": "मराठी"
+    },
+    {
+      "id": "ur",
+      "label": "اردو",
+      "direction": "rtl"
+    },
+    {
+      "id": "ne",
+      "label": "नेपाली"
+    },
+    {
+      "id": "mk",
+      "label": "Македонски"
+    },
+    {
+      "id": "sw",
+      "label": "Kiswahili"
+    },
+    {
+      "id": "ckb",
+      "label": "کوردیی سۆرانی",
+      "direction": "rtl"
+    },
+    {
+      "id": "kmr",
+      "label": "Kurmancî"
+    },
+    {
+      "id": "jv",
+      "label": "Basa Jawa"
+    },
+    {
+      "id": "su",
+      "label": "Basa Sunda"
+    },
+    {
+      "id": "ht",
+      "label": "Kreyòl ayisyen"
+    },
+    {
+      "id": "ceb",
+      "label": "Cebuano"
+    },
+    {
+      "id": "mi",
+      "label": "Māori"
+    },
+    {
+      "id": "gn",
+      "label": "Avañe'ẽ"
+    },
+    {
+      "id": "uz",
+      "label": "O‘zbekcha"
+    },
+    {
+      "id": "kk",
+      "label": "Қазақ тілі"
+    },
+    {
+      "id": "ml",
+      "label": "മലയാളം"
+    },
+    {
+      "id": "kn",
+      "label": "ಕನ್ನಡ"
+    },
+    {
+      "id": "gu",
+      "label": "ગુજરાતી"
+    },
+    {
+      "id": "pa-Guru",
+      "label": "ਪੰਜਾਬੀ"
+    },
+    {
+      "id": "mn",
+      "label": "Монгол"
+    },
+    {
+      "id": "ky",
+      "label": "Кыргызча"
+    },
+    {
+      "id": "tg",
+      "label": "Тоҷикӣ"
+    },
+    {
+      "id": "si",
+      "label": "සිංහල"
+    },
+    {
+      "id": "mai",
+      "label": "मैथिली"
+    },
+    {
+      "id": "pa-Arab",
+      "label": "پنجابی",
+      "direction": "rtl"
+    },
+    {
+      "id": "tet",
+      "label": "Tetun"
+    },
+    {
+      "id": "xh",
+      "label": "isiXhosa"
+    },
+    {
+      "id": "zu",
+      "label": "isiZulu"
+    },
+    {
+      "id": "as",
+      "label": "অসমীয়া"
+    },
+    {
+      "id": "or",
+      "label": "ଓଡ଼ିଆ"
+    },
+    {
+      "id": "ps",
+      "label": "پښتو",
+      "direction": "rtl"
+    },
+    {
+      "id": "am",
+      "label": "አማርኛ"
+    },
+    {
+      "id": "ha",
+      "label": "Hausa"
+    },
+    {
+      "id": "so",
+      "label": "Soomaali"
+    },
+    {
+      "id": "rw",
+      "label": "Kinyarwanda"
+    },
+    {
+      "id": "sn",
+      "label": "chiShona"
+    },
+    {
+      "id": "sd",
+      "label": "سنڌي",
+      "direction": "rtl"
+    },
+    {
+      "id": "ln",
+      "label": "Lingála"
+    },
+    {
+      "id": "nso",
+      "label": "Sepedi"
+    },
+    {
+      "id": "st",
+      "label": "Sesotho"
+    },
+    {
+      "id": "tn",
+      "label": "Setswana"
+    },
+    {
+      "id": "ss",
+      "label": "siSwati"
+    },
+    {
+      "id": "ts",
+      "label": "itsonga"
+    },
+    {
+      "id": "mt",
+      "label": "Malti"
+    },
+    {
+      "id": "km",
+      "label": "ខ្មែរ"
+    },
+    {
+      "id": "lo",
+      "label": "ລາວ"
+    },
+    {
+      "id": "my",
+      "label": "မြန်မာ"
+    },
+    {
+      "id": "om",
+      "label": "Afaan Oromoo"
+    },
+    {
+      "id": "yo",
+      "label": "Yorùbá"
+    },
+    {
+      "id": "ig",
+      "label": "Igbo"
+    },
+    {
+      "id": "mg",
+      "label": "Malagasy"
+    },
+    {
+      "id": "tk",
+      "label": "Türkmençe"
+    },
+    {
+      "id": "ve",
+      "label": "Tshivenḓa"
+    },
+    {
+      "id": "nr",
+      "label": "isiNdebele"
+    },
+    {
+      "id": "ay",
+      "label": "Aymar aru"
+    },
+    {
+      "id": "kok",
+      "label": "कोंकणी"
+    },
+    {
+      "id": "ks",
+      "label": "کٲشُر",
+      "direction": "rtl"
+    },
+    {
+      "id": "qu",
+      "label": "Runasimi"
+    },
+    {
+      "id": "rn",
+      "label": "Ikirundi"
+    },
+    {
+      "id": "sat",
+      "label": "ᱥᱟᱱᱛᱟᱲᱤ"
+    },
+    {
+      "id": "sg",
+      "label": "Sängö"
+    },
+    {
+      "id": "ti",
+      "label": "ትግርኛ"
+    },
+    {
+      "id": "ug",
+      "label": "ئۇيغۇرچە",
+      "direction": "rtl"
+    }
+  ],
+  "messages": {
+    "af": {
+      "allTitle": "Taalkatalogus",
+      "sortName": "Volgens naam",
+      "sortPopulationDesc": "Gebruikers: meeste eerste",
+      "sortPopulationAsc": "Gebruikers: minste eerste",
+      "sortFamily": "Volgens familie／tak",
+      "sortScript": "Volgens skryfstelsel",
+      "sortCountry": "Volgens aantal lande／gebiede",
+      "sortCode": "Volgens locale-kode",
+      "about": "Oor",
+      "show": "Getoon",
+      "of": "van",
+      "generated": "Geskep"
+    },
+    "am": {
+      "allTitle": "የቋንቋዎች ማውጫ",
+      "sortName": "በስም"
+    },
+    "ar": {
+      "allTitle": "دليل اللغات",
+      "sortName": "حسب الاسم",
+      "sortPopulationDesc": "المستخدمون: من الأكثر",
+      "sortPopulationAsc": "المستخدمون: من الأقل",
+      "sortFamily": "حسب العائلة／الفرع",
+      "sortScript": "حسب نظام الكتابة",
+      "sortCountry": "حسب عدد البلدان／الأقاليم",
+      "sortCode": "حسب رمز الإعداد",
+      "about": "نبذة",
+      "show": "المعروض",
+      "of": "من",
+      "generated": "تاريخ الإنشاء"
+    },
+    "as": {
+      "allTitle": "ভাষাৰ তালিকা",
+      "sortName": "নাম অনুসৰি"
+    },
+    "ay": {
+      "allTitle": "Arunakan katalogopa",
+      "sortName": "Suti taypit"
+    },
+    "az": {
+      "allTitle": "Dil kataloqu",
+      "sortName": "Ada görə",
+      "sortPopulationDesc": "İstifadəçilər: çoxdan aza",
+      "sortPopulationAsc": "İstifadəçilər: azdan çoxa",
+      "sortFamily": "Ailə／qola görə",
+      "sortScript": "Yazıya görə",
+      "sortCountry": "Ölkə／ərazi sayına görə",
+      "sortCode": "Locale koduna görə",
+      "about": "Haqqında",
+      "show": "Göstərilir",
+      "of": "/",
+      "generated": "Yaradılıb"
+    },
+    "be": {
+      "allTitle": "Каталог моў",
+      "sortName": "Паводле назвы",
+      "sortPopulationDesc": "Карыстальнікі: па змяншэнні",
+      "sortPopulationAsc": "Карыстальнікі: па ўзрастанні",
+      "sortFamily": "Паводле сям'і／галіны",
+      "sortScript": "Паводле пісьма",
+      "sortCountry": "Паводле колькасці краін／тэрыторый",
+      "sortCode": "Паводле кода locale",
+      "about": "Пра",
+      "show": "Паказана",
+      "of": "з",
+      "generated": "Створана"
+    },
+    "bg": {
+      "allTitle": "Каталог на езиците",
+      "sortName": "По име",
+      "sortPopulationDesc": "Потребители: низходящо",
+      "sortPopulationAsc": "Потребители: възходящо",
+      "sortFamily": "По семейство／клон",
+      "sortScript": "По писменост",
+      "sortCountry": "По брой държави／територии",
+      "sortCode": "По код на локала",
+      "about": "Относно",
+      "show": "Показани",
+      "of": "от",
+      "generated": "Създадено"
+    },
+    "bn": {
+      "allTitle": "ভাষার তালিকা",
+      "sortName": "নাম অনুযায়ী",
+      "about": "পরিচিতি",
+      "show": "দেখানো হচ্ছে",
+      "of": "এর মধ্যে",
+      "generated": "তৈরি"
+    },
+    "bs": {
+      "allTitle": "Katalog jezika",
+      "sortName": "Prema nazivu",
+      "sortPopulationDesc": "Korisnici: opadajuće",
+      "sortPopulationAsc": "Korisnici: rastuće",
+      "sortFamily": "Prema porodici／grani",
+      "sortScript": "Prema pismu",
+      "sortCountry": "Prema broju država／teritorija",
+      "sortCode": "Prema kodu localea",
+      "about": "O jeziku",
+      "show": "Prikazano",
+      "of": "od",
+      "generated": "Izrađeno"
+    },
+    "ca": {
+      "allTitle": "Catàleg de llengües",
+      "sortName": "Per nom",
+      "sortPopulationDesc": "Usuaris: de més a menys",
+      "sortPopulationAsc": "Usuaris: de menys a més",
+      "sortFamily": "Per família／branca",
+      "sortScript": "Per escriptura",
+      "sortCountry": "Per nombre de països／territoris",
+      "sortCode": "Per codi de locale",
+      "about": "Informació",
+      "show": "Mostrant",
+      "of": "de",
+      "generated": "Generat"
+    },
+    "ceb": {
+      "allTitle": "Katalogo sa mga pinulongan",
+      "sortName": "Pinaagi sa ngalan",
+      "about": "Mahitungod",
+      "show": "Gipakita",
+      "of": "sa",
+      "generated": "Gihimo"
+    },
+    "ckb": {
+      "allTitle": "پێڕستی زمانەکان",
+      "sortName": "بەپێی ناو",
+      "about": "دەربارە",
+      "show": "پیشاندراو",
+      "of": "لە",
+      "generated": "دروستکراو"
+    },
+    "cs": {
+      "allTitle": "Katalog jazyků",
+      "sortName": "Podle názvu",
+      "sortPopulationDesc": "Uživatelé: sestupně",
+      "sortPopulationAsc": "Uživatelé: vzestupně",
+      "sortFamily": "Podle rodiny／větve",
+      "sortScript": "Podle písma",
+      "sortCountry": "Podle počtu zemí／území",
+      "sortCode": "Podle kódu locale",
+      "about": "Informace",
+      "show": "Zobrazeno",
+      "of": "z",
+      "generated": "Vytvořeno"
+    },
+    "cy": {
+      "allTitle": "Catalog ieithoedd",
+      "sortName": "Yn ôl enw",
+      "about": "Ynghylch",
+      "show": "Dangos",
+      "of": "o",
+      "generated": "Crëwyd"
+    },
+    "da": {
+      "allTitle": "Sprogkatalog",
+      "sortName": "Efter navn",
+      "sortPopulationDesc": "Brugere: flest først",
+      "sortPopulationAsc": "Brugere: færrest først",
+      "sortFamily": "Efter familie／gren",
+      "sortScript": "Efter skriftsystem",
+      "sortCountry": "Efter antal lande／territorier",
+      "sortCode": "Efter localekode",
+      "about": "Om",
+      "show": "Viser",
+      "of": "af",
+      "generated": "Oprettet"
+    },
+    "de": {
+      "allTitle": "Sprachenkatalog",
+      "sortName": "Name",
+      "sortPopulationDesc": "Sprecherzahl: absteigend",
+      "sortPopulationAsc": "Sprecherzahl: aufsteigend",
+      "sortFamily": "Sprachfamilie／Zweig",
+      "sortScript": "Schriftsystem",
+      "sortCountry": "Länder-／Gebietsreichweite",
+      "sortCode": "Locale-Code",
+      "about": "Info",
+      "show": "Anzeige",
+      "of": "von",
+      "generated": "Erstellt"
+    },
+    "el": {
+      "allTitle": "Κατάλογος γλωσσών",
+      "sortName": "Κατά όνομα",
+      "sortPopulationDesc": "Χρήστες: φθίνουσα",
+      "sortPopulationAsc": "Χρήστες: αύξουσα",
+      "sortFamily": "Κατά οικογένεια／κλάδο",
+      "sortScript": "Κατά γραφή",
+      "sortCountry": "Κατά αριθμό χωρών／επικρατειών",
+      "sortCode": "Κατά κωδικό locale",
+      "about": "Σχετικά",
+      "show": "Εμφάνιση",
+      "of": "από",
+      "generated": "Δημιουργήθηκε"
+    },
+    "en": {
+      "allTitle": "Language catalog",
+      "sortName": "Name",
+      "sortPopulationDesc": "Speaker population: high to low",
+      "sortPopulationAsc": "Speaker population: low to high",
+      "sortFamily": "Language family / branch",
+      "sortScript": "Writing system",
+      "sortCountry": "Country / territory reach",
+      "sortCode": "Locale code",
+      "unsupported": "Not supported",
+      "about": "About",
+      "show": "Showing",
+      "of": "of",
+      "generated": "Generated",
+      "open": "Open"
+    },
+    "eo": {
+      "allTitle": "Lingvokatalogo",
+      "sortName": "Laŭ nomo",
+      "sortPopulationDesc": "Uzantoj: malkreske",
+      "sortPopulationAsc": "Uzantoj: kreske",
+      "sortFamily": "Laŭ familio／branĉo",
+      "sortScript": "Laŭ skribo",
+      "sortCountry": "Laŭ nombro de landoj／teritorioj",
+      "sortCode": "Laŭ lokaĵara kodo",
+      "about": "Pri",
+      "show": "Montrataj",
+      "of": "el",
+      "generated": "Kreita"
+    },
+    "es": {
+      "allTitle": "Catálogo de idiomas",
+      "sortName": "Nombre",
+      "sortPopulationDesc": "Hablantes: mayor a menor",
+      "sortPopulationAsc": "Hablantes: menor a mayor",
+      "sortFamily": "Familia／rama",
+      "sortScript": "Sistema de escritura",
+      "sortCountry": "Alcance por países／territorios",
+      "sortCode": "Código locale",
+      "about": "Acerca de",
+      "show": "Mostrando",
+      "of": "de",
+      "generated": "Generado"
+    },
+    "et": {
+      "allTitle": "Keelekataloog",
+      "sortName": "Nime järgi",
+      "sortPopulationDesc": "Kasutajad: kahanevalt",
+      "sortPopulationAsc": "Kasutajad: kasvavalt",
+      "sortFamily": "Keelkonna／haru järgi",
+      "sortScript": "Kirja järgi",
+      "sortCountry": "Riikide／territooriumide arvu järgi",
+      "sortCode": "Locale'i koodi järgi",
+      "about": "Teave",
+      "show": "Kuvatud",
+      "of": "/",
+      "generated": "Loodud"
+    },
+    "eu": {
+      "allTitle": "Hizkuntzen katalogoa",
+      "sortName": "Izenaren arabera",
+      "sortPopulationDesc": "Erabiltzaileak: beherantz",
+      "sortPopulationAsc": "Erabiltzaileak: gorantz",
+      "sortFamily": "Familia／adarraren arabera",
+      "sortScript": "Idazkeraren arabera",
+      "sortCountry": "Herrialde／lurralde kopuruaren arabera",
+      "sortCode": "Locale-kodearen arabera",
+      "about": "Honi buruz",
+      "show": "Erakutsita",
+      "of": "-tik",
+      "generated": "Sortuta"
+    },
+    "fa": {
+      "allTitle": "فهرست زبان‌ها",
+      "sortName": "بر پایهٔ نام",
+      "sortPopulationDesc": "کاربران: نزولی",
+      "sortPopulationAsc": "کاربران: صعودی",
+      "sortFamily": "بر پایهٔ خانواده／شاخه",
+      "sortScript": "بر پایهٔ خط",
+      "sortCountry": "بر پایهٔ شمار کشورها／قلمروها",
+      "sortCode": "بر پایهٔ کد locale",
+      "about": "درباره",
+      "show": "نمایش",
+      "of": "از",
+      "generated": "ایجاد"
+    },
+    "fi": {
+      "allTitle": "Kielikatalogi",
+      "sortName": "Nimen mukaan",
+      "sortPopulationDesc": "Käyttäjät: eniten ensin",
+      "sortPopulationAsc": "Käyttäjät: vähiten ensin",
+      "sortFamily": "Kielikunnan／haaran mukaan",
+      "sortScript": "Kirjoitusjärjestelmän mukaan",
+      "sortCountry": "Maiden／alueiden määrän mukaan",
+      "sortCode": "Locale-tunnuksen mukaan",
+      "about": "Tietoja",
+      "show": "Näytetään",
+      "of": "/",
+      "generated": "Luotu"
+    },
+    "fil": {
+      "allTitle": "Katalogo ng mga wika",
+      "sortName": "Ayon sa pangalan",
+      "sortPopulationDesc": "Mga gumagamit: pinakamarami muna",
+      "sortPopulationAsc": "Mga gumagamit: pinakakaunti muna",
+      "sortFamily": "Ayon sa pamilya／sanga",
+      "sortScript": "Ayon sa sistema ng pagsulat",
+      "sortCountry": "Ayon sa dami ng bansa／teritoryo",
+      "sortCode": "Ayon sa locale code",
+      "about": "Tungkol dito",
+      "show": "Ipinapakita",
+      "of": "sa",
+      "generated": "Ginawa"
+    },
+    "fr": {
+      "allTitle": "Catalogue des langues",
+      "sortName": "Nom",
+      "sortPopulationDesc": "Locuteurs : ordre décroissant",
+      "sortPopulationAsc": "Locuteurs : ordre croissant",
+      "sortFamily": "Famille／branche",
+      "sortScript": "Système d’écriture",
+      "sortCountry": "Nombre de pays／territoires",
+      "sortCode": "Code locale",
+      "about": "À propos",
+      "show": "Affichage",
+      "of": "sur",
+      "generated": "Généré"
+    },
+    "ga": {
+      "allTitle": "Catalóg teangacha",
+      "sortName": "De réir ainm",
+      "about": "Maidir leis",
+      "show": "Á dtaispeáint",
+      "of": "as",
+      "generated": "Cruthaithe"
+    },
+    "gl": {
+      "allTitle": "Catálogo de linguas",
+      "sortName": "Por nome",
+      "sortPopulationDesc": "Usuarios: descendente",
+      "sortPopulationAsc": "Usuarios: ascendente",
+      "sortFamily": "Por familia／rama",
+      "sortScript": "Por escritura",
+      "sortCountry": "Por número de países／territorios",
+      "sortCode": "Por código de locale",
+      "about": "Sobre",
+      "show": "Amosados",
+      "of": "de",
+      "generated": "Creado"
+    },
+    "gn": {
+      "allTitle": "Ñe’ẽnguéra rysýi",
+      "sortName": "Téra rupive",
+      "about": "Rehegua",
+      "show": "Ojehechaukáva",
+      "of": "gui",
+      "generated": "Ojejapo"
+    },
+    "gu": {
+      "allTitle": "ભાષાઓની સૂચિ",
+      "sortName": "નામ મુજબ"
+    },
+    "ha": {
+      "allTitle": "Kundin harsuna",
+      "sortName": "Bisa suna"
+    },
+    "he": {
+      "allTitle": "קטלוג שפות",
+      "sortName": "לפי שם",
+      "sortPopulationDesc": "משתמשים: מהגבוה לנמוך",
+      "sortPopulationAsc": "משתמשים: מהנמוך לגבוה",
+      "sortFamily": "לפי משפחה／ענף",
+      "sortScript": "לפי כתב",
+      "sortCountry": "לפי מספר מדינות／טריטוריות",
+      "sortCode": "לפי קוד locale",
+      "about": "אודות",
+      "show": "מוצגים",
+      "of": "מתוך",
+      "generated": "נוצר"
+    },
+    "hi": {
+      "allTitle": "भाषा सूची",
+      "sortName": "नाम के अनुसार",
+      "sortPopulationDesc": "उपयोगकर्ता: अधिक से कम",
+      "sortPopulationAsc": "उपयोगकर्ता: कम से अधिक",
+      "sortFamily": "परिवार／शाखा के अनुसार",
+      "sortScript": "लिपि के अनुसार",
+      "sortCountry": "देश／क्षेत्र संख्या के अनुसार",
+      "sortCode": "locale कोड के अनुसार",
+      "about": "परिचय",
+      "show": "दिखाए गए",
+      "of": "में से",
+      "generated": "निर्मित"
+    },
+    "hr": {
+      "allTitle": "Katalog jezika",
+      "sortName": "Prema nazivu",
+      "sortPopulationDesc": "Korisnici: silazno",
+      "sortPopulationAsc": "Korisnici: uzlazno",
+      "sortFamily": "Prema porodici／grani",
+      "sortScript": "Prema pismu",
+      "sortCountry": "Prema broju država／područja",
+      "sortCode": "Prema kodu localea",
+      "about": "O jeziku",
+      "show": "Prikazano",
+      "of": "od",
+      "generated": "Izrađeno"
+    },
+    "ht": {
+      "allTitle": "Katalòg lang",
+      "sortName": "Selon non",
+      "about": "Konsènan",
+      "show": "Montre",
+      "of": "sou",
+      "generated": "Kreye"
+    },
+    "hu": {
+      "allTitle": "Nyelvkatalógus",
+      "sortName": "Név szerint",
+      "sortPopulationDesc": "Használók: csökkenő",
+      "sortPopulationAsc": "Használók: növekvő",
+      "sortFamily": "Család／ág szerint",
+      "sortScript": "Írásrendszer szerint",
+      "sortCountry": "Ország／terület száma szerint",
+      "sortCode": "Locale-kód szerint",
+      "about": "Névjegy",
+      "show": "Megjelenítve",
+      "of": "/",
+      "generated": "Létrehozva"
+    },
+    "hy": {
+      "allTitle": "Լեզուների կատալոգ",
+      "sortName": "Ըստ անվան",
+      "sortPopulationDesc": "Օգտագործողներ՝ շատից քիչ",
+      "sortPopulationAsc": "Օգտագործողներ՝ քչից շատ",
+      "sortFamily": "Ըստ ընտանիքի／ճյուղի",
+      "sortScript": "Ըստ գրի",
+      "sortCountry": "Ըստ երկրների／տարածքների թվի",
+      "sortCode": "Ըստ locale կոդի",
+      "about": "Մասին",
+      "show": "Ցուցադրված",
+      "of": "-ից",
+      "generated": "Ստեղծվել է"
+    },
+    "id": {
+      "allTitle": "Katalog bahasa",
+      "sortName": "Menurut nama",
+      "sortPopulationDesc": "Pengguna: terbanyak",
+      "sortPopulationAsc": "Pengguna: tersedikit",
+      "sortFamily": "Menurut rumpun／cabang",
+      "sortScript": "Menurut sistem tulisan",
+      "sortCountry": "Menurut jumlah negara／wilayah",
+      "sortCode": "Menurut kode locale",
+      "about": "Tentang",
+      "show": "Menampilkan",
+      "of": "dari",
+      "generated": "Dibuat"
+    },
+    "ig": {
+      "allTitle": "Ndepụta asụsụ",
+      "sortName": "Site n'aha"
+    },
+    "is": {
+      "allTitle": "Tungumálaskrá",
+      "sortName": "Eftir heiti",
+      "sortPopulationDesc": "Notendur: flestir fyrst",
+      "sortPopulationAsc": "Notendur: fæstir fyrst",
+      "sortFamily": "Eftir ætt／grein",
+      "sortScript": "Eftir ritkerfi",
+      "sortCountry": "Eftir fjölda landa／svæða",
+      "sortCode": "Eftir locale-kóða",
+      "about": "Um",
+      "show": "Sýnd",
+      "of": "af",
+      "generated": "Búið til"
+    },
+    "it": {
+      "allTitle": "Catalogo delle lingue",
+      "sortName": "Nome",
+      "sortPopulationDesc": "Parlanti: ordine decrescente",
+      "sortPopulationAsc": "Parlanti: ordine crescente",
+      "sortFamily": "Famiglia／ramo",
+      "sortScript": "Sistema di scrittura",
+      "sortCountry": "Numero di paesi／territori",
+      "sortCode": "Codice locale",
+      "about": "Informazioni",
+      "show": "Visualizzati",
+      "of": "di",
+      "generated": "Generato"
+    },
+    "ja": {
+      "allTitle": "言語カタログ",
+      "sortName": "名前順",
+      "sortPopulationDesc": "使用人口：多い順",
+      "sortPopulationAsc": "使用人口：少ない順",
+      "sortFamily": "語族・語派順",
+      "sortScript": "文字体系順",
+      "sortCountry": "関連国・地域数順",
+      "sortCode": "ロケールコード順",
+      "unsupported": "未対応",
+      "about": "概要",
+      "show": "表示",
+      "of": "件中",
+      "generated": "作成",
+      "open": "開く"
+    },
+    "jv": {
+      "allTitle": "Katalog basa",
+      "sortName": "Miturut jeneng",
+      "about": "Babagan",
+      "show": "Ditampilake",
+      "of": "saka",
+      "generated": "Digawe"
+    },
+    "ka": {
+      "allTitle": "ენების კატალოგი",
+      "sortName": "სახელის მიხედვით",
+      "sortPopulationDesc": "მომხმარებლები: კლებადობით",
+      "sortPopulationAsc": "მომხმარებლები: ზრდადობით",
+      "sortFamily": "ოჯახის／განშტოების მიხედვით",
+      "sortScript": "დამწერლობის მიხედვით",
+      "sortCountry": "ქვეყნების／ტერიტორიების რაოდენობით",
+      "sortCode": "Locale კოდის მიხედვით",
+      "about": "შესახებ",
+      "show": "ნაჩვენებია",
+      "of": "-დან",
+      "generated": "შექმნილია"
+    },
+    "kk": {
+      "allTitle": "Тілдер каталогы",
+      "sortName": "Атауы бойынша"
+    },
+    "km": {
+      "allTitle": "បញ្ជីភាសា",
+      "sortName": "តាមឈ្មោះ"
+    },
+    "kmr": {
+      "allTitle": "Kataloga zimanan",
+      "sortName": "Li gorî nav",
+      "about": "Derbarê",
+      "show": "Tê nîşandan",
+      "of": "ji",
+      "generated": "Hatiye çêkirin"
+    },
+    "kn": {
+      "allTitle": "ಭಾಷೆಗಳ ಪಟ್ಟಿ",
+      "sortName": "ಹೆಸರಿನ ಪ್ರಕಾರ"
+    },
+    "ko": {
+      "allTitle": "언어 카탈로그",
+      "sortName": "이름순",
+      "sortPopulationDesc": "사용자 수: 많은 순",
+      "sortPopulationAsc": "사용자 수: 적은 순",
+      "sortFamily": "어족／어파순",
+      "sortScript": "문자 체계순",
+      "sortCountry": "관련 국가／지역 수순",
+      "sortCode": "locale 코드순",
+      "about": "설명",
+      "show": "표시",
+      "of": "/",
+      "generated": "생성"
+    },
+    "kok": {
+      "allTitle": "भाशांची वळेरी",
+      "sortName": "नांवाप्रमाणें"
+    },
+    "ks": {
+      "allTitle": "زَبانَن ہُند فہرست",
+      "sortName": "ناو مطابق"
+    },
+    "ky": {
+      "allTitle": "Тилдер каталогу",
+      "sortName": "Аты боюнча"
+    },
+    "la": {
+      "allTitle": "Catalogus linguarum",
+      "sortName": "Nomine",
+      "sortPopulationDesc": "Utentes: plures primum",
+      "sortPopulationAsc": "Utentes: pauciores primum",
+      "sortFamily": "Familia／ramo",
+      "sortScript": "Scriptura",
+      "sortCountry": "Numero civitatum／territoriorum",
+      "sortCode": "Codice locali",
+      "about": "De",
+      "show": "Monstrantur",
+      "of": "ex",
+      "generated": "Creatum"
+    },
+    "ln": {
+      "allTitle": "Kataloge ya minɔkɔ",
+      "sortName": "Na nkombo"
+    },
+    "lo": {
+      "allTitle": "ລາຍການພາສາ",
+      "sortName": "ຕາມຊື່"
+    },
+    "lt": {
+      "allTitle": "Kalbų katalogas",
+      "sortName": "Pagal pavadinimą",
+      "sortPopulationDesc": "Naudotojai: mažėjančiai",
+      "sortPopulationAsc": "Naudotojai: didėjančiai",
+      "sortFamily": "Pagal šeimą／šaką",
+      "sortScript": "Pagal raštą",
+      "sortCountry": "Pagal šalių／teritorijų skaičių",
+      "sortCode": "Pagal locale kodą",
+      "about": "Apie",
+      "show": "Rodoma",
+      "of": "iš",
+      "generated": "Sukurta"
+    },
+    "lv": {
+      "allTitle": "Valodu katalogs",
+      "sortName": "Pēc nosaukuma",
+      "sortPopulationDesc": "Lietotāji: dilstoši",
+      "sortPopulationAsc": "Lietotāji: augoši",
+      "sortFamily": "Pēc saimes／atzara",
+      "sortScript": "Pēc rakstības",
+      "sortCountry": "Pēc valstu／teritoriju skaita",
+      "sortCode": "Pēc locale koda",
+      "about": "Par",
+      "show": "Parādīti",
+      "of": "no",
+      "generated": "Izveidots"
+    },
+    "mai": {
+      "allTitle": "भाषा सूची",
+      "sortName": "नाम अनुसार"
+    },
+    "mg": {
+      "allTitle": "Katalaogin’ny fiteny",
+      "sortName": "Araka ny anarana"
+    },
+    "mi": {
+      "allTitle": "Rārangi reo",
+      "sortName": "Mā te ingoa",
+      "about": "Mō",
+      "show": "E whakaaturia ana",
+      "of": "o",
+      "generated": "I hangaia"
+    },
+    "mk": {
+      "allTitle": "Каталог на јазици",
+      "sortName": "По име",
+      "about": "За",
+      "show": "Прикажани",
+      "of": "од",
+      "generated": "Создадено"
+    },
+    "ml": {
+      "allTitle": "ഭാഷകളുടെ പട്ടിക",
+      "sortName": "പേര് അനുസരിച്ച്"
+    },
+    "mn": {
+      "allTitle": "Хэлний каталог",
+      "sortName": "Нэрээр"
+    },
+    "mr": {
+      "allTitle": "भाषा सूची",
+      "sortName": "नावानुसार",
+      "about": "माहिती",
+      "show": "दर्शविले",
+      "of": "पैकी",
+      "generated": "तयार केले"
+    },
+    "ms": {
+      "allTitle": "Katalog bahasa",
+      "sortName": "Mengikut nama",
+      "sortPopulationDesc": "Pengguna: menurun",
+      "sortPopulationAsc": "Pengguna: menaik",
+      "sortFamily": "Mengikut keluarga／cabang",
+      "sortScript": "Mengikut tulisan",
+      "sortCountry": "Mengikut bilangan negara／wilayah",
+      "sortCode": "Mengikut kod locale",
+      "about": "Perihal",
+      "show": "Dipaparkan",
+      "of": "daripada",
+      "generated": "Dijana"
+    },
+    "mt": {
+      "allTitle": "Katalgu tal-lingwi",
+      "sortName": "Skont l-isem"
+    },
+    "my": {
+      "allTitle": "ဘာသာစကားစာရင်း",
+      "sortName": "အမည်အလိုက်"
+    },
+    "nb": {
+      "allTitle": "Språkkatalog",
+      "sortName": "Etter navn",
+      "sortPopulationDesc": "Brukere: flest først",
+      "sortPopulationAsc": "Brukere: færrest først",
+      "sortFamily": "Etter familie／gren",
+      "sortScript": "Etter skriftsystem",
+      "sortCountry": "Etter antall land／territorier",
+      "sortCode": "Etter localekode",
+      "about": "Om",
+      "show": "Viser",
+      "of": "av",
+      "generated": "Opprettet"
+    },
+    "ne": {
+      "allTitle": "भाषा सूची",
+      "sortName": "नामअनुसार",
+      "about": "बारेमा",
+      "show": "देखाइएका",
+      "of": "मध्ये",
+      "generated": "सिर्जना"
+    },
+    "nl": {
+      "allTitle": "Taalcatalogus",
+      "sortName": "Op naam",
+      "sortPopulationDesc": "Gebruikers: aflopend",
+      "sortPopulationAsc": "Gebruikers: oplopend",
+      "sortFamily": "Op familie／tak",
+      "sortScript": "Op schriftsysteem",
+      "sortCountry": "Op aantal landen／gebieden",
+      "sortCode": "Op localecode",
+      "about": "Over",
+      "show": "Getoond",
+      "of": "van",
+      "generated": "Gegenereerd"
+    },
+    "nn": {
+      "allTitle": "Språkkatalog",
+      "sortName": "Etter namn",
+      "sortPopulationDesc": "Brukarar: flest først",
+      "sortPopulationAsc": "Brukarar: færrast først",
+      "sortFamily": "Etter familie／grein",
+      "sortScript": "Etter skriftsystem",
+      "sortCountry": "Etter talet på land／territorium",
+      "sortCode": "Etter localekode",
+      "about": "Om",
+      "show": "Viser",
+      "of": "av",
+      "generated": "Oppretta"
+    },
+    "nr": {
+      "allTitle": "Ikhathalogu yamalimi",
+      "sortName": "Ngebizo"
+    },
+    "nso": {
+      "allTitle": "Khathaloko ya maleme",
+      "sortName": "Ka leina"
+    },
+    "om": {
+      "allTitle": "Tarree afaanotaa",
+      "sortName": "Maqaan"
+    },
+    "or": {
+      "allTitle": "ଭାଷା ତାଲିକା",
+      "sortName": "ନାମ ଅନୁସାରେ"
+    },
+    "pa-Arab": {
+      "allTitle": "زباناں دی فہرست",
+      "sortName": "ناں مطابق"
+    },
+    "pa-Guru": {
+      "allTitle": "ਭਾਸ਼ਾਵਾਂ ਦੀ ਸੂਚੀ",
+      "sortName": "ਨਾਮ ਅਨੁਸਾਰ"
+    },
+    "pl": {
+      "allTitle": "Katalog języków",
+      "sortName": "Według nazwy",
+      "sortPopulationDesc": "Użytkownicy: malejąco",
+      "sortPopulationAsc": "Użytkownicy: rosnąco",
+      "sortFamily": "Według rodziny／gałęzi",
+      "sortScript": "Według pisma",
+      "sortCountry": "Według liczby krajów／terytoriów",
+      "sortCode": "Według kodu locale",
+      "about": "Informacje",
+      "show": "Wyświetlono",
+      "of": "z",
+      "generated": "Utworzono"
+    },
+    "ps": {
+      "allTitle": "د ژبو لړلیک",
+      "sortName": "د نوم له مخې"
+    },
+    "pt-BR": {
+      "allTitle": "Catálogo de idiomas",
+      "sortName": "Nome",
+      "sortPopulationDesc": "Falantes: maior para menor",
+      "sortPopulationAsc": "Falantes: menor para maior",
+      "sortFamily": "Família／ramo",
+      "sortScript": "Sistema de escrita",
+      "sortCountry": "Alcance por países／territórios",
+      "sortCode": "Código do locale",
+      "about": "Sobre",
+      "show": "Exibindo",
+      "of": "de",
+      "generated": "Gerado"
+    },
+    "pt-PT": {
+      "allTitle": "Catálogo de línguas",
+      "sortName": "Nome",
+      "sortPopulationDesc": "Falantes: maior para menor",
+      "sortPopulationAsc": "Falantes: menor para maior",
+      "sortFamily": "Família／ramo",
+      "sortScript": "Sistema de escrita",
+      "sortCountry": "Alcance por países／territórios",
+      "sortCode": "Código do locale",
+      "about": "Sobre",
+      "show": "A mostrar",
+      "of": "de",
+      "generated": "Gerado"
+    },
+    "qu": {
+      "allTitle": "Simikunapa katalogon",
+      "sortName": "Sutiman hina"
+    },
+    "rm": {
+      "allTitle": "Catalog da linguas",
+      "sortName": "Tenor num",
+      "sortPopulationDesc": "Utilisaders: ils blers l'emprim",
+      "sortPopulationAsc": "Utilisaders: ils paucs l'emprim",
+      "sortFamily": "Tenor famiglia／rom",
+      "sortScript": "Tenor scrittira",
+      "sortCountry": "Tenor dumber da pajais／territoris",
+      "sortCode": "Tenor code da locale",
+      "about": "Davart",
+      "show": "Mussads",
+      "of": "da",
+      "generated": "Creà"
+    },
+    "rn": {
+      "allTitle": "Urutonde rw’indimi",
+      "sortName": "Ukurikije izina"
+    },
+    "ro": {
+      "allTitle": "Catalog de limbi",
+      "sortName": "După nume",
+      "sortPopulationDesc": "Utilizatori: descrescător",
+      "sortPopulationAsc": "Utilizatori: crescător",
+      "sortFamily": "După familie／ramură",
+      "sortScript": "După scriere",
+      "sortCountry": "După numărul de țări／teritorii",
+      "sortCode": "După codul locale",
+      "about": "Despre",
+      "show": "Afișate",
+      "of": "din",
+      "generated": "Generat"
+    },
+    "ru": {
+      "allTitle": "Каталог языков",
+      "sortName": "По названию",
+      "sortPopulationDesc": "Пользователи: по убыванию",
+      "sortPopulationAsc": "Пользователи: по возрастанию",
+      "sortFamily": "По семье／ветви",
+      "sortScript": "По системе письма",
+      "sortCountry": "По числу стран／территорий",
+      "sortCode": "По коду locale",
+      "about": "Описание",
+      "show": "Показано",
+      "of": "из",
+      "generated": "Создано"
+    },
+    "rw": {
+      "allTitle": "Urutonde rw’indimi",
+      "sortName": "Ku izina"
+    },
+    "sat": {
+      "allTitle": "ᱯᱟᱹᱨᱥᱤ ᱛᱟᱞᱠᱟ",
+      "sortName": "ᱧᱩᱛᱩᱢ ᱛᱮ"
+    },
+    "sd": {
+      "allTitle": "ٻولين جي فهرست",
+      "sortName": "نالي موجب"
+    },
+    "sg": {
+      "allTitle": "Âlïstë tî âyângâ",
+      "sortName": "Na lege ti iri"
+    },
+    "si": {
+      "allTitle": "භාෂා නාමාවලිය",
+      "sortName": "නම අනුව"
+    },
+    "sk": {
+      "allTitle": "Katalóg jazykov",
+      "sortName": "Podľa názvu",
+      "sortPopulationDesc": "Používatelia: zostupne",
+      "sortPopulationAsc": "Používatelia: vzostupne",
+      "sortFamily": "Podľa rodiny／vetvy",
+      "sortScript": "Podľa písma",
+      "sortCountry": "Podľa počtu krajín／území",
+      "sortCode": "Podľa kódu locale",
+      "about": "O jazyku",
+      "show": "Zobrazené",
+      "of": "z",
+      "generated": "Vytvorené"
+    },
+    "sl": {
+      "allTitle": "Katalog jezikov",
+      "sortName": "Po imenu",
+      "sortPopulationDesc": "Uporabniki: padajoče",
+      "sortPopulationAsc": "Uporabniki: naraščajoče",
+      "sortFamily": "Po družini／veji",
+      "sortScript": "Po pisavi",
+      "sortCountry": "Po številu držav／ozemelj",
+      "sortCode": "Po kodi locale",
+      "about": "O jeziku",
+      "show": "Prikazano",
+      "of": "od",
+      "generated": "Ustvarjeno"
+    },
+    "sn": {
+      "allTitle": "Rondedzero yemitauro",
+      "sortName": "Nezita"
+    },
+    "so": {
+      "allTitle": "Tusmada luqadaha",
+      "sortName": "Magac ahaan"
+    },
+    "sq": {
+      "allTitle": "Katalogu i gjuhëve",
+      "sortName": "Sipas emrit",
+      "sortPopulationDesc": "Përdoruesit: më të shumtët së pari",
+      "sortPopulationAsc": "Përdoruesit: më të paktët së pari",
+      "sortFamily": "Sipas familjes／degës",
+      "sortScript": "Sipas shkrimit",
+      "sortCountry": "Sipas numrit të shteteve／territoreve",
+      "sortCode": "Sipas kodit locale",
+      "about": "Rreth",
+      "show": "Shfaqen",
+      "of": "nga",
+      "generated": "Krijuar"
+    },
+    "sr": {
+      "allTitle": "Каталог језика",
+      "sortName": "Према називу",
+      "sortPopulationDesc": "Корисници: опадајуће",
+      "sortPopulationAsc": "Корисници: растуће",
+      "sortFamily": "Према породици／грани",
+      "sortScript": "Према писму",
+      "sortCountry": "Према броју држава／територија",
+      "sortCode": "Према коду locale-а",
+      "about": "О језику",
+      "show": "Приказано",
+      "of": "од",
+      "generated": "Израђено"
+    },
+    "ss": {
+      "allTitle": "Ikhathalogi yetilwimi",
+      "sortName": "Ngeligama"
+    },
+    "st": {
+      "allTitle": "Lethathamo la lipuo",
+      "sortName": "Ka lebitso"
+    },
+    "su": {
+      "allTitle": "Katalog basa",
+      "sortName": "Dumasar ngaran",
+      "about": "Ngeunaan",
+      "show": "Ditémbongkeun",
+      "of": "tina",
+      "generated": "Dijieun"
+    },
+    "sv": {
+      "allTitle": "Språkkatalog",
+      "sortName": "Efter namn",
+      "sortPopulationDesc": "Användare: flest först",
+      "sortPopulationAsc": "Användare: minst först",
+      "sortFamily": "Efter familj／gren",
+      "sortScript": "Efter skriftsystem",
+      "sortCountry": "Efter antal länder／territorier",
+      "sortCode": "Efter localekod",
+      "about": "Om",
+      "show": "Visar",
+      "of": "av",
+      "generated": "Skapad"
+    },
+    "sw": {
+      "allTitle": "Orodha ya lugha",
+      "sortName": "Kwa jina",
+      "about": "Kuhusu",
+      "show": "Zinaonyeshwa",
+      "of": "kati ya",
+      "generated": "Imeundwa"
+    },
+    "ta": {
+      "allTitle": "மொழிப் பட்டியல்",
+      "sortName": "பெயர் வாரியாக",
+      "about": "பற்றி",
+      "show": "காட்டப்படுவது",
+      "of": "இல்",
+      "generated": "உருவாக்கப்பட்டது"
+    },
+    "te": {
+      "allTitle": "భాషల జాబితా",
+      "sortName": "పేరు ప్రకారం",
+      "about": "గురించి",
+      "show": "చూపిస్తున్నవి",
+      "of": "లో",
+      "generated": "సృష్టించబడింది"
+    },
+    "tet": {
+      "allTitle": "Katálogu lian",
+      "sortName": "Tuir naran"
+    },
+    "tg": {
+      "allTitle": "Феҳристи забонҳо",
+      "sortName": "Аз рӯи ном"
+    },
+    "th": {
+      "allTitle": "รายการภาษา",
+      "sortName": "ตามชื่อ",
+      "sortPopulationDesc": "ผู้ใช้: มากไปน้อย",
+      "sortPopulationAsc": "ผู้ใช้: น้อยไปมาก",
+      "sortFamily": "ตามตระกูล／สาขา",
+      "sortScript": "ตามระบบอักษร",
+      "sortCountry": "ตามจำนวนประเทศ／ดินแดน",
+      "sortCode": "ตามรหัส locale",
+      "about": "เกี่ยวกับ",
+      "show": "แสดง",
+      "of": "จาก",
+      "generated": "สร้างเมื่อ"
+    },
+    "ti": {
+      "allTitle": "መዝገበ ቋንቋታት",
+      "sortName": "ብስም"
+    },
+    "tk": {
+      "allTitle": "Diller katalogy",
+      "sortName": "Ady boýunça"
+    },
+    "tn": {
+      "allTitle": "Lenaane la dipuo",
+      "sortName": "Ka leina"
+    },
+    "tr": {
+      "allTitle": "Dil kataloğu",
+      "sortName": "Ada göre",
+      "sortPopulationDesc": "Kullanıcı: çoktan aza",
+      "sortPopulationAsc": "Kullanıcı: azdan çoğa",
+      "sortFamily": "Aileye／kola göre",
+      "sortScript": "Yazı sistemine göre",
+      "sortCountry": "Ülke／bölge sayısına göre",
+      "sortCode": "Locale koduna göre",
+      "about": "Hakkında",
+      "show": "Gösterilen",
+      "of": "/",
+      "generated": "Oluşturuldu"
+    },
+    "ts": {
+      "allTitle": "Khathalogu ya tindzimi",
+      "sortName": "Hi vito"
+    },
+    "ug": {
+      "allTitle": "تىل مۇندەرىجىسى",
+      "sortName": "نام بويىچە"
+    },
+    "uk": {
+      "allTitle": "Каталог мов",
+      "sortName": "За назвою",
+      "sortPopulationDesc": "Користувачі: за спаданням",
+      "sortPopulationAsc": "Користувачі: за зростанням",
+      "sortFamily": "За сім’єю／гілкою",
+      "sortScript": "За системою письма",
+      "sortCountry": "За кількістю країн／територій",
+      "sortCode": "За кодом локалі",
+      "about": "Опис",
+      "show": "Показано",
+      "of": "з",
+      "generated": "Створено"
+    },
+    "ur": {
+      "allTitle": "زبانوں کی فہرست",
+      "sortName": "نام کے مطابق",
+      "about": "تعارف",
+      "show": "دکھائے گئے",
+      "of": "میں سے",
+      "generated": "تیار کردہ"
+    },
+    "uz": {
+      "allTitle": "Tillar katalogi",
+      "sortName": "Nom bo‘yicha"
+    },
+    "ve": {
+      "allTitle": "Khaṱhalogo ya nyambo",
+      "sortName": "Nga dzina"
+    },
+    "vi": {
+      "allTitle": "Danh mục ngôn ngữ",
+      "sortName": "Theo tên",
+      "sortPopulationDesc": "Người dùng: giảm dần",
+      "sortPopulationAsc": "Người dùng: tăng dần",
+      "sortFamily": "Theo ngữ hệ／nhánh",
+      "sortScript": "Theo hệ chữ",
+      "sortCountry": "Theo số quốc gia／vùng",
+      "sortCode": "Theo mã locale",
+      "about": "Giới thiệu",
+      "show": "Hiển thị",
+      "of": "trên",
+      "generated": "Tạo lúc"
+    },
+    "xh": {
+      "allTitle": "Ikhathalogu yeelwimi",
+      "sortName": "Ngegama",
+      "sortPopulationDesc": "Abasebenzisi: abaninzi kuqala",
+      "sortPopulationAsc": "Abasebenzisi: abambalwa kuqala",
+      "sortFamily": "Ngokosapho／isebe",
+      "sortScript": "Ngokwenkqubo yokubhala",
+      "sortCountry": "Ngokwenani lamazwe／imimandla",
+      "sortCode": "Ngekhowudi ye-locale",
+      "about": "Malunga",
+      "show": "Kuboniswa",
+      "of": "kwezi",
+      "generated": "Yenziwe",
+      "open": "Vula"
+    },
+    "yo": {
+      "allTitle": "Àkójọ èdè",
+      "sortName": "Nípasẹ̀ orúkọ"
+    },
+    "zh-Hans": {
+      "allTitle": "语言目录",
+      "sortName": "按名称",
+      "sortPopulationDesc": "使用人口：从多到少",
+      "sortPopulationAsc": "使用人口：从少到多",
+      "sortFamily": "按语系／语支",
+      "sortScript": "按书写系统",
+      "sortCountry": "按相关国家／地区数",
+      "sortCode": "按 locale 代码",
+      "about": "简介",
+      "show": "显示",
+      "of": "项",
+      "generated": "生成时间"
+    },
+    "zh-Hant": {
+      "allTitle": "語言目錄",
+      "sortName": "按名稱",
+      "sortPopulationDesc": "使用人口：由多至少",
+      "sortPopulationAsc": "使用人口：由少至多",
+      "sortFamily": "按語系／語支",
+      "sortScript": "按書寫系統",
+      "sortCountry": "按相關國家／地區數",
+      "sortCode": "按 locale 代碼",
+      "about": "簡介",
+      "show": "顯示",
+      "of": "項",
+      "generated": "產生時間"
+    },
+    "zu": {
+      "allTitle": "Ikhathalogi yezilimi",
+      "sortName": "Ngegama"
+    }
+  }
+}

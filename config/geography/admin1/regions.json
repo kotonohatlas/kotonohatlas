@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "regions": {
+    "east-asia": {
+      "countries": ["CN", "HK", "JP", "KP", "KR", "MN", "MO", "TW"],
+      "neighbors": ["southeast-asia", "south-asia", "north-eurasia-east", "west-central-asia"]
+    },
+    "southeast-asia": {
+      "countries": ["BN", "ID", "KH", "LA", "MM", "MY", "PH", "SG", "TH", "TL", "VN"],
+      "neighbors": ["east-asia", "south-asia", "oceania"]
+    },
+    "south-asia": {
+      "countries": ["AF", "BD", "BT", "IN", "LK", "MV", "NP", "PK"],
+      "neighbors": ["east-asia", "southeast-asia", "west-central-asia"]
+    },
+    "west-central-asia": {
+      "countries": [
+        "AE", "AM", "AZ", "BH", "CY", "GE", "IL", "IQ", "IR", "JO", "KG", "KW",
+        "KZ", "LB", "OM", "PS", "QA", "SA", "SY", "TJ", "TM", "TR", "UZ", "YE"
+      ],
+      "neighbors": [
+        "south-asia", "east-asia", "north-eurasia-west", "north-eurasia-east",
+        "eastern-europe", "west-europe", "north-africa"
+      ]
+    },
+    "northwest-europe": {
+      "countries": [
+        "AX", "BE", "DK", "FI", "FO", "GB", "GG", "IE", "IM", "IS", "JE", "LU",
+        "NL", "NO", "SE"
+      ],
+      "neighbors": ["west-europe", "eastern-europe", "north-eurasia-west", "canada", "united-states"]
+    },
+    "west-europe": {
+      "countries": [
+        "AD", "AT", "CH", "DE", "ES", "FR", "GI", "IT", "LI", "MC", "MT", "PT",
+        "SM", "VA"
+      ],
+      "neighbors": ["northwest-europe", "eastern-europe", "west-central-asia", "north-africa"]
+    },
+    "eastern-europe": {
+      "countries": [
+        "AL", "BA", "BG", "BY", "CZ", "EE", "GR", "HR", "HU", "LT", "LV", "MD",
+        "ME", "MK", "PL", "RO", "RS", "SI", "SK", "UA", "XK"
+      ],
+      "neighbors": ["northwest-europe", "west-europe", "north-eurasia-west", "west-central-asia"]
+    },
+    "north-eurasia-west": {
+      "countries": ["RU"],
+      "feature_filter": {"lon_max": 60},
+      "neighbors": ["eastern-europe", "northwest-europe", "west-central-asia", "north-eurasia-east", "canada"]
+    },
+    "north-eurasia-east": {
+      "countries": ["RU"],
+      "feature_filter": {"lon_min": 60},
+      "neighbors": ["north-eurasia-west", "east-asia", "west-central-asia", "canada"]
+    },
+    "north-africa": {
+      "countries": ["DJ", "DZ", "EG", "EH", "ER", "ET", "LY", "MA", "SD", "SO", "SS", "TN"],
+      "neighbors": ["west-africa", "southern-africa", "west-central-asia", "west-europe"]
+    },
+    "west-africa": {
+      "countries": [
+        "BF", "BJ", "CD", "CF", "CG", "CI", "CM", "CV", "GA", "GH", "GM", "GN",
+        "GQ", "GW", "LR", "ML", "MR", "NE", "NG", "SL", "SN", "ST", "TD", "TG"
+      ],
+      "neighbors": ["north-africa", "southern-africa", "south-america"]
+    },
+    "southern-africa": {
+      "countries": [
+        "AO", "BI", "BW", "KE", "KM", "LS", "MG", "MU", "MW", "MZ", "NA", "RW",
+        "SC", "SH", "SZ", "TZ", "UG", "ZA", "ZM", "ZW"
+      ],
+      "neighbors": ["west-africa", "north-africa", "oceania"]
+    },
+    "canada": {
+      "countries": ["CA", "GL", "PM"],
+      "neighbors": ["united-states", "northwest-europe", "north-eurasia-west", "north-eurasia-east"]
+    },
+    "united-states": {
+      "countries": ["BM", "US"],
+      "neighbors": ["canada", "central-america", "northwest-europe", "oceania"]
+    },
+    "central-america": {
+      "countries": [
+        "AG", "AI", "AW", "BB", "BL", "BS", "BZ", "CR", "CU", "CW", "DM", "DO",
+        "GD", "GT", "HN", "HT", "JM", "KN", "KY", "LC", "MF", "MS", "MX", "NI",
+        "PA", "PR", "SV", "SX", "TC", "TT", "VC", "VG", "VI"
+      ],
+      "neighbors": ["united-states", "south-america", "oceania"]
+    },
+    "south-america": {
+      "countries": [
+        "AR", "BO", "BR", "CL", "CO", "EC", "FK", "GS", "GY", "PE", "PY", "SR",
+        "UY", "VE"
+      ],
+      "neighbors": ["central-america", "west-africa", "oceania"]
+    },
+    "oceania": {
+      "countries": [
+        "AQ", "AS", "AU", "CK", "FJ", "FM", "GU", "HM", "IO", "KI", "MH", "MP",
+        "NC", "NF", "NR", "NU", "NZ", "PF", "PG", "PN", "PW", "SB", "TF", "TK",
+        "TO", "TV", "UM", "VU", "WF", "WS"
+      ],
+      "neighbors": ["southeast-asia", "south-america", "united-states", "southern-africa"]
+    }
+  }
+}

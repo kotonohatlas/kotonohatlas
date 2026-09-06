@@ -1,0 +1,1744 @@
+{
+  "schema": 2,
+  "countries": {
+    "AF": "./country/AF.geojson",
+    "AO": "./country/AO.geojson",
+    "AR": "./country/AR.geojson",
+    "AT": "./country/AT.geojson",
+    "AZ": "./country/AZ.geojson",
+    "BE": "./country/BE.geojson",
+    "BD": "./country/BD.geojson",
+    "BF": "./country/BF.geojson",
+    "BJ": "./country/BJ.geojson",
+    "BG": "./country/BG.geojson",
+    "BI": "./country/BI.geojson",
+    "BO": "./country/BO.geojson",
+    "BR": "./country/BR.geojson",
+    "BT": "./country/BT.geojson",
+    "BW": "./country/BW.geojson",
+    "CA": "./country/CA.geojson",
+    "CD": "./country/CD.geojson",
+    "CF": "./country/CF.geojson",
+    "CG": "./country/CG.geojson",
+    "CH": "./country/CH.geojson",
+    "CI": "./country/CI.geojson",
+    "CL": "./country/CL.geojson",
+    "CM": "./country/CM.geojson",
+    "CN": "./country/CN.geojson",
+    "CO": "./country/CO.geojson",
+    "CY": "./country/CY.geojson",
+    "DE": "./country/DE.geojson",
+    "DJ": "./country/DJ.geojson",
+    "DK": "./country/DK.geojson",
+    "DZ": "./country/DZ.geojson",
+    "EE": "./country/EE.geojson",
+    "EC": "./country/EC.geojson",
+    "ER": "./country/ER.geojson",
+    "ES": "./country/ES.geojson",
+    "ET": "./country/ET.geojson",
+    "FI": "./country/FI.geojson",
+    "FM": "./country/FM.geojson",
+    "FR": "./country/FR.geojson",
+    "GA": "./country/GA.geojson",
+    "GE": "./country/GE.geojson",
+    "GH": "./country/GH.geojson",
+    "GR": "./country/GR.geojson",
+    "GB": "./country/GB.geojson",
+    "GM": "./country/GM.geojson",
+    "GN": "./country/GN.geojson",
+    "GQ": "./country/GQ.geojson",
+    "GT": "./country/GT.geojson",
+    "HR": "./country/HR.geojson",
+    "ID": "./country/ID.geojson",
+    "IE": "./country/IE.geojson",
+    "IN": "./country/IN.geojson",
+    "IQ": "./country/IQ.geojson",
+    "IR": "./country/IR.geojson",
+    "IT": "./country/IT.geojson",
+    "JP": "./country/JP.geojson",
+    "KE": "./country/KE.geojson",
+    "KG": "./country/KG.geojson",
+    "KH": "./country/KH.geojson",
+    "KM": "./country/KM.geojson",
+    "KZ": "./country/KZ.geojson",
+    "LA": "./country/LA.geojson",
+    "LK": "./country/LK.geojson",
+    "LT": "./country/LT.geojson",
+    "LV": "./country/LV.geojson",
+    "LR": "./country/LR.geojson",
+    "MA": "./country/MA.geojson",
+    "ML": "./country/ML.geojson",
+    "MD": "./country/MD.geojson",
+    "ME": "./country/ME.geojson",
+    "MK": "./country/MK.geojson",
+    "MM": "./country/MM.geojson",
+    "MW": "./country/MW.geojson",
+    "MR": "./country/MR.geojson",
+    "MY": "./country/MY.geojson",
+    "MZ": "./country/MZ.geojson",
+    "NA": "./country/NA.geojson",
+    "NE": "./country/NE.geojson",
+    "NG": "./country/NG.geojson",
+    "NL": "./country/NL.geojson",
+    "NO": "./country/NO.geojson",
+    "NP": "./country/NP.geojson",
+    "OM": "./country/OM.geojson",
+    "PK": "./country/PK.geojson",
+    "PE": "./country/PE.geojson",
+    "PH": "./country/PH.geojson",
+    "PL": "./country/PL.geojson",
+    "PT": "./country/PT.geojson",
+    "RO": "./country/RO.geojson",
+    "RS": "./country/RS.geojson",
+    "RU": "./country/RU.geojson",
+    "SA": "./country/SA.geojson",
+    "SE": "./country/SE.geojson",
+    "SD": "./country/SD.geojson",
+    "SI": "./country/SI.geojson",
+    "SK": "./country/SK.geojson",
+    "SL": "./country/SL.geojson",
+    "SN": "./country/SN.geojson",
+    "SS": "./country/SS.geojson",
+    "SY": "./country/SY.geojson",
+    "SZ": "./country/SZ.geojson",
+    "TD": "./country/TD.geojson",
+    "TG": "./country/TG.geojson",
+    "TH": "./country/TH.geojson",
+    "TJ": "./country/TJ.geojson",
+    "TM": "./country/TM.geojson",
+    "TR": "./country/TR.geojson",
+    "TW": "./country/TW.geojson",
+    "TZ": "./country/TZ.geojson",
+    "UA": "./country/UA.geojson",
+    "UG": "./country/UG.geojson",
+    "US": "./country/US.geojson",
+    "UZ": "./country/UZ.geojson",
+    "VE": "./country/VE.geojson",
+    "WF": "./country/WF.geojson",
+    "XK": "./country/XK.geojson",
+    "ZA": "./country/ZA.geojson",
+    "ZM": "./country/ZM.geojson",
+    "ZW": "./country/ZW.geojson"
+  },
+  "sources": {
+    "as": "./lang/as.geojson",
+    "az": "./lang/az.geojson",
+    "bn": "./lang/bn.geojson",
+    "bo": "./lang/bo.geojson",
+    "brx": "./lang/brx.geojson",
+    "ca": "./lang/ca.geojson",
+    "ceb": "./lang/ceb.geojson",
+    "ckb": "./lang/ckb.geojson",
+    "cy": "./lang/cy.geojson",
+    "de": "./lang/de.geojson",
+    "doi": "./lang/doi.geojson",
+    "eu": "./lang/eu.geojson",
+    "fr": "./lang/fr.geojson",
+    "gl": "./lang/gl.geojson",
+    "gu": "./lang/gu.geojson",
+    "hi": "./lang/hi.geojson",
+    "it": "./lang/it.geojson",
+    "jv": "./lang/jv.geojson",
+    "kk": "./lang/kk.geojson",
+    "kn": "./lang/kn.geojson",
+    "ko": "./lang/ko.geojson",
+    "kok": "./lang/kok.geojson",
+    "ks": "./lang/ks.geojson",
+    "kmr": "./lang/kmr.geojson",
+    "ky": "./lang/ky.geojson",
+    "mai": "./lang/mai.geojson",
+    "ml": "./lang/ml.geojson",
+    "mn": "./lang/mn.geojson",
+    "mni": "./lang/mni.geojson",
+    "mr": "./lang/mr.geojson",
+    "ne": "./lang/ne.geojson",
+    "nl": "./lang/nl.geojson",
+    "or": "./lang/or.geojson",
+    "pa-Arab": "./lang/pa-Arab.geojson",
+    "pa-Guru": "./lang/pa-Guru.geojson",
+    "ps": "./lang/ps.geojson",
+    "rm": "./lang/rm.geojson",
+    "sat": "./lang/sat.geojson",
+    "sd": "./lang/sd.geojson",
+    "sdh": "./lang/sdh.geojson",
+    "su": "./lang/su.geojson",
+    "ta": "./lang/ta.geojson",
+    "ta-LK": "./lang/ta-LK.geojson",
+    "te": "./lang/te.geojson",
+    "tl": "./lang/tl.geojson",
+    "ug": "./lang/ug.geojson"
+  },
+  "languages": {
+    "bar": [
+      {"country":"AT","layer":"scope","basis":"de_facto","intensity":0.58,"replace_country_role":true,"regions":["AT-1","AT-2","AT-3","AT-4","AT-5","AT-6","AT-7","AT-9"]}
+    ],
+    "hr": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["AT-1"]},
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.56,"replace_country_role":true,"regions":["IT-CB"]},
+      {"country":"ME","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["ME-10","ME-19","ME-08"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.48,"replace_country_role":true,"regions":["RS-01","RS-05","RS-07"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["RS-01","RS-05","RS-07"]}
+    ],
+    "bs": [
+      {"country":"ME","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["ME-17","ME-13","ME-04"]},
+      {"country":"ME","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["ME-02","ME-03"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["RS-18","RS-16"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["RS-18","RS-16"]}
+    ],
+    "sr": [
+      {"country":"XK","role":"distribution","basis":"de_facto","intensity":0.92,"regions":["XK-X12~","XK-X29~","XK-X30~","XK-X11~"]},
+      {"country":"XK","role":"distribution","basis":"de_facto","intensity":0.56,"regions":["XK-X24~","XK-X15~","XK-X10~"]}
+    ],
+    "sl": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["AT-2"]},
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.42,"regions":["AT-6"]},
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["IT-TS","IT-GO","IT-UD"]}
+    ],
+    "hu": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.72,"replace_country_role":true,"regions":["AT-1"]},
+      {"country":"AT","role":"distribution","basis":"de_facto","intensity":0.34,"regions":["AT-9"]},
+      {"country":"RO","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RO-HR","RO-CV"]},
+      {"country":"RO","layer":"scope","basis":"statutory","intensity":0.58,"regions":["RO-MS","RO-SM","RO-SJ","RO-BH","RO-CJ","RO-BV"]},
+      {"country":"RO","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["RO-HR","RO-CV"]},
+      {"country":"RO","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["RO-MS","RO-SM","RO-SJ","RO-BH","RO-CJ","RO-BV"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["RS-01","RS-03","RS-05"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.48,"regions":["RS-02","RS-04","RS-06"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.84,"regions":["RS-01","RS-03","RS-05"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["RS-02","RS-04","RS-06"]},
+      {"country":"SI","layer":"scope","basis":"statutory","intensity":0.8,"replace_country_role":true,"regions":["SI-078","SI-033","SI-161","SI-031","SI-056","SI-059","SI-156","SI-047","SI-105","SI-152","SI-097","SI-158","SI-080","SI-015","SI-132","SI-187","SI-002","SI-086"]},
+      {"country":"SI","role":"distribution","basis":"de_facto","intensity":0.8,"regions":["SI-078","SI-033","SI-161","SI-031","SI-056","SI-059","SI-156","SI-047","SI-105","SI-152","SI-097","SI-158","SI-080","SI-015","SI-132","SI-187","SI-002","SI-086"]},
+      {"country":"SK","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["SK-TA","SK-NI"]},
+      {"country":"SK","layer":"scope","basis":"statutory","intensity":0.52,"regions":["SK-BL","SK-BC","SK-KI"]}
+    ],
+    "vls": [
+      {"country":"BE","layer":"scope","basis":"de_facto","intensity":0.8,"replace_country_role":true,"regions":["BE-VWV"]},
+      {"country":"BE","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["BE-VOV"]}
+    ],
+    "wa": [
+      {"country":"BE","layer":"scope","basis":"protected","intensity":0.62,"replace_country_role":true,"regions":["BE-WHT","BE-WNA","BE-WLX","BE-WLG","BE-WBR"]}
+    ],
+    "vec": [
+      {"country":"HR","layer":"scope","basis":"de_facto","intensity":0.74,"replace_country_role":true,"regions":["HR-18"]},
+      {"country":"HR","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["HR-08","HR-13","HR-15","HR-17","HR-19"]},
+      {"country":"HR","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["HR-18"]},
+      {"country":"HR","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["HR-08","HR-13","HR-15","HR-17","HR-19"]},
+      {"country":"IT","layer":"scope","basis":"de_facto","intensity":0.7,"replace_country_role":true,"regions":["IT-VE","IT-VR","IT-VI","IT-TV","IT-PD","IT-RO","IT-BL"]},
+      {"country":"IT","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["IT-TN","IT-UD","IT-PN","IT-GO","IT-TS"]},
+      {"country":"SI","layer":"scope","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["SI-090","SI-040","SI-050"]},
+      {"country":"SI","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["SI-090","SI-040","SI-050"]},
+      {"country":"BR","layer":"scope","basis":"statutory","intensity":0.66,"replace_country_role":true,"regions":["BR-RS","BR-SC"]},
+      {"country":"BR","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["BR-PR","BR-ES"]}
+    ],
+    "nds": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.6,"replace_country_role":true,"regions":["DE-SH","DE-NI","DE-NW","DE-BB","DE-MV","DE-HB","DE-HH","DE-ST"]}
+    ],
+    "vmf": [
+      {"country":"DE","layer":"scope","basis":"de_facto","intensity":0.46,"replace_country_role":true,"regions":["DE-BY","DE-BW","DE-HE","DE-TH","DE-RP"]}
+    ],
+    "frr": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["DE-SH"]}
+    ],
+    "hsb": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.82,"replace_country_role":true,"regions":["DE-SN"]}
+    ],
+    "dsb": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.82,"replace_country_role":true,"regions":["DE-BB"]}
+    ],
+    "da": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.68,"replace_country_role":true,"regions":["DE-SH"]}
+    ],
+    "vro": [
+      {"country":"EE","layer":"scope","basis":"protected","intensity":0.82,"replace_country_role":true,"regions":["EE-86"]},
+      {"country":"EE","layer":"scope","basis":"protected","intensity":0.6,"regions":["EE-65"]},
+      {"country":"EE","layer":"scope","basis":"protected","intensity":0.38,"regions":["EE-82"]}
+    ],
+    "ast": [
+      {"country":"ES","layer":"scope","basis":"statutory","intensity":0.8,"replace_country_role":true,"regions":["ES-O"]}
+    ],
+    "oc": [
+      {"country":"ES","layer":"scope","basis":"statutory","intensity":0.68,"replace_country_role":true,"regions":["ES-L"]},
+      {"country":"FR","layer":"scope","basis":"protected","intensity":0.62,"replace_country_role":true,"regions":["FR-04","FR-05","FR-06","FR-07","FR-09","FR-11","FR-12","FR-13","FR-15","FR-19","FR-24","FR-26","FR-30","FR-31","FR-32","FR-33","FR-34","FR-38","FR-40","FR-43","FR-46","FR-47","FR-48","FR-63","FR-64","FR-65","FR-73","FR-74","FR-81","FR-82","FR-83","FR-84","FR-87"]},
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.58,"replace_country_role":true,"regions":["IT-CN","IT-TO"]}
+    ],
+    "sv": [
+      {"country":"FI","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["FI-12"]},
+      {"country":"FI","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["FI-07","FI-18","FI-19"]}
+    ],
+    "sms": [
+      {"country":"FI","layer":"scope","basis":"statutory","intensity":0.7,"replace_country_role":true,"regions":["FI-10"]}
+    ],
+    "se": [
+      {"country":"FI","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["FI-10"]},
+      {"country":"SE","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["SE-BD","SE-AC"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.88,"replace_country_role":true,"regions":["NO-20","NO-19"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.42,"regions":["NO-18"]}
+    ],
+    "smn": [
+      {"country":"FI","layer":"scope","basis":"statutory","intensity":0.74,"replace_country_role":true,"regions":["FI-10"]}
+    ],
+    "br": [
+      {"country":"FR","layer":"scope","basis":"protected","intensity":0.72,"replace_country_role":true,"regions":["FR-29","FR-56","FR-22","FR-35","FR-44"]}
+    ],
+    "co": [
+      {"country":"FR","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["FR-2A","FR-2B"]}
+    ],
+    "gsw": [
+      {"country":"FR","layer":"scope","basis":"protected","intensity":0.72,"replace_country_role":true,"regions":["FR-67","FR-68","FR-57"]},
+      {"country":"CH","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["CH-ZH","CH-BE","CH-LU","CH-UR","CH-SZ","CH-OW","CH-NW","CH-GL","CH-ZG","CH-SO","CH-BS","CH-BL","CH-SH","CH-AR","CH-AI","CH-SG","CH-AG","CH-TG"]},
+      {"country":"CH","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["CH-FR","CH-VS","CH-GR"]}
+    ],
+    "ga": [
+      {"country":"IE","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["IE-DL","IE-G","IE-MO"]},
+      {"country":"IE","role":"distribution","basis":"de_facto","intensity":0.54,"regions":["IE-KY","IE-CO","IE-WD","IE-MH"]},
+      {"country":"GB","layer":"scope","basis":"statutory","intensity":0.66,"replace_country_role":true,"regions":["GB-DRY","GB-STB","GB-OMH","GB-FER","GB-CKT","GB-NYM"]},
+      {"country":"GB","layer":"scope","basis":"statutory","intensity":0.32,"regions":["GB-BFS","GB-ANT","GB-ARM","GB-DGN"]}
+    ],
+    "gd": [
+      {"country":"GB","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["GB-ELS","GB-HLD","GB-AGB"]},
+      {"country":"GB","layer":"scope","basis":"statutory","intensity":0.42,"regions":["GB-GLG","GB-PKN","GB-MRY"]}
+    ],
+    "kw": [
+      {"country":"GB","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["GB-CON"]}
+    ],
+    "lmo": [
+      {"country":"IT","layer":"scope","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["IT-BG","IT-BS","IT-CO","IT-CR","IT-LC","IT-LO","IT-MN","IT-MI","IT-MB","IT-PV","IT-SO","IT-VA"]}
+    ],
+    "sc": [
+      {"country":"IT","layer":"scope","basis":"protected","intensity":0.76,"replace_country_role":true,"regions":["IT-CI","IT-SS","IT-NU","IT-OT","IT-OR","IT-VS","IT-CA","IT-OG"]}
+    ],
+    "fur": [
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["IT-UD","IT-PN","IT-GO"]}
+    ],
+    "lld": [
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["IT-BZ","IT-TN","IT-BL"]}
+    ],
+    "ltg": [
+      {"country":"LV","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["LV-DGV","LV-REZ","LV-001","LV-014","LV-015","LV-023","LV-024","LV-036","LV-044","LV-047","LV-056","LV-058","LV-073","LV-078","LV-082","LV-103","LV-108","LV-109","LV-110"]}
+    ],
+    "li": [
+      {"country":"NL","layer":"scope","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["NL-LI"]}
+    ],
+    "fy": [
+      {"country":"NL","layer":"scope","basis":"statutory","intensity":0.86,"replace_country_role":true,"regions":["NL-FR"]}
+    ],
+    "gos": [
+      {"country":"NL","layer":"scope","basis":"protected","intensity":0.68,"replace_country_role":true,"regions":["NL-GR","NL-DR"]}
+    ],
+    "lt": [
+      {"country":"PL","layer":"scope","basis":"statutory","intensity":0.68,"replace_country_role":true,"regions":["PL-PD"]}
+    ],
+    "mwl": [
+      {"country":"PT","layer":"scope","basis":"statutory","intensity":0.68,"replace_country_role":true,"regions":["PT-04"]}
+    ],
+    "pnt": [
+      {"country":"GR","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["GR-B","GR-A","GR-C"]},
+      {"country":"GR","role":"distribution","basis":"de_facto","intensity":0.36,"regions":["GR-A1"]}
+    ],
+    "sma": [
+      {"country":"SE","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["SE-AC","SE-Z"]},
+      {"country":"SE","layer":"scope","basis":"statutory","intensity":0.38,"regions":["SE-W"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.62,"replace_country_role":true,"regions":["NO-17","NO-16"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.34,"regions":["NO-18","NO-04"]}
+    ],
+    "smj": [
+      {"country":"SE","layer":"scope","basis":"statutory","intensity":0.74,"replace_country_role":true,"regions":["SE-BD"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.86,"replace_country_role":true,"regions":["NO-18"]},
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.3,"regions":["NO-19"]}
+    ],
+    "fkv": [
+      {"country":"NO","layer":"scope","basis":"protected","intensity":0.82,"replace_country_role":true,"regions":["NO-20","NO-19"]}
+    ],
+    "csb": [
+      {"country":"PL","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["PL-PM"]}
+    ],
+    "fi": [
+      {"country":"SE","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["SE-BD"]},
+      {"country":"SE","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["SE-AB","SE-C","SE-U","SE-T"]}
+    ],
+    "cs": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.58,"replace_country_role":true,"regions":["AT-9"]}
+    ],
+    "sk": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.5,"replace_country_role":true,"regions":["AT-9"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RS-06","RS-02","RS-04"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["RS-06","RS-02"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["RS-04"]}
+    ],
+    "ro": [
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RS-04","RS-02"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["RS-04"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["RS-02"]}
+    ],
+    "bg": [
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RS-22","RS-24"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["RS-22"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.36,"regions":["RS-24"]}
+    ],
+    "rom": [
+      {"country":"AT","layer":"scope","basis":"protected","intensity":0.5,"replace_country_role":true,"regions":["AT-1","AT-9"]}
+    ],
+    "stq": [
+      {"country":"DE","layer":"scope","basis":"protected","intensity":0.76,"replace_country_role":true,"regions":["DE-NI"]}
+    ],
+    "sq": [
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.54,"replace_country_role":true,"regions":["IT-PA","IT-CT","IT-CB","IT-FG","IT-BA","IT-MT","IT-PZ","IT-CS","IT-CZ","IT-KR"]},
+      {"country":"ME","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["ME-20"]},
+      {"country":"ME","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["ME-13","ME-16","ME-02"]},
+      {"country":"MK","role":"distribution","basis":"de_facto","intensity":0.88,"regions":["MK-72","MK-21","MK-19","MK-48","MK-68","MK-75","MK-76","MK-06","MK-16","MK-30","MK-31","MK-74","MK-02"]},
+      {"country":"MK","role":"distribution","basis":"de_facto","intensity":0.52,"regions":["MK-50","MK-82","MK-35","MK-08","MK-40","MK-79","MK-09","MK-47"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["RS-24"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["RS-24"]}
+    ],
+    "rsk": [
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RS-05","RS-06","RS-07"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["RS-05","RS-06"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["RS-07"]}
+    ],
+    "frp": [
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.62,"replace_country_role":true,"regions":["IT-AO","IT-TO"]},
+      {"country":"FR","layer":"scope","basis":"protected","intensity":0.44,"replace_country_role":true,"regions":["FR-01","FR-38","FR-69","FR-73","FR-74"]}
+    ],
+    "fit": [
+      {"country":"SE","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["SE-BD"]}
+    ],
+    "gn": [
+      {"country":"AR","layer":"scope","basis":"statutory","intensity":0.84,"replace_country_role":true,"regions":["AR-W"]},
+      {"country":"AR","role":"distribution","basis":"de_facto","intensity":0.45,"regions":["AR-N","AR-P","AR-H"]},
+      {"country":"BO","layer":"scope","basis":"statutory","intensity":0.62,"replace_country_role":true,"regions":["BO-H","BO-S","BO-T"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["BO-H"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["BO-S","BO-T"]}
+    ],
+    "qu": [
+      {"country":"BO","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["BO-C","BO-H","BO-P","BO-O"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["BO-C","BO-H","BO-P"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.5,"regions":["BO-O"]},
+      {"country":"EC","layer":"scope","basis":"statutory","intensity":0.64,"replace_country_role":true,"regions":["EC-C","EC-I","EC-P","EC-X","EC-H","EC-B","EC-T","EC-F","EC-A","EC-L","EC-U","EC-D","EC-N","EC-Y"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.66,"regions":["EC-I","EC-X","EC-H","EC-B","EC-T","EC-F","EC-A","EC-L"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.44,"regions":["EC-U","EC-D","EC-N","EC-Y"]},
+      {"country":"PE","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["PE-ANC","PE-CUS","PE-AYA","PE-APU","PE-HUV","PE-JUN","PE-PUN","PE-HUC","PE-PAS","PE-ARE","PE-MOQ"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["PE-ANC","PE-CUS","PE-AYA","PE-APU","PE-HUV"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.52,"regions":["PE-JUN","PE-PUN","PE-HUC","PE-PAS","PE-ARE","PE-MOQ"]}
+    ],
+    "ay": [
+      {"country":"AR","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["AR-Y","AR-A"]},
+      {"country":"BO","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["BO-L","BO-O","BO-P"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["BO-L","BO-O"]},
+      {"country":"BO","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["BO-P"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["CL-AP","CL-TA"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.4,"regions":["CL-AN"]},
+      {"country":"PE","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["PE-PUN","PE-MOQ","PE-TAC"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["PE-PUN"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.55,"regions":["PE-MOQ","PE-TAC"]}
+    ],
+    "qug": [
+      {"country":"EC","layer":"scope","basis":"statutory","intensity":0.74,"replace_country_role":true,"regions":["EC-C","EC-I","EC-P","EC-X","EC-H","EC-B","EC-T","EC-F","EC-A","EC-L"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["EC-I","EC-X","EC-H","EC-B","EC-T","EC-F"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["EC-C","EC-P","EC-A","EC-L"]}
+    ],
+    "arn": [
+      {"country":"AR","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["AR-Q","AR-R","AR-U"]},
+      {"country":"CL","layer":"scope","basis":"protected","intensity":0.72,"replace_country_role":true,"regions":["CL-AR","CL-BI","CL-LR","CL-LL"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.8,"regions":["CL-AR"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["CL-BI","CL-LR"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.4,"regions":["CL-LL"]},
+      {"country":"CL","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["CL-RM"]}
+    ],
+    "guc": [
+      {"country":"CO","layer":"scope","basis":"protected","intensity":0.8,"replace_country_role":true,"regions":["CO-LAG"]},
+      {"country":"CO","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["CO-LAG"]},
+      {"country":"CO","role":"distribution","basis":"de_facto","intensity":0.35,"regions":["CO-CES"]},
+      {"country":"VE","layer":"scope","basis":"protected","intensity":0.8,"replace_country_role":true,"regions":["VE-V"]},
+      {"country":"VE","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["VE-V"]}
+    ],
+    "pbb": [
+      {"country":"CO","layer":"scope","basis":"protected","intensity":0.76,"replace_country_role":true,"regions":["CO-CAU"]},
+      {"country":"CO","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["CO-CAU"]},
+      {"country":"CO","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["CO-HUI","CO-PUT"]}
+    ],
+    "icr": [
+      {"country":"CO","layer":"scope","basis":"protected","intensity":0.86,"replace_country_role":true,"regions":["CO-SAP"]},
+      {"country":"CO","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["CO-SAP"]}
+    ],
+    "jiv": [
+      {"country":"EC","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["EC-S","EC-Z","EC-Y"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["EC-S","EC-Z"]},
+      {"country":"EC","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["EC-Y"]}
+    ],
+    "cni": [
+      {"country":"PE","layer":"scope","basis":"protected","intensity":0.74,"replace_country_role":true,"regions":["PE-JUN","PE-UCA","PE-PAS"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["PE-JUN","PE-UCA","PE-PAS"]}
+    ],
+    "shp": [
+      {"country":"PE","layer":"scope","basis":"protected","intensity":0.76,"replace_country_role":true,"regions":["PE-UCA","PE-LOR"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["PE-UCA"]},
+      {"country":"PE","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["PE-LOR"]}
+    ],
+    "wba": [
+      {"country":"VE","layer":"scope","basis":"protected","intensity":0.76,"replace_country_role":true,"regions":["VE-Y","VE-N","VE-R"]},
+      {"country":"VE","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["VE-Y"]},
+      {"country":"VE","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["VE-N","VE-R"]}
+    ],
+    "aoc": [
+      {"country":"VE","layer":"scope","basis":"protected","intensity":0.72,"replace_country_role":true,"regions":["VE-F"]},
+      {"country":"VE","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["VE-F"]}
+    ],
+    "be": [
+      {"country":"UA","layer":"scope","basis":"de_facto","intensity":0.38,"replace_country_role":true,"regions":["UA-74","UA-32","UA-30"]},
+      {"country":"PL","layer":"scope","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["PL-PD"]},
+      {"country":"LT","layer":"scope","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["LT-UT","LT-VL","LT-AL"]},
+      {"country":"LV","layer":"scope","basis":"de_facto","intensity":0.42,"replace_country_role":true,"regions":["LV-001","LV-014","LV-015","LV-023","LV-024","LV-036","LV-044","LV-047","LV-056","LV-058","LV-073","LV-078","LV-082","LV-103","LV-108","LV-109","LV-110","LV-DGV","LV-REZ"]}
+    ],
+    "az": [
+      {"country":"GE","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["GE-KK"]}
+    ],
+    "az-Latn": [
+      {"country":"GE","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["GE-KK"]}
+    ],
+    "hy": [
+      {"country":"GE","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["GE-SJ"]}
+    ],
+    "az-Cyrl": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RU-DA"]}
+    ],
+    "az-Arab": [
+      {"country":"IR","role":"regional","basis":"protected","intensity":0.78,"replace_country_role":true,"regions":["IR-03","IR-04","IR-24","IR-19"]}
+    ],
+    "mzn": [
+      {"country":"IR","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["IR-02"]},
+      {"country":"IR","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["IR-27"]}
+    ],
+    "glk": [
+      {"country":"IR","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["IR-01"]}
+    ],
+    "tly": [
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["AZ-AST","AZ-LER","AZ-LAN","AZ-LA"]},
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["AZ-MAS"]}
+    ],
+    "xmf": [
+      {"country":"GE","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["GE-SZ"]}
+    ],
+    "ab": [
+      {"country":"GE","role":"regional","basis":"statutory","intensity":0.92,"replace_country_role":true,"feature_ids":["D-B35"]}
+    ],
+    "os": [
+      {"country":"GE","role":"regional","basis":"de_facto","intensity":0.9,"replace_country_role":true,"feature_ids":["D-B37"]},
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-SE"]}
+    ],
+    "haz": [
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["AF-BAM","AF-DAY"]},
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["AF-GHO","AF-GHA","AF-WAR","AF-URU"]}
+    ],
+    "ars": [
+      {"country":"SA","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["SA-01","SA-05"]},
+      {"country":"SA","layer":"scope","basis":"de_facto","intensity":0.72,"regions":["SA-06"]}
+    ],
+    "bal": [
+      {"country":"AF","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["AF-NIM"]},
+      {"country":"IR","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["IR-11"]},
+      {"country":"OM","role":"resident","basis":"de_facto","intensity":0.74,"replace_country_role":true,"regions":["OM-MA","OM-BA","OM-BJ"]},
+      {"country":"PK","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["PK-BA"]},
+      {"country":"PK","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["PK-SD"]}
+    ],
+    "ug": [{"source":"ug","country":"CN","role":"regional","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["CN-XJ"]}],
+    "bo": [{"source":"bo","country":"CN","role":"regional","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["CN-XZ"]}],
+    "mn": [{"source":"mn","country":"CN","role":"regional","basis":"statutory","intensity":0.68,"replace_country_role":true,"regions":["CN-NM"]}],
+    "mn-Mong": [{"source":"mn","country":"CN","role":"regional","basis":"statutory","intensity":0.68,"replace_country_role":true,"regions":["CN-NM"]}],
+    "wuu": [
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["CN-ZJ","CN-SH"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["CN-JS"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["CN-AH","CN-JX"]}
+    ],
+    "yue-Hans": [
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["CN-GD"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.66,"regions":["CN-GX"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.26,"regions":["CN-HI"]}
+    ],
+    "yue-Hant": [
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["CN-GD"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.66,"regions":["CN-GX"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.26,"regions":["CN-HI"]}
+    ],
+    "za": [
+      {"country":"CN","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["CN-GX"]},
+      {"country":"CN","layer":"scope","basis":"de_facto","intensity":0.28,"regions":["CN-YN","CN-GD"]}
+    ],
+    "ko": [{"source":"ko","country":"CN","role":"regional","basis":"statutory","intensity":0.74,"replace_country_role":true,"regions":["CN-JL-YB"]}],
+    "kk": [
+      {"source":"kk","country":"CN","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["CN-XJ"]},
+      {"country":"RU","layer":"scope","basis":"de_facto","intensity":0.28,"replace_country_role":true,"regions":["RU-AST","RU-VGG","RU-SAR","RU-SAM","RU-ORE","RU-CHE","RU-KGN","RU-TYU","RU-OMS","RU-NVS","RU-AL","RU-ALT"]},
+      {"country":"TM","layer":"scope","basis":"de_facto","intensity":0.18,"replace_country_role":true,"regions":["TM-B","TM-D"]},
+      {"country":"UZ","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["UZ-QR","UZ-TO"]},
+      {"country":"UZ","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["UZ-NW"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.48,"replace_country_role":true,"regions":["KG-C","KG-GB"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["KG-Y","KG-T"]}
+    ],
+    "ky": [
+      {"source":"ky","country":"CN","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["CN-XJ"]},
+      {"country":"KZ","layer":"scope","basis":"de_facto","intensity":0.44,"replace_country_role":true,"regions":["KZ-ZHA","KZ-ALA"]},
+      {"country":"UZ","layer":"scope","basis":"de_facto","intensity":0.38,"replace_country_role":true,"regions":["UZ-AN","UZ-NG","UZ-FA"]},
+      {"country":"TJ","layer":"scope","basis":"de_facto","intensity":0.28,"replace_country_role":true,"regions":["TJ-GB"]}
+    ],
+    "el": [
+      {"country":"CY","role":"distribution","basis":"de_facto","intensity":0.92,"regions":["CY-01","CY-02","CY-03","CY-04","CY-05"]},
+      {"country":"IT","layer":"scope","basis":"statutory","intensity":0.54,"replace_country_role":true,"regions":["IT-LE","IT-RC"]}
+    ],
+    "tr": [
+      {"country":"CY","role":"distribution","basis":"de_facto","intensity":0.94,"feature_ids":["CYN"]},
+      {"country":"BG","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["BG-09","BG-17"]},
+      {"country":"BG","layer":"scope","basis":"de_facto","intensity":0.68,"regions":["BG-25","BG-19","BG-27"]},
+      {"country":"BG","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["BG-08","BG-18","BG-02","BG-26"]},
+      {"country":"BG","role":"distribution","basis":"de_facto","intensity":0.84,"regions":["BG-09","BG-17"]},
+      {"country":"BG","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["BG-25","BG-19","BG-27","BG-08","BG-18","BG-02","BG-26"]},
+      {"country":"GR","layer":"scope","basis":"protected","intensity":0.56,"replace_country_role":true,"regions":["GR-A"]},
+      {"country":"GR","role":"distribution","basis":"de_facto","intensity":0.56,"regions":["GR-A"]},
+      {"country":"IQ","role":"regional","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["IQ-TS","IQ-NI","IQ-SD"]},
+      {"country":"IQ","role":"regional","basis":"statutory","intensity":0.54,"regions":["IQ-AR","IQ-DI"]}
+    ],
+    "ms": [
+      {"country":"ID","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["ID-RI","ID-KR","ID-KB"]},
+      {"country":"ID","layer":"scope","basis":"de_facto","intensity":0.62,"regions":["ID-JA"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TH-94","TH-95","TH-96"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.62,"regions":["TH-90","TH-91"]}
+    ],
+    "th": [
+      {"country":"MY","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["MY-09","MY-02"]},
+      {"country":"MY","layer":"scope","basis":"de_facto","intensity":0.54,"regions":["MY-03"]},
+      {"country":"MY","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["MY-07","MY-08"]}
+    ],
+    "km": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TH-32","TH-31","TH-33"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["TH-34","TH-30","TH-44","TH-45"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["TH-25","TH-27","TH-22","TH-23","TH-24"]}
+    ],
+    "lo": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["TH-38","TH-43","TH-48","TH-49","TH-42","TH-39","TH-41","TH-40","TH-47","TH-46","TH-45","TH-44","TH-35"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["TH-37","TH-34","TH-33","TH-32","TH-31","TH-36","TH-30"]},
+      {"country":"KH","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["KH-19"]},
+      {"country":"KH","layer":"scope","basis":"de_facto","intensity":0.54,"regions":["KH-16","KH-13"]}
+    ],
+    "uk": [
+      {"country":"RU","layer":"scope","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["RU-BRY","RU-KRS","RU-BEL","RU-VOR","RU-ROS"]},
+      {"country":"RS","layer":"scope","basis":"statutory","intensity":0.38,"replace_country_role":true,"regions":["RS-05","RS-06","RS-07"]},
+      {"country":"RS","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["RS-05","RS-06","RS-07"]}
+    ],
+    "ru": [
+      {"country":"UA","role":"distribution","basis":"de_facto","intensity":0.88,"regions":["UA-14","UA-09"]},
+      {"country":"UA","role":"distribution","basis":"de_facto","intensity":0.68,"regions":["UA-23","UA-63","UA-51"]},
+      {"country":"UA","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["UA-12","UA-48","UA-65"]},
+      {"country":"KG","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["KG-GB"]},
+      {"country":"KG","role":"distribution","basis":"de_facto","intensity":0.56,"regions":["KG-C"]},
+      {"country":"EE","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["EE-44"]},
+      {"country":"EE","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["EE-37"]},
+      {"country":"LV","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["LV-DGV","LV-110"]},
+      {"country":"LV","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["LV-RIX","LV-001","LV-014","LV-015","LV-023","LV-024","LV-036","LV-044","LV-047","LV-056","LV-058","LV-073","LV-078","LV-082","LV-103","LV-108","LV-109","LV-REZ"]},
+      {"country":"UZ","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["UZ-TK"]},
+      {"country":"UZ","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["UZ-TO","UZ-QR"]},
+      {"country":"UZ","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["UZ-AN","UZ-NG","UZ-SA","UZ-FA","UZ-NW","UZ-XO","UZ-BU"]},
+      {"country":"UZ","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["UZ-JI","UZ-QA","UZ-SU","UZ-SI"]},
+      {"country":"TJ","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["TJ-DU"]},
+      {"country":"MD","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["MD-CAM","MD-SN","MD-GRI","MD-BD"]},
+      {"country":"MD","layer":"scope","basis":"de_facto","intensity":0.62,"regions":["MD-GA","MD-TA"]},
+      {"country":"MD","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["MD-CAM","MD-SN","MD-GRI","MD-BD"]},
+      {"country":"MD","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["MD-BA","MD-CU"]},
+      {"country":"MD","role":"distribution","basis":"de_facto","intensity":0.5,"regions":["MD-BR","MD-OC","MD-ED","MD-TA","MD-CA","MD-GA"]}
+    ],
+    "gag": [
+      {"country":"MD","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["MD-GA"]},
+      {"country":"MD","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["MD-TA"]}
+    ],
+    "zh-Hans": [
+      {"country":"RU","layer":"scope","basis":"de_facto","intensity":0.3,"replace_country_role":true,"regions":["RU-AL","RU-ZAB","RU-AMU","RU-YEV","RU-KHA","RU-PRI"]}
+    ],
+    "jv": [{"source":"jv","country":"ID","role":"distribution","basis":"de_facto","intensity":0.8,"replace_country_role":true,"regions":["ID-JT","ID-JI","ID-YO","ID-JK"]}],
+    "su": [{"source":"su","country":"ID","role":"distribution","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["ID-JB","ID-BT"]}],
+    "min": [
+      {"country":"ID","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["ID-SB"]},
+      {"country":"ID","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["ID-RI","ID-JA","ID-BE"]}
+    ],
+    "ceb": [
+      {"source":"ceb","country":"PH","role":"distribution","basis":"de_facto","intensity":0.8,"replace_country_role":true,"regions":["PH-CEB","PH-BOH","PH-SIG","PH-NER"]},
+      {"source":"ceb","country":"PH","role":"distribution","basis":"de_facto","intensity":0.58,"replace_country_role":true,"regions":["PH-LEY","PH-SLE","PH-BIL","PH-BUK","PH-AGN","PH-AGS","PH-MSR","PH-MSC","PH-CAM","PH-DAV","PH-DAS","PH-COM","PH-DAO","PH-SUR","PH-SUN"]}
+    ],
+    "ilo": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["PH-ILN","PH-ILS","PH-LUN","PH-ABR"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["PH-PAN","PH-CAG","PH-ISA","PH-NUV","PH-QUI"]}
+    ],
+    "hil": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["PH-ILI","PH-GUI","PH-CAP","PH-NEC"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.5,"regions":["PH-SCO","PH-SUK"]}
+    ],
+    "bik": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["PH-ALB","PH-CAS","PH-CAN","PH-CAT","PH-SOR"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["PH-MAS"]}
+    ],
+    "war": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["PH-WSA","PH-EAS","PH-NSA","PH-LEY","PH-BIL"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.44,"regions":["PH-SLE"]}
+    ],
+    "pag": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["PH-PAN"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["PH-LUN","PH-TAR","PH-NUE"]}
+    ],
+    "mdh": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["PH-MAG","PH-NCO","PH-SUK"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["PH-LAS"]}
+    ],
+    "tsg": [
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.96,"replace_country_role":true,"regions":["PH-SLU"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.76,"regions":["PH-TAW"]},
+      {"country":"PH","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["PH-BAS","PH-ZAN","PH-ZAS","PH-ZSI"]}
+    ],
+    "tl": [{"source":"tl","country":"PH","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["PH-MNL","PH-CAV","PH-LAG","PH-RIZ","PH-BTG","PH-QUE","PH-BUL","PH-BAN","PH-NUE","PH-MAD","PH-MDR","PH-MDC","PH-AUR"]}],
+    "tk": [
+      {"country":"IR","layer":"scope","basis":"de_facto","intensity":0.48,"replace_country_role":true,"regions":["IR-27"]},
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.42,"replace_country_role":true,"regions":["AF-JOW"]},
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.28,"regions":["AF-FYB","AF-BAL","AF-KDZ"]},
+      {"country":"UZ","layer":"scope","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["UZ-XO","UZ-QR"]}
+    ],
+    "tg": [
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["AF-BDS","AF-TAK"]},
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["AF-KDZ"]},
+      {"country":"UZ","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["UZ-SA","UZ-BU"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["KG-B"]}
+    ],
+    "uz-Arab": [
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.74,"replace_country_role":true,"regions":["AF-FYB","AF-JOW","AF-SAR","AF-SAM","AF-TAK"]},
+      {"country":"AF","layer":"scope","basis":"de_facto","intensity":0.5,"regions":["AF-BAL","AF-KDZ","AF-BDS"]}
+    ],
+    "uz": [
+      {"country":"TM","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["TM-D"]},
+      {"country":"TM","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["TM-L"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["KG-O","KG-J"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["KG-B"]},
+      {"country":"TJ","layer":"scope","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["TJ-SU"]},
+      {"country":"TJ","layer":"scope","basis":"de_facto","intensity":0.56,"regions":["TJ-KT","TJ-X01~"]},
+      {"country":"KZ","layer":"scope","basis":"de_facto","intensity":0.7,"replace_country_role":true,"regions":["KZ-YUZ"]}
+    ],
+    "uz-Latn": [
+      {"country":"TM","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["TM-D"]},
+      {"country":"TM","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["TM-L"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["KG-O","KG-J"]},
+      {"country":"KG","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["KG-B"]},
+      {"country":"TJ","layer":"scope","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["TJ-SU"]},
+      {"country":"TJ","layer":"scope","basis":"de_facto","intensity":0.56,"regions":["TJ-KT","TJ-X01~"]},
+      {"country":"KZ","layer":"scope","basis":"de_facto","intensity":0.7,"replace_country_role":true,"regions":["KZ-YUZ"]}
+    ],
+    "ckb": [
+      {"source":"ckb","country":"IQ","role":"distribution","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["IQ-SU","IQ-AR"]},
+      {"country":"IR","role":"distribution","basis":"de_facto","intensity":0.74,"replace_country_role":true,"regions":["IR-12"]}
+    ],
+    "kmr": [
+      {"source":"kmr","country":"TR","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["TR-21","TR-72","TR-56","TR-73","TR-30","TR-65","TR-13","TR-49","TR-12","TR-47","TR-63","TR-02","TR-62","TR-04","TR-76","TR-36","TR-23","TR-25"]},
+      {"source":"kmr","country":"IQ","role":"distribution","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["IQ-DA"]},
+      {"country":"IR","role":"distribution","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["IR-04"]},
+      {"source":"kmr","country":"SY","role":"distribution","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["SY-HA"]}
+    ],
+    "hi": [{"source":"hi","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-UP","IN-BR","IN-MP","IN-RJ","IN-HR","IN-HP","IN-CT","IN-JH","IN-UT","IN-DL","IN-CH"]}],
+    "mai": [{"source":"mai","country":"IN","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["IN-BR"]}],
+    "ks": [{"source":"ks","country":"IN","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["IN-JK"]}],
+    "kok": [{"source":"kok","country":"IN","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["IN-GA"]}],
+    "brx": [{"source":"brx","country":"IN","role":"distribution","basis":"de_facto","intensity":0.6,"regions":["IN-AS"]}],
+    "doi": [{"source":"doi","country":"IN","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["IN-JK"]}],
+    "sat": [{"source":"sat","country":"IN","role":"distribution","basis":"de_facto","intensity":0.56,"regions":["IN-JH","IN-WB","IN-OR"]}],
+    "as": [{"source":"as","country":"IN","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["IN-AS"]}],
+    "bn": [{"source":"bn","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-WB","IN-TR"]}],
+    "gu": [{"source":"gu","country":"IN","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["IN-GJ"]}],
+    "kn": [{"source":"kn","country":"IN","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["IN-KA"]}],
+    "ml": [{"source":"ml","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-KL","IN-LD"]}],
+    "mr": [{"source":"mr","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-MH"]}],
+    "or": [{"source":"or","country":"IN","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["IN-OR"]}],
+    "pa-Guru": [{"source":"pa-Guru","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-PB"]}],
+    "ur": [
+      {"country":"PK","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["PK-SD"]},
+      {"country":"PK","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["PK-IS"]},
+      {"country":"PK","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["PK-PB"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["IN-TG"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["IN-KA"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["IN-BR","IN-DL"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["IN-MH"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["IN-UP","IN-JH"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["IN-AP"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["IN-WB"]}
+    ],
+    "si": [
+      {"country":"LK","role":"distribution","basis":"de_facto","intensity":0.84,"regions":["LK-12","LK-13","LK-31","LK-32","LK-33","LK-61","LK-71","LK-72","LK-82","LK-91","LK-92"]},
+      {"country":"LK","role":"distribution","basis":"de_facto","intensity":0.68,"regions":["LK-11","LK-21","LK-22","LK-62","LK-81"]},
+      {"country":"LK","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["LK-23","LK-52"]},
+      {"country":"LK","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["LK-53"]}
+    ],
+    "ta": [
+      {"source":"ta","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-TN"]},
+      {"source":"ta-LK","country":"LK","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["LK-41","LK-42","LK-43","LK-44","LK-45"]},
+      {"source":"ta-LK","country":"LK","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["LK-51","LK-52","LK-53"]},
+      {"source":"ta-LK","country":"LK","role":"distribution","basis":"de_facto","intensity":0.44,"regions":["LK-23"]}
+    ],
+    "te": [{"source":"te","country":"IN","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["IN-AP","IN-TG"]}],
+    "mni": [{"source":"mni","country":"IN","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["IN-MN"]}],
+    "ne": [
+      {"source":"ne","country":"IN","role":"distribution","basis":"de_facto","intensity":0.68,"regions":["IN-SK"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["JP-13"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.6,"replace_country_role":true,"regions":["JP-12","JP-11","JP-14","JP-23","JP-27","JP-40"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["JP-28","JP-22","JP-10","JP-26"]}
+    ],
+    "pt-BR": [
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["JP-23"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["JP-22"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.5,"replace_country_role":true,"regions":["JP-10","JP-21","JP-24"]},
+      {"country":"JP","role":"resident","basis":"de_facto","intensity":0.3,"replace_country_role":true,"regions":["JP-08","JP-11","JP-14"]}
+    ],
+    "sd": [
+      {"source":"sd","country":"PK","role":"distribution","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["PK-SD"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["IN-GJ"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["IN-MH"]},
+      {"country":"IN","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["IN-RJ"]}
+    ],
+    "sdh": [
+      {"country":"IR","role":"distribution","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["IR-05","IR-16"]},
+      {"country":"IQ","role":"distribution","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["IQ-DI"]},
+      {"country":"IQ","role":"distribution","basis":"de_facto","intensity":0.34,"regions":["IQ-WA"]}
+    ],
+    "pa-Arab": [{"source":"pa-Arab","country":"PK","role":"distribution","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["PK-PB"]}],
+    "ps": [
+      {"source":"ps","country":"PK","role":"distribution","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["PK-KP","PK-TA"]},
+      {"country":"AF","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["AF-KAN","AF-HEL","AF-ZAB","AF-URU","AF-PIA","AF-PKA","AF-KHO","AF-NAN"]},
+      {"country":"AF","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["AF-KNR","AF-LAG","AF-LOG","AF-WAR","AF-GHA"]},
+      {"country":"AF","role":"distribution","basis":"de_facto","intensity":0.34,"regions":["AF-KAB","AF-HER","AF-FRA","AF-NIM"]}
+    ],
+    "ca": [
+      {
+        "source": "ca",
+        "country": "ES",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.92,
+        "replace_country_role": true,
+        "regions": ["ES-B", "ES-GI", "ES-L", "ES-T", "ES-CS", "ES-V", "ES-A", "ES-PM"]
+      },
+      {
+        "source": "ca",
+        "country": "FR",
+        "layer": "scope",
+        "basis": "de_facto",
+        "intensity": 0.78,
+        "replace_country_role": true,
+        "regions": ["FR-66"]
+      },
+      {
+        "source": "ca",
+        "country": "IT",
+        "layer": "scope",
+        "basis": "protected",
+        "intensity": 0.72,
+        "replace_country_role": true,
+        "regions": ["IT-SS-ALG"]
+      }
+    ],
+    "cy": [
+      {
+        "source": "cy",
+        "country": "GB",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.92,
+        "replace_country_role": true,
+        "regions": ["GB-AGY", "GB-BGE", "GB-BGW", "GB-CAY", "GB-CGN", "GB-CMN", "GB-CRF", "GB-CWY", "GB-DEN", "GB-FLN", "GB-GWN", "GB-MON", "GB-MTY", "GB-NTL", "GB-NWP", "GB-PEM", "GB-POW", "GB-RCT", "GB-SWA", "GB-TOF", "GB-VGL", "GB-WRX"]
+      }
+    ],
+    "de": [
+      {
+        "source": "de",
+        "country": "CH",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.86,
+        "regions": ["CH-ZH", "CH-BE", "CH-LU", "CH-UR", "CH-SZ", "CH-OW", "CH-NW", "CH-GL", "CH-ZG", "CH-FR", "CH-SO", "CH-BS", "CH-BL", "CH-SH", "CH-AR", "CH-AI", "CH-SG", "CH-GR", "CH-AG", "CH-TG", "CH-VS"]
+      },
+      {
+        "source": "de",
+        "country": "BE",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.82,
+        "replace_country_role": true,
+        "remainder_role": "neighbor-countrywide",
+        "regions": ["BE-WLG"]
+      },
+      {
+        "source": "de",
+        "country": "IT",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.86,
+        "replace_country_role": true,
+        "regions": ["IT-BZ"]
+      },
+      {
+        "source": "de",
+        "country": "FR",
+        "layer": "scope",
+        "basis": "protected",
+        "intensity": 0.7,
+        "replace_country_role": true,
+        "regions": ["FR-57", "FR-67", "FR-68"]
+      },
+      {
+        "source": "de",
+        "country": "DK",
+        "layer": "scope",
+        "basis": "protected",
+        "intensity": 0.68,
+        "replace_country_role": true,
+        "regions": ["DK-83"]
+      },
+      {
+        "country": "PL",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.84,
+        "replace_country_role": true,
+        "regions": ["PL-OP", "PL-SL"]
+      }
+    ],
+    "eu": [
+      {
+        "source": "eu",
+        "country": "ES",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.92,
+        "replace_country_role": true,
+        "regions": ["ES-BI", "ES-SS", "ES-VI"]
+      },
+      {
+        "source": "eu",
+        "country": "ES",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.76,
+        "replace_country_role": true,
+        "regions": ["ES-NA"]
+      },
+      {
+        "source": "eu",
+        "country": "FR",
+        "layer": "scope",
+        "basis": "de_facto",
+        "intensity": 0.72,
+        "replace_country_role": true,
+        "regions": ["FR-64"]
+      }
+    ],
+    "fr": [
+      {
+        "source": "fr",
+        "country": "CA",
+        "role": "distribution",
+        "basis": "de_facto",
+        "intensity": 0.9,
+        "regions": ["CA-QC", "CA-NB"]
+      },
+      {
+        "source": "fr",
+        "country": "BE",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.88,
+        "replace_country_role": true,
+        "regions": ["BE-WHT", "BE-WNA", "BE-WLX", "BE-WLG", "BE-WBR", "BE-BRU"]
+      },
+      {
+        "source": "fr",
+        "country": "CH",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.86,
+        "regions": ["CH-GE", "CH-VD", "CH-NE", "CH-JU", "CH-FR", "CH-VS", "CH-BE"]
+      },
+      {
+        "source": "fr",
+        "country": "IT",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.84,
+        "replace_country_role": true,
+        "regions": ["IT-AO"]
+      }
+    ],
+    "gl": [
+      {
+        "source": "gl",
+        "country": "ES",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.92,
+        "replace_country_role": true,
+        "regions": ["ES-C", "ES-LU", "ES-OR", "ES-PO"]
+      }
+    ],
+    "it": [
+      {
+        "source": "it",
+        "country": "CH",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.86,
+        "regions": ["CH-TI", "CH-GR"]
+      },
+      {
+        "source": "it",
+        "country": "HR",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.8,
+        "replace_country_role": true,
+        "regions": ["HR-18"]
+      },
+      {"source":"it","country":"HR","role":"distribution","basis":"de_facto","intensity":0.8,"regions":["HR-18"]},
+      {
+        "source": "it",
+        "country": "SI",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.8,
+        "replace_country_role": true,
+        "regions": ["SI-090", "SI-040", "SI-050"]
+      },
+      {"source":"it","country":"SI","role":"distribution","basis":"de_facto","intensity":0.8,"regions":["SI-090","SI-040","SI-050"]}
+    ],
+    "nl": [
+      {
+        "source": "nl",
+        "country": "BE",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.88,
+        "replace_country_role": true,
+        "regions": ["BE-VWV", "BE-VOV", "BE-VAN", "BE-VLI", "BE-VBR", "BE-BRU"]
+      }
+    ],
+    "nn": [
+      {"country":"NO","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["NO-14","NO-15","NO-12"]},
+      {"country":"NO","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["NO-11","NO-05","NO-08"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["NO-14"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["NO-15"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.68,"regions":["NO-12"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["NO-11"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.24,"regions":["NO-05","NO-08"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.18,"regions":["NO-09","NO-10"]},
+      {"country":"NO","role":"distribution","basis":"de_facto","intensity":0.12,"regions":["NO-06"]}
+    ],
+    "tt": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.96,"replace_country_role":true,"regions":["RU-TA"]},
+      {"country":"RU","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["RU-BA"]},
+      {"country":"RU","role":"distribution","basis":"de_facto","intensity":0.44,"regions":["RU-ULY","RU-ORE","RU-SAM"]},
+      {"country":"RU","role":"distribution","basis":"de_facto","intensity":0.3,"regions":["RU-UD","RU-CU","RU-ME","RU-PER"]},
+      {"country":"RU","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["RU-SVE","RU-CHE","RU-TYU"]}
+    ],
+    "ba": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["RU-BA"]}
+    ],
+    "ce": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["RU-CE"]}
+    ],
+    "av": [
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["AZ-BAL","AZ-ZAQ"]},
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["RU-DA"]}
+    ],
+    "udm": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-UD"]}
+    ],
+    "sah": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["RU-SA"]}
+    ],
+    "kbd": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-KB","RU-KC"]}
+    ],
+    "myv": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.86,"replace_country_role":true,"regions":["RU-MO"]}
+    ],
+    "mdf": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.86,"replace_country_role":true,"regions":["RU-MO"]}
+    ],
+    "kum": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["RU-DA"]}
+    ],
+    "kv": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-KO"]}
+    ],
+    "lez": [
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["AZ-QUS"]},
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.62,"regions":["AZ-QBA"]},
+      {"country":"AZ","layer":"scope","basis":"de_facto","intensity":0.45,"regions":["AZ-XAC"]},
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.76,"replace_country_role":true,"regions":["RU-DA"]}
+    ],
+    "krc": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-KC","RU-KB"]}
+    ],
+    "inh": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["RU-IN"]}
+    ],
+    "tyv": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["RU-TY"]}
+    ],
+    "ady": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["RU-AD"]}
+    ],
+    "lbe": [
+      {"country":"RU","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["RU-DA"]}
+    ],
+    "koi": [
+      {"country":"RU","layer":"scope","basis":"protected","intensity":0.58,"replace_country_role":true,"regions":["RU-PER"]}
+    ],
+    "rm": [
+      {
+        "source": "rm",
+        "country": "CH",
+        "layer": "scope",
+        "basis": "statutory",
+        "intensity": 0.82,
+        "regions": ["CH-GR"]
+      }
+    ],
+    "am": [
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.94,"regions":["ET-AM","ET-AA"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["ET-BE","ET-DD"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["ET-OR"]}
+    ],
+    "ti": [
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["ET-TI"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.24,"regions":["ET-AM"]}
+    ],
+    "om": [
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["ET-OR"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["ET-DD","ET-HA"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.34,"regions":["ET-AA"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.24,"regions":["ET-SN"]}
+    ],
+    "so": [
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["ET-SO"]},
+      {"country":"ET","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["ET-DD"]},
+      {"country":"KE","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["KE-500"]},
+      {"country":"KE","role":"distribution","basis":"de_facto","intensity":0.4,"regions":["KE-400"]},
+      {"country":"KE","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["KE-300"]},
+      {"country":"DJ","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["DJ-DJ","DJ-AR","DJ-AS","DJ-DI"]}
+    ],
+    "sw": [
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["CD-NK","CD-SK"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.72,"regions":["CD-MA"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.56,"regions":["CD-HK","CD-HL","CD-LU","CD-TA"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.34,"regions":["CD-BU","CD-HU","CD-IT","CD-TO"]},
+      {"country":"BI","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["BI-BM","BI-BL","BI-CI","BI-BB","BI-MA"]},
+      {"country":"BI","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["BI-BR"]}
+    ],
+    "umb": [
+      {"country":"AO","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["AO-BGU","AO-HUA","AO-BIE"]},
+      {"country":"AO","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["AO-CUS","AO-HUI"]}
+    ],
+    "kmb": [
+      {"country":"AO","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["AO-BGO","AO-CNO","AO-MAL"]},
+      {"country":"AO","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["AO-LUA","AO-CUS"]}
+    ],
+    "kg": [
+      {"country":"AO","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["AO-CAB","AO-ZAI","AO-UIG"]},
+      {"country":"CD","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["CD-BC"]},
+      {"country":"CD","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["CD-KG","CD-KL","CD-KN","CD-MN"]}
+    ],
+    "fon": [
+      {"country":"BJ","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["BJ-ZO","BJ-AQ","BJ-LI","BJ-OU"]},
+      {"country":"BJ","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["BJ-CO","BJ-PL","BJ-KO","BJ-MO"]}
+    ],
+    "ff": [
+      {"country":"BF","layer":"scope","basis":"de_facto","intensity":0.58,"replace_country_role":true,"regions":["BF-OUD","BF-SOM","BF-SEN","BF-YAG"]},
+      {"country":"BF","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["BF-LOR","BF-YAT","BF-SOR","BF-BAM","BF-SMT","BF-NAM","BF-GNA","BF-GOU","BF-TAP"]},
+      {"country":"BJ","layer":"scope","basis":"de_facto","intensity":0.48,"replace_country_role":true,"regions":["BJ-AL","BJ-BO","BJ-AK","BJ-DO"]},
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["CM-AD","CM-NO","CM-EN"]},
+      {"country":"GM","layer":"scope","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["GM-U","GM-M"]},
+      {"country":"GM","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["GM-N"]},
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GN-MM","GN-ML","GN-KB","GN-TO","GN-LE","GN-DL","GN-LA","GN-PI"]},
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["GN-GA","GN-TE","GN-KN"]},
+      {"country":"MR","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["MR-04","MR-05","MR-10"]},
+      {"country":"MR","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["MR-06","MR-03"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["SN-SL","SN-MT","SN-TC","SN-KE"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["SN-LG"]}
+    ],
+    "bum": [
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["CM-SU"]},
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["CM-CE"]}
+    ],
+    "ewo": [
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["CM-CE"]},
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["CM-SU"]}
+    ],
+    "lua": [
+      {"country":"CD","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["CD-KC","CD-KE","CD-KS","CD-LO","CD-SA"]},
+      {"country":"CD","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["CD-HK","CD-HL","CD-LU","CD-TA"]}
+    ],
+    "ee": [
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GH-TV"]},
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["GH-AA","GH-EP"]},
+      {"country":"TG","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TG-M"]},
+      {"country":"TG","layer":"scope","basis":"de_facto","intensity":0.68,"regions":["TG-P"]}
+    ],
+    "abr": [
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["GH-BA"]},
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["GH-AH","GH-WP"]}
+    ],
+    "gur": [
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["GH-UE"]},
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["GH-NP"]}
+    ],
+    "ada": [
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["GH-AA"]},
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["GH-EP"]}
+    ],
+    "gaa": [
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["GH-AA"]}
+    ],
+    "ki": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["KE-200"]},
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["KE-110","KE-700"]}
+    ],
+    "luy": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["KE-800"]},
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["KE-700"]}
+    ],
+    "luo": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["KE-600"]}
+    ],
+    "kam": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["KE-400"]}
+    ],
+    "kln": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["KE-700"]}
+    ],
+    "guz": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["KE-600"]}
+    ],
+    "mer": [
+      {"country":"KE","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["KE-400"]}
+    ],
+    "vmw": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["MZ-N"]},
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["MZ-P","MZ-A"]}
+    ],
+    "ndc": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["MZ-B","MZ-S"]}
+    ],
+    "ngl": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["MZ-Q"]},
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.44,"regions":["MZ-N"]}
+    ],
+    "seh": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["MZ-T","MZ-S"]},
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["MZ-Q","MZ-B"]}
+    ],
+    "mgh": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["MZ-P"]},
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["MZ-A"]}
+    ],
+    "rng": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["MZ-L","MZ-MPM"]}
+    ],
+    "ny": [
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["MZ-T","MZ-A"]},
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.5,"replace_country_role":true,"regions":["ZW-MC"]},
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.28,"regions":["ZW-ME"]},
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["ZM-03","ZM-09"]},
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["ZM-02"]}
+    ],
+    "kj": [
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["NA-OW","NA-OS","NA-ON","NA-OT"]}
+    ],
+    "ng": [
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["NA-ON","NA-OT","NA-OW","NA-OS"]}
+    ],
+    "naq": [
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["NA-KA","NA-HA"]},
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["NA-KH","NA-ER"]}
+    ],
+    "hz": [
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["NA-OH","NA-OD","NA-KU"]},
+      {"country":"NA","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["NA-KH","NA-ER"]}
+    ],
+    "dje": [
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["NE-3","NE-6","NE-8"]}
+    ],
+    "fuq": [
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.54,"replace_country_role":true,"regions":["NE-5","NE-4","NE-7","NE-6"]},
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["NE-2","NE-3"]}
+    ],
+    "tmh": [
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["NE-1"]},
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.54,"regions":["NE-5"]},
+      {"country":"NE","layer":"scope","basis":"de_facto","intensity":0.28,"regions":["NE-6"]}
+    ],
+    "fuv": [
+      {"country":"NG","layer":"scope","basis":"de_facto","intensity":0.66,"replace_country_role":true,"regions":["NG-AD","NG-TA","NG-BA","NG-GO"]},
+      {"country":"NG","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["NG-PL","NG-KD","NG-KN","NG-KT","NG-JI","NG-YO","NG-BO"]}
+    ],
+    "bej": [
+      {"country":"SD","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["SD-RS","SD-KA"]},
+      {"country":"SD","layer":"scope","basis":"de_facto","intensity":0.56,"regions":["SD-GD"]}
+    ],
+    "suk": [
+      {"country":"TZ","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["TZ-18","TZ-22","TZ-30","TZ-27"]}
+    ],
+    "nym": [
+      {"country":"TZ","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["TZ-24"]},
+      {"country":"TZ","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["TZ-28","TZ-22","TZ-23"]}
+    ],
+    "lg": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-102","UG-113","UG-108","UG-117","UG-106","UG-104","UG-112","UG-105","UG-110","UG-111","UG-114","UG-115","UG-116","UG-118","UG-119","UG-120","UG-121","UG-122","UG-123","UG-124"]}
+    ],
+    "nyn": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-410","UG-411","UG-416","UG-402","UG-425","UG-422","UG-325"]},
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["UG-417","UG-412","UG-414"]}
+    ],
+    "cgg": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-404","UG-408","UG-412","UG-414"]}
+    ],
+    "xog": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-204","UG-203","UG-201","UG-205","UG-214","UG-220","UG-222","UG-226","UG-229","UG-230"]}
+    ],
+    "teo": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-211","UG-213","UG-207","UG-216","UG-232","UG-208","UG-224","UG-231"]}
+    ],
+    "laj": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-307","UG-302","UG-321","UG-326","UG-318","UG-314","UG-323","UG-330"]}
+    ],
+    "ach": [
+      {"country":"UG","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["UG-304","UG-305","UG-312","UG-319","UG-327","UG-322","UG-329"]}
+    ],
+    "nd": [
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["ZW-MN","ZW-MS","ZW-BU"]},
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["ZW-MI"]}
+    ],
+    "mxc": [
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["ZW-MA"]}
+    ],
+    "kck": [
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["ZW-MS"]},
+      {"country":"ZW","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["ZW-BU","ZW-MN"]},
+      {"country":"BW","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["BW-NE","BW-FR","BW-SP"]},
+      {"country":"BW","layer":"scope","basis":"de_facto","intensity":0.44,"regions":["BW-CE"]}
+    ],
+    "ha": [
+      {"country":"NG","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["NG-SO","NG-ZA","NG-KE","NG-KT","NG-KN","NG-JI","NG-KD","NG-BA","NG-GO","NG-YO","NG-BO","NG-NI","NG-FC","NG-NA","NG-PL","NG-AD","NG-TA"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["NG-SO","NG-ZA","NG-KE","NG-KT","NG-KN","NG-JI","NG-KD","NG-BA","NG-GO"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.64,"regions":["NG-YO","NG-BO","NG-NI","NG-FC","NG-NA","NG-PL"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["NG-AD","NG-TA"]},
+      {"country":"NE","role":"distribution","basis":"de_facto","intensity":0.94,"regions":["NE-4","NE-7","NE-5"]},
+      {"country":"NE","role":"distribution","basis":"de_facto","intensity":0.7,"regions":["NE-2","NE-3","NE-8"]},
+      {"country":"BF","layer":"scope","basis":"de_facto","intensity":0.28,"replace_country_role":true,"regions":["BF-OUD","BF-SOM","BF-SEN","BF-YAG","BF-TAP","BF-KMD","BF-GOU","BF-GNA"]},
+      {"country":"BJ","layer":"scope","basis":"de_facto","intensity":0.52,"replace_country_role":true,"regions":["BJ-AL","BJ-BO","BJ-AK","BJ-DO"]},
+      {"country":"CM","layer":"scope","basis":"de_facto","intensity":0.58,"replace_country_role":true,"regions":["CM-EN","CM-NO","CM-AD"]},
+      {"country":"GH","layer":"scope","basis":"de_facto","intensity":0.34,"replace_country_role":true,"regions":["GH-UE","GH-NP","GH-UW"]},
+      {"country":"TD","layer":"scope","basis":"de_facto","intensity":0.38,"replace_country_role":true,"regions":["TD-LC","TD-KA","TD-BG","TD-HL","TD-CB","TD-ND"]},
+      {"country":"TG","layer":"scope","basis":"de_facto","intensity":0.24,"replace_country_role":true,"regions":["TG-S","TG-K","TG-C"]},
+      {"country":"SD","role":"resident","basis":"de_facto","intensity":0.7,"replace_country_role":true,"regions":["SD-GZ","SD-GD","SD-NB","SD-SI","SD-KA"]},
+      {"country":"SD","role":"resident","basis":"de_facto","intensity":0.5,"replace_country_role":true,"regions":["SD-DN","SD-DS","SD-DE","SD-KN","SD-KS"]},
+      {"country":"SD","role":"resident","basis":"de_facto","intensity":0.35,"replace_country_role":true,"regions":["SD-KH"]}
+    ],
+    "yo": [
+      {"country":"NG","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["NG-OY","NG-OG","NG-OS","NG-ON","NG-EK","NG-LA","NG-KW","NG-KO","NG-ED"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["NG-OY","NG-OG","NG-OS","NG-ON","NG-EK","NG-LA"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.44,"regions":["NG-KW","NG-KO","NG-ED"]},
+      {"country":"BJ","layer":"scope","basis":"de_facto","intensity":0.68,"replace_country_role":true,"regions":["BJ-PL","BJ-OU","BJ-ZO","BJ-CO","BJ-AQ","BJ-LI"]},
+      {"country":"BJ","role":"distribution","basis":"de_facto","intensity":0.68,"regions":["BJ-PL","BJ-OU","BJ-ZO"]},
+      {"country":"BJ","role":"distribution","basis":"de_facto","intensity":0.36,"regions":["BJ-CO","BJ-AQ","BJ-LI"]}
+    ],
+    "ig": [
+      {"country":"NG","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["NG-AB","NG-AN","NG-EB","NG-EN","NG-IM","NG-DE","NG-RI"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.96,"regions":["NG-AB","NG-AN","NG-EB","NG-EN","NG-IM"]},
+      {"country":"NG","role":"distribution","basis":"de_facto","intensity":0.48,"regions":["NG-DE","NG-RI"]}
+    ],
+    "rw": [
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.86,"regions":["CD-NK"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["CD-SK"]},
+      {"country":"UG","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["UG-408"]}
+    ],
+    "rn": [
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.74,"regions":["CD-SK"]},
+      {"country":"TZ","role":"distribution","basis":"de_facto","intensity":0.78,"regions":["TZ-08"]}
+    ],
+    "ln": [
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.92,"regions":["CD-EQ","CD-KN","CD-MO","CD-NU","CD-SU","CD-TU"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.76,"regions":["CD-BU","CD-HU","CD-IT","CD-KG","CD-KL","CD-MN","CD-TO"]},
+      {"country":"CD","role":"distribution","basis":"de_facto","intensity":0.44,"regions":["CD-BC"]},
+      {"country":"CG","layer":"scope","basis":"statutory","intensity":0.82,"replace_country_role":true,"regions":["CG-7","CG-8","CG-13","CG-15","CG-14","CG-BZV","CG-12"]},
+      {"country":"CG","role":"distribution","basis":"de_facto","intensity":0.86,"regions":["CG-7","CG-8","CG-13","CG-15","CG-BZV"]},
+      {"country":"CG","role":"distribution","basis":"de_facto","intensity":0.52,"regions":["CG-14","CG-12"]},
+      {"country":"CF","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["CF-BGF","CF-MP","CF-LB"]},
+      {"country":"AO","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["AO-CAB","AO-ZAI"]},
+      {"country":"AO","role":"distribution","basis":"de_facto","intensity":0.16,"regions":["AO-LNO","AO-LUA"]}
+    ],
+    "sn": [
+      {"country":"MZ","role":"distribution","basis":"de_facto","intensity":0.52,"regions":["MZ-B","MZ-T"]},
+      {"country":"MZ","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["MZ-S"]}
+    ],
+    "af": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.58,
+        "regions": ["ZA-WC", "ZA-NC", "ZA-EC"]
+      },
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.82,"regions":["NA-KA","NA-HA"]},
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.62,"regions":["NA-ER","NA-KH"]},
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["NA-OH","NA-OD"]}
+    ],
+    "xh": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.62,
+        "regions": ["ZA-EC", "ZA-WC"]
+      },
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["ZW-MN"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["ZW-BU"]}
+    ],
+    "zu": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.68,
+        "regions": ["ZA-NL", "ZA-MP", "ZA-GT"]
+      },
+      {"country":"SZ","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["SZ-LU","SZ-HH","SZ-MA","SZ-SH"]},
+      {"country":"MZ","role":"distribution","basis":"de_facto","intensity":0.28,"regions":["MZ-L","MZ-MPM","MZ-G"]}
+    ],
+    "nr": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.54,
+        "regions": ["ZA-MP"]
+      }
+    ],
+    "nso": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.6,
+        "regions": ["ZA-LP", "ZA-GT", "ZA-MP"]
+      }
+    ],
+    "st": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.56,
+        "regions": ["ZA-FS", "ZA-GT"]
+      },
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.42,"regions":["ZW-MS"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["ZW-MV"]}
+    ],
+    "ss": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.52,
+        "regions": ["ZA-MP"]
+      }
+    ],
+    "tn": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.58,
+        "regions": ["ZA-NW", "ZA-NC", "ZA-GT"]
+      },
+      {"country":"NA","layer":"scope","basis":"protected","intensity":0.48,"replace_country_role":true,"regions":["NA-OH","NA-OD","NA-KH"]},
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.58,"regions":["NA-OH"]},
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.26,"regions":["NA-OD"]},
+      {"country":"NA","role":"distribution","basis":"de_facto","intensity":0.14,"regions":["NA-KH"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.38,"regions":["ZW-MS"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.2,"regions":["ZW-MN","ZW-BU"]}
+    ],
+    "ts": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.56,
+        "regions": ["ZA-LP", "ZA-MP", "ZA-GT"]
+      },
+      {"country":"MZ","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["MZ-L","MZ-MPM","MZ-G","MZ-I"]},
+      {"country":"MZ","role":"distribution","basis":"de_facto","intensity":0.9,"regions":["MZ-L","MZ-MPM","MZ-G"]},
+      {"country":"MZ","role":"distribution","basis":"de_facto","intensity":0.5,"regions":["MZ-I"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.46,"regions":["ZW-MV"]}
+    ],
+    "ve": [
+      {
+        "country": "ZA",
+        "role": "distribution",
+        "intensity": 0.54,
+        "regions": ["ZA-LP", "ZA-GT"]
+      },
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.66,"regions":["ZW-MS"]},
+      {"country":"ZW","role":"distribution","basis":"de_facto","intensity":0.24,"regions":["ZW-MV"]}
+    ],
+    "haw": [
+      {"country":"US","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["US-HI"]}
+    ],
+    "iu": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.92,"replace_country_role":true,"regions":["CA-NU"]},
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.46,"regions":["CA-NT","CA-NL"]}
+    ],
+    "iu-Latn": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["CA-NU","CA-NT"]}
+    ],
+    "crk": [
+      {"country":"CA","layer":"scope","basis":"de_facto","intensity":0.62,"replace_country_role":true,"regions":["CA-AB","CA-SK","CA-MB"]}
+    ],
+    "chp": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.72,"replace_country_role":true,"regions":["CA-NT"]},
+      {"country":"CA","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["CA-AB","CA-SK"]}
+    ],
+    "den": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["CA-NT"]}
+    ],
+    "dgr": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.84,"replace_country_role":true,"regions":["CA-NT"]}
+    ],
+    "gwi": [
+      {"country":"CA","layer":"scope","basis":"statutory","intensity":0.78,"replace_country_role":true,"regions":["CA-NT","CA-YT"]}
+    ],
+    "chk": [
+      {"country":"FM","layer":"scope","basis":"statutory","intensity":0.94,"replace_country_role":true,"regions":["FM-TRK"]}
+    ],
+    "pon": [
+      {"country":"FM","layer":"scope","basis":"statutory","intensity":0.92,"replace_country_role":true,"regions":["FM-PNI"]}
+    ],
+    "kos": [
+      {"country":"FM","layer":"scope","basis":"statutory","intensity":0.92,"replace_country_role":true,"regions":["FM-KSA"]}
+    ],
+    "yap": [
+      {"country":"FM","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["FM-YAP"]}
+    ],
+    "uli": [
+      {"country":"FM","layer":"scope","basis":"de_facto","intensity":0.56,"replace_country_role":true,"regions":["FM-YAP"]}
+    ],
+    "wls": [
+      {"country":"WF","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["WF-UV"]}
+    ],
+    "fud": [
+      {"country":"WF","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["WF-SG","WF-AL"]}
+    ],
+    "tts": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TH-38","TH-43","TH-48","TH-49","TH-42","TH-39","TH-41","TH-40","TH-47","TH-46","TH-45","TH-44","TH-35","TH-37","TH-34","TH-33","TH-32","TH-31","TH-36","TH-30"]}
+    ],
+    "nod": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TH-50","TH-51","TH-52","TH-54","TH-55","TH-56","TH-57","TH-58"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.48,"regions":["TH-53","TH-63"]}
+    ],
+    "sou": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["TH-80","TH-81","TH-82","TH-83","TH-84","TH-85","TH-86","TH-92","TH-93"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["TH-77"]}
+    ],
+    "mfa": [
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["TH-94","TH-95","TH-96"]},
+      {"country":"TH","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["TH-90","TH-91"]}
+    ],
+    "rkt": [
+      {"country":"BD","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["BD-F"]}
+    ],
+    "syl": [
+      {"country":"BD","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["BD-G"]}
+    ],
+    "tsj": [
+      {"country":"BT","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["BT-TY","BT-45","BT-41","BT-43"]},
+      {"country":"BT","layer":"scope","basis":"de_facto","intensity":0.62,"regions":["BT-42","BT-44"]}
+    ],
+    "bci": [
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["CI-04","CI-07","CI-11","CI-12"]},
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["CI-02","CI-18","CI-15"]}
+    ],
+    "sef": [
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["CI-03","CI-10"]},
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["CI-08","CI-14","CI-17"]}
+    ],
+    "dnj": [
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["CI-06","CI-19"]},
+      {"country":"CI","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["CI-17","CI-02","CI-09"]}
+    ],
+    "kab": [
+      {"country":"DZ","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["DZ-06","DZ-15"]},
+      {"country":"DZ","layer":"scope","basis":"de_facto","intensity":0.52,"regions":["DZ-10","DZ-35","DZ-19","DZ-18","DZ-34","DZ-42"]}
+    ],
+    "tig": [
+      {"country":"ER","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["ER-GB","ER-AN","ER-SK"]}
+    ],
+    "ssy": [
+      {"country":"ER","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["ER-SK","ER-DK"]},
+      {"country":"ER","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["ER-DU"]}
+    ],
+    "fan": [
+      {"country":"GA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GA-9"]},
+      {"country":"GA","layer":"scope","basis":"de_facto","intensity":0.58,"regions":["GA-1","GA-3","GA-6"]},
+      {"country":"GQ","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GQ-LI","GQ-KN","GQ-CS","GQ-WN"]}
+    ],
+    "puu": [
+      {"country":"GA","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["GA-2","GA-7"]},
+      {"country":"GA","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["GA-4"]}
+    ],
+    "bvb": [
+      {"country":"GQ","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["GQ-BN","GQ-BS"]}
+    ],
+    "zdj": [
+      {"country":"KM","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["KM-G"]}
+    ],
+    "wni": [
+      {"country":"KM","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["KM-A"]}
+    ],
+    "kjg": [
+      {"country":"LA","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["LA-SV","LA-SL","LA-XE","LA-AT","LA-CH"]},
+      {"country":"LA","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["LA-KH"]}
+    ],
+    "tzm": [
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.84,"replace_country_role":true,"regions":["MA-06","MA-12"]},
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["MA-05","MA-04"]}
+    ],
+    "shi": [
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["MA-13","MA-14"]},
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.5,"regions":["MA-11","MA-15","MA-16"]}
+    ],
+    "shi-Latn": [
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["MA-13","MA-14"]},
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.5,"regions":["MA-11","MA-15","MA-16"]}
+    ],
+    "rif": [
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["MA-01","MA-03","MA-04"]}
+    ],
+    "rif-Tfng": [
+      {"country":"MA","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["MA-01","MA-03","MA-04"]}
+    ],
+    "shn": [
+      {"country":"MM","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["MM-17"]}
+    ],
+    "tum": [
+      {"country":"MW","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["MW-CT","MW-KR","MW-RU","MW-NB"]},
+      {"country":"MW","layer":"scope","basis":"de_facto","intensity":0.44,"regions":["MW-MZ"]}
+    ],
+    "new": [
+      {"country":"NP","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["NP-BA"]}
+    ],
+    "jml": [
+      {"country":"NP","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["NP-KA"]}
+    ],
+    "bho": [
+      {"country":"NP","layer":"scope","basis":"de_facto","intensity":0.8,"replace_country_role":true,"regions":["NP-NA","NP-JA","NP-SA"]},
+      {"country":"NP","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["NP-LU"]}
+    ],
+    "nus": [
+      {"country":"SS","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["SS-NU","SS-JG","SS-UY"]}
+    ],
+    "nan-Hant": [
+      {"country":"TW","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["TW-CHA","TW-YUN","TW-CYQ","TW-CYI","TW-TNN","TW-KHH","TW-PIF","TW-PEN","TW-NAN"]},
+      {"country":"TW","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["TW-TAO","TW-HSQ","TW-HSZ","TW-MIA","TW-TXG","TW-TPQ","TW-KEE","TW-ILA"]}
+    ],
+    "hak-Hant": [
+      {"country":"TW","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["TW-TAO","TW-HSQ","TW-HSZ","TW-MIA"]},
+      {"country":"TW","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["TW-KHH","TW-PIF","TW-HUA","TW-TTT"]}
+    ],
+    "toi": [
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["ZM-07"]},
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.38,"regions":["ZM-09","ZM-02"]}
+    ],
+    "loz": [
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["ZM-01"]}
+    ],
+    "nse": [
+      {"country":"ZM","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["ZM-03"]}
+    ],
+    "wo": [
+      {"country":"GM","layer":"scope","basis":"de_facto","intensity":0.76,"replace_country_role":true,"regions":["GM-N","GM-B","GM-W"]},
+      {"country":"GM","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["GM-L"]},
+      {"country":"MR","layer":"scope","basis":"de_facto","intensity":0.66,"replace_country_role":true,"regions":["MR-06","MR-NKC"]}
+    ],
+    "man-Nkoo": [
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GN-K","GN-SI","GN-MD","GN-KO","GN-KE"]},
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["GN-FA","GN-DB"]}
+    ],
+    "nqo": [
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.72,"replace_country_role":true,"regions":["GN-K","GN-SI","GN-MD","GN-KO","GN-KE"]},
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.34,"regions":["GN-FA","GN-C"]}
+    ],
+    "sus": [
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["GN-KD","GN-FO","GN-BF","GN-DU","GN-C","GN-CO","GN-FR"]},
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["GN-BK","GN-TE"]}
+    ],
+    "kpe": [
+      {"country":"GN","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["GN-NZ","GN-YO","GN-LO"]},
+      {"country":"LR","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["LR-BG","LR-X1~","LR-LO"]},
+      {"country":"LR","layer":"scope","basis":"de_facto","intensity":0.42,"regions":["LR-NI","LR-MG"]}
+    ],
+    "ffm": [
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["ML-5"]},
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["ML-4"]}
+    ],
+    "snk": [
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["ML-1"]},
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.32,"regions":["ML-2"]}
+    ],
+    "mwk": [
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.78,"replace_country_role":true,"regions":["ML-1","ML-2"]},
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["ML-BKO"]}
+    ],
+    "ses": [
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["ML-7"]},
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.4,"regions":["ML-6"]}
+    ],
+    "dyu": [
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["ML-3"]},
+      {"country":"ML","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["ML-BKO","ML-2"]}
+    ],
+    "men": [
+      {"country":"SL","layer":"scope","basis":"de_facto","intensity":0.94,"replace_country_role":true,"regions":["SL-E","SL-S"]}
+    ],
+    "tem": [
+      {"country":"SL","layer":"scope","basis":"de_facto","intensity":0.9,"replace_country_role":true,"regions":["SL-N"]},
+      {"country":"SL","layer":"scope","basis":"de_facto","intensity":0.5,"regions":["SL-W"]}
+    ],
+    "srr": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.88,"replace_country_role":true,"regions":["SN-FK","SN-TH"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["SN-KL","SN-DB"]}
+    ],
+    "dyo": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.92,"replace_country_role":true,"regions":["SN-ZG","SN-SE"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["SN-KD"]}
+    ],
+    "sav": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["SN-TH"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.3,"regions":["SN-DK"]}
+    ],
+    "mfv": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["SN-ZG"]},
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.36,"regions":["SN-SE"]}
+    ],
+    "bjt": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["SN-SE","SN-ZG"]}
+    ],
+    "snf": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.82,"replace_country_role":true,"regions":["SN-TH"]}
+    ],
+    "knf": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["SN-ZG"]}
+    ],
+    "bsc": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["SN-KE"]}
+    ],
+    "mey": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.64,"replace_country_role":true,"regions":["SN-SL"]}
+    ],
+    "tnr": [
+      {"country":"SN","layer":"scope","basis":"de_facto","intensity":0.86,"replace_country_role":true,"regions":["SN-KE"]}
+    ],
+    "quc": [
+      {"country":"GT","layer":"scope","basis":"statutory","intensity":0.9,"replace_country_role":true,"regions":["GT-QC"]},
+      {"country":"GT","layer":"scope","basis":"de_facto","intensity":0.46,"regions":["GT-TO","GT-SO","GT-CM"]}
+    ],
+    "yi": [
+      {"country":"RU","layer":"scope","basis":"protected","intensity":0.56,"replace_country_role":true,"regions":["RU-YEV"]}
+    ]
+  }
+}

@@ -1,0 +1,1009 @@
+{
+  "schema": 1,
+  "description": "Language identities recognized by Kotonohatlas. Rows with enabled omitted or true have a localized Atlas interface; enabled false rows remain available for map lookup and context without entering the localized interface catalog.",
+  "locales": [
+    {
+      "locale": "ja",
+      "name": "日本語",
+      "public_locale": "ja-JP"
+    },
+    {
+      "locale": "en",
+      "name": "English",
+      "public_locale": "en-US"
+    },
+    {
+      "locale": "af",
+      "name": "Afrikaans"
+    },
+    {
+      "locale": "am",
+      "name": "አማርኛ"
+    },
+    {
+      "locale": "ar",
+      "name": "العربية",
+      "direction": "rtl"
+    },
+    {
+      "locale": "as_IN",
+      "name": "অসমীয়া"
+    },
+    {
+      "locale": "az",
+      "name": "Azərbaycan dili",
+      "public_locale": "az-Latn",
+      "html_language": "az-Latn"
+    },
+    {
+      "locale": "be",
+      "name": "Беларуская"
+    },
+    {
+      "locale": "bg_BG",
+      "name": "Български"
+    },
+    {
+      "locale": "bn_BD",
+      "name": "বাংলা"
+    },
+    {
+      "locale": "bs",
+      "name": "Bosanski"
+    },
+    {
+      "locale": "ca",
+      "name": "Català"
+    },
+    {
+      "locale": "ceb",
+      "name": "Cebuano",
+      "public_locale": "ceb",
+      "html_language": "ceb",
+      "mkdocs_locale": "tl_PH"
+    },
+    {
+      "locale": "ckb",
+      "name": "کوردیی سۆرانی",
+      "public_locale": "ckb",
+      "html_language": "ckb",
+      "mkdocs_locale": "ku_IQ",
+      "theme_language": "ku-IQ",
+      "direction": "rtl"
+    },
+    {
+      "locale": "cs_CZ",
+      "name": "Čeština"
+    },
+    {
+      "locale": "cy",
+      "name": "Cymraeg"
+    },
+    {
+      "locale": "da_DK",
+      "name": "Dansk"
+    },
+    {
+      "locale": "de_DE",
+      "name": "Deutsch"
+    },
+    {
+      "locale": "el",
+      "name": "Ελληνικά"
+    },
+    {
+      "locale": "eo",
+      "name": "Esperanto"
+    },
+    {
+      "locale": "es_ES",
+      "name": "Español"
+    },
+    {
+      "locale": "et",
+      "name": "Eesti"
+    },
+    {
+      "locale": "eu",
+      "name": "Euskara"
+    },
+    {
+      "locale": "fa_IR",
+      "name": "فارسی",
+      "direction": "rtl"
+    },
+    {
+      "locale": "fi",
+      "name": "Suomi"
+    },
+    {
+      "locale": "fr_FR",
+      "name": "Français"
+    },
+    {
+      "locale": "ga",
+      "name": "Gaeilge"
+    },
+    {
+      "locale": "gl",
+      "name": "Galego"
+    },
+    {
+      "locale": "gn",
+      "name": "Avañe'ẽ"
+    },
+    {
+      "locale": "gu",
+      "name": "ગુજરાતી"
+    },
+    {
+      "locale": "ha",
+      "name": "Hausa"
+    },
+    {
+      "locale": "he_IL",
+      "name": "עברית",
+      "direction": "rtl"
+    },
+    {
+      "locale": "hi_IN",
+      "name": "हिन्दी"
+    },
+    {
+      "locale": "hr",
+      "name": "Hrvatski"
+    },
+    {
+      "locale": "ht",
+      "name": "Kreyòl ayisyen"
+    },
+    {
+      "locale": "hu_HU",
+      "name": "Magyar"
+    },
+    {
+      "locale": "hy",
+      "name": "Հայերեն"
+    },
+    {
+      "locale": "id_ID",
+      "name": "Bahasa Indonesia"
+    },
+    {
+      "locale": "ig",
+      "name": "Igbo"
+    },
+    {
+      "locale": "is_IS",
+      "name": "Íslenska"
+    },
+    {
+      "locale": "it_IT",
+      "name": "Italiano"
+    },
+    {
+      "locale": "jv",
+      "name": "Basa Jawa"
+    },
+    {
+      "locale": "ka_GE",
+      "name": "ქართული"
+    },
+    {
+      "locale": "kk",
+      "name": "Қазақ тілі"
+    },
+    {
+      "locale": "km",
+      "name": "ខ្មែរ"
+    },
+    {
+      "locale": "kmr",
+      "name": "Kurmancî",
+      "public_locale": "kmr",
+      "html_language": "kmr",
+      "mkdocs_locale": "ku_TR"
+    },
+    {
+      "locale": "kn",
+      "name": "ಕನ್ನಡ"
+    },
+    {
+      "locale": "ko_KR",
+      "name": "한국어"
+    },
+    {
+      "locale": "ky",
+      "name": "Кыргызча"
+    },
+    {
+      "locale": "la",
+      "name": "Latina"
+    },
+    {
+      "locale": "ln",
+      "name": "Lingála"
+    },
+    {
+      "locale": "lo",
+      "name": "ລາວ"
+    },
+    {
+      "locale": "lt_LT",
+      "name": "Lietuvių"
+    },
+    {
+      "locale": "lv",
+      "name": "Latviešu"
+    },
+    {
+      "locale": "mai",
+      "name": "मैथिली",
+      "public_locale": "mai",
+      "html_language": "mai",
+      "mkdocs_locale": "hi_NP"
+    },
+    {
+      "locale": "mk_MK",
+      "name": "Македонски"
+    },
+    {
+      "locale": "mg",
+      "name": "Malagasy"
+    },
+    {
+      "locale": "mi",
+      "name": "Māori"
+    },
+    {
+      "locale": "ml_IN",
+      "name": "മലയാളം"
+    },
+    {
+      "locale": "mn",
+      "name": "Монгол"
+    },
+    {
+      "locale": "mr",
+      "name": "मराठी"
+    },
+    {
+      "locale": "ms_MY",
+      "name": "Bahasa Melayu"
+    },
+    {
+      "locale": "mt",
+      "name": "Malti"
+    },
+    {
+      "locale": "my_MM",
+      "name": "မြန်မာ"
+    },
+    {
+      "locale": "nb_NO",
+      "name": "Norsk bokmål"
+    },
+    {
+      "locale": "nn_NO",
+      "name": "Norsk nynorsk"
+    },
+    {
+      "locale": "ne_NP",
+      "name": "नेपाली"
+    },
+    {
+      "locale": "nl_NL",
+      "name": "Nederlands"
+    },
+    {
+      "locale": "nr",
+      "name": "isiNdebele"
+    },
+    {
+      "locale": "nso",
+      "name": "Sepedi",
+      "public_locale": "nso",
+      "html_language": "nso",
+      "mkdocs_locale": "st_ZA"
+    },
+    {
+      "locale": "om",
+      "name": "Afaan Oromoo"
+    },
+    {
+      "locale": "or_IN",
+      "name": "ଓଡ଼ିଆ"
+    },
+    {
+      "locale": "pa_IN",
+      "name": "ਪੰਜਾਬੀ",
+      "public_locale": "pa-Guru",
+      "html_language": "pa-Guru"
+    },
+    {
+      "locale": "pa_PK",
+      "name": "پنجابی",
+      "public_locale": "pa-Arab",
+      "html_language": "pa-Arab",
+      "direction": "rtl"
+    },
+    {
+      "locale": "pl_PL",
+      "name": "Polski"
+    },
+    {
+      "locale": "ps",
+      "name": "پښتو",
+      "direction": "rtl"
+    },
+    {
+      "locale": "pt_BR",
+      "name": "Português brasileiro"
+    },
+    {
+      "locale": "pt_PT",
+      "name": "Português"
+    },
+    {
+      "locale": "ro_RO",
+      "name": "Română"
+    },
+    {
+      "locale": "rm",
+      "name": "Rumantsch"
+    },
+    {
+      "locale": "ru_RU",
+      "name": "Русский"
+    },
+    {
+      "locale": "rw",
+      "name": "Kinyarwanda"
+    },
+    {
+      "locale": "sd",
+      "name": "سنڌي",
+      "direction": "rtl"
+    },
+    {
+      "locale": "sdh",
+      "name": "کوردیی باشووری",
+      "enabled": false,
+      "direction": "rtl"
+    },
+    {
+      "locale": "si_LK",
+      "name": "සිංහල"
+    },
+    {
+      "locale": "sk_SK",
+      "name": "Slovenčina"
+    },
+    {
+      "locale": "sl_SI",
+      "name": "Slovenščina"
+    },
+    {
+      "locale": "sn",
+      "name": "chiShona"
+    },
+    {
+      "locale": "so",
+      "name": "Soomaali"
+    },
+    {
+      "locale": "sq",
+      "name": "Shqip"
+    },
+    {
+      "locale": "sr_RS",
+      "name": "Српски"
+    },
+    {
+      "locale": "ss",
+      "name": "siSwati"
+    },
+    {
+      "locale": "st",
+      "name": "Sesotho"
+    },
+    {
+      "locale": "su",
+      "name": "Basa Sunda"
+    },
+    {
+      "locale": "sv_SE",
+      "name": "Svenska"
+    },
+    {
+      "locale": "sw",
+      "name": "Kiswahili"
+    },
+    {
+      "locale": "ta_IN",
+      "name": "தமிழ்"
+    },
+    {
+      "locale": "te",
+      "name": "తెలుగు"
+    },
+    {
+      "locale": "tet",
+      "name": "Tetun",
+      "public_locale": "tet",
+      "html_language": "tet",
+      "mkdocs_locale": "pt_TL"
+    },
+    {
+      "locale": "tg",
+      "name": "Тоҷикӣ"
+    },
+    {
+      "locale": "th",
+      "name": "ไทย"
+    },
+    {
+      "locale": "tk",
+      "name": "Türkmençe"
+    },
+    {
+      "locale": "tl",
+      "name": "Filipino",
+      "public_locale": "fil",
+      "html_language": "fil",
+      "mkdocs_locale": "tl",
+      "theme_language": "tl"
+    },
+    {
+      "locale": "tn",
+      "name": "Setswana"
+    },
+    {
+      "locale": "tr_TR",
+      "name": "Türkçe"
+    },
+    {
+      "locale": "ts",
+      "name": "itsonga"
+    },
+    {
+      "locale": "uk",
+      "name": "Українська"
+    },
+    {
+      "locale": "ur",
+      "name": "اردو",
+      "direction": "rtl"
+    },
+    {
+      "locale": "uz_UZ",
+      "name": "Oʻzbekcha"
+    },
+    {
+      "locale": "ve",
+      "name": "Tshivenḓa"
+    },
+    {
+      "locale": "vi",
+      "name": "Tiếng Việt"
+    },
+    {
+      "locale": "xh",
+      "name": "isiXhosa"
+    },
+    {
+      "locale": "yo",
+      "name": "Yorùbá"
+    },
+    {
+      "locale": "zh_Hans",
+      "name": "简体中文",
+      "theme_language": "zh",
+      "mkdocs_locale": "zh_CN",
+      "html_language": "zh-Hans"
+    },
+    {
+      "locale": "zh_Hant",
+      "name": "繁體中文",
+      "theme_language": "zh-Hant",
+      "mkdocs_locale": "zh_TW",
+      "html_language": "zh-Hant"
+    },
+    {
+      "locale": "zu",
+      "name": "isiZulu"
+    },
+    {
+      "locale": "ay",
+      "name": "Aymar aru",
+      "enabled": true
+    },
+    {
+      "locale": "bo",
+      "name": "བོད་སྐད་",
+      "enabled": false
+    },
+    {
+      "locale": "brx",
+      "name": "बर’",
+      "enabled": false
+    },
+    {
+      "locale": "doi",
+      "name": "डोगरी",
+      "enabled": false
+    },
+    {
+      "locale": "dv",
+      "name": "ދިވެހި",
+      "enabled": false,
+      "direction": "rtl"
+    },
+    {
+      "locale": "dz",
+      "name": "རྫོང་ཁ་",
+      "enabled": false
+    },
+    {
+      "locale": "fj",
+      "name": "Na Vosa Vakaviti",
+      "enabled": false
+    },
+    {
+      "locale": "fo",
+      "name": "føroyskt",
+      "enabled": false
+    },
+    {
+      "locale": "iu",
+      "name": "ᐃᓄᒃᑎᑐᑦ",
+      "enabled": false
+    },
+    {
+      "locale": "kl",
+      "name": "kalaallisut",
+      "enabled": false
+    },
+    {
+      "locale": "kok",
+      "name": "कोंकणी",
+      "enabled": true,
+      "mkdocs_locale": "mr_IN",
+      "html_language": "kok"
+    },
+    {
+      "locale": "ks",
+      "name": "کٲشُر",
+      "enabled": true,
+      "direction": "rtl"
+    },
+    {
+      "locale": "mni",
+      "name": "মৈতৈলোন্",
+      "enabled": false
+    },
+    {
+      "locale": "qu",
+      "name": "Runasimi",
+      "enabled": true
+    },
+    {
+      "locale": "rn",
+      "name": "Ikirundi",
+      "enabled": true
+    },
+    {
+      "locale": "sa",
+      "name": "संस्कृत भाषा",
+      "enabled": false
+    },
+    {
+      "locale": "sat",
+      "name": "ᱥᱟᱱᱛᱟᱲᱤ",
+      "enabled": true,
+      "mkdocs_locale": "bn_IN",
+      "html_language": "sat"
+    },
+    {
+      "locale": "sg",
+      "name": "Sängö",
+      "enabled": true
+    },
+    {
+      "locale": "sm",
+      "name": "Gagana faʻa Sāmoa",
+      "enabled": false
+    },
+    {
+      "locale": "ti",
+      "name": "ትግርኛ",
+      "enabled": true
+    },
+    {
+      "locale": "ug",
+      "name": "ئۇيغۇرچە",
+      "enabled": true,
+      "direction": "rtl"
+    },
+    {
+      "locale": "bho_Deva",
+      "name": "भोजपुरी",
+      "enabled": false
+    },
+    {
+      "locale": "zgh_Tfng_MA",
+      "name": "ⵜⴰⵎⴰⵣⵉⵖⵜ",
+      "enabled": false
+    },
+    {
+      "locale": "yue_Hant_HK",
+      "name": "粵語",
+      "enabled": false
+    },
+    {
+      "locale": "tpi_PG",
+      "name": "Tok Pisin",
+      "enabled": false
+    },
+    {
+      "locale": "wo_SN",
+      "name": "Wolof",
+      "enabled": false
+    },
+    {
+      "locale": "bm_Latn_ML",
+      "name": "bamanakan",
+      "enabled": false
+    },
+    {
+      "locale": "tt_Cyrl_RU",
+      "name": "татар теле",
+      "enabled": false
+    },
+    {
+      "locale": "lg_UG",
+      "name": "Luganda",
+      "enabled": false
+    },
+    {
+      "locale": "ilo_PH",
+      "name": "Iloko",
+      "enabled": false
+    },
+    {
+      "locale": "fa_AF",
+      "name": "دری",
+      "enabled": false,
+      "direction": "rtl"
+    },
+    {
+      "locale": "ff_Latn_SN",
+      "name": "Pulaar",
+      "enabled": false
+    },
+    {
+      "locale": "pap_AW",
+      "name": "Papiamento",
+      "enabled": false
+    },
+    {
+      "locale": "pap_CW",
+      "name": "Papiamentu",
+      "enabled": false
+    },
+    {
+      "locale": "pnt",
+      "name": "Ποντιακά",
+      "enabled": false
+    },
+    {
+      "locale": "fit",
+      "name": "meänkieli",
+      "enabled": false
+    },
+    {
+      "locale": "stq",
+      "name": "Seeltersk",
+      "enabled": false
+    },
+    {
+      "locale": "frp",
+      "name": "arpetan",
+      "enabled": false
+    },
+    {
+      "locale": "rom",
+      "name": "romani čhib",
+      "enabled": false
+    },
+    {
+      "locale": "vec",
+      "name": "vèneto",
+      "enabled": false
+    },
+    {
+      "locale": "qug",
+      "name": "Runa shimi",
+      "enabled": false
+    },
+    {
+      "locale": "srn",
+      "name": "Sranantongo",
+      "enabled": false
+    },
+    {
+      "locale": "gcr",
+      "name": "Kriyòl gwiyannen",
+      "enabled": false
+    },
+    {
+      "locale": "arn",
+      "name": "Mapudungun",
+      "enabled": false
+    },
+    {
+      "locale": "guc",
+      "name": "Wayuunaiki",
+      "enabled": false
+    },
+    {
+      "locale": "pbb",
+      "name": "Nasa Yuwe",
+      "enabled": false
+    },
+    {
+      "locale": "icr",
+      "name": "Island Krio",
+      "enabled": false
+    },
+    {
+      "locale": "jiv",
+      "name": "Shuar chicham",
+      "enabled": false
+    },
+    {
+      "locale": "cni",
+      "name": "Asháninka",
+      "enabled": false
+    },
+    {
+      "locale": "shp",
+      "name": "Shipibo-Konibo",
+      "enabled": false
+    },
+    {
+      "locale": "wba",
+      "name": "Warao",
+      "enabled": false
+    },
+    {
+      "locale": "aoc",
+      "name": "Pemón",
+      "enabled": false
+    },
+    {
+      "locale": "cnr",
+      "name": "Crnogorski",
+      "enabled": false
+    },
+    {
+      "locale": "rsk",
+      "name": "Руски язик",
+      "enabled": false
+    },
+    {
+      "locale": "ak",
+      "name": "Akan",
+      "enabled": false
+    },
+    {
+      "locale": "bi",
+      "name": "Bislama",
+      "enabled": false
+    },
+    {
+      "locale": "crs",
+      "name": "Kreol Seselwa",
+      "enabled": false
+    },
+    {
+      "locale": "kri",
+      "name": "Krio",
+      "enabled": false
+    },
+    {
+      "locale": "lb",
+      "name": "Lëtzebuergesch",
+      "enabled": false
+    },
+    {
+      "locale": "mfe",
+      "name": "Kreol Morisien",
+      "enabled": false
+    },
+    {
+      "locale": "ny",
+      "name": "Chichewa",
+      "enabled": false
+    },
+    {
+      "locale": "mos",
+      "name": "Mooré",
+      "enabled": false
+    },
+    {
+      "locale": "kea",
+      "name": "Kabuverdianu",
+      "enabled": false
+    },
+    {
+      "locale": "arq",
+      "name": "الدارجة الجزائرية",
+      "enabled": false
+    },
+    {
+      "locale": "chk",
+      "name": "Chuukese",
+      "enabled": false
+    },
+    {
+      "locale": "man",
+      "name": "Mandingo",
+      "enabled": false
+    },
+    {
+      "locale": "ch",
+      "name": "Chamoru",
+      "enabled": false
+    },
+    {
+      "locale": "jam",
+      "name": "Patwa",
+      "enabled": false
+    },
+    {
+      "locale": "gil",
+      "name": "Taetae ni Kiribati",
+      "enabled": false
+    },
+    {
+      "locale": "kpe",
+      "name": "Kpɛlɛwoo",
+      "enabled": false
+    },
+    {
+      "locale": "ary",
+      "name": "الدارجة المغربية",
+      "enabled": false
+    },
+    {
+      "locale": "mh",
+      "name": "Kajin M̧ajeļ",
+      "enabled": false
+    },
+    {
+      "locale": "na",
+      "name": "Dorerin Naoero",
+      "enabled": false
+    },
+    {
+      "locale": "niu",
+      "name": "ko e vagahau Niuē",
+      "enabled": false
+    },
+    {
+      "locale": "pau",
+      "name": "a tekoi er a Belau",
+      "enabled": false
+    },
+    {
+      "locale": "pis",
+      "name": "Pijin",
+      "enabled": false
+    },
+    {
+      "locale": "nus",
+      "name": "Thok Nath",
+      "enabled": false
+    },
+    {
+      "locale": "vic",
+      "name": "Virgin Islands Creole",
+      "enabled": false
+    },
+    {
+      "locale": "apc",
+      "name": "العربية الشامية",
+      "enabled": false
+    },
+    {
+      "locale": "tkl",
+      "name": "Gagana Tokelau",
+      "enabled": false
+    },
+    {
+      "locale": "aeb",
+      "name": "تونسي",
+      "enabled": false
+    },
+    {
+      "locale": "to",
+      "name": "lea fakatonga",
+      "enabled": false
+    },
+    {
+      "locale": "tvl",
+      "name": "Te Ggana Tuuvalu",
+      "enabled": false
+    },
+    {
+      "locale": "swb",
+      "name": "Shimaore",
+      "enabled": false
+    },
+    {
+      "locale": "gv",
+      "name": "Gaelg",
+      "enabled": false
+    }
+  ],
+  "fallback_locales": {
+    "as_IN": "bn_BD",
+    "ay": "es_ES",
+    "ceb": "tl",
+    "gn": "es_ES",
+    "gu": "hi_IN",
+    "ht": "fr_FR",
+    "jv": "id_ID",
+    "kk": "ru_RU",
+    "kok": "mr",
+    "ks": "ur",
+    "ky": "ru_RU",
+    "ln": "fr_FR",
+    "lo": "th",
+    "mai": "hi_IN",
+    "mg": "fr_FR",
+    "mr": "hi_IN",
+    "pa_IN": "hi_IN",
+    "pa_PK": "ur",
+    "qu": "es_ES",
+    "rn": "fr_FR",
+    "sd": "ur",
+    "sg": "fr_FR",
+    "su": "id_ID",
+    "tet": "pt_PT",
+    "tg": "ru_RU",
+    "tk": "ru_RU",
+    "uz_UZ": "ru_RU"
+  },
+  "aliases": {
+    "ja_JP": "ja",
+    "ja-JP": "ja",
+    "en_US": "en",
+    "en-US": "en",
+    "fil": "tl"
+  },
+  "public_aliases": {
+    "ja_JP": "ja",
+    "ja-JP": "ja",
+    "en_US": "en",
+    "en-US": "en",
+    "ku_IQ": "ckb",
+    "ku-IQ": "ckb",
+    "ku_TR": "kmr",
+    "ku-TR": "kmr"
+  },
+  "public_alias_preferences": {
+    "pt": "pt_PT",
+    "zh": "zh_Hant",
+    "en": "en",
+    "ja": "ja",
+    "es": "es_ES",
+    "fr": "fr_FR",
+    "it": "it_IT",
+    "ko": "ko_KR",
+    "pa": "pa_IN",
+    "ru": "ru_RU"
+  },
+  "public_fallback_locale": "en"
+}
