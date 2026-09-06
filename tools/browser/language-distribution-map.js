@@ -47,6 +47,7 @@ const motionOverviewBorders = mesh(overviewWorld, overviewWorld.objects.features
 const motionOverviewCoastlines = mesh(overviewWorld, overviewWorld.objects.features, (a, b) => a === b);
 let detailedTopologyPromise = null;
 let disputedFeaturesPromise = null;
+let mapInstanceSequence = 0;
 
 function runBackgroundTask(callback) {
   if (window.scheduler && typeof window.scheduler.postTask === "function") {
@@ -2379,6 +2380,7 @@ function radiusPixels(projection, region, width) {
 
 function createMap(root, data, initialOptions) {
   let options = initialOptions;
+  const selectedBoundaryMaskId = `atlas-selected-boundary-mask-${++mapInstanceSequence}`;
   const projectionModes = ["auto", "azimuthal", "azimuthal-equidistant", "stereographic", "gnomonic", "conic-equal-area", "conic-conformal", "conic-equidistant", "equirectangular", "orthographic", "equal-earth", "natural-earth-1", "mercator", "transverse-mercator"];
   const orientationModes = ["north-up", "northeast-up", "east-up", "southeast-up", "south-up", "southwest-up", "west-up", "northwest-up", "free", "custom"];
   const initialViewState = options.initialViewState || {};
@@ -4986,6 +4988,10 @@ function createMap(root, data, initialOptions) {
   function appendSelectedCountryBoundaryLayer(canvas, path, iso2ByIso3) {
     const previous = canvas.querySelector(".location-map__selected-boundaries");
     if (previous) previous.remove();
+    canvas.querySelectorAll('[data-viewpoint-boundary-mask="true"]').forEach((shape) => {
+      shape.removeAttribute("mask");
+      delete shape.dataset.viewpointBoundaryMask;
+    });
     if (!countryFocused || !selectedCountries.size) {
       root.dataset.mapSelectedBoundaryFeatures = "0";
       root.dataset.mapSelectedBoundaryDisputed = "0";
@@ -4994,21 +5000,30 @@ function createMap(root, data, initialOptions) {
     const countryRows = countryRowsByCode();
     const selected = new Set(selectedCountries);
     const boundaryItems = [];
+    const maskedPathData = [];
     features.forEach((feature) => {
       const info = featureInfo(feature, iso2ByIso3, countryRows);
       const rule = selectionRuleForFeature(data, feature).rule;
+      const isSelected = countryItemIsSelected(info);
+      const pathData = path(feature);
+      if (pathData && info.masksUnderlying && !info.overlayHidden && !isSelected) {
+        // The base country geometry can still contain a disputed territory
+        // that the active viewpoint resolves to another party. Its ordinary
+        // fill is covered by this overlay, so remove the same area from the
+        // separately redrawn selected-country outline as well.
+        maskedPathData.push(pathData);
+      }
       // Keep the selected-country outline in lockstep with the selected fill.
       // A viewpoint can resolve a disputed feature to only one party; using
       // every historical party here would revive a claim that the fill has
       // intentionally hidden.
-      if (!countryItemIsSelected(info)) return;
+      if (!isSelected) return;
       const partyCodes = partyCountriesForRule(rule);
       const relatedCodes = uniqueCodes([
         ...(info.selectionCodes || []),
         ...(info.displayCodes || [])
       ]);
       const disputed = Boolean(info.disputed || partyCodes.length > 1 || (rule && rule.self_administered));
-      const pathData = path(feature);
       if (!pathData) return;
       boundaryItems.push({feature, info, relatedCodes, disputed, pathData});
     });
@@ -5019,6 +5034,41 @@ function createMap(root, data, initialOptions) {
       class: "location-map__selected-boundaries",
       "aria-hidden": "true"
     });
+    let boundaryGroup = group;
+    if (maskedPathData.length) {
+      const viewBox = canvas.ownerSVGElement && canvas.ownerSVGElement.viewBox.baseVal;
+      const width = viewBox && viewBox.width || 1200;
+      const height = viewBox && viewBox.height || 540;
+      const defs = svgElement("defs");
+      const mask = svgElement("mask", {
+        id: selectedBoundaryMaskId,
+        x: 0,
+        y: 0,
+        width,
+        height,
+        maskUnits: "userSpaceOnUse",
+        maskContentUnits: "userSpaceOnUse"
+      });
+      mask.style.setProperty("mask-type", "luminance");
+      mask.append(svgElement("rect", {x: 0, y: 0, width, height, fill: "white"}));
+      maskedPathData.forEach((pathData) => {
+        mask.append(svgElement("path", {
+          d: pathData,
+          fill: "black",
+          stroke: "black",
+          "stroke-width": 6,
+          "vector-effect": "non-scaling-stroke"
+        }));
+      });
+      defs.append(mask);
+      group.append(defs);
+      boundaryGroup = svgElement("g", {mask: `url(#${selectedBoundaryMaskId})`});
+      group.append(boundaryGroup);
+      canvas.querySelectorAll('.location-map__country[data-selected="true"]').forEach((shape) => {
+        shape.setAttribute("mask", `url(#${selectedBoundaryMaskId})`);
+        shape.dataset.viewpointBoundaryMask = "true";
+      });
+    }
     ["halo", "line"].forEach((layer) => {
       boundaryItems.forEach((item) => {
         const shape = svgElement("path", {
@@ -5029,7 +5079,7 @@ function createMap(root, data, initialOptions) {
           "data-disputed": item.disputed ? "true" : "false"
         });
         shape.__atlasFeature = item.feature;
-        group.append(shape);
+        boundaryGroup.append(shape);
       });
     });
     const labelLayer = canvas.querySelector(
