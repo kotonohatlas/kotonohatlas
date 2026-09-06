@@ -4978,17 +4978,16 @@ function createMap(root, data, initialOptions) {
     features.forEach((feature) => {
       const info = featureInfo(feature, iso2ByIso3, countryRows);
       const rule = selectionRuleForFeature(data, feature).rule;
-      // A disputed feature can resolve to only one party under the active
-      // viewpoint. Its outline still belongs to every party's selected-country
-      // context, so use the complete party list for this visual boundary only.
+      // Keep the selected-country outline in lockstep with the selected fill.
+      // A viewpoint can resolve a disputed feature to only one party; using
+      // every historical party here would revive a claim that the fill has
+      // intentionally hidden.
+      if (!countryItemIsSelected(info)) return;
       const partyCodes = partyCountriesForRule(rule);
       const relatedCodes = uniqueCodes([
         ...(info.selectionCodes || []),
-        ...(info.displayCodes || []),
-        ...(info.partyCodes || []),
-        ...partyCodes
+        ...(info.displayCodes || [])
       ]);
-      if (!relatedCodes.some((code) => selected.has(code))) return;
       const disputed = Boolean(info.disputed || partyCodes.length > 1 || (rule && rule.self_administered));
       const pathData = path(feature);
       if (!pathData) return;
