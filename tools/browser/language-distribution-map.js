@@ -1184,6 +1184,22 @@ export function baseCountryFocusFeatureIds(data, countryCodes, featureSource) {
   }));
 }
 
+function worldCenterLongitudeForViewpoint(data, viewpointCountry, featureSource) {
+  const country = viewpointCountryCode(viewpointCountry);
+  if (!country) return DEFAULT_WORLD_CENTER_LONGITUDE;
+  const featureIds = baseCountryFocusFeatureIds(data, new Set([country]), featureSource);
+  const countryFeatures = (featureSource || []).filter((item) => (
+    item && item.properties && featureIds.has(item.properties.id)
+  ));
+  if (!countryFeatures.length) return DEFAULT_WORLD_CENTER_LONGITUDE;
+  const longitude = Number(geoCentroid({
+    type: "FeatureCollection",
+    features: countryFeatures
+  })[0]);
+  if (!Number.isFinite(longitude)) return DEFAULT_WORLD_CENTER_LONGITUDE;
+  return longitude >= -75 && longitude <= 75 ? 0 : DEFAULT_WORLD_CENTER_LONGITUDE;
+}
+
 export function languageCountryContextDrivesCamera(contextCountries, preserveCamera = false) {
   return Boolean((contextCountries || []).length) && !preserveCamera;
 }
@@ -2308,7 +2324,8 @@ function distributionRegionFocusFeature(region) {
 
 function fitProjection(width, height, data, language, countryCodes = [], featureId = "", forceWorld = false, viewpointCountry = "", projectionMode = "auto", featureSource = features, orientationMode = "north-up", orientationRoll = 0, languageRegionFeatures = [], regionalCountryReplacements = []) {
   const inset = width < 520 ? 8 : 14;
-  if (forceWorld) return worldProjection(width, height, inset, DEFAULT_WORLD_CENTER_LONGITUDE, projectionMode, orientationMode, orientationRoll);
+  const defaultWorldCenterLongitude = worldCenterLongitudeForViewpoint(data, viewpointCountry, featureSource);
+  if (forceWorld) return worldProjection(width, height, inset, defaultWorldCenterLongitude, projectionMode, orientationMode, orientationRoll);
   const iso2ByIso3 = countryCodeIndex(data);
   const countrySet = new Set(countryCodes || []);
   const focusFeatures = countrySelectionFocusFeatures(data, countryCodes, featureId, featureSource);
@@ -2364,7 +2381,7 @@ function fitProjection(width, height, data, language, countryCodes = [], feature
       return focusedProjection(collection, languageFocusFeatures, width, height, inset, data, LANGUAGE_FOCUS_PADDING_RATIO, false, projectionMode, orientationMode, orientationRoll);
     }
   }
-  return worldProjection(width, height, inset, DEFAULT_WORLD_CENTER_LONGITUDE, projectionMode, orientationMode, orientationRoll);
+  return worldProjection(width, height, inset, defaultWorldCenterLongitude, projectionMode, orientationMode, orientationRoll);
 }
 
 function radiusPixels(projection, region, width) {
@@ -2416,8 +2433,10 @@ function createMap(root, data, initialOptions) {
   let projectionMode = projectionModes.includes(initialViewState.projection) ? initialViewState.projection : "auto";
   let pendingProjectionView = initialCenter.length === 2
     && initialCenter.every(Number.isFinite)
-    && Number.isFinite(initialZoom)
-    ? {center: initialCenter, zoom: initialZoom}
+    ? {
+        center: initialCenter,
+        ...(Number.isFinite(initialZoom) ? {zoom: initialZoom} : {})
+      }
     : null;
   let movementMode = initialViewState.movement === "planar"
     ? "planar"
@@ -6894,7 +6913,7 @@ function createMap(root, data, initialOptions) {
       pendingProjectionView = null;
       const requestedScale = Number.isFinite(view.zoom)
         ? projectionScaleForAbsoluteZoom(view.zoom)
-        : view.scale;
+        : (Number.isFinite(view.scale) ? view.scale : fittedProjection.scale());
       if (view.center && view.center.every(Number.isFinite) && Number.isFinite(requestedScale)) {
         const roll = fittedProjection.rotate()[2] || 0;
         projection = cloneProjection(fittedProjection);
@@ -6961,7 +6980,9 @@ function createMap(root, data, initialOptions) {
       pendingProjectionView = null;
       const point = view.center && view.center.every(Number.isFinite) ? projection(view.center) : null;
       const zoomLevel = Number(view.zoom);
-      const requestedScale = projectionScaleForAbsoluteZoom(zoomLevel);
+      const requestedScale = Number.isFinite(zoomLevel)
+        ? projectionScaleForAbsoluteZoom(zoomLevel)
+        : projection.scale();
       if (point && point.every(Number.isFinite) && Number.isFinite(requestedScale)) {
         const transformScale = requestedScale / projection.scale();
         navigationTransform = zoomIdentity
@@ -7429,8 +7450,10 @@ function createMap(root, data, initialOptions) {
       orientationRoll = nextRoll;
       pendingProjectionView = center.length === 2
         && center.every(Number.isFinite)
-        && Number.isFinite(zoomLevel)
-        ? {center, zoom: zoomLevel}
+        ? {
+            center,
+            ...(Number.isFinite(zoomLevel) ? {zoom: zoomLevel} : {})
+          }
         : null;
       cameraCustomized = Boolean(pendingProjectionView);
       root.dataset.mapProjection = projectionMode;

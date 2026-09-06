@@ -647,6 +647,10 @@
     var selectedCountryFeatureId = "";
     var countryDetailActive = true;
     var countrySelectionChanged = false;
+    // Read this before any asynchronous locale lookup can resolve.  Otherwise
+    // a fast (or cached) IP-country response can select and focus that country
+    // before an explicit `c=` world view is parsed below.
+    var initialCountryParameterPresent = hasCountryParameterInUrl();
     var explicitWorldSelection = false;
     var countryPrefetchEnabled = false;
     var countryMatches = [];
@@ -3190,6 +3194,11 @@
     function deleteUrlParameter(params, key) {
       params.delete(key);
     }
+    function hasCountryParameterInUrl() {
+      try {
+        return new URLSearchParams(window.location.search).has("c");
+      } catch (e) { return false; }
+    }
     function explicitWorldFromUrl() {
       try {
         var params = new URLSearchParams(window.location.search);
@@ -3271,9 +3280,9 @@
         var longitude = Number(urlParameter(params, "lon"));
         var latitude = Number(urlParameter(params, "lat"));
         var zoom = Number(urlParameter(params, "z"));
-        if (hasUrlParameter(params, "lon") && hasUrlParameter(params, "lat") && hasUrlParameter(params, "z") && Number.isFinite(longitude) && Number.isFinite(latitude) && Number.isFinite(zoom)) {
+        if (hasUrlParameter(params, "lon") && hasUrlParameter(params, "lat") && Number.isFinite(longitude) && Number.isFinite(latitude)) {
           state.center = [longitude, latitude];
-          state.zoom = zoom;
+          if (hasUrlParameter(params, "z") && Number.isFinite(zoom)) state.zoom = zoom;
         }
         return state;
       } catch (e) { return null; }
@@ -3839,7 +3848,7 @@
           languageMapOptionsDirty = true;
           scheduleLanguageMapUpdate();
         }
-        if (initialMapFocus) return;
+        if (initialCountryParameterPresent || initialMapFocus) return;
         if (!countrySelectionChanged && allCountries().indexOf(country) !== -1) {
           if (country !== selectedCountry) chooseCountry(country, false);
           else if (languageMapController && selectionState.mode !== "language") {
