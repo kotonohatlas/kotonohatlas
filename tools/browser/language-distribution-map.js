@@ -6375,12 +6375,17 @@ function createMap(root, data, initialOptions) {
     planarProjection = cloneProjection(projection);
     const selection = select(svg);
     const limits = navigationLimits(path, width, height);
+    const currentScale = Math.max(1e-9, navigationTransform.k);
+    const scaleExtent = [
+      Math.min(currentScale, limits.scaleExtent[0]),
+      Math.max(currentScale, limits.scaleExtent[1])
+    ];
     let hydrated = !deferredOffscreen;
     let gestureStartTransform = zoomIdentity;
     let gestureActive = false;
     selection.on(".zoom", null);
     zoomBehavior = zoom()
-      .scaleExtent(limits.scaleExtent)
+      .scaleExtent(scaleExtent)
       .extent([[0, 0], [width, height]])
       .translateExtent([[-width * 100, -height * 100], [width * 101, height * 101]])
       .clickDistance(4)
@@ -6430,18 +6435,17 @@ function createMap(root, data, initialOptions) {
     syncZoomControls();
   }
 
-  function enableGlobeNavigation(canvas, projection, path, width, height, preserveScaleExtent = false, defaultGestureMode = "orbit") {
+  function enableGlobeNavigation(canvas, projection, path, width, height, defaultGestureMode = "orbit") {
     planarProjection = null;
     const generation = ++navigationGeneration;
     const selection = select(svg);
     const limits = navigationLimits(path, width, height);
     const fittedScale = Math.max(1, fittedProjectionScale || projection.scale());
-    if (!preserveScaleExtent || !projectionScaleExtent.every(Number.isFinite)) {
-      projectionScaleExtent = [
-        Math.max(1, fittedScale * limits.scaleExtent[0]),
-        Math.max(fittedScale, fittedScale * limits.scaleExtent[1])
-      ];
-    }
+    const currentScale = Math.max(1, projection.scale());
+    projectionScaleExtent = [
+      Math.max(1, currentScale * limits.scaleExtent[0]),
+      Math.max(currentScale, fittedScale * MAXIMUM_NAVIGATION_ZOOM)
+    ];
     activeProjection = cloneProjection(projection);
     let gestureProjection = cloneProjection(activeProjection);
     let latestTransform = zoomIdentity;
@@ -6689,7 +6693,6 @@ function createMap(root, data, initialOptions) {
         path,
         width,
         height,
-        preserveNavigation,
         movementMode === "planar" ? "pan" : "orbit"
       );
       return;
@@ -6894,11 +6897,6 @@ function createMap(root, data, initialOptions) {
         : view.scale;
       if (view.center && view.center.every(Number.isFinite) && Number.isFinite(requestedScale)) {
         const roll = fittedProjection.rotate()[2] || 0;
-        const minimumScale = Math.max(
-          1,
-          fittedProjection.scale() * navigationLimits(geoPath(fittedProjection), width, height).scaleExtent[0]
-        );
-        const maximumScale = fittedProjection.scale() * MAXIMUM_NAVIGATION_ZOOM;
         projection = cloneProjection(fittedProjection);
         if (projectionFamily(projection) === "transverse-mercator") {
           projection
@@ -6910,7 +6908,7 @@ function createMap(root, data, initialOptions) {
             .rotate([-view.center[0], -view.center[1], roll]);
         }
         projection
-          .scale(Math.max(minimumScale, Math.min(maximumScale, requestedScale)))
+          .scale(requestedScale)
           .translate([width / 2, height / 2]);
       }
     }
@@ -6965,11 +6963,7 @@ function createMap(root, data, initialOptions) {
       const zoomLevel = Number(view.zoom);
       const requestedScale = projectionScaleForAbsoluteZoom(zoomLevel);
       if (point && point.every(Number.isFinite) && Number.isFinite(requestedScale)) {
-        const limits = navigationLimits(path, width, height);
-        const transformScale = Math.max(
-          limits.scaleExtent[0],
-          Math.min(limits.scaleExtent[1], requestedScale / projection.scale())
-        );
+        const transformScale = requestedScale / projection.scale();
         navigationTransform = zoomIdentity
           .translate(width / 2 - point[0] * transformScale, height / 2 - point[1] * transformScale)
           .scale(transformScale);
