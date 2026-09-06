@@ -11,6 +11,8 @@ const {localeContext} = globalThis.AtlasLocaleResolution;
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const DEFAULT_WORLD_CENTER_LONGITUDE = 150;
+const ATLANTIC_WORLD_CENTER_LONGITUDE = 10;
+const AMERICAS_WORLD_CENTER_LONGITUDE = -90;
 // Evaluate small detached parts against the complete set being fitted. The
 // largest polygon of every focused country or standalone Admin-1 region
 // remains required, so a small but intentional anchor such as Fiji is never
@@ -1197,7 +1199,19 @@ function worldCenterLongitudeForViewpoint(data, viewpointCountry, featureSource)
     features: countryFeatures
   })[0]);
   if (!Number.isFinite(longitude)) return DEFAULT_WORLD_CENTER_LONGITUDE;
-  return longitude >= -75 && longitude <= 75 ? 0 : DEFAULT_WORLD_CENTER_LONGITUDE;
+  // Pick the nearest of three regional world centres on a circular longitude
+  // axis. Their opposite seams keep the principal landmass for that viewpoint
+  // together: the Americas at 90°W, Europe/Africa at 10°E, and Asia/Pacific at
+  // 150°E.
+  return [
+    AMERICAS_WORLD_CENTER_LONGITUDE,
+    ATLANTIC_WORLD_CENTER_LONGITUDE,
+    DEFAULT_WORLD_CENTER_LONGITUDE
+  ].reduce((nearest, candidate) => {
+    const candidateDistance = Math.abs(normalizeRotationLongitude(longitude - candidate));
+    const nearestDistance = Math.abs(normalizeRotationLongitude(longitude - nearest));
+    return candidateDistance < nearestDistance ? candidate : nearest;
+  }, DEFAULT_WORLD_CENTER_LONGITUDE);
 }
 
 export function languageCountryContextDrivesCamera(contextCountries, preserveCamera = false) {
