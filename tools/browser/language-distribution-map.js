@@ -1255,7 +1255,7 @@ export function viewpointResolutionForRule(rule, viewpointCountry, viewpointGrou
   ));
   if (exact) return exact;
   const fallbackViewpoint = rule.default_viewpoint_country || defaultViewpointCountry;
-  const fallback = partyCountriesForRule(rule).includes(fallbackViewpoint)
+  const fallback = fallbackViewpoint
     ? rule.viewpoint_resolutions.find((resolution) => (
         !resolution.default && resolutionMatchesViewpoint(resolution, fallbackViewpoint, viewpointGroups)
       ))
@@ -1268,17 +1268,33 @@ function resolutionSelectionCountries(resolution) {
   return uniqueCodes(resolution.selection_countries || resolution.countries);
 }
 
-export function partyEquivalentSelectionForRule(rule, viewpointCountry, defaultViewpointCountry = "") {
-  if (!rule) return [];
+function partyEquivalentSelectionForViewpoint(rule, viewpointCountry) {
+  if (!rule || !viewpointCountry) return [];
   const parties = partyCountriesForRule(rule);
-  if (viewpointCountry && parties.includes(viewpointCountry)) return [viewpointCountry];
+  if (parties.includes(viewpointCountry)) return [viewpointCountry];
   const match = Object.entries(rule.party_equivalent_viewpoint_selections || {}).find(([, viewpoints]) => (
     Array.isArray(viewpoints) && viewpoints.includes(viewpointCountry)
   ));
-  if (match) return [match[0]];
-  if (viewpointSelectionForRule(rule, viewpointCountry).length) return [];
+  return match ? [match[0]] : [];
+}
+
+export function partyEquivalentSelectionForRule(rule, viewpointCountry, defaultViewpointCountry = "") {
+  if (!rule) return [];
+  const viewpointEquivalent = partyEquivalentSelectionForViewpoint(rule, viewpointCountry);
+  if (viewpointEquivalent.length) return viewpointEquivalent;
   const fallbackViewpoint = rule.default_viewpoint_country || defaultViewpointCountry;
-  return parties.includes(fallbackViewpoint) ? [fallbackViewpoint] : [];
+  const viewpointSelection = viewpointSelectionForRule(rule, viewpointCountry);
+  const fallbackEquivalent = partyEquivalentSelectionForViewpoint(rule, fallbackViewpoint);
+  if (viewpointSelection.length) {
+    // The configured viewpoint is a presentation floor. Promote a weaker
+    // third-country position only when it resolves to the same party as a
+    // stronger party-equivalent configured position. An opposing position
+    // from the current access country still takes precedence.
+    return fallbackEquivalent.length && viewpointSelection[0] === fallbackEquivalent[0]
+      ? fallbackEquivalent
+      : [];
+  }
+  return fallbackEquivalent;
 }
 
 export function selectionCountriesForRule(rule, viewpointCountry, viewpointGroups = {}, defaultViewpointCountry = "") {
@@ -1289,6 +1305,9 @@ export function selectionCountriesForRule(rule, viewpointCountry, viewpointGroup
   if (partyEquivalentSelection.length) return partyEquivalentSelection;
   const viewpointSelection = viewpointSelectionForRule(rule, viewpointCountry);
   if (viewpointSelection.length) return viewpointSelection;
+  const fallbackViewpoint = rule.default_viewpoint_country || defaultViewpointCountry;
+  const fallbackSelection = viewpointSelectionForRule(rule, fallbackViewpoint);
+  if (fallbackSelection.length) return fallbackSelection;
   if (Array.isArray(rule.default_viewpoint_selection)) {
     return uniqueCodes(rule.default_viewpoint_selection);
   }

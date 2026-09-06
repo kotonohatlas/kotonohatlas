@@ -184,8 +184,8 @@ lifecycle may call `renderHostLanguageLabels()` there instead. Likewise, the hos
 Kotonohatlas does not choose a country as its default territorial viewpoint. When no current access-country viewpoint
 matches a territorial rule, the rule's neutral default is used.
 
-An embedding site may inject one configured viewpoint. By default it acts as a fallback after the current access-country
-viewpoint. The value is an ISO 3166-1 alpha-2 country code:
+An embedding site may inject one configured viewpoint. By default it acts as a presentation floor after the current
+access-country viewpoint. The value is an ISO 3166-1 alpha-2 country code:
 
 ```html
 <meta name="atlas-viewpoint" content="NZ">
@@ -197,9 +197,12 @@ The equivalent document-level attribute is also supported:
 <html data-atlas-viewpoint="NZ">
 ```
 
-Direct map integrations may instead pass `viewpoint: "NZ"` to `mount()` or `update()`. An explicit current
-`viewpointCountry` still takes priority. For example, the configured default does not override the Russian resolution
-for a visitor whose current viewpoint is Russia.
+Direct map integrations may instead pass `viewpoint: "NZ"` to `mount()` or `update()`. The configured country is
+resolved through every territorial rule just like an access-country viewpoint: it may therefore supply a party-equivalent
+position, a third-country position, or no position for that dispute. A neutral access country inherits that result. A
+known position on the same side is promoted only when the configured viewpoint has a stronger party-equivalent position;
+a known position on the opposing side still takes priority. For example, a configured Japanese viewpoint does not
+override the Russian resolution for a visitor whose current viewpoint is Russia.
 
 To apply the configured viewpoint regardless of the current access country, enable its override flag:
 
