@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "version": 1,
+  "version": 2,
   "locales": [
     {
       "id": "ja",
@@ -717,6 +717,8 @@
       "sortScript": "Writing system",
       "sortCountry": "Country / territory reach",
       "sortCode": "Locale code",
+      "supportAll": "All languages",
+      "supportOnly": "Supported by this site",
       "unsupported": "Not supported",
       "about": "About",
       "show": "Showing",
@@ -1007,6 +1009,8 @@
       "sortScript": "文字体系順",
       "sortCountry": "関連国・地域数順",
       "sortCode": "ロケールコード順",
+      "supportAll": "すべての言語",
+      "supportOnly": "このサイトの対応言語のみ",
       "unsupported": "未対応",
       "about": "概要",
       "show": "表示",

@@ -139,11 +139,50 @@ URL. Omitting the manifest produces a standalone atlas with no edition links. Th
 subset of the Atlas-localized set, but the two sets are not assumed to be equal. Atlas does not infer publication by
 scanning a host build tree.
 
+When the manifest identifies a non-empty proper subset of the localized Atlas catalog, the catalog toolbar exposes an
+all-languages／host-supported-only filter. It is hidden for standalone builds with no publication manifest and when
+every localized Atlas locale is published, because filtering would not change the result.
+
 FrontISTR is one integration example: its adapter reads FrontISTR's own build manifest, converts only the published
 locale IDs into this contract, and then injects FrontISTR-specific introductory copy. Kotonohatlas never imports
 FrontISTR code or reads its translation/review workflow.
 
 ## Catalog extension points
+
+### Host-defined sorting
+
+The catalog exposes `window.Kotonohatlas.catalog.registerSort()` after initialization and emits
+`atlas:catalog-api-ready` on `window` with the same API in `event.detail`. A host may therefore add an ordering rule
+without adding its project concepts to Kotonohatlas. For example, a translation project can map its own waves to an
+ordinary numeric rank:
+
+```js
+const waveByLocale = {en: 0, ja: 0, fr_FR: 1};
+
+function registerWaveSort(api) {
+  api.registerSort({
+    id: "translation-wave",
+    label: (language) => language === "ja" ? "翻訳Wave順" : "Translation wave",
+    selected: true,
+    compare: (left, right) =>
+      (waveByLocale[left.locale] ?? Number.POSITIVE_INFINITY) -
+      (waveByLocale[right.locale] ?? Number.POSITIVE_INFINITY),
+  });
+}
+
+if (window.Kotonohatlas?.catalog) registerWaveSort(window.Kotonohatlas.catalog);
+else window.addEventListener("atlas:catalog-api-ready", (event) => registerWaveSort(event.detail), {once: true});
+```
+
+The `id` is host-owned and appears in the selector as `host:<id>`. `label` may be a string or a function receiving the
+current Atlas interface language. `compare` receives two read-only locale rows and a context object containing
+`language`; returning zero delegates tie-breaking to Atlas's localized name order. Registering the same ID replaces its
+comparison and label. `unregisterSort(id)` removes it, and `render()` reapplies the current catalog selection.
+
+This is deliberately an ordering hook rather than a built-in wave, quality, or editorial-status model. Those meanings,
+their data, and any labels displayed in the cards remain host-owned.
+
+### Host content and per-language labels
 
 The generated page also preserves one empty container after the language catalog:
 

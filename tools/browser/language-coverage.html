@@ -422,7 +422,7 @@
     .role-global { --role-ink: #3d4770; --role-bg: #f0f2f8; }
     .role-block .chip:not(.unsupported), .language-representative-country[class*="role-"] { color: var(--role-ink); background: var(--role-bg); }
     .role-block button.chip:not(.unsupported):hover, .language-representative-country[class*="role-"]:hover { color: #fff; background: var(--role-ink); }
-    .toolbar { display: grid; grid-template-columns: minmax(260px, 1fr) auto; gap: .65rem; margin-bottom: 1rem; }
+    .toolbar { display: grid; grid-template-columns: minmax(260px, 1fr) repeat(2, auto); gap: .65rem; margin-bottom: 1rem; }
     .toolbar select { width: auto; min-width: 155px; }
     .catalog-count { color: var(--muted); font-size: .82rem; white-space: nowrap; }
     .catalog { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .65rem; }
@@ -607,6 +607,10 @@
       </div>
       <div class="toolbar">
         <input type="search" id="search" data-i18n-placeholder="searchPlaceholder" placeholder="言語名・コード・国">
+        <select id="support-filter" hidden>
+          <option value="all" data-i18n="supportAll">すべての言語</option>
+          <option value="supported" data-i18n="supportOnly">このサイトの対応言語のみ</option>
+        </select>
         <select id="sort-order">
           <option value="name" data-i18n="sortName" selected>名前順</option>
           <option value="population-desc" data-i18n="sortPopulationDesc">話者人口：多い順</option>
@@ -706,6 +710,10 @@
     var catalogLocales = data.locales;
     var mapLocales = catalogLocales.slice();
     var taxonomyLocales = data.locales.slice();
+    var hostCatalogSorts = new Map();
+    var supportedLocaleCount = catalogLocales.filter(function (row) { return row.published; }).length;
+    var supportFilter = document.getElementById("support-filter");
+    supportFilter.hidden = supportedLocaleCount === 0 || supportedLocaleCount === catalogLocales.length;
     var languageParentGroups = {
       pt: ["pt-BR", "pt-PT"],
       pa: ["pa-Guru", "pa-Arab"],
@@ -1527,6 +1535,7 @@
         document.getElementById("script-context-clear").setAttribute("aria-label", clearScriptLabel);
         document.getElementById("script-context-clear").title = clearScriptLabel;
       }
+      updateHostCatalogSortLabels();
     }
 
     function renderAtlasCopyImmediately() {
@@ -1537,6 +1546,7 @@
         var translated = copy[lang][node.dataset.i18n];
         if (translated) node.textContent = translated;
       });
+      updateHostCatalogSortLabels();
     }
     function rowsForFamily(family) {
       return mapLocales.filter(function (row) {
@@ -2752,13 +2762,79 @@
     function nameCompare(a, b) {
       return languageName(a).localeCompare(languageName(b), lang) || a.locale.localeCompare(b.locale);
     }
+    function hostCatalogSortLabel(entry) {
+      if (!entry) return "";
+      try {
+        return String(typeof entry.label === "function" ? entry.label(lang) : entry.label || entry.id);
+      } catch (error) {
+        if (!entry.labelErrorReported) {
+          entry.labelErrorReported = true;
+          console.error("Kotonohatlas host catalog sort label failed", error);
+        }
+        return entry.id;
+      }
+    }
+    function updateHostCatalogSortLabels() {
+      hostCatalogSorts.forEach(function (entry, value) {
+        var option = Array.from(document.getElementById("sort-order").options).find(function (item) {
+          return item.value === value;
+        });
+        if (option) option.textContent = hostCatalogSortLabel(entry);
+      });
+    }
+    function registerHostCatalogSort(config) {
+      if (!config || typeof config.compare !== "function") throw new TypeError("catalog sort compare must be a function");
+      var id = String(config.id || "").trim();
+      if (!/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(id)) throw new TypeError("catalog sort id is invalid");
+      var value = "host:" + id;
+      var entry = {
+        id:id,
+        label:config.label || id,
+        compare:config.compare,
+        compareErrorReported:false,
+        labelErrorReported:false
+      };
+      hostCatalogSorts.set(value, entry);
+      var select = document.getElementById("sort-order");
+      var option = Array.from(select.options).find(function (item) { return item.value === value; });
+      if (!option) {
+        option = document.createElement("option");
+        option.value = value;
+        option.dataset.atlasHostSort = id;
+        select.appendChild(option);
+      }
+      option.textContent = hostCatalogSortLabel(entry);
+      if (config.selected) select.value = value;
+      if (!initializingCoverage) renderCatalog();
+      return value;
+    }
+    function unregisterHostCatalogSort(id) {
+      var value = "host:" + String(id || "").trim();
+      if (!hostCatalogSorts.delete(value)) return false;
+      var select = document.getElementById("sort-order");
+      var option = Array.from(select.options).find(function (item) { return item.value === value; });
+      if (option) option.remove();
+      if (select.value === value || !select.value) select.value = "name";
+      if (!initializingCoverage) renderCatalog();
+      return true;
+    }
     function countryReach(row) {
       var rel = countryByLocale.get(row.locale);
       return new Set([].concat(rel.countrywide, rel.official, rel.regional, rel.protected, rel.neighborCountrywide, rel.resident, rel.neighborOfficial)).size;
     }
     function compareRows(a, b, order) {
       var result = 0;
-      if (order === "population-desc" || order === "population-asc") {
+      var hostSort = hostCatalogSorts.get(order);
+      if (hostSort) {
+        try {
+          result = Number(hostSort.compare(a, b, {language:lang})) || 0;
+        } catch (error) {
+          if (!hostSort.compareErrorReported) {
+            hostSort.compareErrorReported = true;
+            console.error("Kotonohatlas host catalog sort failed", error);
+          }
+        }
+      } else if (order === "population-desc" || order === "population-asc") {
         var aPopulation = typeof a.speaker_estimate === "number" ? a.speaker_estimate : (order === "population-desc" ? -1 : Infinity);
         var bPopulation = typeof b.speaker_estimate === "number" ? b.speaker_estimate : (order === "population-desc" ? -1 : Infinity);
         result = order === "population-desc" ? bPopulation - aPopulation : aPopulation - bPopulation;
@@ -3139,11 +3215,12 @@
     function renderCatalog(selectedSummaryAlreadyRendered) {
       if (selectedSummaryAlreadyRendered !== true) renderSelectedLanguageDetail();
       var query = norm(document.getElementById("search").value), order = document.getElementById("sort-order").value;
+      var supportedOnly = document.getElementById("support-filter").value === "supported";
       var exactCodeQuery = query && catalogLocales.some(function (row) { return codeForms(row).indexOf(query) !== -1; });
       var countryLocales = selectionState.mode === "none" ? null : selectionState.languages;
       var rows = catalogLocales.filter(function (row) {
         var searchMatch = !query || (exactCodeQuery ? codeForms(row).indexOf(query) !== -1 : searchText(row).indexOf(query) !== -1);
-        return (!countryLocales || countryLocales.has(row.locale)) && searchMatch;
+        return (!supportedOnly || row.published) && (!countryLocales || countryLocales.has(row.locale)) && searchMatch;
       });
       rows.sort(function (a, b) { return compareRows(a, b, order); });
       document.getElementById("catalog").innerHTML = rows.length ? rows.map(card).join("") : '<div class="empty">' + esc(t("noMatchingLocales")) + '</div>';
@@ -3798,6 +3875,15 @@
       if (event.target.closest("[data-clear-language]")) clearLanguageContext();
     });
     document.getElementById("sort-order").addEventListener("change", renderCatalog);
+    document.getElementById("support-filter").addEventListener("change", renderCatalog);
+    var catalogExtensionApi = {
+      registerSort: registerHostCatalogSort,
+      unregisterSort: unregisterHostCatalogSort,
+      render: renderCatalog
+    };
+    window.Kotonohatlas = window.Kotonohatlas || {};
+    window.Kotonohatlas.catalog = catalogExtensionApi;
+    window.dispatchEvent(new CustomEvent("atlas:catalog-api-ready", {detail:catalogExtensionApi}));
     document.getElementById("family-map-back").addEventListener("click", function () {
       if (familySelectionContext) showFamilyOnMap(familySelectionContext.family, familySelectionContext.label);
       else if (scriptSelectionContext) showScriptOnMap(scriptSelectionContext.script, scriptSelectionContext.label);
