@@ -711,9 +711,11 @@
     var mapLocales = catalogLocales.slice();
     var taxonomyLocales = data.locales.slice();
     var hostCatalogSorts = new Map();
-    var supportedLocaleCount = catalogLocales.filter(function (row) { return row.published; }).length;
     var supportFilter = document.getElementById("support-filter");
-    supportFilter.hidden = supportedLocaleCount === 0 || supportedLocaleCount === catalogLocales.length;
+    function syncSupportFilterVisibility() {
+      var supportedLocaleCount = catalogLocales.filter(function (row) { return row.published; }).length;
+      supportFilter.hidden = supportedLocaleCount === 0 || supportedLocaleCount === catalogLocales.length;
+    }
     var languageParentGroups = {
       pt: ["pt-BR", "pt-PT"],
       pa: ["pa-Guru", "pa-Arab"],
@@ -3890,6 +3892,7 @@
     });
     Promise.all([loadLinguisticCore(), loadUiLanguage(lang, uiLocaleContext)]).then(function () {
       hydrateAccessOnlyLocales();
+      syncSupportFilterVisibility();
       warmLanguageSearchIndex(false);
       populateLanguageSelector();
       explicitWorldSelection = explicitWorldFromUrl();
