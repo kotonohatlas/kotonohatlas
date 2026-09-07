@@ -8,6 +8,31 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class MapToponymResolutionTests(unittest.TestCase):
+    def test_motion_preview_prefers_matching_overview_geometry(self):
+        runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
+        script = f"""
+          import {{motionPreviewFeature}} from {json.dumps(runtime)};
+          const detailed = {{properties:{{id:'overlay'}}, resolution:'detail'}};
+          const overview = {{properties:{{id:'overlay'}}, resolution:'overview'}};
+          const extracted = {{properties:{{id:'extracted'}}, resolution:'detail'}};
+          const index = new Map([['overlay', overview]]);
+          console.log(JSON.stringify({{
+            matched: motionPreviewFeature(detailed, index).resolution,
+            fallback: motionPreviewFeature(extracted, index).resolution
+          }}));
+        """
+        completed = subprocess.run(
+            ["node", "--input-type=module", "--eval", script],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(
+            json.loads(completed.stdout),
+            {"matched": "overview", "fallback": "detail"},
+        )
+
     def test_motion_preview_keeps_semantic_overlays_in_paint_order(self):
         runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
         script = f"""

@@ -77,6 +77,11 @@ function motionPaintKey(paint) {
   ].join("\u0000");
 }
 
+export function motionPreviewFeature(item, overviewFeaturesById) {
+  const featureId = item && item.properties && item.properties.id;
+  return (featureId && overviewFeaturesById.get(featureId)) || item;
+}
+
 export function motionShapeDrawPlan(entries, resolvePaint = (entry) => entry.paint) {
   const baseGroups = new Map();
   const orderedGroups = [];
@@ -5955,17 +5960,12 @@ function createMap(root, data, initialOptions) {
       motionShapes.push({
         shape,
         feature: shape.__atlasFeature,
-        // Ordinary countries can use the topology-safe 110m feature while a
-        // gesture is active.  Both fills and borders then come from the same
-        // resolution and pass through D3's geographic clipper, so the preview
-        // cannot grow seam-crossing triangles or expose a mismatched 10m/110m
-        // coastline.  Semantic overlays (disputes, claims, extracted regions)
-        // stay on their detailed geometry because their small boundaries are
-        // the information being presented.
-        motionFeature: ordered
-          ? shape.__atlasFeature
-          : (overviewFeaturesById.get(shape.__atlasFeature.properties.id)
-            || shape.__atlasFeature),
+        // Prefer the matching 110m feature for every motion shape, including
+        // disputes and region overlays. Parent countries and their separately
+        // supplied territories then share the same generalized boundary and
+        // join without a 10m/110m seam. Only extracted regions absent from the
+        // overview data retain their detailed geometry as a fallback.
+        motionFeature: motionPreviewFeature(shape.__atlasFeature, overviewFeaturesById),
         ordered,
         vertexStart: 0,
         vertexCount: 0,

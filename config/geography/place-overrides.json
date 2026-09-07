@@ -169,6 +169,7 @@
     },
     "SO": {
       "budget": 3,
+      "administrative_center": "Mogadishu",
       "priority": ["Mogadishu", "Hargeisa", "Kismaayo"]
     },
     "SK": {
