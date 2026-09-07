@@ -63,6 +63,45 @@ function runBackgroundTask(callback) {
   });
 }
 
+function motionPaintKey(paint) {
+  return [
+    paint.fill,
+    paint.fillOpacity,
+    paint.fillRule,
+    paint.stroke,
+    paint.strokeOpacity,
+    paint.strokeWidth,
+    paint.opacity,
+    paint.lineCap,
+    paint.lineJoin
+  ].join("\u0000");
+}
+
+export function motionShapeDrawPlan(entries, resolvePaint = (entry) => entry.paint) {
+  const baseGroups = new Map();
+  const orderedGroups = [];
+  let orderedKey = null;
+  entries.forEach((entry) => {
+    const paint = resolvePaint(entry);
+    if (paint.opacity <= 0
+      || ((paint.fill === "none" || paint.fillOpacity <= 0)
+        && (paint.stroke === "none" || paint.strokeOpacity <= 0 || paint.strokeWidth <= 0))) return;
+    if (entry.ordered) {
+      const key = motionPaintKey(paint);
+      if (key !== orderedKey) {
+        orderedGroups.push({paint, features: []});
+        orderedKey = key;
+      }
+      orderedGroups[orderedGroups.length - 1].features.push(entry.motionFeature);
+      return;
+    }
+    const key = motionPaintKey(paint);
+    if (!baseGroups.has(key)) baseGroups.set(key, {paint, features: []});
+    baseGroups.get(key).features.push(entry.motionFeature);
+  });
+  return {baseGroups: Array.from(baseGroups.values()), orderedGroups};
+}
+
 function geometryPolygons(item) {
   if (!item || !item.geometry) return [];
   if (item.geometry.type === "Polygon") return [item.geometry.coordinates];
@@ -5900,18 +5939,6 @@ function createMap(root, data, initialOptions) {
       context.globalAlpha = 1;
     };
 
-    const paintKey = (paint) => [
-      paint.fill,
-      paint.fillOpacity,
-      paint.fillRule,
-      paint.stroke,
-      paint.strokeOpacity,
-      paint.strokeWidth,
-      paint.opacity,
-      paint.lineCap,
-      paint.lineJoin
-    ].join("\u0000");
-
     const semanticAttributes = [
       "role", "disputed", "settledBoundary",
       "regionOverlay", "masksUnderlying", "viewpointLevel", "selected", "claimOnly"
@@ -5925,10 +5952,6 @@ function createMap(root, data, initialOptions) {
         || attributes.regionOverlay === "true"
         || attributes.masksUnderlying === "true"
         || attributes.claimOnly === "true";
-      // Keep all selectable overlay geometry in the static mesh. An overlay
-      // that is not currently selected is transparent; changing countries
-      // then only updates its colour buffer instead of rebuilding and
-      // retriangulating the complete 10m scene.
       motionShapes.push({
         shape,
         feature: shape.__atlasFeature,
@@ -5949,11 +5972,7 @@ function createMap(root, data, initialOptions) {
         color: null
       });
     });
-    const effectivePaint = (entry) => {
-      const paint = paintFor(entry.shape);
-      if (!entry.ordered || entry.shape.dataset.selected === "true") return paint;
-      return {...paint, fillOpacity: 0, strokeOpacity: 0};
-    };
+    const effectivePaint = (entry) => paintFor(entry.shape);
     const borderPaint = paintFor(settledCanvas.querySelector(".location-map__borders"));
     const coastlinePaint = paintFor(settledCanvas.querySelector(".location-map__coastlines"));
     const minorGraticulePaint = paintFor(settledCanvas.querySelector(".location-map__graticule--minor"));
@@ -6298,24 +6317,23 @@ function createMap(root, data, initialOptions) {
     const drawExactMotionShapes = (path) => {
       // Most ordinary country shapes share one paint.  Feeding those features
       // to a single geographic stream preserves D3's seam/horizon clipping
-      // while avoiding one complete path setup per country. Detailed dispute,
-      // mask, and region-overlay geometry is intentionally omitted during the
-      // gesture and restored atomically with the settled 10m SVG.
-      const baseGroups = new Map();
-      motionShapes.forEach((entry) => {
-        const paint = effectivePaint(entry);
-        if (paint.opacity <= 0
-          || ((paint.fill === "none" || paint.fillOpacity <= 0)
-            && (paint.stroke === "none" || paint.strokeOpacity <= 0 || paint.strokeWidth <= 0))) return;
-        if (entry.ordered) return;
-        const key = paintKey(paint);
-        if (!baseGroups.has(key)) baseGroups.set(key, {paint, features: []});
-        baseGroups.get(key).features.push(entry.motionFeature);
-      });
+      // while avoiding one complete path setup per country. Detailed disputes,
+      // masks, and region overlays must then be painted in DOM order: their
+      // opaque fills cut the parent-country geometry underneath and their
+      // boundaries remain visible throughout the gesture. Consecutive shapes
+      // with identical paint can share one stream without changing that order.
+      const {baseGroups, orderedGroups} = motionShapeDrawPlan(motionShapes, effectivePaint);
       baseGroups.forEach(({paint, features}) => {
         drawGeometry(path, {type: "FeatureCollection", features}, paint);
       });
-      root.dataset.mapMotionFillDraws = String(baseGroups.size);
+      orderedGroups.forEach(({paint, features}) => {
+        drawGeometry(path, {type: "FeatureCollection", features}, paint);
+      });
+      root.dataset.mapMotionOverlayShapes = String(
+        orderedGroups.reduce((total, group) => total + group.features.length, 0)
+      );
+      root.dataset.mapMotionOverlayDraws = String(orderedGroups.length);
+      root.dataset.mapMotionFillDraws = String(baseGroups.length + orderedGroups.length);
     };
 
     const drawMotionLabels = (projection) => {

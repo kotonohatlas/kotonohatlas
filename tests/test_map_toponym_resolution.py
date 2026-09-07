@@ -8,6 +8,51 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class MapToponymResolutionTests(unittest.TestCase):
+    def test_motion_preview_keeps_semantic_overlays_in_paint_order(self):
+        runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
+        script = f"""
+          import {{motionShapeDrawPlan}} from {json.dumps(runtime)};
+          const visible = {{
+            fill:'#eee', fillOpacity:1, fillRule:'nonzero',
+            stroke:'none', strokeOpacity:1, strokeWidth:0,
+            opacity:1, lineCap:'butt', lineJoin:'miter'
+          }};
+          const hidden = {{...visible, fill:'none', fillOpacity:0}};
+          const alternate = {{...visible, fill:'#ddd'}};
+          const entries = [
+            {{motionFeature:{{id:'base-a'}}, ordered:false, paint:visible}},
+            {{motionFeature:{{id:'overlay-a'}}, ordered:true, paint:visible}},
+            {{motionFeature:{{id:'base-b'}}, ordered:false, paint:visible}},
+            {{motionFeature:{{id:'overlay-b'}}, ordered:true, paint:visible}},
+            {{motionFeature:{{id:'overlay-c'}}, ordered:true, paint:alternate}},
+            {{motionFeature:{{id:'overlay-d'}}, ordered:true, paint:visible}},
+            {{motionFeature:{{id:'hidden'}}, ordered:true, paint:hidden}}
+          ];
+          const plan = motionShapeDrawPlan(entries);
+          console.log(JSON.stringify({{
+            baseGroups: plan.baseGroups.map((group) => group.features.map((item) => item.id)),
+            orderedGroups: plan.orderedGroups.map((group) => group.features.map((item) => item.id))
+          }}));
+        """
+        completed = subprocess.run(
+            ["node", "--input-type=module", "--eval", script],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(
+            json.loads(completed.stdout),
+            {
+                "baseGroups": [["base-a", "base-b"]],
+                "orderedGroups": [
+                    ["overlay-a", "overlay-b"],
+                    ["overlay-c"],
+                    ["overlay-d"],
+                ],
+            },
+        )
+
     def test_motion_preview_labels_can_be_relocalized_without_rebuilding_geometry(self):
         runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
         script = f"""
