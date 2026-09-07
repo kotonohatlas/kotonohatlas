@@ -301,6 +301,9 @@
     .taxonomy-searches > .country-combobox { min-width: 0; }
     .taxonomy-searches #family-options { width: calc(200% + .22rem); inset-inline: 0 auto; }
     .taxonomy-searches #script-options { width: calc(200% + .22rem); inset-inline: auto 0; }
+    .language-support-scope { display: inline-flex; align-items: center; justify-self: end; gap: .38rem; margin: .12rem .12rem 0; color: var(--muted); cursor: pointer; font-size: .68rem; font-weight: 650; }
+    .language-support-scope[hidden] { display: none; }
+    .language-picker .language-support-scope input { width: .9rem; height: .9rem; margin: 0; padding: 0; accent-color: var(--brand); }
     .language-search-control { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); }
     .language-search-control.has-back { grid-template-columns: 2.35rem minmax(0, 1fr); }
     .language-search-control.has-back input { border-start-start-radius: 0; border-end-start-radius: 0; }
@@ -587,6 +590,10 @@
                     <div class="country-options" id="script-options" role="listbox" hidden></div>
                   </div>
                 </div>
+                <label class="language-support-scope" id="support-only-control" hidden>
+                  <input type="checkbox" id="support-only-toggle">
+                  <span data-i18n="supportOnly">このサイトの対応言語のみ</span>
+                </label>
               </div>
             </div>
           </div>
@@ -712,9 +719,20 @@
     var taxonomyLocales = data.locales.slice();
     var hostCatalogSorts = new Map();
     var supportFilter = document.getElementById("support-filter");
+    var supportOnlyToggle = document.getElementById("support-only-toggle");
+    var supportOnlyControl = document.getElementById("support-only-control");
+    function supportedOnlyEnabled() {
+      return supportFilter.value === "supported";
+    }
+    function scopedLanguageRows(rows) {
+      return supportedOnlyEnabled() ? rows.filter(function (row) { return row.published; }) : rows;
+    }
     function syncSupportFilterVisibility() {
       var supportedLocaleCount = catalogLocales.filter(function (row) { return row.published; }).length;
-      supportFilter.hidden = supportedLocaleCount === 0 || supportedLocaleCount === catalogLocales.length;
+      var hidden = supportedLocaleCount === 0 || supportedLocaleCount === catalogLocales.length;
+      supportFilter.hidden = hidden;
+      supportOnlyControl.hidden = hidden;
+      supportOnlyToggle.checked = supportedOnlyEnabled();
     }
     var languageParentGroups = {
       pt: ["pt-BR", "pt-PT"],
@@ -1334,7 +1352,7 @@
         return mapLocales.find(function (row) {
           return [row.locale, row.slug, row.public_identity, row.hreflang].map(norm).indexOf(norm(identity)) !== -1;
         });
-      }).filter(Boolean);
+      }).filter(Boolean).filter(function (row) { return !supportedOnlyEnabled() || row.published; });
     }
     function parentCodeForRow(row) {
       return Object.keys(languageParentGroups).find(function (code) {
@@ -1409,7 +1427,7 @@
     }
     function project(code) {
       var parentRows = parentLanguageRows(code);
-      return parentRows.length > 1 ? parentRows : mapLocales.filter(function (row) { return matches(row, code); });
+      return parentRows.length > 1 ? parentRows : scopedLanguageRows(mapLocales).filter(function (row) { return matches(row, code); });
     }
     function uniqueRows(codes) {
       var seen = new Set(), rows = [];
@@ -1551,7 +1569,7 @@
       updateHostCatalogSortLabels();
     }
     function rowsForFamily(family) {
-      return mapLocales.filter(function (row) {
+      return scopedLanguageRows(mapLocales).filter(function (row) {
         return row.family_en === family || row.family_en.indexOf(family + " › ") === 0;
       });
     }
@@ -2081,6 +2099,7 @@
         document.getElementById("language-search").setAttribute("aria-expanded", "true");
         return;
       }
+      if (supportedOnlyEnabled()) languages = languages.filter(function (entry) { return entry.row.published; });
       var codeMatches = /^[a-z]{1,8}(-[a-z0-9]{0,8})?$/.test(value) ? languages.filter(function (entry) {
         return entry.codes.some(function (code) { return code.indexOf(value) === 0; });
       }) : [];
@@ -2155,7 +2174,8 @@
     }
     function renderFamilyOptions(query) {
       var value = norm(query);
-      var familyRows = familySuggestionRows(familyPickerTree(mapLocales), 0).filter(function (row) {
+      var taxonomyScopeRows = scopedLanguageRows(taxonomyLocales);
+      var familyRows = familySuggestionRows(familyPickerTree(scopedLanguageRows(mapLocales)), 0).filter(function (row) {
         return row.family_group !== "—";
       });
       familyMatches = value ? familyRows.filter(function (row) {
@@ -2173,7 +2193,7 @@
       activeFamilyIndex = familyMatches.length ? 0 : -1;
       var options = document.getElementById("family-options");
       var familyRoot = !value
-        ? '<div class="family-option-root"><span>' + esc(t("allRegisteredLanguages")) + '</span><span class="language-option-state">' + (activeCountryContextCodes().length ? countryContextMemberCount(new Set(taxonomyLocales.map(function (row) { return row.locale; })), activeCountryContextCodes(), false) : taxonomyLocales.length) + '</span></div>'
+        ? '<div class="family-option-root"><span>' + esc(t("allRegisteredLanguages")) + '</span><span class="language-option-state">' + (activeCountryContextCodes().length ? countryContextMemberCount(new Set(taxonomyScopeRows.map(function (row) { return row.locale; })), activeCountryContextCodes(), false) : taxonomyScopeRows.length) + '</span></div>'
         : '';
       options.innerHTML = familyMatches.length ? familyRoot + familyMatches.map(function (row, index) {
         var active = index === activeFamilyIndex;
@@ -2195,14 +2215,14 @@
       });
     }
     function rowsForScript(script) {
-      return mapLocales.filter(function (row) {
+      return scopedLanguageRows(mapLocales).filter(function (row) {
         var scripts = scriptsOf(row);
         return script === "Zzzz" ? !scripts.length : scripts.indexOf(script) !== -1;
       });
     }
     function scriptSuggestionRows() {
       var groups = new Map();
-      mapLocales.forEach(function (row) {
+      scopedLanguageRows(mapLocales).forEach(function (row) {
         var scripts = scriptsOf(row);
         (scripts.length ? scripts : ["Zzzz"]).forEach(function (script) {
           if (!groups.has(script)) groups.set(script, {rows:new Set(), localizedRows:new Set()});
@@ -3217,7 +3237,7 @@
     function renderCatalog(selectedSummaryAlreadyRendered) {
       if (selectedSummaryAlreadyRendered !== true) renderSelectedLanguageDetail();
       var query = norm(document.getElementById("search").value), order = document.getElementById("sort-order").value;
-      var supportedOnly = document.getElementById("support-filter").value === "supported";
+      var supportedOnly = supportedOnlyEnabled();
       var exactCodeQuery = query && catalogLocales.some(function (row) { return codeForms(row).indexOf(query) !== -1; });
       var countryLocales = selectionState.mode === "none" ? null : selectionState.languages;
       var rows = catalogLocales.filter(function (row) {
@@ -3876,8 +3896,23 @@
     document.getElementById("selected-language-summary").addEventListener("click", function (event) {
       if (event.target.closest("[data-clear-language]")) clearLanguageContext();
     });
+    function updateSupportedOnly(enabled) {
+      supportFilter.value = enabled ? "supported" : "all";
+      supportOnlyToggle.checked = enabled;
+      renderCatalog();
+      if (document.getElementById("language-search").getAttribute("aria-expanded") === "true") {
+        flushLanguageOptionsRender(document.getElementById("language-search").value);
+      }
+      if (document.getElementById("family-search").getAttribute("aria-expanded") === "true") {
+        renderFamilyOptions(document.getElementById("family-search").value);
+      }
+      if (document.getElementById("script-search").getAttribute("aria-expanded") === "true") {
+        renderScriptOptions(document.getElementById("script-search").value);
+      }
+    }
     document.getElementById("sort-order").addEventListener("change", renderCatalog);
-    document.getElementById("support-filter").addEventListener("change", renderCatalog);
+    supportFilter.addEventListener("change", function () { updateSupportedOnly(supportedOnlyEnabled()); });
+    supportOnlyToggle.addEventListener("change", function () { updateSupportedOnly(supportOnlyToggle.checked); });
     var catalogExtensionApi = {
       registerSort: registerHostCatalogSort,
       unregisterSort: unregisterHostCatalogSort,

@@ -139,9 +139,10 @@ URL. Omitting the manifest produces a standalone atlas with no edition links. Th
 subset of the Atlas-localized set, but the two sets are not assumed to be equal. Atlas does not infer publication by
 scanning a host build tree.
 
-When the manifest identifies a non-empty proper subset of the localized Atlas catalog, the catalog toolbar exposes an
-all-languages／host-supported-only filter. It is hidden for standalone builds with no publication manifest and when
-every localized Atlas locale is published, because filtering would not change the result.
+When the manifest identifies a non-empty proper subset of the languages available for lookup, Atlas exposes an
+all-languages／host-supported-only selector in the catalog toolbar and a synchronized checkbox in the main explorer.
+The checkbox also limits language, family, and script suggestions and the selections made from them. Both controls are
+hidden for standalone builds with no publication manifest and when filtering would not change the result.
 
 FrontISTR is one integration example: its adapter reads FrontISTR's own build manifest, converts only the published
 locale IDs into this contract, and then injects FrontISTR-specific introductory copy. Kotonohatlas never imports
