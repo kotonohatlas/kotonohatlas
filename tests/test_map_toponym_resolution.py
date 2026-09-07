@@ -8,17 +8,22 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class MapToponymResolutionTests(unittest.TestCase):
-    def test_motion_preview_prefers_matching_overview_geometry(self):
+    def test_motion_preview_uses_only_eligible_overview_geometry(self):
         runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
         script = f"""
           import {{motionPreviewFeature}} from {json.dumps(runtime)};
           const detailed = {{properties:{{id:'overlay'}}, resolution:'detail'}};
           const overview = {{properties:{{id:'overlay'}}, resolution:'overview'}};
-          const extracted = {{properties:{{id:'extracted'}}, resolution:'detail'}};
-          const index = new Map([['overlay', overview]]);
+          const unmatched = {{properties:{{id:'unmatched'}}, resolution:'detail'}};
+          const configured = {{
+            properties:{{id:'configured', motion_preview:false}},
+            resolution:'detail'
+          }};
+          const index = new Map([['overlay', overview], ['configured', configured]]);
           console.log(JSON.stringify({{
             matched: motionPreviewFeature(detailed, index).resolution,
-            fallback: motionPreviewFeature(extracted, index).resolution
+            unmatched: motionPreviewFeature(unmatched, index),
+            configured: motionPreviewFeature(configured, index)
           }}));
         """
         completed = subprocess.run(
@@ -30,7 +35,7 @@ class MapToponymResolutionTests(unittest.TestCase):
         )
         self.assertEqual(
             json.loads(completed.stdout),
-            {"matched": "overview", "fallback": "detail"},
+            {"matched": "overview", "unmatched": None, "configured": None},
         )
 
     def test_motion_preview_keeps_semantic_overlays_in_paint_order(self):

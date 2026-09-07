@@ -79,7 +79,8 @@ function motionPaintKey(paint) {
 
 export function motionPreviewFeature(item, overviewFeaturesById) {
   const featureId = item && item.properties && item.properties.id;
-  return (featureId && overviewFeaturesById.get(featureId)) || item;
+  const overview = featureId && overviewFeaturesById.get(featureId);
+  return overview && overview.properties.motion_preview !== false ? overview : null;
 }
 
 export function motionShapeDrawPlan(entries, resolvePaint = (entry) => entry.paint) {
@@ -534,7 +535,11 @@ function applyFeatureRegions(data) {
         name: region.name_en || region.id,
         name_long: region.name_en || region.id,
         selection_rule: region.selection_rule || null,
-        settled_boundary: Boolean(region.settled_boundary)
+        settled_boundary: Boolean(region.settled_boundary),
+        // This geometry comes from the detailed configuration rather than the
+        // active Natural Earth overview. Keep it out of the motion renderer,
+        // whose geometry must remain consistently 110m.
+        motion_preview: false
       },
       geometry: region.geometry
     });
@@ -2851,7 +2856,10 @@ function createMap(root, data, initialOptions) {
   const admin1ConfiguredLanguages = new Set(data.admin1_languages || []);
   const admin1ConfiguredLanguageIds = Array.from(admin1ConfiguredLanguages);
 
-  const initialChanges = prepareFeatures(data);
+  // Module geometry is upgraded in place after the first map settles. A later
+  // mount must still build its motion index from the immutable overview, not
+  // snapshot whichever 10m topology the previous instance left globally.
+  const initialChanges = installTopology(overviewWorld, data);
   const overviewFeatures = features.slice();
   const overviewFeaturesById = new Map(overviewFeatures.map((item) => [item.properties.id, item]));
   root.dataset.mapViewpointCountry = viewpointCountry;
@@ -5949,6 +5957,7 @@ function createMap(root, data, initialOptions) {
       "regionOverlay", "masksUnderlying", "viewpointLevel", "selected", "claimOnly"
     ];
     const motionShapes = [];
+    let detailedMotionShapesSkipped = 0;
     settledCanvas.querySelectorAll("path.location-map__country").forEach((shape) => {
       if (!shape.__atlasFeature || shape.dataset.overlayHidden === "true") return;
       const attributes = Object.fromEntries(semanticAttributes.map((name) => [name, shape.dataset[name] || ""]));
@@ -5957,21 +5966,25 @@ function createMap(root, data, initialOptions) {
         || attributes.regionOverlay === "true"
         || attributes.masksUnderlying === "true"
         || attributes.claimOnly === "true";
+      const motionFeature = motionPreviewFeature(shape.__atlasFeature, overviewFeaturesById);
+      if (!motionFeature) {
+        detailedMotionShapesSkipped += 1;
+        return;
+      }
       motionShapes.push({
         shape,
         feature: shape.__atlasFeature,
-        // Prefer the matching 110m feature for every motion shape, including
-        // disputes and region overlays. Parent countries and their separately
-        // supplied territories then share the same generalized boundary and
-        // join without a 10m/110m seam. Only extracted regions absent from the
-        // overview data retain their detailed geometry as a fallback.
-        motionFeature: motionPreviewFeature(shape.__atlasFeature, overviewFeaturesById),
+        // Every motion shape comes from the prepared 110m overview. Disputes
+        // extracted from an overview parent are therefore retained, while
+        // detail-only regions are omitted instead of mixing resolutions.
+        motionFeature,
         ordered,
         vertexStart: 0,
         vertexCount: 0,
         color: null
       });
     });
+    root.dataset.mapMotionDetailedShapesSkipped = String(detailedMotionShapesSkipped);
     const effectivePaint = (entry) => paintFor(entry.shape);
     const borderPaint = paintFor(settledCanvas.querySelector(".location-map__borders"));
     const coastlinePaint = paintFor(settledCanvas.querySelector(".location-map__coastlines"));
