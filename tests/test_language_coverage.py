@@ -2692,7 +2692,7 @@ global.fetch = async () => ({
                     seen.add(current)
                     current = fallback_locales[current]
 
-        required_ui = {"allTitle", "sortName"}
+        required_ui = {"allTitle", "sortName", "supportOnly"}
         for locale in locale_ids:
             with self.subTest(locale=locale):
                 messages = ui["messages"][locale]

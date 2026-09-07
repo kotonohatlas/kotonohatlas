@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "version": 2,
+  "version": 3,
   "locales": [
     {
       "id": "ja",
@@ -513,6 +513,7 @@
     "af": {
       "allTitle": "Taalkatalogus",
       "sortName": "Volgens naam",
+      "supportOnly": "Slegs tale wat deur hierdie webwerf ondersteun word",
       "sortPopulationDesc": "Gebruikers: meeste eerste",
       "sortPopulationAsc": "Gebruikers: minste eerste",
       "sortFamily": "Volgens familie／tak",
@@ -526,11 +527,13 @@
     },
     "am": {
       "allTitle": "የቋንቋዎች ማውጫ",
-      "sortName": "በስም"
+      "sortName": "በስም",
+      "supportOnly": "በዚህ ድረ ገጽ የሚደገፉ ቋንቋዎች ብቻ"
     },
     "ar": {
       "allTitle": "دليل اللغات",
       "sortName": "حسب الاسم",
+      "supportOnly": "اللغات التي يدعمها هذا الموقع فقط",
       "sortPopulationDesc": "المستخدمون: من الأكثر",
       "sortPopulationAsc": "المستخدمون: من الأقل",
       "sortFamily": "حسب العائلة／الفرع",
@@ -544,15 +547,18 @@
     },
     "as": {
       "allTitle": "ভাষাৰ তালিকা",
-      "sortName": "নাম অনুসৰি"
+      "sortName": "নাম অনুসৰি",
+      "supportOnly": "কেৱল এই ছাইটে সমৰ্থন কৰা ভাষাসমূহ"
     },
     "ay": {
       "allTitle": "Arunakan katalogopa",
-      "sortName": "Suti taypit"
+      "sortName": "Suti taypit",
+      "supportOnly": "Aka sitio web ukan yanapt'at arunakaki"
     },
     "az": {
       "allTitle": "Dil kataloqu",
       "sortName": "Ada görə",
+      "supportOnly": "Yalnız bu saytın dəstəklədiyi dillər",
       "sortPopulationDesc": "İstifadəçilər: çoxdan aza",
       "sortPopulationAsc": "İstifadəçilər: azdan çoxa",
       "sortFamily": "Ailə／qola görə",
@@ -567,6 +573,7 @@
     "be": {
       "allTitle": "Каталог моў",
       "sortName": "Паводле назвы",
+      "supportOnly": "Толькі мовы, якія падтрымлівае гэты сайт",
       "sortPopulationDesc": "Карыстальнікі: па змяншэнні",
       "sortPopulationAsc": "Карыстальнікі: па ўзрастанні",
       "sortFamily": "Паводле сям'і／галіны",
@@ -581,6 +588,7 @@
     "bg": {
       "allTitle": "Каталог на езиците",
       "sortName": "По име",
+      "supportOnly": "Само езици, поддържани от този сайт",
       "sortPopulationDesc": "Потребители: низходящо",
       "sortPopulationAsc": "Потребители: възходящо",
       "sortFamily": "По семейство／клон",
@@ -595,6 +603,7 @@
     "bn": {
       "allTitle": "ভাষার তালিকা",
       "sortName": "নাম অনুযায়ী",
+      "supportOnly": "শুধুমাত্র এই সাইটে সমর্থিত ভাষা",
       "about": "পরিচিতি",
       "show": "দেখানো হচ্ছে",
       "of": "এর মধ্যে",
@@ -603,6 +612,7 @@
     "bs": {
       "allTitle": "Katalog jezika",
       "sortName": "Prema nazivu",
+      "supportOnly": "Samo jezici koje ova stranica podržava",
       "sortPopulationDesc": "Korisnici: opadajuće",
       "sortPopulationAsc": "Korisnici: rastuće",
       "sortFamily": "Prema porodici／grani",
@@ -617,6 +627,7 @@
     "ca": {
       "allTitle": "Catàleg de llengües",
       "sortName": "Per nom",
+      "supportOnly": "Només els idiomes admesos per aquest lloc",
       "sortPopulationDesc": "Usuaris: de més a menys",
       "sortPopulationAsc": "Usuaris: de menys a més",
       "sortFamily": "Per família／branca",
@@ -631,6 +642,7 @@
     "ceb": {
       "allTitle": "Katalogo sa mga pinulongan",
       "sortName": "Pinaagi sa ngalan",
+      "supportOnly": "Mga pinulongan lamang nga gisuportahan niining site",
       "about": "Mahitungod",
       "show": "Gipakita",
       "of": "sa",
@@ -639,6 +651,7 @@
     "ckb": {
       "allTitle": "پێڕستی زمانەکان",
       "sortName": "بەپێی ناو",
+      "supportOnly": "تەنها ئەو زمانانەی ئەم ماڵپەڕە پشتگیرییان دەکات",
       "about": "دەربارە",
       "show": "پیشاندراو",
       "of": "لە",
@@ -647,6 +660,7 @@
     "cs": {
       "allTitle": "Katalog jazyků",
       "sortName": "Podle názvu",
+      "supportOnly": "Pouze jazyky podporované tímto webem",
       "sortPopulationDesc": "Uživatelé: sestupně",
       "sortPopulationAsc": "Uživatelé: vzestupně",
       "sortFamily": "Podle rodiny／větve",
@@ -661,6 +675,7 @@
     "cy": {
       "allTitle": "Catalog ieithoedd",
       "sortName": "Yn ôl enw",
+      "supportOnly": "Dim ond ieithoedd a gefnogir gan y wefan hon",
       "about": "Ynghylch",
       "show": "Dangos",
       "of": "o",
@@ -669,6 +684,7 @@
     "da": {
       "allTitle": "Sprogkatalog",
       "sortName": "Efter navn",
+      "supportOnly": "Kun sprog, der understøttes af dette websted",
       "sortPopulationDesc": "Brugere: flest først",
       "sortPopulationAsc": "Brugere: færrest først",
       "sortFamily": "Efter familie／gren",
@@ -683,6 +699,7 @@
     "de": {
       "allTitle": "Sprachenkatalog",
       "sortName": "Name",
+      "supportOnly": "Nur von dieser Website unterstützte Sprachen",
       "sortPopulationDesc": "Sprecherzahl: absteigend",
       "sortPopulationAsc": "Sprecherzahl: aufsteigend",
       "sortFamily": "Sprachfamilie／Zweig",
@@ -697,6 +714,7 @@
     "el": {
       "allTitle": "Κατάλογος γλωσσών",
       "sortName": "Κατά όνομα",
+      "supportOnly": "Μόνο γλώσσες που υποστηρίζονται από αυτόν τον ιστότοπο",
       "sortPopulationDesc": "Χρήστες: φθίνουσα",
       "sortPopulationAsc": "Χρήστες: αύξουσα",
       "sortFamily": "Κατά οικογένεια／κλάδο",
@@ -711,6 +729,7 @@
     "en": {
       "allTitle": "Language catalog",
       "sortName": "Name",
+      "supportOnly": "Supported by this site",
       "sortPopulationDesc": "Speaker population: high to low",
       "sortPopulationAsc": "Speaker population: low to high",
       "sortFamily": "Language family / branch",
@@ -718,7 +737,6 @@
       "sortCountry": "Country / territory reach",
       "sortCode": "Locale code",
       "supportAll": "All languages",
-      "supportOnly": "Supported by this site",
       "unsupported": "Not supported",
       "about": "About",
       "show": "Showing",
@@ -729,6 +747,7 @@
     "eo": {
       "allTitle": "Lingvokatalogo",
       "sortName": "Laŭ nomo",
+      "supportOnly": "Nur lingvoj subtenataj de ĉi tiu retejo",
       "sortPopulationDesc": "Uzantoj: malkreske",
       "sortPopulationAsc": "Uzantoj: kreske",
       "sortFamily": "Laŭ familio／branĉo",
@@ -743,6 +762,7 @@
     "es": {
       "allTitle": "Catálogo de idiomas",
       "sortName": "Nombre",
+      "supportOnly": "Solo idiomas compatibles con este sitio",
       "sortPopulationDesc": "Hablantes: mayor a menor",
       "sortPopulationAsc": "Hablantes: menor a mayor",
       "sortFamily": "Familia／rama",
@@ -757,6 +777,7 @@
     "et": {
       "allTitle": "Keelekataloog",
       "sortName": "Nime järgi",
+      "supportOnly": "Ainult selle saidi toetatud keeled",
       "sortPopulationDesc": "Kasutajad: kahanevalt",
       "sortPopulationAsc": "Kasutajad: kasvavalt",
       "sortFamily": "Keelkonna／haru järgi",
@@ -771,6 +792,7 @@
     "eu": {
       "allTitle": "Hizkuntzen katalogoa",
       "sortName": "Izenaren arabera",
+      "supportOnly": "Gune honek onartzen dituen hizkuntzak soilik",
       "sortPopulationDesc": "Erabiltzaileak: beherantz",
       "sortPopulationAsc": "Erabiltzaileak: gorantz",
       "sortFamily": "Familia／adarraren arabera",
@@ -785,6 +807,7 @@
     "fa": {
       "allTitle": "فهرست زبان‌ها",
       "sortName": "بر پایهٔ نام",
+      "supportOnly": "فقط زبان‌های پشتیبانی‌شده توسط این وب‌سایت",
       "sortPopulationDesc": "کاربران: نزولی",
       "sortPopulationAsc": "کاربران: صعودی",
       "sortFamily": "بر پایهٔ خانواده／شاخه",
@@ -799,6 +822,7 @@
     "fi": {
       "allTitle": "Kielikatalogi",
       "sortName": "Nimen mukaan",
+      "supportOnly": "Vain tämän sivuston tukemat kielet",
       "sortPopulationDesc": "Käyttäjät: eniten ensin",
       "sortPopulationAsc": "Käyttäjät: vähiten ensin",
       "sortFamily": "Kielikunnan／haaran mukaan",
@@ -813,6 +837,7 @@
     "fil": {
       "allTitle": "Katalogo ng mga wika",
       "sortName": "Ayon sa pangalan",
+      "supportOnly": "Mga wikang sinusuportahan lang ng site na ito",
       "sortPopulationDesc": "Mga gumagamit: pinakamarami muna",
       "sortPopulationAsc": "Mga gumagamit: pinakakaunti muna",
       "sortFamily": "Ayon sa pamilya／sanga",
@@ -827,6 +852,7 @@
     "fr": {
       "allTitle": "Catalogue des langues",
       "sortName": "Nom",
+      "supportOnly": "Uniquement les langues prises en charge par ce site",
       "sortPopulationDesc": "Locuteurs : ordre décroissant",
       "sortPopulationAsc": "Locuteurs : ordre croissant",
       "sortFamily": "Famille／branche",
@@ -841,6 +867,7 @@
     "ga": {
       "allTitle": "Catalóg teangacha",
       "sortName": "De réir ainm",
+      "supportOnly": "Teangacha a dtacaíonn an suíomh seo leo amháin",
       "about": "Maidir leis",
       "show": "Á dtaispeáint",
       "of": "as",
@@ -849,6 +876,7 @@
     "gl": {
       "allTitle": "Catálogo de linguas",
       "sortName": "Por nome",
+      "supportOnly": "Só os idiomas compatibles con este sitio",
       "sortPopulationDesc": "Usuarios: descendente",
       "sortPopulationAsc": "Usuarios: ascendente",
       "sortFamily": "Por familia／rama",
@@ -863,6 +891,7 @@
     "gn": {
       "allTitle": "Ñe’ẽnguéra rysýi",
       "sortName": "Téra rupive",
+      "supportOnly": "Ko ñanduti renda oipytyvõva ñe’ẽnguéra añoite",
       "about": "Rehegua",
       "show": "Ojehechaukáva",
       "of": "gui",
@@ -870,15 +899,18 @@
     },
     "gu": {
       "allTitle": "ભાષાઓની સૂચિ",
-      "sortName": "નામ મુજબ"
+      "sortName": "નામ મુજબ",
+      "supportOnly": "ફક્ત આ સાઇટ દ્વારા સમર્થિત ભાષાઓ"
     },
     "ha": {
       "allTitle": "Kundin harsuna",
-      "sortName": "Bisa suna"
+      "sortName": "Bisa suna",
+      "supportOnly": "Harsunan da wannan shafin ke tallafawa kawai"
     },
     "he": {
       "allTitle": "קטלוג שפות",
       "sortName": "לפי שם",
+      "supportOnly": "רק שפות שנתמכות באתר זה",
       "sortPopulationDesc": "משתמשים: מהגבוה לנמוך",
       "sortPopulationAsc": "משתמשים: מהנמוך לגבוה",
       "sortFamily": "לפי משפחה／ענף",
@@ -893,6 +925,7 @@
     "hi": {
       "allTitle": "भाषा सूची",
       "sortName": "नाम के अनुसार",
+      "supportOnly": "केवल इस साइट द्वारा समर्थित भाषाएँ",
       "sortPopulationDesc": "उपयोगकर्ता: अधिक से कम",
       "sortPopulationAsc": "उपयोगकर्ता: कम से अधिक",
       "sortFamily": "परिवार／शाखा के अनुसार",
@@ -907,6 +940,7 @@
     "hr": {
       "allTitle": "Katalog jezika",
       "sortName": "Prema nazivu",
+      "supportOnly": "Samo jezici koje ova stranica podržava",
       "sortPopulationDesc": "Korisnici: silazno",
       "sortPopulationAsc": "Korisnici: uzlazno",
       "sortFamily": "Prema porodici／grani",
@@ -921,6 +955,7 @@
     "ht": {
       "allTitle": "Katalòg lang",
       "sortName": "Selon non",
+      "supportOnly": "Sèlman lang sit sa a sipòte",
       "about": "Konsènan",
       "show": "Montre",
       "of": "sou",
@@ -929,6 +964,7 @@
     "hu": {
       "allTitle": "Nyelvkatalógus",
       "sortName": "Név szerint",
+      "supportOnly": "Csak az oldal által támogatott nyelvek",
       "sortPopulationDesc": "Használók: csökkenő",
       "sortPopulationAsc": "Használók: növekvő",
       "sortFamily": "Család／ág szerint",
@@ -943,6 +979,7 @@
     "hy": {
       "allTitle": "Լեզուների կատալոգ",
       "sortName": "Ըստ անվան",
+      "supportOnly": "Միայն այս կայքի աջակցած լեզուները",
       "sortPopulationDesc": "Օգտագործողներ՝ շատից քիչ",
       "sortPopulationAsc": "Օգտագործողներ՝ քչից շատ",
       "sortFamily": "Ըստ ընտանիքի／ճյուղի",
@@ -957,6 +994,7 @@
     "id": {
       "allTitle": "Katalog bahasa",
       "sortName": "Menurut nama",
+      "supportOnly": "Hanya bahasa yang didukung situs ini",
       "sortPopulationDesc": "Pengguna: terbanyak",
       "sortPopulationAsc": "Pengguna: tersedikit",
       "sortFamily": "Menurut rumpun／cabang",
@@ -970,11 +1008,13 @@
     },
     "ig": {
       "allTitle": "Ndepụta asụsụ",
-      "sortName": "Site n'aha"
+      "sortName": "Site n'aha",
+      "supportOnly": "Naanị asụsụ saịtị a na-akwado"
     },
     "is": {
       "allTitle": "Tungumálaskrá",
       "sortName": "Eftir heiti",
+      "supportOnly": "Aðeins tungumál sem þessi vefur styður",
       "sortPopulationDesc": "Notendur: flestir fyrst",
       "sortPopulationAsc": "Notendur: fæstir fyrst",
       "sortFamily": "Eftir ætt／grein",
@@ -989,6 +1029,7 @@
     "it": {
       "allTitle": "Catalogo delle lingue",
       "sortName": "Nome",
+      "supportOnly": "Solo le lingue supportate da questo sito",
       "sortPopulationDesc": "Parlanti: ordine decrescente",
       "sortPopulationAsc": "Parlanti: ordine crescente",
       "sortFamily": "Famiglia／ramo",
@@ -1003,6 +1044,7 @@
     "ja": {
       "allTitle": "言語カタログ",
       "sortName": "名前順",
+      "supportOnly": "このサイトの対応言語のみ",
       "sortPopulationDesc": "使用人口：多い順",
       "sortPopulationAsc": "使用人口：少ない順",
       "sortFamily": "語族・語派順",
@@ -1010,7 +1052,6 @@
       "sortCountry": "関連国・地域数順",
       "sortCode": "ロケールコード順",
       "supportAll": "すべての言語",
-      "supportOnly": "このサイトの対応言語のみ",
       "unsupported": "未対応",
       "about": "概要",
       "show": "表示",
@@ -1021,6 +1062,7 @@
     "jv": {
       "allTitle": "Katalog basa",
       "sortName": "Miturut jeneng",
+      "supportOnly": "Mung basa sing didhukung situs iki",
       "about": "Babagan",
       "show": "Ditampilake",
       "of": "saka",
@@ -1029,6 +1071,7 @@
     "ka": {
       "allTitle": "ენების კატალოგი",
       "sortName": "სახელის მიხედვით",
+      "supportOnly": "მხოლოდ ამ საიტის მიერ მხარდაჭერილი ენები",
       "sortPopulationDesc": "მომხმარებლები: კლებადობით",
       "sortPopulationAsc": "მომხმარებლები: ზრდადობით",
       "sortFamily": "ოჯახის／განშტოების მიხედვით",
@@ -1042,15 +1085,18 @@
     },
     "kk": {
       "allTitle": "Тілдер каталогы",
-      "sortName": "Атауы бойынша"
+      "sortName": "Атауы бойынша",
+      "supportOnly": "Тек осы сайт қолдайтын тілдер"
     },
     "km": {
       "allTitle": "បញ្ជីភាសា",
-      "sortName": "តាមឈ្មោះ"
+      "sortName": "តាមឈ្មោះ",
+      "supportOnly": "តែភាសាដែលគេហទំព័រនេះគាំទ្រ"
     },
     "kmr": {
       "allTitle": "Kataloga zimanan",
       "sortName": "Li gorî nav",
+      "supportOnly": "Tenê zimanên ku ev malper piştgirî dike",
       "about": "Derbarê",
       "show": "Tê nîşandan",
       "of": "ji",
@@ -1058,11 +1104,13 @@
     },
     "kn": {
       "allTitle": "ಭಾಷೆಗಳ ಪಟ್ಟಿ",
-      "sortName": "ಹೆಸರಿನ ಪ್ರಕಾರ"
+      "sortName": "ಹೆಸರಿನ ಪ್ರಕಾರ",
+      "supportOnly": "ಈ ತಾಣವು ಬೆಂಬಲಿಸುವ ಭಾಷೆಗಳು ಮಾತ್ರ"
     },
     "ko": {
       "allTitle": "언어 카탈로그",
       "sortName": "이름순",
+      "supportOnly": "이 사이트에서 지원하는 언어만",
       "sortPopulationDesc": "사용자 수: 많은 순",
       "sortPopulationAsc": "사용자 수: 적은 순",
       "sortFamily": "어족／어파순",
@@ -1076,19 +1124,23 @@
     },
     "kok": {
       "allTitle": "भाशांची वळेरी",
-      "sortName": "नांवाप्रमाणें"
+      "sortName": "नांवाप्रमाणें",
+      "supportOnly": "फकत ह्या संकेतस्थळान आदार दिल्ल्यो भासो"
     },
     "ks": {
       "allTitle": "زَبانَن ہُند فہرست",
-      "sortName": "ناو مطابق"
+      "sortName": "ناو مطابق",
+      "supportOnly": "صرف یِم زَبانہٕ یِم یَتھ سایٹَس سَپورٹ چھِ"
     },
     "ky": {
       "allTitle": "Тилдер каталогу",
-      "sortName": "Аты боюнча"
+      "sortName": "Аты боюнча",
+      "supportOnly": "Бул сайт колдогон тилдер гана"
     },
     "la": {
       "allTitle": "Catalogus linguarum",
       "sortName": "Nomine",
+      "supportOnly": "Linguae tantum quas hic situs sustinet",
       "sortPopulationDesc": "Utentes: plures primum",
       "sortPopulationAsc": "Utentes: pauciores primum",
       "sortFamily": "Familia／ramo",
@@ -1102,15 +1154,18 @@
     },
     "ln": {
       "allTitle": "Kataloge ya minɔkɔ",
-      "sortName": "Na nkombo"
+      "sortName": "Na nkombo",
+      "supportOnly": "Kaka minɔkɔ oyo site oyo esungaka"
     },
     "lo": {
       "allTitle": "ລາຍການພາສາ",
-      "sortName": "ຕາມຊື່"
+      "sortName": "ຕາມຊື່",
+      "supportOnly": "ສະເພາະພາສາທີ່ເວັບໄຊນີ້ຮອງຮັບ"
     },
     "lt": {
       "allTitle": "Kalbų katalogas",
       "sortName": "Pagal pavadinimą",
+      "supportOnly": "Tik šios svetainės palaikomos kalbos",
       "sortPopulationDesc": "Naudotojai: mažėjančiai",
       "sortPopulationAsc": "Naudotojai: didėjančiai",
       "sortFamily": "Pagal šeimą／šaką",
@@ -1125,6 +1180,7 @@
     "lv": {
       "allTitle": "Valodu katalogs",
       "sortName": "Pēc nosaukuma",
+      "supportOnly": "Tikai šīs vietnes atbalstītās valodas",
       "sortPopulationDesc": "Lietotāji: dilstoši",
       "sortPopulationAsc": "Lietotāji: augoši",
       "sortFamily": "Pēc saimes／atzara",
@@ -1138,15 +1194,18 @@
     },
     "mai": {
       "allTitle": "भाषा सूची",
-      "sortName": "नाम अनुसार"
+      "sortName": "नाम अनुसार",
+      "supportOnly": "केवल एहि साइट द्वारा समर्थित भाषा"
     },
     "mg": {
       "allTitle": "Katalaogin’ny fiteny",
-      "sortName": "Araka ny anarana"
+      "sortName": "Araka ny anarana",
+      "supportOnly": "Ireo fiteny tohanan'ity tranonkala ity ihany"
     },
     "mi": {
       "allTitle": "Rārangi reo",
       "sortName": "Mā te ingoa",
+      "supportOnly": "Ko ngā reo anake e tautokona ana e tēnei pae",
       "about": "Mō",
       "show": "E whakaaturia ana",
       "of": "o",
@@ -1155,6 +1214,7 @@
     "mk": {
       "allTitle": "Каталог на јазици",
       "sortName": "По име",
+      "supportOnly": "Само јазици поддржани од оваа страница",
       "about": "За",
       "show": "Прикажани",
       "of": "од",
@@ -1162,15 +1222,18 @@
     },
     "ml": {
       "allTitle": "ഭാഷകളുടെ പട്ടിക",
-      "sortName": "പേര് അനുസരിച്ച്"
+      "sortName": "പേര് അനുസരിച്ച്",
+      "supportOnly": "ഈ സൈറ്റ് പിന്തുണയ്ക്കുന്ന ഭാഷകൾ മാത്രം"
     },
     "mn": {
       "allTitle": "Хэлний каталог",
-      "sortName": "Нэрээр"
+      "sortName": "Нэрээр",
+      "supportOnly": "Зөвхөн энэ сайтын дэмждэг хэлнүүд"
     },
     "mr": {
       "allTitle": "भाषा सूची",
       "sortName": "नावानुसार",
+      "supportOnly": "केवळ या साइटद्वारे समर्थित भाषा",
       "about": "माहिती",
       "show": "दर्शविले",
       "of": "पैकी",
@@ -1179,6 +1242,7 @@
     "ms": {
       "allTitle": "Katalog bahasa",
       "sortName": "Mengikut nama",
+      "supportOnly": "Hanya bahasa yang disokong oleh laman ini",
       "sortPopulationDesc": "Pengguna: menurun",
       "sortPopulationAsc": "Pengguna: menaik",
       "sortFamily": "Mengikut keluarga／cabang",
@@ -1192,15 +1256,18 @@
     },
     "mt": {
       "allTitle": "Katalgu tal-lingwi",
-      "sortName": "Skont l-isem"
+      "sortName": "Skont l-isem",
+      "supportOnly": "Il-lingwi appoġġati minn dan is-sit biss"
     },
     "my": {
       "allTitle": "ဘာသာစကားစာရင်း",
-      "sortName": "အမည်အလိုက်"
+      "sortName": "အမည်အလိုက်",
+      "supportOnly": "ဤဝဘ်ဆိုက်က ပံ့ပိုးသော ဘာသာစကားများသာ"
     },
     "nb": {
       "allTitle": "Språkkatalog",
       "sortName": "Etter navn",
+      "supportOnly": "Bare språk som støttes av dette nettstedet",
       "sortPopulationDesc": "Brukere: flest først",
       "sortPopulationAsc": "Brukere: færrest først",
       "sortFamily": "Etter familie／gren",
@@ -1215,6 +1282,7 @@
     "ne": {
       "allTitle": "भाषा सूची",
       "sortName": "नामअनुसार",
+      "supportOnly": "यो साइटले समर्थन गर्ने भाषाहरू मात्र",
       "about": "बारेमा",
       "show": "देखाइएका",
       "of": "मध्ये",
@@ -1223,6 +1291,7 @@
     "nl": {
       "allTitle": "Taalcatalogus",
       "sortName": "Op naam",
+      "supportOnly": "Alleen talen die door deze site worden ondersteund",
       "sortPopulationDesc": "Gebruikers: aflopend",
       "sortPopulationAsc": "Gebruikers: oplopend",
       "sortFamily": "Op familie／tak",
@@ -1237,6 +1306,7 @@
     "nn": {
       "allTitle": "Språkkatalog",
       "sortName": "Etter namn",
+      "supportOnly": "Berre språk som er støtta av denne nettstaden",
       "sortPopulationDesc": "Brukarar: flest først",
       "sortPopulationAsc": "Brukarar: færrast først",
       "sortFamily": "Etter familie／grein",
@@ -1250,31 +1320,38 @@
     },
     "nr": {
       "allTitle": "Ikhathalogu yamalimi",
-      "sortName": "Ngebizo"
+      "sortName": "Ngebizo",
+      "supportOnly": "Kuphela amalimi asekelwa yisiza le"
     },
     "nso": {
       "allTitle": "Khathaloko ya maleme",
-      "sortName": "Ka leina"
+      "sortName": "Ka leina",
+      "supportOnly": "Ke maleme fela ao saete ye e a thekgago"
     },
     "om": {
       "allTitle": "Tarree afaanotaa",
-      "sortName": "Maqaan"
+      "sortName": "Maqaan",
+      "supportOnly": "Afaanota marsariitiin kun deeggaru qofa"
     },
     "or": {
       "allTitle": "ଭାଷା ତାଲିକା",
-      "sortName": "ନାମ ଅନୁସାରେ"
+      "sortName": "ନାମ ଅନୁସାରେ",
+      "supportOnly": "କେବଳ ଏହି ସାଇଟ୍‌ ଦ୍ୱାରା ସମର୍ଥିତ ଭାଷା"
     },
     "pa-Arab": {
       "allTitle": "زباناں دی فہرست",
-      "sortName": "ناں مطابق"
+      "sortName": "ناں مطابق",
+      "supportOnly": "صرف ایں سائٹ ولوں معاونت یافتہ زباناں"
     },
     "pa-Guru": {
       "allTitle": "ਭਾਸ਼ਾਵਾਂ ਦੀ ਸੂਚੀ",
-      "sortName": "ਨਾਮ ਅਨੁਸਾਰ"
+      "sortName": "ਨਾਮ ਅਨੁਸਾਰ",
+      "supportOnly": "ਸਿਰਫ਼ ਇਸ ਸਾਈਟ ਵੱਲੋਂ ਸਮਰਥਿਤ ਭਾਸ਼ਾਵਾਂ"
     },
     "pl": {
       "allTitle": "Katalog języków",
       "sortName": "Według nazwy",
+      "supportOnly": "Tylko języki obsługiwane przez tę witrynę",
       "sortPopulationDesc": "Użytkownicy: malejąco",
       "sortPopulationAsc": "Użytkownicy: rosnąco",
       "sortFamily": "Według rodziny／gałęzi",
@@ -1288,11 +1365,13 @@
     },
     "ps": {
       "allTitle": "د ژبو لړلیک",
-      "sortName": "د نوم له مخې"
+      "sortName": "د نوم له مخې",
+      "supportOnly": "یوازې هغه ژبې چې دا وېبپاڼه یې ملاتړ کوي"
     },
     "pt-BR": {
       "allTitle": "Catálogo de idiomas",
       "sortName": "Nome",
+      "supportOnly": "Somente idiomas compatíveis com este site",
       "sortPopulationDesc": "Falantes: maior para menor",
       "sortPopulationAsc": "Falantes: menor para maior",
       "sortFamily": "Família／ramo",
@@ -1307,6 +1386,7 @@
     "pt-PT": {
       "allTitle": "Catálogo de línguas",
       "sortName": "Nome",
+      "supportOnly": "Apenas idiomas suportados por este site",
       "sortPopulationDesc": "Falantes: maior para menor",
       "sortPopulationAsc": "Falantes: menor para maior",
       "sortFamily": "Família／ramo",
@@ -1320,11 +1400,13 @@
     },
     "qu": {
       "allTitle": "Simikunapa katalogon",
-      "sortName": "Sutiman hina"
+      "sortName": "Sutiman hina",
+      "supportOnly": "Kay web kiti yanapasqan simikuna sapalla"
     },
     "rm": {
       "allTitle": "Catalog da linguas",
       "sortName": "Tenor num",
+      "supportOnly": "Mo las linguas sustegnidas da questa pagina",
       "sortPopulationDesc": "Utilisaders: ils blers l'emprim",
       "sortPopulationAsc": "Utilisaders: ils paucs l'emprim",
       "sortFamily": "Tenor famiglia／rom",
@@ -1338,11 +1420,13 @@
     },
     "rn": {
       "allTitle": "Urutonde rw’indimi",
-      "sortName": "Ukurikije izina"
+      "sortName": "Ukurikije izina",
+      "supportOnly": "Indimi zishigikirwa n'uru rubuga gusa"
     },
     "ro": {
       "allTitle": "Catalog de limbi",
       "sortName": "După nume",
+      "supportOnly": "Numai limbile acceptate de acest site",
       "sortPopulationDesc": "Utilizatori: descrescător",
       "sortPopulationAsc": "Utilizatori: crescător",
       "sortFamily": "După familie／ramură",
@@ -1357,6 +1441,7 @@
     "ru": {
       "allTitle": "Каталог языков",
       "sortName": "По названию",
+      "supportOnly": "Только языки, поддерживаемые этим сайтом",
       "sortPopulationDesc": "Пользователи: по убыванию",
       "sortPopulationAsc": "Пользователи: по возрастанию",
       "sortFamily": "По семье／ветви",
@@ -1370,27 +1455,33 @@
     },
     "rw": {
       "allTitle": "Urutonde rw’indimi",
-      "sortName": "Ku izina"
+      "sortName": "Ku izina",
+      "supportOnly": "Indimi zishyigikiwe n'uru rubuga gusa"
     },
     "sat": {
       "allTitle": "ᱯᱟᱹᱨᱥᱤ ᱛᱟᱞᱠᱟ",
-      "sortName": "ᱧᱩᱛᱩᱢ ᱛᱮ"
+      "sortName": "ᱧᱩᱛᱩᱢ ᱛᱮ",
+      "supportOnly": "ᱮᱠᱮᱱ ᱱᱚᱣᱟ ᱥᱟᱭᱤᱴ ᱛᱮ ᱥᱚᱦᱚᱫ ᱠᱟᱱ ᱯᱟᱹᱨᱥᱤᱠᱚ"
     },
     "sd": {
       "allTitle": "ٻولين جي فهرست",
-      "sortName": "نالي موجب"
+      "sortName": "نالي موجب",
+      "supportOnly": "صرف هن سائيٽ پاران سهائتا ڪيل ٻوليون"
     },
     "sg": {
       "allTitle": "Âlïstë tî âyângâ",
-      "sortName": "Na lege ti iri"
+      "sortName": "Na lege ti iri",
+      "supportOnly": "Âyângâ tî site sô otâa âla"
     },
     "si": {
       "allTitle": "භාෂා නාමාවලිය",
-      "sortName": "නම අනුව"
+      "sortName": "නම අනුව",
+      "supportOnly": "මෙම අඩවිය සහාය දක්වන භාෂා පමණි"
     },
     "sk": {
       "allTitle": "Katalóg jazykov",
       "sortName": "Podľa názvu",
+      "supportOnly": "Iba jazyky podporované touto stránkou",
       "sortPopulationDesc": "Používatelia: zostupne",
       "sortPopulationAsc": "Používatelia: vzostupne",
       "sortFamily": "Podľa rodiny／vetvy",
@@ -1405,6 +1496,7 @@
     "sl": {
       "allTitle": "Katalog jezikov",
       "sortName": "Po imenu",
+      "supportOnly": "Samo jeziki, ki jih podpira to spletno mesto",
       "sortPopulationDesc": "Uporabniki: padajoče",
       "sortPopulationAsc": "Uporabniki: naraščajoče",
       "sortFamily": "Po družini／veji",
@@ -1418,15 +1510,18 @@
     },
     "sn": {
       "allTitle": "Rondedzero yemitauro",
-      "sortName": "Nezita"
+      "sortName": "Nezita",
+      "supportOnly": "Mitauro inotsigirwa nesaiti ino chete"
     },
     "so": {
       "allTitle": "Tusmada luqadaha",
-      "sortName": "Magac ahaan"
+      "sortName": "Magac ahaan",
+      "supportOnly": "Keliya luqadaha boggani taageero"
     },
     "sq": {
       "allTitle": "Katalogu i gjuhëve",
       "sortName": "Sipas emrit",
+      "supportOnly": "Vetëm gjuhët që mbështeten nga ky sajt",
       "sortPopulationDesc": "Përdoruesit: më të shumtët së pari",
       "sortPopulationAsc": "Përdoruesit: më të paktët së pari",
       "sortFamily": "Sipas familjes／degës",
@@ -1441,6 +1536,7 @@
     "sr": {
       "allTitle": "Каталог језика",
       "sortName": "Према називу",
+      "supportOnly": "Само језици које овај сајт подржава",
       "sortPopulationDesc": "Корисници: опадајуће",
       "sortPopulationAsc": "Корисници: растуће",
       "sortFamily": "Према породици／грани",
@@ -1454,15 +1550,18 @@
     },
     "ss": {
       "allTitle": "Ikhathalogi yetilwimi",
-      "sortName": "Ngeligama"
+      "sortName": "Ngeligama",
+      "supportOnly": "Tilwimi letisekelwa nguleli sayithi kuphela"
     },
     "st": {
       "allTitle": "Lethathamo la lipuo",
-      "sortName": "Ka lebitso"
+      "sortName": "Ka lebitso",
+      "supportOnly": "Ke lipuo feela tse tšehetsoang ke sebaka sena"
     },
     "su": {
       "allTitle": "Katalog basa",
       "sortName": "Dumasar ngaran",
+      "supportOnly": "Ngan basa nu dirojong ku situs ieu",
       "about": "Ngeunaan",
       "show": "Ditémbongkeun",
       "of": "tina",
@@ -1471,6 +1570,7 @@
     "sv": {
       "allTitle": "Språkkatalog",
       "sortName": "Efter namn",
+      "supportOnly": "Endast språk som stöds av denna webbplats",
       "sortPopulationDesc": "Användare: flest först",
       "sortPopulationAsc": "Användare: minst först",
       "sortFamily": "Efter familj／gren",
@@ -1485,6 +1585,7 @@
     "sw": {
       "allTitle": "Orodha ya lugha",
       "sortName": "Kwa jina",
+      "supportOnly": "Lugha zinazotumika kwenye tovuti hii pekee",
       "about": "Kuhusu",
       "show": "Zinaonyeshwa",
       "of": "kati ya",
@@ -1493,6 +1594,7 @@
     "ta": {
       "allTitle": "மொழிப் பட்டியல்",
       "sortName": "பெயர் வாரியாக",
+      "supportOnly": "இந்தத் தளம் ஆதரிக்கும் மொழிகள் மட்டும்",
       "about": "பற்றி",
       "show": "காட்டப்படுவது",
       "of": "இல்",
@@ -1501,6 +1603,7 @@
     "te": {
       "allTitle": "భాషల జాబితా",
       "sortName": "పేరు ప్రకారం",
+      "supportOnly": "ఈ సైట్ మద్దతిచ్చే భాషలు మాత్రమే",
       "about": "గురించి",
       "show": "చూపిస్తున్నవి",
       "of": "లో",
@@ -1508,15 +1611,18 @@
     },
     "tet": {
       "allTitle": "Katálogu lian",
-      "sortName": "Tuir naran"
+      "sortName": "Tuir naran",
+      "supportOnly": "Lian ne'ebé síti ida-ne'e suporta de'it"
     },
     "tg": {
       "allTitle": "Феҳристи забонҳо",
-      "sortName": "Аз рӯи ном"
+      "sortName": "Аз рӯи ном",
+      "supportOnly": "Танҳо забонҳое, ки ин сомона дастгирӣ мекунад"
     },
     "th": {
       "allTitle": "รายการภาษา",
       "sortName": "ตามชื่อ",
+      "supportOnly": "เฉพาะภาษาที่เว็บไซต์นี้รองรับ",
       "sortPopulationDesc": "ผู้ใช้: มากไปน้อย",
       "sortPopulationAsc": "ผู้ใช้: น้อยไปมาก",
       "sortFamily": "ตามตระกูล／สาขา",
@@ -1530,19 +1636,23 @@
     },
     "ti": {
       "allTitle": "መዝገበ ቋንቋታት",
-      "sortName": "ብስም"
+      "sortName": "ብስም",
+      "supportOnly": "በዚ መርበብ ሓበሬታ ዝድገፉ ቋንቋታት ጥራይ"
     },
     "tk": {
       "allTitle": "Diller katalogy",
-      "sortName": "Ady boýunça"
+      "sortName": "Ady boýunça",
+      "supportOnly": "Diňe şu saýtyň goldaýan dilleri"
     },
     "tn": {
       "allTitle": "Lenaane la dipuo",
-      "sortName": "Ka leina"
+      "sortName": "Ka leina",
+      "supportOnly": "Dipuo fela tse setsha seno se di tshegetsang"
     },
     "tr": {
       "allTitle": "Dil kataloğu",
       "sortName": "Ada göre",
+      "supportOnly": "Yalnızca bu sitenin desteklediği diller",
       "sortPopulationDesc": "Kullanıcı: çoktan aza",
       "sortPopulationAsc": "Kullanıcı: azdan çoğa",
       "sortFamily": "Aileye／kola göre",
@@ -1556,15 +1666,18 @@
     },
     "ts": {
       "allTitle": "Khathalogu ya tindzimi",
-      "sortName": "Hi vito"
+      "sortName": "Hi vito",
+      "supportOnly": "Tindzimi leti seketeriwaka hi sayiti leyi ntsena"
     },
     "ug": {
       "allTitle": "تىل مۇندەرىجىسى",
-      "sortName": "نام بويىچە"
+      "sortName": "نام بويىچە",
+      "supportOnly": "پەقەت بۇ بېكەت قوللايدىغان تىللار"
     },
     "uk": {
       "allTitle": "Каталог мов",
       "sortName": "За назвою",
+      "supportOnly": "Лише мови, які підтримує цей сайт",
       "sortPopulationDesc": "Користувачі: за спаданням",
       "sortPopulationAsc": "Користувачі: за зростанням",
       "sortFamily": "За сім’єю／гілкою",
@@ -1579,6 +1692,7 @@
     "ur": {
       "allTitle": "زبانوں کی فہرست",
       "sortName": "نام کے مطابق",
+      "supportOnly": "صرف اس سائٹ کی معاونت یافتہ زبانیں",
       "about": "تعارف",
       "show": "دکھائے گئے",
       "of": "میں سے",
@@ -1586,15 +1700,18 @@
     },
     "uz": {
       "allTitle": "Tillar katalogi",
-      "sortName": "Nom bo‘yicha"
+      "sortName": "Nom bo‘yicha",
+      "supportOnly": "Faqat ushbu sayt qoʻllab-quvvatlaydigan tillar"
     },
     "ve": {
       "allTitle": "Khaṱhalogo ya nyambo",
-      "sortName": "Nga dzina"
+      "sortName": "Nga dzina",
+      "supportOnly": "Nyambo dzi tikedzwaho nga saithi iyi fhedzi"
     },
     "vi": {
       "allTitle": "Danh mục ngôn ngữ",
       "sortName": "Theo tên",
+      "supportOnly": "Chỉ các ngôn ngữ được trang web này hỗ trợ",
       "sortPopulationDesc": "Người dùng: giảm dần",
       "sortPopulationAsc": "Người dùng: tăng dần",
       "sortFamily": "Theo ngữ hệ／nhánh",
@@ -1609,6 +1726,7 @@
     "xh": {
       "allTitle": "Ikhathalogu yeelwimi",
       "sortName": "Ngegama",
+      "supportOnly": "Kuphela ziilwimi ezixhaswa yile sayithi",
       "sortPopulationDesc": "Abasebenzisi: abaninzi kuqala",
       "sortPopulationAsc": "Abasebenzisi: abambalwa kuqala",
       "sortFamily": "Ngokosapho／isebe",
@@ -1623,11 +1741,13 @@
     },
     "yo": {
       "allTitle": "Àkójọ èdè",
-      "sortName": "Nípasẹ̀ orúkọ"
+      "sortName": "Nípasẹ̀ orúkọ",
+      "supportOnly": "Àwọn èdè tí ojúlé yìí ń ṣe àtìlẹ́yìn fún nìkan"
     },
     "zh-Hans": {
       "allTitle": "语言目录",
       "sortName": "按名称",
+      "supportOnly": "仅显示此网站支持的语言",
       "sortPopulationDesc": "使用人口：从多到少",
       "sortPopulationAsc": "使用人口：从少到多",
       "sortFamily": "按语系／语支",
@@ -1642,6 +1762,7 @@
     "zh-Hant": {
       "allTitle": "語言目錄",
       "sortName": "按名稱",
+      "supportOnly": "僅顯示此網站支援的語言",
       "sortPopulationDesc": "使用人口：由多至少",
       "sortPopulationAsc": "使用人口：由少至多",
       "sortFamily": "按語系／語支",
@@ -1655,7 +1776,8 @@
     },
     "zu": {
       "allTitle": "Ikhathalogi yezilimi",
-      "sortName": "Ngegama"
+      "sortName": "Ngegama",
+      "supportOnly": "Izilimi ezisekelwa yile sayithi kuphela"
     }
   }
 }
