@@ -1,5 +1,17 @@
 # Host insertion points
 
+Kotonohatlas exposes stable IDs for its visible brand block:
+
+```html
+<div id="atlas-brand">
+  <h1 id="atlas-title" data-i18n="heroTitle">Kotonohatlas</h1>
+  <p id="atlas-subtitle" class="hero-subtitle" lang="la">Atlas Linguarum Mundi</p>
+</div>
+```
+
+An embedding site may replace `#atlas-brand` as a unit, or update `#atlas-title` and `#atlas-subtitle` separately. The
+IDs are the integration contract; hosts must not depend on the default wording, attributes, or child-element order.
+
 Kotonohatlas provides a generic insertion point near the start of the page:
 
 ```html
@@ -23,6 +35,11 @@ For example, a host may change the browser title and add its own introductory co
 document.title = "Language guide — Example site";
 
 const intro = document.getElementById("atlas-host-intro");
+const title = document.getElementById("atlas-title");
+const subtitle = document.getElementById("atlas-subtitle");
+title.textContent = "Language guide";
+subtitle.hidden = true;
+
 const heading = document.createElement("h2");
 heading.textContent = "About this language guide";
 const copy = document.createElement("p");
