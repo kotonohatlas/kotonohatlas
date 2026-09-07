@@ -121,6 +121,11 @@ the result is correct. Reviewed readings and IPA corrections belong in
 target-script usage; an established map label may be preferable to an unfamiliar, overly phonetic rendering. IPA data
 is not included in the browser payload.
 
+Generated writing-system forms remain valid display fallbacks when no established localized form is known. Verified
+usage belongs in `config/geography/place-name-usage-overrides.json`, together with its evidence, and overrides only the
+listed locale and place. Absence from that file does not mark a generated form as missing or incorrect. Keeping this
+layer separate also makes reviewed usage survive regeneration of `config/geography/places.json`.
+
 ## Tests
 
 ```text

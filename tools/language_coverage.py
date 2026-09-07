@@ -70,6 +70,7 @@ CLDR_LICENSE_PATH = CLDR_REPOSITORY / "LICENSE"
 LANGUAGE_MAP_PATH = GEOGRAPHY_DIR / "map.json"
 LANGUAGE_DISPUTED_REGIONS_PATH = GEOGRAPHY_DIR / "overlays.json"
 LANGUAGE_MAP_PLACES_PATH = GEOGRAPHY_DIR / "places.json"
+PLACE_NAME_USAGE_OVERRIDES_PATH = GEOGRAPHY_DIR / "place-name-usage-overrides.json"
 LANGUAGE_MAP_ADMIN1_PATH = GEOGRAPHY_DIR / "admin1" / "index.json"
 LANGUAGE_MAP_ADMIN1_REGIONS_PATH = GEOGRAPHY_DIR / "admin1" / "regions.json"
 LANGUAGE_MAP_ADMIN1_DIR = GEOGRAPHY_DIR / "admin1"
@@ -531,6 +532,7 @@ def _language_admin1_assets(manifest: dict) -> tuple[dict, dict[str, bytes]]:
 def _language_place_assets(
     places: dict,
     toponym_resolution: dict,
+    usage_overrides: dict | None = None,
 ) -> tuple[dict, dict[str, bytes]]:
     """Split map labels into one core and writing-system name packs.
 
@@ -543,7 +545,8 @@ def _language_place_assets(
     rows: list[list] = []
     core_countries: dict[str, dict] = {}
     available_scripts: set[str] = set()
-    locale_overrides: dict[str, list[list]] = {}
+    locale_overrides: dict[str, dict[int, str]] = {}
+    place_indices: dict[tuple[str, str], list[int]] = {}
     for country, configured_country in (places.get("countries") or {}).items():
         country_places = configured_country.get("places") or []
         core_country = {
@@ -563,6 +566,7 @@ def _language_place_assets(
                 raise ValueError(f"invalid multilingual place row: {country}/{country_index}")
             global_index = len(rows)
             rows.append(row)
+            place_indices.setdefault((str(country), str(row[5])), []).append(global_index)
             core_country["places"].append(row[:5])
             if representative_name and str(row[5]) == representative_name:
                 core_country["representative_place_index"] = country_index
@@ -573,10 +577,67 @@ def _language_place_assets(
                 if not normalized_locale.replace("-", "").isalnum():
                     raise ValueError(f"invalid place-name locale id: {locale}")
                 if value:
-                    locale_overrides.setdefault(normalized_locale, []).append(
-                        [global_index, str(value)]
-                    )
+                    locale_overrides.setdefault(normalized_locale, {})[global_index] = str(value)
         core_countries[str(country)] = core_country
+
+    if usage_overrides is None:
+        usage_overrides = {"schema": 1, "places": []}
+    if not isinstance(usage_overrides, dict) or usage_overrides.get("schema") != 1:
+        raise ValueError("unsupported place-name usage override schema")
+    configured_usage_places = usage_overrides.get("places")
+    if not isinstance(configured_usage_places, list):
+        raise ValueError("place-name usage overrides must contain a places list")
+    seen_usage_overrides: set[tuple[int, str]] = set()
+    for override_index, override in enumerate(configured_usage_places):
+        if not isinstance(override, dict):
+            raise ValueError(f"invalid place-name usage override: {override_index}")
+        country = str(override.get("country") or "")
+        place = str(override.get("place") or "").strip()
+        if len(country) != 2 or country != country.upper() or not place:
+            raise ValueError(f"invalid place-name usage override identity: {override_index}")
+        matching_indices = place_indices.get((country, place), [])
+        if len(matching_indices) != 1:
+            raise ValueError(
+                f"place-name usage override must match exactly one place: {country}/{place}"
+            )
+        evidence = override.get("evidence") or {}
+        if not isinstance(evidence, dict):
+            raise ValueError(
+                f"place-name usage override has invalid evidence: {country}/{place}"
+            )
+        sources = evidence.get("sources") or []
+        if evidence.get("basis") != "attested-usage" or not isinstance(sources, list):
+            raise ValueError(
+                f"place-name usage override lacks attested evidence: {country}/{place}"
+            )
+        if not sources or any(
+            not isinstance(source, dict)
+            or not str(source.get("url") or "").startswith(("https://", "http://"))
+            for source in sources
+        ):
+            raise ValueError(
+                f"place-name usage override lacks a source URL: {country}/{place}"
+            )
+        locale_names = override.get("locale_names")
+        if not isinstance(locale_names, dict) or not locale_names:
+            raise ValueError(
+                f"place-name usage override lacks locale names: {country}/{place}"
+            )
+        global_index = matching_indices[0]
+        for locale, value in locale_names.items():
+            normalized_locale = str(locale).replace("_", "-").lower()
+            normalized_value = str(value).strip()
+            if not normalized_locale.replace("-", "").isalnum() or not normalized_value:
+                raise ValueError(
+                    f"invalid attested place-name override: {country}/{place}/{locale}"
+                )
+            usage_key = (global_index, normalized_locale)
+            if usage_key in seen_usage_overrides:
+                raise ValueError(
+                    f"duplicate attested place-name override: {country}/{place}/{locale}"
+                )
+            seen_usage_overrides.add(usage_key)
+            locale_overrides.setdefault(normalized_locale, {})[global_index] = normalized_value
 
     script_fallbacks = {
         str(script): [str(item) for item in fallbacks]
@@ -646,7 +707,10 @@ def _language_place_assets(
         packed_locales: dict[str, dict[str, list[list]]] = {}
         for locale, overrides in sorted(locale_overrides.items()):
             if locale_scripts[locale] == script:
-                packed_locales.setdefault(locale, {})["places"] = overrides
+                packed_locales.setdefault(locale, {})["places"] = [
+                    [place_index, value]
+                    for place_index, value in sorted(overrides.items())
+                ]
         pack_payload = {
             "schema": 2,
             "script": script,
@@ -1341,6 +1405,7 @@ def render(
     places_manifest, places_chunks = _language_place_assets(
         hub.load_json(LANGUAGE_MAP_PLACES_PATH),
         map_data.get("toponym_resolution") or {},
+        hub.load_json(PLACE_NAME_USAGE_OVERRIDES_PATH),
     )
     map_data.pop("places_url", None)
     map_data["places"] = places_manifest

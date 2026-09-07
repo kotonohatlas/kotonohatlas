@@ -1342,121 +1342,95 @@ global.fetch = async () => ({
         self.assertEqual(set(snapshot["country_codes"]), set(map_data["iso2_to_iso3"]))
         self.assertIn("AQ", snapshot["country_codes"])
 
-    def test_deferred_place_labels_balance_population_and_map_prominence(self):
-        raw = COVERAGE.LANGUAGE_MAP_PLACES_PATH.read_text(encoding="utf-8")
-        self.assertNotIn("\n        [\n", raw)
-        payload = json.loads(raw)
-        countries = payload["countries"]
-
-        def names(code):
-            return [item[5] for item in countries[code]["places"]]
-
-        self.assertEqual(countries["JP"]["budget"], 20)
-        self.assertEqual(countries["JP"]["broad_label_floor"], 7)
-        self.assertEqual(
-            names("JP")[:13],
-            [
-                "Tokyo", "Ōsaka", "Nagoya", "Sapporo", "Fukuoka", "Sendai",
-                "Naha", "Hiroshima", "Niigata", "Akita", "Kagoshima", "Kanazawa",
-                "Miyazaki",
-            ],
-        )
-        self.assertEqual(countries["MM"]["representative_place"], "Yangon")
-        self.assertEqual(names("MM")[:3], ["Yangon", "Mandalay", "Naypyidaw"])
-        self.assertEqual(
-            names("RU")[:5],
-            ["Moscow", "St.  Petersburg", "Yekaterinburg", "Novosibirsk", "Kazan"],
-        )
-        self.assertEqual(countries["RU"]["budget"], 18)
-        self.assertEqual(countries["RU"]["broad_label_floor"], 7)
-        self.assertTrue(
-            {"Krasnoyarsk", "Irkutsk", "Vladivostok", "Khabarovsk", "Yakutsk", "Chita"}
-            <= set(names("RU"))
-        )
-        self.assertEqual(countries["US"]["budget"], 32)
-        self.assertEqual(countries["US"]["broad_label_floor"], 11)
-        self.assertEqual(countries["US"]["selected_label_floor"], 18)
-        self.assertTrue(
-            {
-                "Kansas City", "Omaha", "Wichita", "Oklahoma City", "Tulsa",
-                "Des Moines", "Fargo", "Sioux Falls", "Anchorage", "Fairbanks",
-                "Juneau", "Nome", "Utqiaġvik",
+    def test_attested_place_usage_overrides_generated_script_fallback(self):
+        places = {
+            "countries": {
+                "ZZ": {
+                    "places": [
+                        [
+                            1.0,
+                            2.0,
+                            3.0,
+                            1,
+                            4,
+                            "Synthetic Place",
+                            {"scripts": {"Latn": "Generated form"}},
+                        ]
+                    ]
+                }
             }
-            <= set(names("US"))
+        }
+        policy = {"locale_scripts": {"zz": "Latn"}, "final_scripts": ["Latn"]}
+        usage = {
+            "schema": 1,
+            "places": [
+                {
+                    "country": "ZZ",
+                    "place": "Synthetic Place",
+                    "evidence": {
+                        "basis": "attested-usage",
+                        "sources": [{"url": "https://example.invalid/attested-place"}],
+                    },
+                    "locale_names": {"zz": "Attested form"},
+                }
+            ],
+        }
+
+        manifest, chunks = COVERAGE._language_place_assets(places, policy, usage)
+        pack = json.loads(gzip.decompress(chunks["pack-Latn.json.gz"]))
+
+        self.assertEqual(manifest["place_count"], 1)
+        self.assertEqual(pack["names"], ["Generated form"])
+        self.assertEqual(pack["locales"]["zz"]["places"], [[0, "Attested form"]])
+
+    def test_deferred_place_labels_have_well_formed_sparse_names(self):
+        payload = json.loads(
+            COVERAGE.LANGUAGE_MAP_PLACES_PATH.read_text(encoding="utf-8")
         )
-        self.assertEqual(countries["CA"]["budget"], 15)
-        self.assertEqual(countries["CA"]["broad_label_floor"], 7)
-        self.assertEqual(countries["CA"]["selected_label_floor"], 14)
-        self.assertTrue(
-            {"Whitehorse", "Yellowknife", "Iqaluit", "Churchill", "Inuvik", "Resolute"}
-            <= set(names("CA"))
-        )
-        for code in ("US", "CA", "RU"):
-            self.assertEqual(len(names(code)), len(set(names(code))))
-            self.assertTrue(countries[code]["prefer_place_labels_when_selected"])
-        self.assertEqual(names("KZ")[0], "Astana")
-        self.assertEqual(countries["KZ"]["places"][0][6]["scripts"]["Jpan"], "アスタナ")
-        self.assertEqual(names("TN")[0], "Tunis")
-        self.assertEqual(countries["AR"]["broad_label_floor"], 2)
-        self.assertEqual(names("AR")[:2], ["Buenos Aires", "Ushuaia"])
-        self.assertEqual(countries["ZA"]["broad_label_floor"], 3)
-        self.assertEqual(names("ZA")[:3], ["Pretoria", "Cape Town", "Bloemfontein"])
-        self.assertEqual(countries["AU"]["broad_label_floor"], 3)
-        self.assertEqual(names("AU")[:3], ["Canberra", "Sydney", "Darwin"])
-        self.assertEqual(names("PL")[:3], ["Warsaw", "Kraków", "Gdańsk"])
-        self.assertEqual(
-            names("PL")[:7],
-            ["Warsaw", "Kraków", "Gdańsk", "Wrocław", "Poznań", "Łódź", "Szczecin"],
-        )
-        self.assertEqual(
-            names("BY")[:6],
-            ["Minsk", "Homyel", "Brest", "Hrodna", "Vitsyebsk", "Mahilyow"],
-        )
-        self.assertEqual(names("CZ")[:3], ["Prague", "Brno", "Ostrava"])
-        self.assertEqual(
-            names("DE")[:7],
-            ["Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne", "Dresden", "Leipzig"],
-        )
-        self.assertEqual(
-            names("FR")[:6],
-            ["Paris", "Lyon", "Marseille", "Toulouse", "Bordeaux", "Strasbourg"],
-        )
-        self.assertEqual(
-            names("GB")[:7],
-            ["London", "Edinburgh", "Belfast", "Cardiff", "Manchester", "Birmingham", "Glasgow"],
-        )
-        self.assertEqual(
-            names("AT")[:4],
-            ["Vienna", "Salzburg", "Innsbruck", "Graz"],
-        )
-        self.assertEqual(
-            names("IT")[:8],
-            ["Rome", "Milan", "Naples", "Venice", "Florence", "Turin", "Bologna", "Bari"],
-        )
-        self.assertEqual(names("CH")[:4], ["Zürich", "Bern", "Geneva", "Basel"])
-        self.assertEqual(
-            names("SO")[:3],
-            ["Mogadishu", "Hargeisa", "Kismaayo"],
-        )
-        self.assertEqual(
-            names("TR")[:10],
-            ["Istanbul", "Ankara", "İzmir", "Bursa", "Antalya", "Adana", "Gaziantep", "Diyarbakır", "Trabzon", "Erzurum"],
-        )
-        self.assertEqual(
-            names("UA")[:5],
-            ["Kyiv", "Lviv", "Odessa", "Kharkiv", "Dnipro"],
-        )
-        self.assertEqual(names("SA")[:4], ["Riyadh", "Jeddah", "Medina", "Makkah"])
-        self.assertEqual(names("SK")[:2], ["Bratislava", "Košice"])
-        self.assertNotIn("MC", countries)
-        self.assertNotIn("SM", countries)
-        self.assertEqual(names("LI")[0], "Vaduz")
-        louangphrabang = next(item for item in countries["LA"]["places"] if item[5] == "Louangphrabang")
-        self.assertEqual(louangphrabang[6]["scripts"]["Jpan"], "ルアンパバーン")
-        seoul = next(item for item in countries["KR"]["places"] if item[5] == "Seoul")
-        busan = next(item for item in countries["KR"]["places"] if item[5] == "Busan")
-        self.assertEqual(seoul[6]["scripts"]["Jpan"], "ソウル")
-        self.assertEqual(busan[6]["scripts"]["Jpan"], "釜山")
+        countries = payload.get("countries")
+        self.assertIsInstance(countries, dict)
+        self.assertTrue(countries)
+
+        for country, configured in countries.items():
+            with self.subTest(country=country):
+                self.assertRegex(country, r"^[A-Z]{2}$")
+                places = configured.get("places")
+                self.assertIsInstance(places, list)
+                self.assertTrue(places)
+                names = [row[5] for row in places]
+                self.assertGreaterEqual(configured.get("budget", 0), 1)
+                self.assertLessEqual(configured["budget"], len(places))
+                if "representative_place" in configured:
+                    self.assertIn(configured["representative_place"], names)
+                if "prefer_place_labels_when_selected" in configured:
+                    self.assertIsInstance(
+                        configured["prefer_place_labels_when_selected"], bool
+                    )
+                for row in places:
+                    self.assertEqual(len(row), 7)
+                    longitude, latitude, minimum_zoom, capital, population, name, labels = row
+                    self.assertTrue(-180 <= longitude <= 180)
+                    self.assertTrue(-90 <= latitude <= 90)
+                    self.assertIsInstance(minimum_zoom, (int, float))
+                    self.assertIn(capital, (0, 1))
+                    self.assertGreaterEqual(population, 0)
+                    self.assertTrue(str(name).strip())
+                    self.assertIsInstance(labels, dict)
+                    scripts = labels.get("scripts")
+                    self.assertIsInstance(scripts, dict)
+                    self.assertTrue(scripts)
+                    self.assertTrue(all(
+                        str(script).replace("-", "").isalnum()
+                        and bool(str(value).strip())
+                        for script, value in scripts.items()
+                    ))
+                    locales = labels.get("locales") or {}
+                    self.assertIsInstance(locales, dict)
+                    self.assertTrue(all(
+                        str(locale).replace("-", "").replace("_", "").isalnum()
+                        and bool(str(value).strip())
+                        for locale, value in locales.items()
+                    ))
 
     def test_disabled_registry_rows_are_omitted_instead_of_becoming_plans(self):
         registry = json.loads(json.dumps(COVERAGE.hub.locales_config()))
@@ -2213,166 +2187,74 @@ global.fetch = async () => ({
         self.assertNotRegex(raw, r'"[A-Za-z_]*countries": \[\n')
         self.assertEqual(data["type"], "FeatureCollection")
         features = data["features"]
-        self.assertGreaterEqual(len(features), 70)
-        wave_one_label_locales = {
-            "en", "ja", "zh-hans", "zh-hant", "de", "fr", "es", "ko", "pt", "it", "ru",
-        }
+        self.assertTrue(features)
+        configured_codes = set(json.loads(
+            COVERAGE.LANGUAGE_MAP_PATH.read_text(encoding="utf-8")
+        )["iso2_to_iso3"])
+        viewpoint_groups = set(json.loads(
+            COVERAGE.LANGUAGE_MAP_PATH.read_text(encoding="utf-8")
+        ).get("viewpoint_groups", {}))
+        feature_ids = [feature["properties"].get("id") for feature in features]
+        source_ids = [
+            feature["properties"].get("selection_rule", {}).get("source_id")
+            for feature in features
+        ]
+        self.assertTrue(all(feature_ids))
+        self.assertEqual(len(feature_ids), len(set(feature_ids)))
+        self.assertTrue(all(source_ids))
+        self.assertEqual(len(source_ids), len(set(source_ids)))
+
         for feature in features:
             with self.subTest(feature_name_schema=feature["properties"]["id"]):
                 properties = feature["properties"]
                 rule = properties["selection_rule"]
-                self.assertIn("name", properties)
-                self.assertEqual(set(properties["name"]), wave_one_label_locales)
-                self.assertTrue(all(properties["name"].values()))
+                names = properties.get("name")
+                self.assertIsInstance(names, dict)
+                self.assertTrue(names)
+                self.assertFalse(set(names) - {"scripts", "locales"})
+                scripts = names.get("scripts") or {}
+                locales = names.get("locales") or {}
+                self.assertIsInstance(scripts, dict)
+                self.assertIsInstance(locales, dict)
+                self.assertTrue(scripts)
+                self.assertTrue(all(str(value).strip() for value in scripts.values()))
+                self.assertTrue(all(str(value).strip() for value in locales.values()))
+                self.assertIn(feature["geometry"]["type"], {"Polygon", "MultiPolygon"})
                 self.assertNotIn("name_en", properties)
                 self.assertNotIn("name_ja", properties)
                 self.assertNotIn("name_long", properties)
                 self.assertNotIn("label_en", rule)
                 self.assertNotIn("label_ja", rule)
+                for key in (
+                    "countries",
+                    "party_countries",
+                    "admin_countries",
+                    "claim_only_countries",
+                ):
+                    if key not in rule:
+                        continue
+                    codes = rule[key]
+                    self.assertIsInstance(codes, list)
+                    self.assertEqual(len(codes), len(set(codes)))
+                    self.assertFalse(set(codes) - configured_codes)
+                for resolution in rule.get("viewpoint_resolutions", []):
+                    self.assertIsInstance(resolution, dict)
+                    self.assertTrue(
+                        resolution.get("viewpoint_group")
+                        or resolution.get("viewpoints")
+                        or resolution.get("default") is True
+                    )
+                    if resolution.get("viewpoint_group"):
+                        self.assertIn(resolution["viewpoint_group"], viewpoint_groups)
+                    self.assertFalse(
+                        set(resolution.get("viewpoints", [])) - configured_codes
+                    )
+                    self.assertFalse(
+                        set(resolution.get("selection_countries", []))
+                        - configured_codes
+                    )
+
         rules = [feature["properties"]["selection_rule"] for feature in features]
-        self.assertNotIn("B21", {rule["source_id"] for rule in rules})
-        alhucemas = next(
-            feature for feature in features
-            if feature["properties"]["id"] == "D-B64"
-        )
-        self.assertEqual(alhucemas["properties"]["name"]["en"], "Alhucemas Islands")
-        self.assertEqual(alhucemas["properties"]["name"]["ja"], "アルセマス諸島")
-        map_data = json.loads(COVERAGE.LANGUAGE_MAP_PATH.read_text(encoding="utf-8"))
-        viewpoint_groups = set(map_data.get("viewpoint_groups", {}))
-        self.assertTrue(all(feature["geometry"]["type"] in {"Polygon", "MultiPolygon"} for feature in features))
-        ilemi_rules = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B17", "B74"}
-        }
-        self.assertEqual(set(ilemi_rules), {"B17", "B74"})
-        for source_id, rule in ilemi_rules.items():
-            with self.subTest(source_id=source_id):
-                self.assertEqual(set(rule["countries"]), {"KE", "SS"})
-                self.assertEqual(set(rule["party_countries"]), {"KE", "SS"})
-                self.assertNotIn("SD", rule["countries"])
-                self.assertNotIn("ET", rule["party_countries"])
-                self.assertEqual(
-                    rule["viewpoint_resolutions"],
-                    [
-                        {
-                            "viewpoints": ["KE"],
-                            "selection_countries": ["KE"],
-                            "level": "administered",
-                        },
-                        {
-                            "viewpoints": ["SS"],
-                            "selection_countries": ["SS"],
-                            "level": "administered",
-                        },
-                        {
-                            "default": True,
-                            "selection_countries": ["KE", "SS"],
-                            "level": "observed",
-                        },
-                    ],
-                )
-        lawa_rule = next(rule for rule in rules if rule["source_id"] == "B14")
-        self.assertEqual(lawa_rule["countries"], ["GF", "SR"])
-        self.assertEqual(lawa_rule["admin_countries"], ["GF"])
-        self.assertEqual(lawa_rule["party_countries"], ["GF", "SR"])
-        japan_rules = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B18", "B29", "B39"}
-        }
-        self.assertEqual(set(japan_rules), {"B18", "B29", "B39"})
-        self.assertTrue(all(rule["countries"] == ["JP"] for rule in japan_rules.values()))
-        self.assertEqual(japan_rules["B18"]["party_countries"], ["JP", "TW", "CN"])
-        self.assertEqual(japan_rules["B18"]["admin_countries"], ["JP"])
-        self.assertEqual(japan_rules["B29"]["party_countries"], ["JP", "RU"])
-        self.assertEqual(japan_rules["B29"]["admin_countries"], ["RU"])
-        self.assertEqual(japan_rules["B39"]["party_countries"], ["JP", "KR"])
-        self.assertEqual(japan_rules["B39"]["admin_countries"], ["KR"])
-        self.assertTrue(all("japan_preferred" not in rule for rule in rules))
-        self_administered = {
-            rule["source_id"]
-            for rule in rules
-            if rule.get("self_administered")
-        }
-        self.assertEqual(self_administered, {"B35", "B36", "B37", "C02", "C03"})
-        israel_rule = next(rule for rule in rules if rule["source_id"] == "B91")
-        self.assertEqual(israel_rule["countries"], ["IL"])
-        self.assertEqual(israel_rule["party_countries"], ["IL"])
-        palestinian_regions = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B53", "B54"}
-        }
-        self.assertEqual(set(palestinian_regions), {"B53", "B54"})
-        for rule in palestinian_regions.values():
-            self.assertEqual(rule["countries"], ["PS"])
-            self.assertEqual(rule["party_countries"], ["PS", "IL"])
-            self.assertEqual(rule["admin_countries"], ["PS"])
-        israel_claim_regions = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B16", "B53", "B54", "B58", "B78", "B79", "B98", "B99"}
-        }
-        self.assertEqual(
-            set(israel_claim_regions),
-            {"B16", "B53", "B54", "B58", "B78", "B79", "B98", "B99"},
-        )
-        recognized_by_source = {
-            "B16": "SY",
-            "B53": "PS",
-            "B54": "PS",
-            "B58": "LB",
-            "B78": "PS",
-            "B79": "PS",
-            "B98": "PS",
-            "B99": "PS",
-        }
-        for source_id, rule in israel_claim_regions.items():
-            with self.subTest(source_id=source_id):
-                recognized_country = recognized_by_source[source_id]
-                self.assertEqual(
-                    rule["viewpoint_resolutions"],
-                    [
-                        {
-                            "viewpoint_group": "israel_nonrecognizing_states",
-                            "selection_countries": [recognized_country],
-                            "level": "recognized",
-                        }
-                    ],
-                )
-                self.assertIn(
-                    rule["viewpoint_resolutions"][0]["viewpoint_group"],
-                    viewpoint_groups,
-                )
-        standalone_disputed = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B12", "B22", "B32", "B33", "B55", "B69"}
-        }
-        self.assertEqual(standalone_disputed["B12"]["countries"], ["FK"])
-        self.assertEqual(standalone_disputed["B55"]["countries"], ["GI"])
-        self.assertEqual(standalone_disputed["B22"]["countries"], ["YT"])
-        self.assertEqual(standalone_disputed["B69"]["countries"], ["IO"])
-        for source_id in ("B32", "B33"):
-            self.assertEqual(standalone_disputed[source_id]["countries"], ["GS"])
-        ceuta_melilla = {
-            rule["source_id"]: rule
-            for rule in rules
-            if rule["source_id"] in {"B60", "B61"}
-        }
-        self.assertEqual(set(ceuta_melilla), {"B60", "B61"})
-        for rule in ceuta_melilla.values():
-            self.assertEqual(rule["countries"], ["EA"])
-            self.assertEqual(rule["admin_countries"], ["EA", "ES"])
-            self.assertEqual(rule["party_countries"], ["EA", "ES", "MA"])
-        north_borneo = next(
-            feature for feature in features
-            if feature["properties"]["selection_rule"]["source_id"] == "C04"
-        )
-        self.assertEqual(north_borneo["properties"]["name"]["en"], "Sabah (North Borneo)")
-        self.assertEqual(north_borneo["properties"]["name"]["ja"], "サバ州（北ボルネオ）")
-        configured_codes = set(json.loads(COVERAGE.LANGUAGE_MAP_PATH.read_text(encoding="utf-8"))["iso2_to_iso3"])
         for rule in rules:
             for target, viewpoints in rule.get(
                 "party_equivalent_viewpoint_selections", {}

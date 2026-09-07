@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "description": "Attested locale-specific place labels. These selectively override generated script fallbacks; a locale absent from this file deliberately keeps the generated form.",
+  "places": [
+    {
+      "country": "AT",
+      "place": "Salzburg",
+      "identity": {
+        "wikidata": "Q34713"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q34713",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳልጽቡርግ",
+        "ar": "زالتسبورغ",
+        "bn": "জালৎস্‌বুর্গ",
+        "ckb": "سالزبۆرگ",
+        "gu": "સાલ્ઝબર્ગ",
+        "hi": "साल्ज़बर्ग",
+        "hy": "Զալցբուրգ",
+        "ka": "ზალცბურგი",
+        "kn": "ಸಾಲ್ಜ್ಬರ್ಗ್",
+        "ml": "സാൽസ്ബുർഗ്",
+        "mr": "जाल्त्सबुर्ग",
+        "ps": "سالڅبورګ",
+        "sd": "سلزبرگ",
+        "th": "ซัลทซ์บวร์ค"
+      }
+    }
+  ]
+}
