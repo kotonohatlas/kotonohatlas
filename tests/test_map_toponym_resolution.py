@@ -8,6 +8,35 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class MapToponymResolutionTests(unittest.TestCase):
+    def test_motion_preview_labels_can_be_relocalized_without_rebuilding_geometry(self):
+        runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
+        script = f"""
+          import {{relocalizeMotionLabels}} from {json.dumps(runtime)};
+          const countries = [{{code:'AA', name:'Localized country'}}];
+          const places = [['AA', {{places:[[10, 20, 4, true, 100, 'source capital']]}}]];
+          const countryLabels = [{{code:'AA', text:'Initial country'}}];
+          const capitalLabels = [{{countryCode:'AA', coordinate:[10, 20], text:'Initial capital'}}];
+          const updated = relocalizeMotionLabels(
+            countryLabels,
+            capitalLabels,
+            countries,
+            places,
+            (row) => 'Localized ' + row[5]
+          );
+          console.log(JSON.stringify({{updated, countryLabels, capitalLabels}}));
+        """
+        completed = subprocess.run(
+            ["node", "--input-type=module", "--eval", script],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        result = json.loads(completed.stdout)
+        self.assertEqual(result["updated"], 2)
+        self.assertEqual(result["countryLabels"][0]["text"], "Localized country")
+        self.assertEqual(result["capitalLabels"][0]["text"], "Localized source capital")
+
     def test_url_zoom_uses_web_map_absolute_levels(self):
         runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
         script = f"""

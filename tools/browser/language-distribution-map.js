@@ -892,6 +892,46 @@ export function placeScriptForLocale(assets, locale, resolution = {}, localeFall
   return placeAssetPlanForLocale(assets, locale, resolution, localeFallbacks).script;
 }
 
+function motionPlaceLabelKey(countryCode, coordinate) {
+  return `${countryCode}\u0000${Number(coordinate?.[0])},${Number(coordinate?.[1])}`;
+}
+
+export function relocalizeMotionLabels(
+  countryLabels,
+  capitalLabels,
+  countries,
+  placeCountryEntries,
+  resolvePlaceName = (row) => row?.[5] || ""
+) {
+  const countryNames = new Map(
+    (countries || []).map((country) => [country.code, String(country.name || "")])
+  );
+  let updated = 0;
+  (countryLabels || []).forEach((label) => {
+    const next = countryNames.get(label.code);
+    if (!next || next === label.text) return;
+    label.text = next;
+    updated += 1;
+  });
+
+  const capitalNames = new Map();
+  (placeCountryEntries || []).forEach(([countryCode, country]) => {
+    (country?.places || []).forEach((row) => {
+      if (!row[3]) return;
+      const next = String(resolvePlaceName(row) || "");
+      if (!next) return;
+      capitalNames.set(motionPlaceLabelKey(countryCode, row), next);
+    });
+  });
+  (capitalLabels || []).forEach((label) => {
+    const next = capitalNames.get(motionPlaceLabelKey(label.countryCode, label.coordinate));
+    if (!next || next === label.text) return;
+    label.text = next;
+    updated += 1;
+  });
+  return updated;
+}
+
 function placeLocaleAssetKeys(assets, locale, resolution, localeFallbacks) {
   const available = normalizedRecord(assets?.locales);
   return placeAssetPlanForLocale(assets, locale, resolution, localeFallbacks).localeKeys
@@ -2443,6 +2483,7 @@ function createMap(root, data, initialOptions) {
   let navigationFrame = 0;
   let navigationGeneration = 0;
   let refreshNavigationSelection = null;
+  let refreshNavigationLocalization = null;
   let detailRestoreTimer = 0;
   let projectionMode = projectionModes.includes(initialViewState.projection) ? initialViewState.projection : "auto";
   let pendingProjectionView = initialCenter.length === 2
@@ -5633,6 +5674,7 @@ function createMap(root, data, initialOptions) {
       // or when a full draw invalidates the cached scene.
       paintLocalizedLabels(canvas, projection, width, height, iso2ByIso3);
     }
+    if (refreshNavigationLocalization) refreshNavigationLocalization();
     root.dataset.mapLocalizationRefreshMs = (performance.now() - startedAt).toFixed(2);
   }
 
@@ -5794,13 +5836,28 @@ function createMap(root, data, initialOptions) {
     [normalCountryProbe, selectedCountryProbe, capitalLabelProbe, capitalMarkerProbe]
       .forEach((item) => { if (item.style.visibility === "hidden") item.remove(); });
     const motionTextLabels = [...motionCountryLabels, ...motionCapitalLabels];
-    motionTextLabels.forEach((item) => {
+    const measureMotionLabel = (item) => {
       context.font = item.paint.font;
       item.textWidth = Math.ceil(context.measureText(item.text || "").width);
       item.textHeight = Math.max(8, Number.parseFloat(item.paint.font.match(/([\d.]+)px/)?.[1]) || 10);
-    });
+    };
+    motionTextLabels.forEach(measureMotionLabel);
     root.dataset.mapMotionLabels = String(motionTextLabels.length);
     root.dataset.mapMotionCapitals = String(motionCapitalMarkers.length);
+
+    const updateLocalization = () => {
+      const updated = relocalizeMotionLabels(
+        motionCountryLabels,
+        motionCapitalLabels,
+        options.countries,
+        placesReadyForUiLanguage() ? placeCountryEntries : [],
+        placeName
+      );
+      motionTextLabels.forEach(measureMotionLabel);
+      root.dataset.mapMotionLabelLanguage = normalize(options.language);
+      root.dataset.mapMotionLabelUpdates = String(updated);
+      return updated > 0;
+    };
 
     const paintFor = (shape) => {
       const style = shape ? window.getComputedStyle(shape) : null;
@@ -6446,12 +6503,14 @@ function createMap(root, data, initialOptions) {
       show,
       hide,
       updateSelection,
+      updateLocalization,
       renderDuration: () => lastRenderDuration
     };
   }
 
   function enablePlanarNavigation(canvas, projection, path, width, height, preserveNavigation, deferredOffscreen) {
     refreshNavigationSelection = null;
+    refreshNavigationLocalization = null;
     planarProjection = cloneProjection(projection);
     const selection = select(svg);
     const limits = navigationLimits(path, width, height);
@@ -6583,6 +6642,14 @@ function createMap(root, data, initialOptions) {
       // when a selection arrives while a detailed SVG restore is pending.
       // The pending restore is intentionally left intact so it can hide the
       // transient layer and leave the following drag in a settled state.
+      if (root.dataset.mapMotionActive === "true") {
+        motionRenderer.render(activeProjection);
+      }
+      return true;
+    };
+    refreshNavigationLocalization = () => {
+      if (generation !== navigationGeneration) return false;
+      motionRenderer.updateLocalization();
       if (root.dataset.mapMotionActive === "true") {
         motionRenderer.render(activeProjection);
       }
@@ -7603,6 +7670,8 @@ function createMap(root, data, initialOptions) {
       cancelAnimationFrame(navigationFrame);
       window.clearTimeout(detailUpgradeTimer);
       placeLoadGeneration += 1;
+      refreshNavigationSelection = null;
+      refreshNavigationLocalization = null;
       if (detailUpgradeIdle && typeof window.cancelIdleCallback === "function") window.cancelIdleCallback(detailUpgradeIdle);
       root.replaceChildren();
     }
