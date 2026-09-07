@@ -126,6 +126,10 @@ usage belongs in `config/geography/place-name-usage-overrides.json`, together wi
 listed locale and place. Absence from that file does not mark a generated form as missing or incorrect. Keeping this
 layer separate also makes reviewed usage survive regeneration of `config/geography/places.json`.
 
+Use the per-country `priority` lists in `config/geography/place-overrides.json` to order usage review. Prominent labels
+are more likely to have established exonyms, but priority is only a review queue: it never proves an override or changes
+a label without attested locale-specific evidence.
+
 ## Tests
 
 ```text

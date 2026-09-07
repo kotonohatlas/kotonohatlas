@@ -34,6 +34,6289 @@
         "sd": "سلزبرگ",
         "th": "ซัลทซ์บวร์ค"
       }
+    },
+    {
+      "country": "AT",
+      "place": "Vienna",
+      "identity": {
+        "wikidata": "Q1741"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q1741",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቪየና",
+        "ckb": "ڤیێنا",
+        "hy": "Վիեննա",
+        "ka": "ვენა",
+        "kn": "ವಿಯೆನ್ನ",
+        "ml": "വിയന്ന",
+        "mr": "व्हियेना",
+        "ps": "ویانا",
+        "sd": "ويانا",
+        "th": "เวียนนา"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Munich",
+      "identity": {
+        "wikidata": "Q1726"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q1726",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሙኒክ",
+        "ckb": "میونشن",
+        "hy": "Մյունխեն",
+        "ka": "მიუნხენი",
+        "kn": "ಮ್ಯೂನಿಕ್",
+        "ml": "മ്യൂണിക്ക്",
+        "mr": "म्युन्शेन",
+        "sd": "ميونخ",
+        "th": "มิวนิก"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Hamburg",
+      "identity": {
+        "wikidata": "Q1055"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q1055",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሃምቡርግ",
+        "ckb": "ھامبورگ",
+        "hy": "Համբուրգ",
+        "ka": "ჰამბურგი",
+        "kn": "ಹ್ಯಾಂಬರ್ಗ್",
+        "ml": "ഹാംബർഗ്",
+        "mr": "हांबुर्ग",
+        "ps": "هامبورګ",
+        "sd": "ھئمبرگ",
+        "th": "ฮัมบวร์ค"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Frankfurt",
+      "identity": {
+        "wikidata": "Q1794"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q1794",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፍራንክፉርት",
+        "ckb": "فرانکفورت",
+        "hy": "Մայնի Ֆրանկֆուրտ",
+        "ka": "ფრანკფურტი",
+        "kn": "ಫ್ರಾಂಕ್ಫರ್ಟ್",
+        "ml": "ഫ്രാങ്ക്ഫർട്ട്",
+        "mr": "फ्रांकफुर्ट",
+        "ps": "فرانکفورت",
+        "sd": "فرينڪفرٽ",
+        "th": "แฟรงก์เฟิร์ต"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Cologne",
+      "identity": {
+        "wikidata": "Q365"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q365",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "کۆلن",
+        "hy": "Քյոլն",
+        "ka": "კიოლნი",
+        "kn": "ಕಲೋನ್",
+        "ml": "കൊളോൺ",
+        "mr": "क्योल्न",
+        "ps": "کولن",
+        "sd": "ڪولون",
+        "th": "โคโลญ"
+      }
+    },
+    {
+      "country": "CH",
+      "place": "Geneva",
+      "identity": {
+        "wikidata": "Q71"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q71",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዠኔቭ",
+        "ckb": "ژنێڤ",
+        "hy": "Ժնև",
+        "ka": "ჟენევა",
+        "kn": "ಜಿನಿವಾ",
+        "ml": "ജനീവ",
+        "mr": "जिनिव्हा",
+        "ps": "ژینو",
+        "sd": "جنيوا",
+        "th": "เจนีวา"
+      }
+    },
+    {
+      "country": "CZ",
+      "place": "Prague",
+      "identity": {
+        "wikidata": "Q1085"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q1085",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፕራግ",
+        "ckb": "پراگ",
+        "hy": "Պրահա",
+        "ka": "პრაღა",
+        "kn": "ಪ್ರಾಗ್",
+        "ml": "പ്രാഗ്",
+        "ps": "پراګ",
+        "sd": "پراگ",
+        "th": "ปราก"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Berlin",
+      "identity": {
+        "wikidata": "Q64"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q64",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "بەرلین",
+        "gu": "બર્લિન",
+        "hy": "Բեռլին",
+        "ka": "ბერლინი",
+        "kn": "ಬರ್ಲಿನ್",
+        "ml": "ബെർലിൻ",
+        "sd": "برلن",
+        "th": "เบอร์ลิน"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "London",
+      "identity": {
+        "wikidata": "Q84"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q84",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "لەندەن",
+        "gu": "લંડન",
+        "kn": "ಲಂಡನ್",
+        "ml": "ലണ്ടൻ",
+        "mr": "लंडन",
+        "sd": "لنڊن"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Paris",
+      "identity": {
+        "wikidata": "Q90"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q90",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "پاریس",
+        "gu": "પેરિસ",
+        "hi": "पेरिस",
+        "kn": "ಪ್ಯಾರಿಸ್",
+        "ml": "പാരിസ്",
+        "mr": "पॅरिस",
+        "ps": "پاریس",
+        "sd": "پيرس"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Rome",
+      "identity": {
+        "wikidata": "Q220"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q220",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ڕۆما",
+        "hy": "Հռոմ",
+        "ka": "რომი",
+        "kn": "ರೋಮ್",
+        "ml": "റോം",
+        "ps": "روم",
+        "sd": "روم"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Warsaw",
+      "identity": {
+        "wikidata": "Q270"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q270",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዋርሶው",
+        "ckb": "وارشۆ",
+        "hy": "Վարշավա",
+        "kn": "ವಾರ್ಸಾ",
+        "ml": "വാഴ്‌സ",
+        "mr": "वॉर्सा",
+        "ps": "وارسا",
+        "sd": "وارسا",
+        "th": "วอร์ซอ"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Milan",
+      "identity": {
+        "wikidata": "Q490"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q490",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "میلان",
+        "gu": "મિલાન",
+        "hy": "Միլան",
+        "ka": "მილანი",
+        "kn": "ಮಿಲಾನ್",
+        "ml": "മിലാൻ",
+        "mr": "मिलान",
+        "ps": "میلان",
+        "th": "มิลาน"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Venice",
+      "identity": {
+        "wikidata": "Q641"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q641",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቬኒስ",
+        "ckb": "ڤێنیز",
+        "hy": "Վենետիկ",
+        "kn": "ವೆನಿಸ್",
+        "ml": "വെനീസ്",
+        "mr": "व्हेनिस",
+        "ps": "وېنيس",
+        "th": "เวนิส"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Moscow",
+      "identity": {
+        "wikidata": "Q649"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q649",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሞስኮ",
+        "ckb": "مۆسکۆ",
+        "hy": "Մոսկվա",
+        "ka": "მოსკოვი",
+        "kn": "ಮಾಸ್ಕೋ",
+        "ml": "മോസ്കോ",
+        "mr": "मॉस्को",
+        "ps": "مسکو",
+        "sd": "ماسڪو",
+        "th": "มอสโก"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "St.  Petersburg",
+      "identity": {
+        "wikidata": "Q656"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q656",
+            "checked_on": "2026-09-07"
+          },
+          {
+            "kind": "thai-government-usage",
+            "url": "https://iao.bangkok.go.th/content-detail/12317",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳንክት ፔቴርቡርግ",
+        "ckb": "سەنت پیتەرزبورگ",
+        "hy": "Սանկտ Պետերբուրգ",
+        "ka": "სანქტ-პეტერბურგი",
+        "kn": "ಸೇಂಟ್ ಪೀಟರ್ಸ್‌ಬರ್ಗ್",
+        "ml": "സെന്റ് പീറ്റേഴ്സ്ബർഗ്",
+        "ps": "سینټ پیټرزبورګ",
+        "sd": "سينٽ پيٽرسبرگ",
+        "th": "เซนต์ปีเตอร์สเบิร์ก"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Florence",
+      "identity": {
+        "wikidata": "Q2044"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q2044",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፍሎረንስ",
+        "ckb": "فلۆرێنس",
+        "hy": "Ֆլորենցիա",
+        "ka": "ფლორენცია",
+        "ml": "ഫ്ലോറൻസ്",
+        "mr": "फिरेंझे",
+        "ps": "فلورانس",
+        "th": "ฟลอเรนซ์"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Naples",
+      "identity": {
+        "wikidata": "Q2634"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q2634",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ናፖሊ",
+        "ckb": "ناپۆلی",
+        "hy": "Նեապոլ",
+        "ka": "ნეაპოლი",
+        "ml": "നാപ്പൊളി",
+        "mr": "नापोली",
+        "ps": "ناپل",
+        "th": "นาโปลี"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Strasbourg",
+      "identity": {
+        "wikidata": "Q6602"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikipedia-sitelinks",
+            "url": "https://www.wikidata.org/wiki/Q6602",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ስትራዝቡርግ",
+        "ckb": "سترازبێرگ",
+        "gu": "સ્ટ્રાસબોર્ગ",
+        "hy": "Ստրասբուրգ",
+        "ka": "სტრასბურგი",
+        "ml": "സ്ട്രാസ്ബർഗ്",
+        "mr": "स्त्रासबुर्ग",
+        "th": "สทราซบูร์"
+      }
+    },
+    {
+      "country": "NL",
+      "place": "Eindhoven",
+      "identity": {
+        "wikidata": "Q9832"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "hindi-news-usage",
+            "url": "https://navbharattimes.indiatimes.com/world/rest-of-europe/netherlands-eindhoven-airport-closed-after-drone-sighting-army-deployed-counter-drone-unit/amp_articleshow/125514313.cms",
+            "checked_on": "2026-09-07"
+          },
+          {
+            "kind": "hindi-financial-news-usage",
+            "url": "https://www.angelone.in/news/hindi/economy/india-explores-semiconductor-collaboration-in-eindhoven-amid-growing-tech-ties",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hi": "आइंडहोवन"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Buenos Aires",
+      "identity": {
+        "wikidata": "Q1486"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1486",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ብዌኖስ አይሬስ",
+        "ckb": "بوێنس ئایریس",
+        "hy": "Բուենոս Այրես",
+        "ka": "ბუენოს-აირესი",
+        "kn": "ಬ್ಯೂನಸ್ ಐರಿಸ್",
+        "ml": "ബ്യൂണസ് അയേഴ്സ്",
+        "mr": "बुएनोस आइरेस",
+        "ps": "بوئنوس آيرز",
+        "sd": "بيونس آئرس",
+        "th": "บัวโนสไอเรส"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Ushuaia",
+      "identity": {
+        "wikidata": "Q44254"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q44254",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئۆشوایە",
+        "hy": "Ուշուայա",
+        "ka": "უშუაია",
+        "kn": "ಉಶುವಿಯಾ",
+        "ml": "ഉഷ്യൂയിയ",
+        "th": "อูซัวยา"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Córdoba",
+      "identity": {
+        "wikidata": "Q44210"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q44210",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "کۆردۆبا",
+        "hy": "Կորդովա",
+        "th": "กอร์โดบา"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Rosario",
+      "identity": {
+        "wikidata": "Q52535"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q52535",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ڕۆساریۆ",
+        "hy": "Ռոսարիո",
+        "ml": "റോസാരിയോ",
+        "mr": "रोझारियो",
+        "th": "โรซาริโอ"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Mendoza",
+      "identity": {
+        "wikidata": "Q44237"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q44237",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Մենդոսա",
+        "th": "เมนโดซา"
+      }
+    },
+    {
+      "country": "AT",
+      "place": "Innsbruck",
+      "identity": {
+        "wikidata": "Q1735"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1735",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "እንስብሩክ",
+        "ckb": "ئینسبروک",
+        "hy": "Ինսբրուք",
+        "ka": "ინსბრუკი",
+        "mr": "इन्सब्रुक",
+        "ps": "اینسبروک",
+        "sd": "انسبروڪ",
+        "th": "อินส์บรุค"
+      }
+    },
+    {
+      "country": "AT",
+      "place": "Graz",
+      "identity": {
+        "wikidata": "Q13298"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q13298",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "گراتس",
+        "hy": "Գրաց",
+        "ka": "გრაცი",
+        "kn": "ಗ್ರಾಜ್",
+        "mr": "ग्राझ",
+        "ps": "گراڅ",
+        "sd": "گراتس",
+        "th": "กราทซ์"
+      }
+    },
+    {
+      "country": "AT",
+      "place": "Linz",
+      "identity": {
+        "wikidata": "Q41329"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q41329",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "لینتز",
+        "hy": "Լինց",
+        "ka": "ლინცი",
+        "mr": "लिंत्स",
+        "ps": "لینڅ",
+        "th": "ลินทซ์"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Canberra",
+      "identity": {
+        "wikidata": "Q3114"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3114",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ካንበራ",
+        "ckb": "کانبێرا",
+        "hy": "Կանբերրա",
+        "ka": "კანბერა",
+        "ml": "കാൻബറ",
+        "mr": "कॅनबेरा",
+        "ps": "کانبیرا",
+        "sd": "ڪينبرا",
+        "th": "แคนเบอร์รา"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Sydney",
+      "identity": {
+        "wikidata": "Q3130"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3130",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሲድኒ",
+        "ckb": "سیدنی",
+        "gu": "સીડની",
+        "hy": "Սիդնեյ",
+        "kn": "ಸಿಡ್ನಿ",
+        "ml": "സിഡ്നി",
+        "ps": "سیدنی",
+        "sd": "سڊني",
+        "th": "ซิดนีย์"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Darwin",
+      "identity": {
+        "wikidata": "Q11568"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q11568",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "داروین",
+        "hy": "Դարվին",
+        "ka": "დარვინი",
+        "ml": "ഡാർവിൻ",
+        "ps": "داروین",
+        "th": "ดาร์วิน"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Melbourne",
+      "identity": {
+        "wikidata": "Q3141"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3141",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "መልበርን",
+        "ckb": "مێلبۆرن",
+        "gu": "મેલબોર્ન",
+        "hy": "Մելբուռն",
+        "ka": "მელბურნი",
+        "kn": "ಮೆಲ್ಬರ್ನ್",
+        "ml": "മെൽബൺ",
+        "mr": "मेलबर्न",
+        "sd": "ميلبورن",
+        "th": "เมลเบิร์น"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Brisbane",
+      "identity": {
+        "wikidata": "Q34932"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34932",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ብርዝበን",
+        "ckb": "بریزبێن",
+        "hy": "Բրիսբեն",
+        "ka": "ბრიზბენი",
+        "kn": "ಬ್ರಿಸ್ಬೇನ್",
+        "ml": "ബ്രിസ്ബെൻ",
+        "ps": "بریزبن",
+        "sd": "برسبين",
+        "th": "บริสเบน"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Minsk",
+      "identity": {
+        "wikidata": "Q2280"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2280",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሚንስክ",
+        "ckb": "مینسک",
+        "hy": "Մինսկ",
+        "ka": "მინსკი",
+        "kn": "ಮಿನ್ಸ್ಕ್",
+        "ml": "മിൻസ്ക്",
+        "mr": "मिन्‍स्‍क",
+        "ps": "مینسک",
+        "sd": "منسڪ",
+        "th": "มินสค์"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Homyel",
+      "identity": {
+        "wikidata": "Q2678"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2678",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Գոմել",
+        "ka": "გომელი",
+        "ps": "ګومل",
+        "th": "โฆเมียล"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Brest",
+      "identity": {
+        "wikidata": "Q140147"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q140147",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Բրեստ",
+        "ka": "ბრესტი",
+        "th": "แบรสต์"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Hrodna",
+      "identity": {
+        "wikidata": "Q181376"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q181376",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Գրոդնո",
+        "ka": "გროდნო",
+        "ps": "ګرودنو",
+        "th": "ฆโรดนา"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Vitsyebsk",
+      "identity": {
+        "wikidata": "Q102217"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q102217",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Վիտեբսկ",
+        "ka": "ვიტებსკი",
+        "ps": "ویتبسک",
+        "th": "วีเชปสก์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Ottawa",
+      "identity": {
+        "wikidata": "Q1930"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1930",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኦታዋ",
+        "ckb": "ئۆتاوا",
+        "hy": "Օտտավա",
+        "ka": "ოტავა",
+        "kn": "ಆಟ್ಟಾವಾ",
+        "ml": "ഓട്ടവ",
+        "ps": "آټاوا",
+        "sd": "اوٽاوا",
+        "th": "ออตตาวา"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Toronto",
+      "identity": {
+        "wikidata": "Q172"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q172",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "تۆرۆنتۆ",
+        "hy": "Տորոնտո",
+        "kn": "ಟೊರಾಂಟೋ",
+        "ml": "ടൊറാന്റോ",
+        "mr": "टोराँटो",
+        "ps": "ټورنټو",
+        "sd": "ٽورنٽو",
+        "th": "โทรอนโต"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Vancouver",
+      "identity": {
+        "wikidata": "Q24639"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q24639",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቫንኩቨር",
+        "ckb": "ڤانکۆڤەر",
+        "gu": "વાનકુવર",
+        "hy": "Վանկուվեր",
+        "ka": "ვანკუვერი",
+        "ml": "വാൻകൂവർ",
+        "mr": "व्हँकूव्हर",
+        "ps": "وانکووېر",
+        "th": "แวนคูเวอร์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Montréal",
+      "identity": {
+        "wikidata": "Q340"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q340",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሞንትሬያል",
+        "ckb": "مۆنتریال",
+        "hy": "Մոնրեալ",
+        "ka": "მონრეალი",
+        "ml": "മൊൺട്രിയാൽ",
+        "mr": "माँत्रियाल",
+        "ps": "مونټريال",
+        "sd": "مونٽريال",
+        "th": "มอนทรีออล"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Calgary",
+      "identity": {
+        "wikidata": "Q36312"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q36312",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ካልገሪ",
+        "ckb": "کالگاری",
+        "hy": "Կալգարի",
+        "kn": "ಕ್ಯಾಲ್ಗರಿ",
+        "ml": "കാൽഗറി",
+        "mr": "कॅल्गारी",
+        "th": "แคลกะรี"
+      }
+    },
+    {
+      "country": "CD",
+      "place": "Kinshasa",
+      "identity": {
+        "wikidata": "Q3838"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3838",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኪንሻሳ",
+        "ckb": "کینشاسا",
+        "hy": "Կինշասա",
+        "ka": "კინშასა",
+        "ml": "കിൻഷസ",
+        "ps": "کینشاسا",
+        "sd": "ڪنشاسا",
+        "th": "กินชาซา"
+      }
+    },
+    {
+      "country": "CD",
+      "place": "Lubumbashi",
+      "identity": {
+        "wikidata": "Q187593"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q187593",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Լուբումբաշի",
+        "ka": "ლუბუმბაში",
+        "th": "ลูบุมบาชี"
+      }
+    },
+    {
+      "country": "CD",
+      "place": "Mbuji-Mayi",
+      "identity": {
+        "wikidata": "Q319660"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q319660",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Մբուժի-Մայի",
+        "ka": "მბუჟი-მაიი",
+        "th": "อึมบูจีไมอี"
+      }
+    },
+    {
+      "country": "CD",
+      "place": "Kisangani",
+      "identity": {
+        "wikidata": "Q146723"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q146723",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կիսանգանի",
+        "ka": "კისანგანი"
+      }
+    },
+    {
+      "country": "CD",
+      "place": "Kananga",
+      "identity": {
+        "wikidata": "Q205327"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q205327",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կանանգա"
+      }
+    },
+    {
+      "country": "CH",
+      "place": "Zürich",
+      "identity": {
+        "wikidata": "Q72"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q72",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዙሪክ",
+        "ckb": "زوریخ",
+        "hy": "Ցյուրիխ",
+        "ka": "ციურიხი",
+        "ml": "സൂറിച്ച്",
+        "mr": "झ्युरिक",
+        "ps": "څوریخ",
+        "th": "ซือริช"
+      }
+    },
+    {
+      "country": "CH",
+      "place": "Bern",
+      "identity": {
+        "wikidata": "Q70"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q70",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቤርን",
+        "ckb": "بێرن",
+        "hy": "Բեռն",
+        "ka": "ბერნი",
+        "ml": "ബേൺ",
+        "th": "แบร์น"
+      }
+    },
+    {
+      "country": "CH",
+      "place": "Basel",
+      "identity": {
+        "wikidata": "Q78"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q78",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ባዝል",
+        "hy": "Բազել",
+        "ka": "ბაზელი",
+        "mr": "बासल",
+        "th": "บาเซิล"
+      }
+    },
+    {
+      "country": "CZ",
+      "place": "Brno",
+      "identity": {
+        "wikidata": "Q14960"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q14960",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "برنۆ",
+        "hy": "Բռնո",
+        "th": "เบอร์โน"
+      }
+    },
+    {
+      "country": "CZ",
+      "place": "Ostrava",
+      "identity": {
+        "wikidata": "Q8385"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q8385",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Օստրավա",
+        "mr": "ओस्त्राव्हा",
+        "ps": "اوستراوا",
+        "th": "โอสตราวา"
+      }
+    },
+    {
+      "country": "ET",
+      "place": "Addis Ababa",
+      "identity": {
+        "wikidata": "Q3624"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3624",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئەدیس ئەبابا",
+        "hy": "Ադիս Աբեբա",
+        "ka": "ადის-აბება",
+        "kn": "ಅಡಿಸ್ ಅಬಾಬ",
+        "ml": "അഡിസ് അബെബ",
+        "mr": "अदिस अबाबा",
+        "ps": "آدیس آبابا",
+        "sd": "اديس ابابا",
+        "th": "อาดดิสอาบาบา"
+      }
+    },
+    {
+      "country": "ET",
+      "place": "Dire Dawa",
+      "identity": {
+        "wikidata": "Q193486"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q193486",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ድሬዳዋ",
+        "hy": "Դիրե Դաուա",
+        "ka": "დირე-დაუა"
+      }
+    },
+    {
+      "country": "ET",
+      "place": "Gondar",
+      "identity": {
+        "wikidata": "Q218861"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q218861",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Գոնդեր"
+      }
+    },
+    {
+      "country": "ET",
+      "place": "Bahir Dar",
+      "identity": {
+        "wikidata": "Q464699"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q464699",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ባሕር-ዳር",
+        "ka": "ბაჰრ-დარი"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Lyon",
+      "identity": {
+        "wikidata": "Q456"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q456",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "لیۆن",
+        "hy": "Լիոն",
+        "ka": "ლიონი",
+        "ml": "ലിയോൺ",
+        "ps": "لیون",
+        "th": "ลียง"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Marseille",
+      "identity": {
+        "wikidata": "Q23482"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23482",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ማርሴ",
+        "ckb": "مارسیلیا",
+        "hy": "Մարսել",
+        "ka": "მარსელი",
+        "ml": "മാർസേയ്",
+        "mr": "मार्सेल",
+        "sd": "مارسيلئ",
+        "th": "มาร์แซย์"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Toulouse",
+      "identity": {
+        "wikidata": "Q7880"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q7880",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቱሉሰ",
+        "ckb": "توولووز",
+        "hy": "Թուլուզ",
+        "ka": "ტულუზა",
+        "ml": "ടൂളൂസ്",
+        "mr": "तुलूझ",
+        "th": "ตูลูซ"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Bordeaux",
+      "identity": {
+        "wikidata": "Q1479"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1479",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "بۆردۆ",
+        "hy": "Բորդո",
+        "ml": "ബോർഡോ",
+        "mr": "बोर्दू",
+        "ps": "بورډو",
+        "th": "บอร์โด"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Edinburgh",
+      "identity": {
+        "wikidata": "Q23436"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23436",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኤዲንቦሮ",
+        "ckb": "ئێدینبەرە",
+        "hy": "Էդինբուրգ",
+        "ka": "ედინბურგი",
+        "kn": "ಎಡಿನ್‌ಬರ್ಗ್",
+        "ml": "എഡിൻബറോ",
+        "ps": "ایدینبرګ",
+        "sd": "ايڊنبرا",
+        "th": "เอดินบะระ"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Belfast",
+      "identity": {
+        "wikidata": "Q10686"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q10686",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቤልፋስት",
+        "ckb": "بێڵفێست",
+        "hy": "Բելֆասթ",
+        "ka": "ბელფასტი",
+        "kn": "ಬೆಲ್ ಫಾಸ್ಟ್",
+        "ml": "ബെൽഫാസ്റ്റ്",
+        "mr": "बेलफास्ट",
+        "sd": "بيلفاسٽ",
+        "th": "เบลฟาสต์"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Cardiff",
+      "identity": {
+        "wikidata": "Q10690"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q10690",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ካርዲፍ",
+        "ckb": "کاردیف",
+        "hy": "Քարդիֆ",
+        "ka": "კარდიფი",
+        "ml": "കാർഡിഫ്",
+        "mr": "कार्डिफ",
+        "ps": "کاردیف",
+        "sd": "ڪارڊف",
+        "th": "คาร์ดิฟฟ์"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Manchester",
+      "identity": {
+        "wikidata": "Q18125"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q18125",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ማንችስተር",
+        "ckb": "مەنچستر",
+        "hy": "Մանչեսթեր",
+        "ka": "მანჩესტერი",
+        "kn": "ಮ್ಯಾಂಚೆಸ್ಟರ್",
+        "ml": "മാഞ്ചസ്റ്റർ",
+        "mr": "मँचेस्टर",
+        "sd": "مانچسٽر",
+        "th": "แมนเชสเตอร์"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Tokyo",
+      "identity": {
+        "wikidata": "Q1490"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1490",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቶክዮ",
+        "ckb": "تۆکیۆ",
+        "kn": "ಟೋಕ್ಯೊ",
+        "ml": "ടോക്കിയോ",
+        "mr": "तोक्यो",
+        "ps": "توکيو",
+        "sd": "ٽوڪيو"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Ōsaka",
+      "identity": {
+        "wikidata": "Q35765"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q35765",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئۆساکا",
+        "hy": "Օսակա",
+        "kn": "ಒಸಾಕಾ",
+        "ml": "ഒസാക്ക",
+        "ps": "اوساکا",
+        "sd": "اوساڪا",
+        "th": "โอซากะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Nagoya",
+      "identity": {
+        "wikidata": "Q11751"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q11751",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ناگۆیا",
+        "hy": "Նագոյա",
+        "sd": "ناگويا",
+        "th": "นาโงยะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Sapporo",
+      "identity": {
+        "wikidata": "Q37951"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37951",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳፖሮ",
+        "ckb": "ساپۆرۆ",
+        "hy": "Սապորո",
+        "ka": "საპორო",
+        "ml": "സാപ്പൊറൊ",
+        "mr": "सप्पोरो",
+        "sd": "ساپورو",
+        "th": "ซัปโปโระ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Fukuoka",
+      "identity": {
+        "wikidata": "Q26600"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q26600",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "فوکوئۆکا",
+        "hy": "Ֆուկուոկա",
+        "ml": "ഫുക്കുഓക്ക",
+        "ps": "فوکویوکا",
+        "th": "ฟูกูโอกะ"
+      }
+    },
+    {
+      "country": "MM",
+      "place": "Yangon",
+      "identity": {
+        "wikidata": "Q37995"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37995",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "یانگۆن",
+        "hy": "Յանգոն",
+        "ka": "იანგონი",
+        "kn": "ಯಾಂಗಾನ್",
+        "ml": "യംഗോൺ",
+        "sd": "يانگون",
+        "th": "ย่างกุ้ง"
+      }
+    },
+    {
+      "country": "MM",
+      "place": "Mandalay",
+      "identity": {
+        "wikidata": "Q185518"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q185518",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ماندالای",
+        "ml": "മണ്ഡലൈ",
+        "mr": "मांडले",
+        "th": "มัณฑะเลย์"
+      }
+    },
+    {
+      "country": "MM",
+      "place": "Naypyidaw",
+      "identity": {
+        "wikidata": "Q37400"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37400",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኔፕዪዶ",
+        "ckb": "نایپییدۆ",
+        "hy": "Նայպյիդաու",
+        "ka": "ნაიფიიდო",
+        "kn": "ನೇಪ್ಯಿಡಾವ್",
+        "ml": "നേപ്യിഡോ",
+        "mr": "नेपिडो",
+        "ps": "نایپیداو",
+        "sd": "نئپيداو",
+        "th": "เนปยีดอ"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Kraków",
+      "identity": {
+        "wikidata": "Q31487"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q31487",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ክራካው",
+        "ckb": "کڕاکۆف",
+        "hy": "Կրակով",
+        "ka": "კრაკოვი",
+        "ml": "ക്രാക്കോവ്",
+        "mr": "क्राकूफ",
+        "th": "กรากุฟ"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Gdańsk",
+      "identity": {
+        "wikidata": "Q1792"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1792",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ግዳስንክ",
+        "ckb": "گدانسک",
+        "hy": "Գդանսկ",
+        "ka": "გდანსკი",
+        "ml": "ഗ്ദാൻസ്ക്",
+        "mr": "गदान्स्क",
+        "th": "กดัญสก์"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Wrocław",
+      "identity": {
+        "wikidata": "Q1799"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1799",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቭሮጽወፍ",
+        "ckb": "ڤرۆتسواف",
+        "hy": "Վրոցլավ",
+        "ka": "ვროცლავი",
+        "mr": "व्रोत्सवाफ",
+        "th": "วรอตสวัฟ"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Poznań",
+      "identity": {
+        "wikidata": "Q268"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q268",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፖዝነኝ",
+        "ckb": "پۆزنان",
+        "hy": "Պոզնան",
+        "mr": "पोझ्नान",
+        "th": "พอซนาน"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Yekaterinburg",
+      "identity": {
+        "wikidata": "Q887"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q887",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "የካተሪንቡርግ",
+        "ckb": "یەکاتێرینبۆرگ",
+        "hy": "Եկատերինբուրգ",
+        "ka": "ეკატერინბურგი",
+        "ml": "യെകാർതെറിൻബർഗ്ഗ്",
+        "mr": "येकातेरिनबुर्ग",
+        "ps": "یکاترینبورګ",
+        "th": "เยคาเตรินบุร์ก"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Novosibirsk",
+      "identity": {
+        "wikidata": "Q883"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q883",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኖቮሲቢርስክ",
+        "ckb": "نۆڤۆسیبیرسک",
+        "hy": "Նովոսիբիրսկ",
+        "ka": "ნოვოსიბირსკი",
+        "ml": "നൊവോസിബിർസ്ക്",
+        "mr": "नोवोसिबिर्स्क",
+        "ps": "نووسيبيرسک",
+        "sd": "نوووسبرسڪ",
+        "th": "โนโวซีบีสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Kazan",
+      "identity": {
+        "wikidata": "Q900"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q900",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "کازان",
+        "hy": "Կազան",
+        "ka": "ყაზანი",
+        "ml": "കസാൻ",
+        "mr": "कझान",
+        "th": "คาซัน"
+      }
+    },
+    {
+      "country": "SA",
+      "place": "Riyadh",
+      "identity": {
+        "wikidata": "Q3692"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3692",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሪያድ",
+        "ckb": "ڕیاز",
+        "hy": "Ալ-Ռիադ",
+        "ka": "ერ-რიადი",
+        "kn": "ರಿಯಾಧ್",
+        "ml": "റിയാദ്",
+        "mr": "रियाध",
+        "ps": "رياض",
+        "sd": "رياض",
+        "th": "รียาด"
+      }
+    },
+    {
+      "country": "SA",
+      "place": "Jeddah",
+      "identity": {
+        "wikidata": "Q374365"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q374365",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ጀዳህ",
+        "ckb": "جدە",
+        "hy": "Ջիդդա",
+        "ka": "ჯიდა",
+        "ps": "جده",
+        "sd": "جده",
+        "th": "ญิดดะฮ์"
+      }
+    },
+    {
+      "country": "SA",
+      "place": "Medina",
+      "identity": {
+        "wikidata": "Q35484"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q35484",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "መዲና",
+        "ckb": "مەدینە",
+        "gu": "મદીના",
+        "hy": "Մադինա",
+        "ka": "მედინა",
+        "kn": "ಮದೀನಾ",
+        "ml": "മദീന",
+        "ps": "مدينه",
+        "sd": "مدينو",
+        "th": "อัลมะดีนะฮ์"
+      }
+    },
+    {
+      "country": "SA",
+      "place": "Makkah",
+      "identity": {
+        "wikidata": "Q5806"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5806",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "መካ",
+        "ckb": "مەککە",
+        "gu": "મક્કા",
+        "hy": "Մեքքա",
+        "ka": "მექა",
+        "kn": "ಮಕ್ಕಾ",
+        "ml": "മക്ക",
+        "ps": "مکه",
+        "sd": "مڪو",
+        "th": "มักกะฮ์"
+      }
+    },
+    {
+      "country": "SO",
+      "place": "Mogadishu",
+      "identity": {
+        "wikidata": "Q2449"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2449",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሞቃዲሾ",
+        "ckb": "مۆگادیشۆ",
+        "hy": "Մոգադիշո",
+        "ka": "მოგადიშო",
+        "ml": "മൊഗാദിഷു",
+        "mr": "मोगादिशू",
+        "ps": "موګادیشو",
+        "sd": "موغاديشو",
+        "th": "โมกาดิชู"
+      }
+    },
+    {
+      "country": "SK",
+      "place": "Bratislava",
+      "identity": {
+        "wikidata": "Q1780"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1780",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "براتسیلاڤا",
+        "hy": "Բրատիսլավա",
+        "kn": "ಬ್ರಾಟಿಸ್ಲಾವಾ",
+        "ml": "ബ്രാട്ടിസ്‌ലാവ",
+        "mr": "ब्रातिस्लाव्हा",
+        "ps": "براتیسلاوا",
+        "sd": "براٽيسلاوا",
+        "th": "บราติสลาวา"
+      }
+    },
+    {
+      "country": "SK",
+      "place": "Košice",
+      "identity": {
+        "wikidata": "Q25409"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q25409",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կոշիցե",
+        "ka": "კოშიცე",
+        "mr": "कोशित्सा",
+        "th": "กอชิตเซ"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Istanbul",
+      "identity": {
+        "wikidata": "Q406"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q406",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئەستەمبوڵ",
+        "hy": "Ստամբուլ",
+        "ka": "სტამბოლი",
+        "kn": "ಇಸ್ತಾಂಬುಲ್",
+        "ml": "ഇസ്താംബുൾ",
+        "mr": "इस्तंबूल",
+        "ps": "استانبول",
+        "sd": "استنبول",
+        "th": "อิสตันบูล"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Ankara",
+      "identity": {
+        "wikidata": "Q3640"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3640",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئەنقەرە",
+        "hy": "Անկարա",
+        "kn": "ಅಂಕಾರಾ",
+        "ml": "അങ്കാറ",
+        "ps": "انقره",
+        "sd": "انقره",
+        "th": "อังการา"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "İzmir",
+      "identity": {
+        "wikidata": "Q35997"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q35997",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئیزمیر",
+        "hy": "Իզմիր",
+        "ka": "იზმირი",
+        "kn": "ಇಜ್ಮಿರ್",
+        "mr": "इझ्मिर",
+        "ps": "ازمير",
+        "th": "อิซมีร์"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Bursa",
+      "identity": {
+        "wikidata": "Q40738"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q40738",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "بورسا",
+        "hy": "Բուրսա",
+        "ml": "ബുർസാ",
+        "mr": "बुर्सा",
+        "ps": "بورصه",
+        "th": "บูร์ซา"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Antalya",
+      "identity": {
+        "wikidata": "Q6487"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6487",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئانتالیا",
+        "hy": "Անթալիա",
+        "ka": "ანთალია",
+        "ps": "انتاليا",
+        "sd": "انتاليا",
+        "th": "อันตัลยา"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Washington,  D.C.",
+      "identity": {
+        "wikidata": "Q61"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q61",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዋሺንግተን ዲሲ",
+        "ckb": "واشینگتن دی سی",
+        "hy": "Վաշինգտոն",
+        "ka": "ვაშინგტონი",
+        "kn": "ವಾಷಿಂಗ್ಟನ್",
+        "ml": "വാഷിങ്ടൺ ഡി.സി",
+        "mr": "वॉशिंग्टन",
+        "ps": "واشنګټن ډي سي",
+        "sd": "واشنگٽن ڊي سي",
+        "th": "วอชิงตัน ดี.ซี."
+      }
+    },
+    {
+      "country": "US",
+      "place": "New York",
+      "identity": {
+        "wikidata": "Q60"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q60",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኒው ዮርክ",
+        "ckb": "نیوویۆرک",
+        "gu": "ન્યૂ યોર્ક સીટી",
+        "kn": "ನ್ಯೂ ಯಾರ್ಕ್ ನಗರ",
+        "ml": "ന്യൂയോർക്ക് നഗരം",
+        "mr": "न्यू यॉर्क शहर",
+        "ps": "نيويارک",
+        "sd": "نيو يارڪ شهر",
+        "th": "นครนิวยอร์ก"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Los Angeles",
+      "identity": {
+        "wikidata": "Q65"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q65",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሎስ አንጄሌስ",
+        "ckb": "لۆس ئانجلەس",
+        "gu": "લોસ એન્જેલસ",
+        "hy": "Լոս Անջելես",
+        "ka": "ლოს-ანჯელესი",
+        "kn": "ಲಾಸ್ ಎಂಜಲೀಸ್",
+        "ml": "ലോസ് ആഞ്ചെലെസ്",
+        "mr": "लॉस एंजेल्स",
+        "ps": "لاس انجلس",
+        "sd": "لاس اينجلس",
+        "th": "ลอสแอนเจลิส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Chicago",
+      "identity": {
+        "wikidata": "Q1297"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1297",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "شیکاگۆ",
+        "hy": "Չիկագո",
+        "ka": "ჩიკაგო",
+        "kn": "ಶಿಕಾಗೊ",
+        "ml": "ഷിക്കാഗോ",
+        "ps": "شیکاګو",
+        "sd": "شڪاگو",
+        "th": "ชิคาโก"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Houston",
+      "identity": {
+        "wikidata": "Q16555"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16555",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሂውስተን",
+        "ckb": "ھیووستن",
+        "gu": "હ્યુસ્ટન",
+        "hy": "Հյուստոն",
+        "ka": "ჰიუსტონი",
+        "kn": "ಹ್ಯೂಸ್ಟನ್",
+        "ml": "ഹ്യൂസ്റ്റൺ",
+        "ps": "هیوستون",
+        "sd": "ھوسٽن",
+        "th": "ฮิวสตัน"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Kyiv",
+      "identity": {
+        "wikidata": "Q1899"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1899",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኪየቭ",
+        "ckb": "کیێڤ",
+        "hy": "Կիև",
+        "ka": "კიევი",
+        "kn": "ಕೀವ್",
+        "ml": "കീവ്",
+        "mr": "क्यीव",
+        "ps": "کيېف",
+        "sd": "ڪيف",
+        "th": "เคียฟ"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Lviv",
+      "identity": {
+        "wikidata": "Q36036"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q36036",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ልቪቭ",
+        "ckb": "لڤیڤ",
+        "hy": "Լվով",
+        "ka": "ლვივი",
+        "kn": "ಲವಿವ್",
+        "ml": "എൽവീവ്",
+        "mr": "लिव्हिव",
+        "ps": "لووف",
+        "sd": "لويف",
+        "th": "ลวิว"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Odessa",
+      "identity": {
+        "wikidata": "Q1874"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1874",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኦዴሣ",
+        "ckb": "ئۆدێسا",
+        "hy": "Օդեսա",
+        "kn": "ಒಡೆಸ್ಸಾ",
+        "ml": "ഒഡെസ",
+        "mr": "ओदेसा",
+        "sd": "اوديسا",
+        "th": "ออแดซา"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Kharkiv",
+      "identity": {
+        "wikidata": "Q42308"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q42308",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኻርኪው",
+        "ckb": "خارکیڤ",
+        "hy": "Խարկով",
+        "ka": "ხარკივი",
+        "kn": "ಖಾರ್ಕಿವ್",
+        "ml": "ഖാർകിവ്",
+        "mr": "खार्कीव्ह",
+        "th": "คาร์กิว"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Dnipro",
+      "identity": {
+        "wikidata": "Q48256"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q48256",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "دنیپرۆ",
+        "hy": "Դնեպր",
+        "ka": "დნიპრო",
+        "ml": "ദിനിപ്ര",
+        "th": "ดนีปรอ"
+      }
+    },
+    {
+      "country": "TN",
+      "place": "Tunis",
+      "identity": {
+        "wikidata": "Q3572"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3572",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "توونس",
+        "hy": "Թունիս",
+        "ka": "ტუნისი",
+        "ml": "ടൂണിസ്സ്",
+        "mr": "ट्युनिस"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Pretoria",
+      "identity": {
+        "wikidata": "Q3926"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3926",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፕሪቶሪያ",
+        "ckb": "پرێتۆریا",
+        "hy": "Պրետորիա",
+        "ml": "പ്രിട്ടോറിയ",
+        "ps": "پرتوریا",
+        "sd": "پريٽوريا",
+        "th": "พริทอเรีย"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Cape Town",
+      "identity": {
+        "wikidata": "Q5465"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5465",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኬፕ ታውን",
+        "ckb": "کەیپ تاون",
+        "hy": "Քեյփթաուն",
+        "ka": "კეიპტაუნი",
+        "kn": "ಕೇಪ್ ಟೌನ್",
+        "ml": "കേപ് ടൗൺ",
+        "mr": "केपटाउन",
+        "ps": "کيپ ټاؤن",
+        "sd": "ڪيپ ٽائون",
+        "th": "เคปทาวน์"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Bloemfontein",
+      "identity": {
+        "wikidata": "Q37701"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37701",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ብሉምፎንቴይን",
+        "ckb": "بلوومفۆنتەین",
+        "hy": "Բլումֆոնտեյն",
+        "ka": "ბლუმფონტეინი",
+        "ml": "ബ്ലൂംഫൌണ്ടെയിൻ",
+        "mr": "ब्लूमफाँटेन",
+        "sd": "بلومفونٽين",
+        "th": "บลูมฟอนเทน"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Johannesburg",
+      "identity": {
+        "wikidata": "Q34647"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34647",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ጆሃንስበርግ",
+        "ckb": "جۆھانسبێرگ",
+        "hy": "Յոհաննեսբուրգ",
+        "ka": "იოჰანესბურგი",
+        "kn": "ಜೊಹಾನ್ಸ್‌ಬರ್ಗ್",
+        "ml": "ജൊഹാനസ്‌ബർഗ്",
+        "mr": "जोहान्सबर्ग",
+        "sd": "جوهانسبرگ",
+        "th": "โจฮันเนสเบิร์ก"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Durban",
+      "identity": {
+        "wikidata": "Q5468"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5468",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ደርባን",
+        "ckb": "دووربان",
+        "hy": "Դուրբան",
+        "ka": "დურბანი",
+        "kn": "ಡರ್ಬನ್",
+        "ml": "ഡർബൻ",
+        "sd": "ڊربن",
+        "th": "เดอร์บัน"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Salta",
+      "identity": {
+        "wikidata": "Q36307"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q36307",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սալտա",
+        "th": "ซัลตา"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Tucumán",
+      "identity": {
+        "wikidata": "Q44255"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q44255",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "توکومان",
+        "hy": "Տուկուման",
+        "ka": "სან-მიგელ-დე-ტუკუმანი",
+        "th": "ซานมิเกลเดตูกูมัน"
+      }
+    },
+    {
+      "country": "AR",
+      "place": "Mar del Plata",
+      "identity": {
+        "wikidata": "Q52607"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q52607",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Մար-դել-Պլատա",
+        "ka": "მარ-დელ-პლატა",
+        "th": "มาร์เดลปลาตา"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Perth",
+      "identity": {
+        "wikidata": "Q3183"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3183",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "پێرس",
+        "hy": "Պերթ",
+        "ka": "პერთი",
+        "ml": "പെർത്ത്",
+        "ps": "پرت",
+        "sd": "پرٿ",
+        "th": "เพิร์ท"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Adelaide",
+      "identity": {
+        "wikidata": "Q5112"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5112",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "አደለይድ",
+        "ckb": "ئەدێلاید",
+        "gu": "એડિલેઇડ",
+        "hy": "Ադելաիդա",
+        "ka": "ადელაიდა",
+        "kn": "ಅಡಿಲೇಡ್",
+        "ml": "അഡിലെയ്‌ഡ്",
+        "mr": "ॲडलेड",
+        "ps": "ایډلایډ",
+        "sd": "ايڊيليڊ",
+        "th": "แอดิเลด"
+      }
+    },
+    {
+      "country": "AU",
+      "place": "Hobart",
+      "identity": {
+        "wikidata": "Q40191"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q40191",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ھۆبارت",
+        "hy": "Հոբարթ",
+        "ka": "ჰობარტი",
+        "ml": "ഹൊബാർട്",
+        "ps": "هوبارټ",
+        "sd": "ھوبارٽ",
+        "th": "โฮบาร์ต"
+      }
+    },
+    {
+      "country": "BY",
+      "place": "Mahilyow",
+      "identity": {
+        "wikidata": "Q154835"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q154835",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Մոգիլյով",
+        "ka": "მოგილიოვი",
+        "ps": "موګیلف",
+        "th": "มาฆีโลว์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Edmonton",
+      "identity": {
+        "wikidata": "Q2096"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2096",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئێدمنتن",
+        "hy": "Էդմոնտոն",
+        "ka": "ედმონტონი",
+        "ml": "എഡ്മണ്ടൻ",
+        "th": "เอดมันตัน"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Winnipeg",
+      "identity": {
+        "wikidata": "Q2135"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2135",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "وینیپێگ",
+        "hy": "Վինիպեգ",
+        "ka": "უინიპეგი",
+        "mr": "विनिपेग",
+        "sd": "وني پيگ",
+        "th": "วินนิเพก"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Whitehorse",
+      "identity": {
+        "wikidata": "Q2058"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2058",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "وایت ھۆرس",
+        "hy": "Ուայթհորս",
+        "ka": "უაიტჰორსი",
+        "ml": "വൈറ്റ്ഹോഴ്സ്",
+        "th": "ไวต์ฮอร์ส"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Yellowknife",
+      "identity": {
+        "wikidata": "Q2061"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2061",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "የሎናይፍ",
+        "hy": "Ելոունայֆ",
+        "ka": "იელოუნაიფი",
+        "ml": "യെല്ലോനൈഫ്",
+        "th": "เยลโลว์ไนฟ์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Iqaluit",
+      "identity": {
+        "wikidata": "Q2030"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2030",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ka": "იკალუიტი",
+        "ml": "ഇക്വാല്യൂട്ട്",
+        "mr": "इक्वाल्युईत",
+        "th": "อีคาลูอิต"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Québec",
+      "identity": {
+        "wikidata": "Q2145"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2145",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኬበክ ከተማ",
+        "ckb": "شاری کێبێک",
+        "hy": "Քվեբեկ քաղաք",
+        "ka": "კვებეკი",
+        "ml": "ക്യൂബെക് സിറ്റി",
+        "mr": "क्वेबेक सिटी",
+        "th": "นครเกแบ็ก"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Halifax",
+      "identity": {
+        "wikidata": "Q2141"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2141",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሃሊፋክስ",
+        "ckb": "ھالیفاکس",
+        "hy": "Հալիֆաքս",
+        "ka": "ჰალიფაქსი",
+        "ml": "ഹാലിഫാക്സ്",
+        "mr": "हॅलिफॅक्स",
+        "th": "แฮลิแฟกซ์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Churchill",
+      "identity": {
+        "wikidata": "Q744553"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q744553",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ka": "ჩერჩილი"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Victoria",
+      "identity": {
+        "wikidata": "Q2132"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2132",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ڤیکتۆریا",
+        "hy": "Վիկտորիա",
+        "ka": "ვიქტორია",
+        "mr": "व्हिक्टोरिया",
+        "th": "วิกทอเรีย"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Saskatoon",
+      "identity": {
+        "wikidata": "Q10566"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q10566",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սասկատուն",
+        "ka": "სასკატუნი",
+        "th": "แซสคาทูน"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Regina",
+      "identity": {
+        "wikidata": "Q2123"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2123",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ռեջայնա",
+        "ka": "რეჯაინა",
+        "th": "ริไจนา"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Thunder Bay",
+      "identity": {
+        "wikidata": "Q34116"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34116",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Թանդեր Բեյ",
+        "ml": "തണ്ടർ ബേ"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Prince George",
+      "identity": {
+        "wikidata": "Q590205"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q590205",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ml": "പ്രിൻസ് ജോർജ്",
+        "th": "พรินซ์จอร์จ"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "St. John's",
+      "identity": {
+        "wikidata": "Q2082"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2082",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "سانت جۆنز",
+        "hy": "Սենտ-Ջոնս",
+        "ka": "სენტ-ჯონზი",
+        "ml": "സെന്റ് ജോൺസ്",
+        "th": "เซนต์จอนส์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Charlottetown",
+      "identity": {
+        "wikidata": "Q2127"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2127",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Շառլոտթաուն",
+        "ka": "შარლოტტაუნი",
+        "ml": "ഷാർലറ്റ്ടൗൺ",
+        "th": "ชาร์ลอตต์ทาวน์"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Fredericton",
+      "identity": {
+        "wikidata": "Q2138"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2138",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ֆրեդերիկթոն",
+        "ka": "ფრედერიკტონი",
+        "ml": "ഫ്രെഡറിക്‌ടൺ",
+        "mr": "फ्रेडरिक्टन",
+        "th": "เฟรดริกตัน"
+      }
+    },
+    {
+      "country": "CA",
+      "place": "Resolute",
+      "identity": {
+        "wikidata": "Q606622"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q606622",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ռեզոլյուտ"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Dresden",
+      "identity": {
+        "wikidata": "Q1731"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1731",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "درێسدن",
+        "hy": "Դրեզդեն",
+        "ka": "დრეზდენი",
+        "ml": "ഡ്രെസ്ഡെൻ",
+        "mr": "ड्रेस्डेन",
+        "sd": "ڊريسڊن",
+        "th": "เดรสเดิน"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Leipzig",
+      "identity": {
+        "wikidata": "Q2079"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2079",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ላይፕጽግ",
+        "ckb": "لایپزیگ",
+        "hy": "Լայպցիգ",
+        "ka": "ლაიფციგი",
+        "ml": "ലീപ്സിഗ്",
+        "mr": "लाइपझिश",
+        "sd": "ليپزگ",
+        "th": "ไลพ์ซิช"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Stuttgart",
+      "identity": {
+        "wikidata": "Q1022"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1022",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "شتوتگارت",
+        "gu": "સ્ટુટગાર્ટ",
+        "hy": "Շտուտգարտ",
+        "ka": "შტუტგარტი",
+        "ml": "സ്റ്റുട്ട്ഗാർട്ട്",
+        "sd": "اسٽٽگارٽ",
+        "th": "ชตุทการ์ท"
+      }
+    },
+    {
+      "country": "DE",
+      "place": "Düsseldorf",
+      "identity": {
+        "wikidata": "Q1718"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1718",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዲውስልዶርፍ",
+        "ckb": "دوسلدۆرف",
+        "hy": "Դյուսելդորֆ",
+        "ka": "დიუსელდორფი",
+        "ml": "ഡൂസൽഡോർഫ്",
+        "mr": "ड्युसेलडॉर्फ",
+        "sd": "ڊزلڊورف",
+        "th": "ดึสเซิลดอร์ฟ"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Lille",
+      "identity": {
+        "wikidata": "Q648"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q648",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "لیل",
+        "hy": "Լիլ",
+        "ka": "ლილი",
+        "th": "ลีล"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Nice",
+      "identity": {
+        "wikidata": "Q33959"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q33959",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "نیس",
+        "hy": "Նիս",
+        "ka": "ნიცა",
+        "th": "นิส"
+      }
+    },
+    {
+      "country": "FR",
+      "place": "Nantes",
+      "identity": {
+        "wikidata": "Q12191"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q12191",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Նանտ",
+        "ka": "ნანტი",
+        "mr": "नाँत",
+        "th": "น็องต์"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Birmingham",
+      "identity": {
+        "wikidata": "Q2256"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q2256",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "በርሚንግሃም",
+        "ckb": "بێرمینگام",
+        "gu": "બર્મિંગહામ",
+        "hy": "Բիրմինգհեմ",
+        "ka": "ბირმინგემი",
+        "kn": "ಬರ್ಮಿಂಗ್ಹ್ಯಾಮ್",
+        "ml": "ബിർമിങ്ഹാം",
+        "mr": "बर्मिंगहॅम",
+        "sd": "برمنگهم",
+        "th": "เบอร์มิงแฮม"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Glasgow",
+      "identity": {
+        "wikidata": "Q4093"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q4093",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ግላዝጎ",
+        "ckb": "گلاسگۆ",
+        "hy": "Գլազգո",
+        "ka": "გლაზგო",
+        "kn": "ಗ್ಲ್ಯಾಸ್ಗೋ",
+        "ml": "ഗ്ലാസ്ഗോ",
+        "ps": "ګلاسګو",
+        "sd": "گلاسگو",
+        "th": "กลาสโกว์"
+      }
+    },
+    {
+      "country": "GB",
+      "place": "Liverpool",
+      "identity": {
+        "wikidata": "Q24826"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q24826",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "لیڤەرپوول",
+        "hy": "Լիվերպուլ",
+        "ka": "ლივერპული",
+        "kn": "ಲಿವರ್‌ಪೂಲ್",
+        "ml": "ലിവർപൂൾ",
+        "mr": "लिव्हरपूल",
+        "ps": "لیورپول",
+        "th": "ลิเวอร์พูล"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Turin",
+      "identity": {
+        "wikidata": "Q495"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q495",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "تورین",
+        "hy": "Թուրին",
+        "ka": "ტურინი",
+        "ml": "ടൂറിൻ",
+        "mr": "तोरिनो",
+        "th": "ตูริน"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Bologna",
+      "identity": {
+        "wikidata": "Q1891"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1891",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቦሎኛ",
+        "ckb": "بۆلۆنیا",
+        "hy": "Բոլոնիա",
+        "ka": "ბოლონია",
+        "mr": "बोलोन्या",
+        "th": "โบโลญญา"
+      }
+    },
+    {
+      "country": "IT",
+      "place": "Bari",
+      "identity": {
+        "wikidata": "Q3519"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3519",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "باری",
+        "hy": "Բարի",
+        "th": "บารี"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Sendai",
+      "identity": {
+        "wikidata": "Q46747"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q46747",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սենդայ",
+        "mr": "सेंडाई",
+        "th": "เซ็นได"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Naha",
+      "identity": {
+        "wikidata": "Q181966"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q181966",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Նահա",
+        "th": "นาฮะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Hiroshima",
+      "identity": {
+        "wikidata": "Q34664"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34664",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ھیرۆشیما",
+        "hy": "Հիրոսիմա",
+        "ka": "ჰიროსიმა",
+        "ml": "ഹിരോഷിമ",
+        "ps": "هیروشیما",
+        "th": "ฮิโรชิมะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Niigata",
+      "identity": {
+        "wikidata": "Q179691"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q179691",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Նիիգատա",
+        "mr": "निगाता",
+        "th": "นีงาตะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Akita",
+      "identity": {
+        "wikidata": "Q17139"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q17139",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئەکیتا",
+        "hy": "Ակիտա",
+        "mr": "अकिता",
+        "th": "อากิตะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Kagoshima",
+      "identity": {
+        "wikidata": "Q15674"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q15674",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կագոշիմա",
+        "sd": "ڪاگوشيما",
+        "th": "คาโงชิมะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Kanazawa",
+      "identity": {
+        "wikidata": "Q191130"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q191130",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կանաձավա",
+        "ml": "കനസാവ",
+        "mr": "कानाझावा",
+        "th": "คานาซาวะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Miyazaki",
+      "identity": {
+        "wikidata": "Q204308"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q204308",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Միիաձակի",
+        "th": "มิยาซากิ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Yokohama",
+      "identity": {
+        "wikidata": "Q38283"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q38283",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "یۆکۆھاما",
+        "hy": "Յոկոհամա",
+        "ml": "യോകോഹാമ",
+        "ps": "يوکوهوما",
+        "th": "โยโกฮามะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Kyoto",
+      "identity": {
+        "wikidata": "Q34600"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34600",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "کیۆتۆ",
+        "gu": "ક્યોટો",
+        "hy": "Կիոտո",
+        "kn": "ಕ್ಯೋಟೋ",
+        "ml": "ക്യോട്ടോ",
+        "ps": "کیوتو",
+        "sd": "ڪيوتو",
+        "th": "เกียวโต"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Kōbe",
+      "identity": {
+        "wikidata": "Q48320"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q48320",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "کۆبێ",
+        "hy": "Կոբե",
+        "ml": "കോബെ",
+        "th": "โคเบะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Hamamatsu",
+      "identity": {
+        "wikidata": "Q185125"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q185125",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Համամացու",
+        "th": "ฮามามัตสึ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Shizuoka",
+      "identity": {
+        "wikidata": "Q174691"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q174691",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սիձուոկա",
+        "ka": "სიძუოკა",
+        "th": "ชิซูโอกะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Okayama",
+      "identity": {
+        "wikidata": "Q200078"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q200078",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Օկայամա",
+        "th": "โอกายามะ"
+      }
+    },
+    {
+      "country": "JP",
+      "place": "Kumamoto",
+      "identity": {
+        "wikidata": "Q199889"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q199889",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կումամոտո",
+        "th": "คูมาโมโตะ"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Łódź",
+      "identity": {
+        "wikidata": "Q580"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q580",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ووچ",
+        "hy": "Լոձ",
+        "ka": "ლოძი",
+        "mr": "वूत्श",
+        "th": "วุช"
+      }
+    },
+    {
+      "country": "PL",
+      "place": "Szczecin",
+      "identity": {
+        "wikidata": "Q393"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q393",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሽጨቺን",
+        "ckb": "شچێچین",
+        "hy": "Շչեցին",
+        "ka": "შჩეცინი",
+        "mr": "श्टेचिन",
+        "ps": "شچېچېن",
+        "th": "ชแชตชิน"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Samara",
+      "identity": {
+        "wikidata": "Q894"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q894",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሰማረ",
+        "hy": "Սամարա",
+        "ps": "سمارا",
+        "th": "ซามารา"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Omsk",
+      "identity": {
+        "wikidata": "Q898"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q898",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئۆمسک",
+        "hy": "Օմսկ",
+        "ka": "ომსკი",
+        "th": "ออมสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Ufa",
+      "identity": {
+        "wikidata": "Q911"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q911",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ուֆա",
+        "mr": "उफा",
+        "ps": "اوفا",
+        "th": "อูฟา"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Chelyabinsk",
+      "identity": {
+        "wikidata": "Q906"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q906",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "چێلیابینسک",
+        "hy": "Չելյաբինսկ",
+        "ka": "ჩელიაბინსკი",
+        "mr": "चेलियाबिन्स्क",
+        "th": "เชเลียบินสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Perm",
+      "identity": {
+        "wikidata": "Q915"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q915",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፕየርም",
+        "hy": "Պերմ",
+        "ka": "პერმი",
+        "ps": "پيرم",
+        "th": "เปียร์ม"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Nizhny Novgorod",
+      "identity": {
+        "wikidata": "Q891"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q891",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኒዥኒ ኖቭጎሮድ",
+        "ckb": "نیژنی نۆڤگۆرۆد",
+        "hy": "Նիժնի Նովգորոդ",
+        "ka": "ნიჟნი-ნოვგოროდი",
+        "mr": "निज्नी नॉवगोरोद",
+        "ps": "نېژني نوګورود",
+        "th": "นิจนีนอฟโกรอด"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Volgograd",
+      "identity": {
+        "wikidata": "Q914"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q914",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቮልጎግራድ",
+        "ckb": "ڤۆڵگۆگراد",
+        "hy": "Վոլգոգրադ",
+        "ka": "ვოლგოგრადი",
+        "ml": "വോൾഗോഗ്രാഡ്",
+        "ps": "وولګوګراد",
+        "th": "วอลโกกราด"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Krasnoyarsk",
+      "identity": {
+        "wikidata": "Q919"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q919",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կրասնոյարսկ",
+        "ka": "კრასნოიარსკი",
+        "th": "ครัสโนยาสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Irkutsk",
+      "identity": {
+        "wikidata": "Q6576"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6576",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئیرکوتسک",
+        "hy": "Իրկուտսկ",
+        "ka": "ირკუტსკი",
+        "th": "อีร์คุตสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Vladivostok",
+      "identity": {
+        "wikidata": "Q959"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q959",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቭላዲቮስቶክ",
+        "ckb": "ڤلادیڤۆستۆک",
+        "hy": "Վլադիվոստոկ",
+        "ka": "ვლადივოსტოკი",
+        "kn": "ವ್ಲಾಡಿವಾಸ್ಟಾಕ್",
+        "ml": "വ്ലാഡിവോസ്റ്റോക്",
+        "mr": "व्लादिवोस्तॉक",
+        "ps": "ولاديوستوک",
+        "sd": "ولاڊي ووسٽوڪ",
+        "th": "วลาดีวอสตอค"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Khabarovsk",
+      "identity": {
+        "wikidata": "Q4454"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q4454",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Խաբարովսկ",
+        "mr": "खबारोव्स्क",
+        "ps": "خاباروسک",
+        "th": "ฮาบารอฟสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Yakutsk",
+      "identity": {
+        "wikidata": "Q6610"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6610",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Յակուտսկ",
+        "mr": "याकुत्स्क",
+        "ps": "ياکوتسک",
+        "th": "ยาคุตสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Tomsk",
+      "identity": {
+        "wikidata": "Q976"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q976",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Տոմսկ",
+        "ka": "ტომსკი",
+        "th": "ตอมสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Tyumen",
+      "identity": {
+        "wikidata": "Q5815"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5815",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Տյումեն",
+        "ka": "ტიუმენი",
+        "mr": "त्युमेन",
+        "ps": "تيومن",
+        "th": "ตูย์เมน"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Barnaul",
+      "identity": {
+        "wikidata": "Q6014"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6014",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Բառնաուլ",
+        "ka": "ბარნაული",
+        "mr": "बर्नाउल",
+        "th": "บารนัล"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Orenburg",
+      "identity": {
+        "wikidata": "Q5337"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5337",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Օրենբուրգ",
+        "ka": "ორენბურგი",
+        "mr": "ओरेनबर्ग",
+        "ps": "اورینبرګ",
+        "th": "โอเรนบุร์ก"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Saratov",
+      "identity": {
+        "wikidata": "Q5332"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5332",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳራቶቭ",
+        "ckb": "ساراتۆڤ",
+        "hy": "Սարատով",
+        "ka": "სარატოვი",
+        "mr": "सारातोव",
+        "th": "ซาราตอฟ"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Voronezh",
+      "identity": {
+        "wikidata": "Q3426"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3426",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Վորոնեժ",
+        "ka": "ვორონეჟი",
+        "mr": "वोरोनेझ",
+        "ps": "ورونيش",
+        "th": "โวโรเนจ"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Rostov",
+      "identity": {
+        "wikidata": "Q908"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q908",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ረስቶፍ-በ-ዶን",
+        "ckb": "ڕۆستۆڤ لەسەر دۆن",
+        "hy": "Դոնի Ռոստով",
+        "ka": "დონის როსტოვი",
+        "kn": "ರಾಸ್ಟೊವ್-ಆನ್-ಡಾನ್",
+        "mr": "रोस्तोव दॉन",
+        "ps": "روستوف نادونو",
+        "th": "รอสตอฟ-นา-โดนู"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Krasnodar",
+      "identity": {
+        "wikidata": "Q3646"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q3646",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ክረስነዳር",
+        "ckb": "کراسنۆدار",
+        "hy": "Կրասնոդար",
+        "ka": "კრასნოდარი",
+        "kn": "ಕ್ರಸ್ನೋದರ್",
+        "ml": "ക്രാസ്നോദാർ",
+        "mr": "क्रास्नोदर",
+        "ps": "کراسنودار",
+        "th": "คราสโนดาร์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Murmansk",
+      "identity": {
+        "wikidata": "Q1763"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1763",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Մուրմանսկ",
+        "ka": "მურმანსკი",
+        "mr": "मुर्मान्स्क",
+        "ps": "مورمانسک",
+        "th": "มูร์มันสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Archangel",
+      "identity": {
+        "wikidata": "Q1851"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1851",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Արխանգելսկ",
+        "ka": "არხანგელსკი",
+        "kn": "ಆರ್ಕೇಂಜಲ್",
+        "mr": "अर्खांगेल्स्क",
+        "ps": "ارخانګلسک",
+        "th": "อาร์ฮันเกลสค์"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Chita",
+      "identity": {
+        "wikidata": "Q53139"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q53139",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Չիտա",
+        "ka": "ჩიტა",
+        "th": "ชิตา"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Ulan-Ude",
+      "identity": {
+        "wikidata": "Q6816"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6816",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ուլան-Ուդե",
+        "ka": "ულან-უდე",
+        "th": "อูลัน-อูเด"
+      }
+    },
+    {
+      "country": "RU",
+      "place": "Surgut",
+      "identity": {
+        "wikidata": "Q183002"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q183002",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սուրգուտ",
+        "th": "ซูร์กุต"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Adana",
+      "identity": {
+        "wikidata": "Q38545"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q38545",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئادانا",
+        "hy": "Ադանա",
+        "mr": "अदना",
+        "ps": "آدانا",
+        "th": "อาดานา"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Gaziantep",
+      "identity": {
+        "wikidata": "Q93338"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q93338",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "دیلۆک",
+        "hy": "Այնթապ",
+        "ka": "გაზიანთეფი",
+        "kn": "ಗಾಝಿಯಾನ್ಟೆಪ್",
+        "mr": "गाझियान्तेप",
+        "ps": "غازی عین تاب",
+        "th": "กาซีอันเท็พ"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Diyarbakır",
+      "identity": {
+        "wikidata": "Q83387"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q83387",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئامەد",
+        "hy": "Դիարբեքիր",
+        "ka": "დიარბაქირი",
+        "ps": "دیاربکر",
+        "th": "ดียาร์บาคือร์"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Trabzon",
+      "identity": {
+        "wikidata": "Q45301"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q45301",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ترابزۆن",
+        "hy": "Տրապիզոն",
+        "ka": "ტრაპიზონი",
+        "th": "แทรปซอน"
+      }
+    },
+    {
+      "country": "TR",
+      "place": "Erzurum",
+      "identity": {
+        "wikidata": "Q122803"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q122803",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئەرزڕۆم",
+        "hy": "Կարին",
+        "ka": "ერზურუმი",
+        "ps": "ارز روم",
+        "th": "แอร์ซูรุม"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Denver",
+      "identity": {
+        "wikidata": "Q16554"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16554",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "دێنڤەر",
+        "hy": "Դենվեր",
+        "ka": "დენვერი",
+        "ml": "ഡെൻവർ",
+        "mr": "डेन्व्हर",
+        "ps": "ډنور",
+        "sd": "ڊينور",
+        "th": "เดนเวอร์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Minneapolis",
+      "identity": {
+        "wikidata": "Q36091"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q36091",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሚኒያፖሊስ",
+        "ckb": "مینیاپۆڵیس",
+        "gu": "મિનેપોલિસ",
+        "hy": "Մինեապոլիս",
+        "ka": "მინეაპოლისი",
+        "kn": "ಮಿನ್ನಿಯಾಪೋಲಿಸ್",
+        "ml": "മിന്നീപോളിസ്",
+        "mr": "मिनीयापोलिस",
+        "th": "มินนีแอโพลิส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Kansas City",
+      "identity": {
+        "wikidata": "Q41819"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q41819",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կանզաս Սիթի",
+        "ka": "კანზას-სიტი",
+        "mr": "कॅन्सस सिटी",
+        "ps": "کانزاس سیټي",
+        "th": "แคนซัสซิตี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Seattle",
+      "identity": {
+        "wikidata": "Q5083"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5083",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ስያትል",
+        "ckb": "سیاتڵ",
+        "hy": "Սիեթլ",
+        "ka": "სიეტლი",
+        "kn": "ಸಿಯಾಟಲ್",
+        "ml": "സിയാറ്റിൽ",
+        "ps": "سیاتل",
+        "sd": "سياٽيل",
+        "th": "ซีแอตเทิล"
+      }
+    },
+    {
+      "country": "US",
+      "place": "San Francisco",
+      "identity": {
+        "wikidata": "Q62"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q62",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳን ፍራንሲስኰ",
+        "ckb": "سان فرانسیسکۆ",
+        "gu": "સેનફ્રાન્સિસ્કો",
+        "hy": "Սան Ֆրանցիսկո",
+        "ka": "სან-ფრანცისკო",
+        "ml": "സാൻ ഫ്രാൻസിസ്കോ",
+        "mr": "सॅन फ्रान्सिस्को",
+        "ps": "سان فرانسسکو",
+        "sd": "سان فرانسسڪو",
+        "th": "ซานฟรานซิสโก"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Dallas",
+      "identity": {
+        "wikidata": "Q16557"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16557",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዳላስ",
+        "ckb": "داڵاس",
+        "gu": "ડલ્લાસ",
+        "hy": "Դալաս",
+        "ka": "დალასი",
+        "ml": "ഡാളസ്",
+        "mr": "डॅलस",
+        "sd": "ڊلاس",
+        "th": "แดลลัส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "St. Louis",
+      "identity": {
+        "wikidata": "Q38022"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q38022",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Սենթ Լուիս",
+        "ka": "სენტ-ლუისი",
+        "kn": "ಸೈಂಟ್ ಲೂಯಿಸ್",
+        "ml": "സെയ്ന്റ് ലൂയിസ്",
+        "mr": "सेंट लुईस",
+        "ps": "سنت لویز",
+        "th": "เซนต์หลุยส์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Anchorage",
+      "identity": {
+        "wikidata": "Q39450"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q39450",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "አንከረጅ",
+        "ckb": "ئانکۆریج",
+        "ka": "ანკორიჯი",
+        "ml": "ആങ്കറേജ്",
+        "mr": "अँकरेज",
+        "th": "แองเคอเรจ"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Oklahoma City",
+      "identity": {
+        "wikidata": "Q34863"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34863",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኦክላሆማ ከተማ",
+        "ckb": "ئۆکلاھۆما ستی",
+        "hy": "Օկլահոմա Սիթի",
+        "ka": "ოკლაჰომა-სიტი",
+        "mr": "ओक्लाहोमा सिटी",
+        "sd": "اوڪلاهوما شهر",
+        "th": "โอคลาโฮมาซิตี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Omaha",
+      "identity": {
+        "wikidata": "Q43199"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q43199",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئۆمۆھا",
+        "hy": "Օմահա",
+        "ka": "ომაჰა",
+        "ml": "ഒമാഹ",
+        "th": "โอมาฮา"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Fairbanks",
+      "identity": {
+        "wikidata": "Q79638"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q79638",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ֆերբանկս",
+        "ka": "ფერბენკსი",
+        "ml": "ഫെയർബാങ്ക്സ്",
+        "mr": "फेरबँक्स",
+        "th": "แฟร์แบงส์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Juneau",
+      "identity": {
+        "wikidata": "Q29445"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q29445",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "جونۆ",
+        "hy": "Ջունո",
+        "ka": "ჯუნო",
+        "kn": "ಜುನೇಯು",
+        "ml": "ജുന്യൂ",
+        "mr": "जुनू",
+        "th": "จูโน"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Milwaukee",
+      "identity": {
+        "wikidata": "Q37836"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37836",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ምልዎኪ",
+        "ckb": "میلوۆکی",
+        "hy": "Միլուոքի",
+        "ka": "მილუოკი",
+        "kn": "ಮಿಲ್ವಾಕೀ",
+        "ml": "മിൽവൌക്കീ",
+        "mr": "मिलवॉकी",
+        "th": "มิลวอกี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Indianapolis",
+      "identity": {
+        "wikidata": "Q6346"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6346",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኢንዲያናፖሊስ",
+        "ckb": "ئیندیاناپۆلیس",
+        "hy": "Ինդիանապոլիս",
+        "ka": "ინდიანაპოლისი",
+        "ml": "ഇന്ത്യനാപോളിസ്",
+        "sd": "انڊياناپولس",
+        "th": "อินเดียแนโพลิส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Atlanta",
+      "identity": {
+        "wikidata": "Q23556"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23556",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "አትላንታ",
+        "ckb": "ئەتڵانتا",
+        "gu": "એટલાન્ટા",
+        "hy": "Ատլանտա",
+        "ka": "ატლანტა",
+        "kn": "ಅಟ್ಲಾಂಟಾ",
+        "mr": "अटलांटा",
+        "sd": "ائٽلانٽا",
+        "th": "แอตแลนตา"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Miami",
+      "identity": {
+        "wikidata": "Q8652"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q8652",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሚያሚ",
+        "ckb": "مەیامی",
+        "gu": "માયામિ",
+        "hy": "Մայամի",
+        "kn": "ಮಿಯಾಮಿ",
+        "ml": "മയാമി",
+        "mr": "मायामी",
+        "th": "ไมแอมี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Phoenix",
+      "identity": {
+        "wikidata": "Q16556"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16556",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "فینیکس",
+        "hy": "Ֆինիքս",
+        "ka": "ფინიქსი",
+        "ml": "ഫീനിക്സ്",
+        "mr": "फीनिक्स",
+        "sd": "فينڪس",
+        "th": "ฟีนิกซ์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Boston",
+      "identity": {
+        "wikidata": "Q100"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q100",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቦስቶን",
+        "ckb": "بۆستن",
+        "hy": "Բոստոն",
+        "ka": "ბოსტონი",
+        "kn": "ಬಾಸ್ಟನ್",
+        "ml": "ബോസ്റ്റൺ",
+        "mr": "बॉस्टन",
+        "sd": "بوسٽن",
+        "th": "บอสตัน"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Detroit",
+      "identity": {
+        "wikidata": "Q12439"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q12439",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ዲትሮይት",
+        "ckb": "دێترۆیت",
+        "hy": "Դետրոյթ",
+        "ka": "დეტროიტი",
+        "kn": "ಡೆಟ್ರಾಯಿಟ್",
+        "ml": "ഡെട്രോയിറ്റ്",
+        "mr": "डेट्रॉईट",
+        "th": "ดีทรอยต์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Philadelphia",
+      "identity": {
+        "wikidata": "Q1345"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1345",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፊላዴልፊያ",
+        "ckb": "فیلادێلفیا",
+        "hy": "Ֆիլադելֆիա",
+        "ka": "ფილადელფია",
+        "kn": "ಫಿಲಡೆಲ್ಫಿಯಾ",
+        "ml": "ഫിലഡെൽഫിയ",
+        "ps": "پيلادېلپيا",
+        "sd": "فلاڊيلفيا",
+        "th": "ฟิลาเดลเฟีย"
+      }
+    },
+    {
+      "country": "US",
+      "place": "New Orleans",
+      "identity": {
+        "wikidata": "Q34404"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34404",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ኑ ኦርሌንዝ",
+        "ckb": "نیوئۆرلەنس",
+        "ka": "ახალი ორლეანი",
+        "kn": "ನ್ಯೂ ಒರ್ಲೀನ್ಸ್",
+        "mr": "न्यू ऑर्लिन्स",
+        "th": "นิวออร์ลีนส์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Salt Lake City",
+      "identity": {
+        "wikidata": "Q23337"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23337",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳልት ለይክ ከተማ",
+        "ckb": "سەڵت لەیک ستی",
+        "hy": "Սոլթ Լեյք Սիթի",
+        "ka": "სოლტ-ლეიკ-სიტი",
+        "kn": "ಸಾಲ್ಟ್ ಲೇಕ್ ಸಿಟಿ",
+        "th": "ซอลต์เลกซิตี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "San Diego",
+      "identity": {
+        "wikidata": "Q16552"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16552",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳንዲየጎ",
+        "ckb": "سان دیێگۆ",
+        "hy": "Սան Դիեգո",
+        "ka": "სან-დიეგო",
+        "ml": "സാൻ ഡിയേഗോ",
+        "mr": "सॅन डियेगो",
+        "sd": "سان ڊياگو",
+        "th": "แซนดีเอโก"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Nashville",
+      "identity": {
+        "wikidata": "Q23197"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23197",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ناشڤیڵ",
+        "hy": "Նաշվիլ",
+        "ka": "ნეშვილი",
+        "mr": "नॅशव्हिल",
+        "sd": "نئشويل",
+        "th": "แนชวิลล์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Cleveland",
+      "identity": {
+        "wikidata": "Q37320"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q37320",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ክሊቭላንድ",
+        "ckb": "کلیڤلاند",
+        "hy": "Քլիվլենդ",
+        "ka": "კლივლენდი",
+        "mr": "क्लीव्हलंड",
+        "th": "คลีฟแลนด์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Portland",
+      "identity": {
+        "wikidata": "Q6106"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q6106",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "gu": "પોર્ટલેન્ડ",
+        "hy": "Պորտլենդ",
+        "ka": "პორტლენდი",
+        "kn": "ಪೋರ್ಟ್ ಲ್ಯಾಂಡ್",
+        "mr": "पोर्टलंड",
+        "th": "พอร์ตแลนด์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Tampa",
+      "identity": {
+        "wikidata": "Q49255"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q49255",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "تامپا",
+        "hy": "Տամպա",
+        "ka": "ტამპა",
+        "ml": "ടാംപ",
+        "mr": "टँपा",
+        "ps": "تمپا",
+        "th": "แทมปา"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Columbus",
+      "identity": {
+        "wikidata": "Q16567"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16567",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Կոլումբուս",
+        "ka": "კოლუმბუსი",
+        "mr": "कोलंबस",
+        "th": "โคลัมบัส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Cincinnati",
+      "identity": {
+        "wikidata": "Q43196"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q43196",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "سینسیناتی",
+        "hy": "Ցինցինատի",
+        "ka": "ცინცინატი",
+        "ml": "സിൻസിനാറ്റി",
+        "th": "ซินซินแนติ"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Memphis",
+      "identity": {
+        "wikidata": "Q16563"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16563",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "مێمفیس",
+        "hy": "Մեմֆիս",
+        "ka": "მემფისი",
+        "ml": "മെംഫിസ്",
+        "th": "เมมฟิส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Louisville",
+      "identity": {
+        "wikidata": "Q43668"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q43668",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Լուիսվիլ",
+        "ka": "ლუისვილი",
+        "mr": "लुईव्हिल",
+        "th": "ลุยส์วิลล์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Tulsa",
+      "identity": {
+        "wikidata": "Q44989"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q44989",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "تولسا",
+        "hy": "Թալսա",
+        "ka": "ტალსა",
+        "mr": "टल्सा",
+        "th": "ทัลซา"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Albuquerque",
+      "identity": {
+        "wikidata": "Q34804"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34804",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "አልበከርኪ",
+        "ckb": "ئالبوکێرکی",
+        "hy": "Ալբուկերկե",
+        "ka": "ალბუკერკე",
+        "mr": "आल्बुकर्की",
+        "sd": "ايلبقرقي",
+        "th": "แอลบูเคอร์คี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Austin",
+      "identity": {
+        "wikidata": "Q16559"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16559",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Օստին",
+        "ka": "ოსტინი",
+        "ml": "ഓസ്റ്റിൻ",
+        "th": "ออสติน"
+      }
+    },
+    {
+      "country": "US",
+      "place": "San Antonio",
+      "identity": {
+        "wikidata": "Q975"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q975",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳን አንቶኒዮ",
+        "ckb": "سان ئەنتۆنیۆ",
+        "hy": "Սան Անտոնիո",
+        "ka": "სან-ანტონიო",
+        "ml": "സാൻ അന്റോണിയോ",
+        "mr": "सॅन अँटोनियो",
+        "sd": "سان انٽونيو",
+        "th": "แซนแอนโทนีโอ"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Las Vegas",
+      "identity": {
+        "wikidata": "Q23768"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q23768",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ላስ ቬጋስ",
+        "ckb": "لاس ڤێگاس",
+        "gu": "લાસ વેગાસ",
+        "hy": "Լաս Վեգաս",
+        "ka": "ლას-ვეგასი",
+        "ml": "ലാസ് വെയ്ഗസ്",
+        "mr": "लास व्हेगस",
+        "ps": "لاس ویګاس",
+        "th": "ลาสเวกัส"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Pittsburgh",
+      "identity": {
+        "wikidata": "Q1342"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q1342",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ፕትስበርግ",
+        "ckb": "پیتسبێرگ",
+        "hy": "Փիթսբուրգ",
+        "ka": "პიტსბურგი",
+        "kn": "ಪಿಟ್ಸ್‌ಬರ್ಗ್",
+        "th": "พิตต์สเบิร์ก"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Baltimore",
+      "identity": {
+        "wikidata": "Q5092"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q5092",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ባልቲሞር",
+        "ckb": "بالتیمۆر",
+        "hy": "Բալթիմոր",
+        "ka": "ბალტიმორი",
+        "mr": "बॉल्टिमोर",
+        "th": "บอลทิมอร์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Charlotte",
+      "identity": {
+        "wikidata": "Q16565"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16565",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "شارڵۆت",
+        "hy": "Շառլոթ",
+        "ka": "შარლოტი",
+        "mr": "शार्लट",
+        "sd": "شارلوٽ",
+        "th": "ชาร์ลอตต์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Raleigh",
+      "identity": {
+        "wikidata": "Q41087"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q41087",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ռոլի",
+        "ka": "როლი",
+        "mr": "रॅले",
+        "th": "ราลี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Buffalo",
+      "identity": {
+        "wikidata": "Q40435"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q40435",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "بەفاڵۆ",
+        "hy": "Բուֆֆալո",
+        "ka": "ბუფალო",
+        "kn": "ಬಫಲೋ",
+        "ml": "ബഫല്ലോ",
+        "mr": "बफेलो",
+        "th": "บัฟฟาโล"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Jacksonville",
+      "identity": {
+        "wikidata": "Q16568"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16568",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ջեքսոնվիլ",
+        "ka": "ჯექსონვილი",
+        "kn": "ಜಾಕ್ಸನ್ವಿಲ್ಲೆ",
+        "mr": "जॅक्सनव्हिल",
+        "ps": "جکسن ويل",
+        "sd": "جيڪسن ول",
+        "th": "แจ็กสันวิลล์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Orlando",
+      "identity": {
+        "wikidata": "Q49233"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q49233",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئۆرڵاندۆ",
+        "gu": "ઓર્લાન્ડો",
+        "hy": "Օռլանդո",
+        "ka": "ორლანდო",
+        "mr": "ओरलँडो",
+        "th": "ออร์แลนโด"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Sacramento",
+      "identity": {
+        "wikidata": "Q18013"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q18013",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሳክራመንቶ",
+        "hy": "Սակրամենտո",
+        "ka": "საკრამენტო",
+        "ml": "സാക്രമെന്റോ",
+        "mr": "साक्रामेंटो",
+        "sd": "سئڪرامئنٽو",
+        "th": "แซคราเมนโต"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Honolulu",
+      "identity": {
+        "wikidata": "Q18094"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q18094",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ሆኖሉሉ",
+        "ckb": "ھۆنۆلولو",
+        "hy": "Հոնոլուլու",
+        "ka": "ჰონოლულუ",
+        "kn": "ಹೊನೊಲುಲು",
+        "mr": "होनोलुलु",
+        "th": "โฮโนลูลู"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Nome",
+      "identity": {
+        "wikidata": "Q79996"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q79996",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ml": "നോം"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Utqiaġvik",
+      "identity": {
+        "wikidata": "Q79809"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q79809",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Ուտկիագվիկ",
+        "th": "อัทเคียจีวิค"
+      }
+    },
+    {
+      "country": "US",
+      "place": "El Paso",
+      "identity": {
+        "wikidata": "Q16562"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q16562",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ئێڵ پاسۆ",
+        "hy": "Էլ Պասո",
+        "ka": "ელ-პასო",
+        "mr": "एल पॅसो",
+        "th": "เอลแพโซ"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Boise",
+      "identity": {
+        "wikidata": "Q35775"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q35775",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ቦይዚ",
+        "hy": "Բոյսե",
+        "ka": "ბოისე",
+        "kn": "ಬಾಯ್ಸಿ",
+        "mr": "बॉइझी",
+        "sd": "بوئيسي",
+        "th": "บอยซี"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Wichita",
+      "identity": {
+        "wikidata": "Q49266"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q49266",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ویشیتا",
+        "hy": "Ուիչիտո",
+        "ka": "უიჩიტა",
+        "mr": "विचिटा",
+        "th": "วิชิทอ"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Des Moines",
+      "identity": {
+        "wikidata": "Q39709"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q39709",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "am": "ደሞይን",
+        "ckb": "دێس مۆینێس",
+        "hy": "Դե Մոյն",
+        "ka": "დე-მოინი",
+        "ml": "ഡെസ് മോയിൻസ്",
+        "mr": "दे मॉईन",
+        "th": "ดิมอยน์"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Fargo",
+      "identity": {
+        "wikidata": "Q34109"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q34109",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "فارگۆ",
+        "hy": "Ֆարգո",
+        "ka": "ფარგო",
+        "mr": "फार्गो"
+      }
+    },
+    {
+      "country": "US",
+      "place": "Sioux Falls",
+      "identity": {
+        "wikidata": "Q131335"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q131335",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "سیۆکس فۆڵز",
+        "hy": "Սու Ֆոլս",
+        "ml": "സിയൂക്സ് ഫാൾസ്",
+        "mr": "सू फॉल्स",
+        "th": "ซูฟอลส์"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Zaporizhzhya",
+      "identity": {
+        "wikidata": "Q157835"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q157835",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Զապորոժիե",
+        "ka": "ზაპორიჟია",
+        "ml": "സപ്പോറിഷിയ",
+        "mr": "झापोरिझिया",
+        "sd": "زپوريزيا",
+        "th": "ซาปอริฌเฌีย"
+      }
+    },
+    {
+      "country": "UA",
+      "place": "Donetsk",
+      "identity": {
+        "wikidata": "Q43070"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q43070",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "دۆنێتسک",
+        "hy": "Դոնեցկ",
+        "ka": "დონეცკი",
+        "ml": "ഡൊണെറ്റ്സ്ക്",
+        "mr": "दोनेत्स्क",
+        "th": "ดอแนตสก์"
+      }
+    },
+    {
+      "country": "ZA",
+      "place": "Pietermaritzburg",
+      "identity": {
+        "wikidata": "Q185591"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q185591",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "hy": "Պիտերմարիցբուրգ",
+        "ka": "პიტერმარიცბურგი",
+        "mr": "पीटरमारित्झबर्ग",
+        "th": "ปีเตอร์มาริตซ์เบิร์ก"
+      }
+    },
+    {
+      "country": "SO",
+      "place": "Hargeisa",
+      "identity": {
+        "wikidata": "Q168652"
+      },
+      "evidence": {
+        "basis": "attested-usage",
+        "sources": [
+          {
+            "kind": "wikidata-label-with-wikipedia-sitelink",
+            "url": "https://www.wikidata.org/wiki/Q168652",
+            "checked_on": "2026-09-07"
+          }
+        ]
+      },
+      "locale_names": {
+        "ckb": "ھەرگیسا",
+        "hy": "Հարգեյսա",
+        "sd": "هرگيسا",
+        "th": "ฮาร์เกย์ซา"
+      }
     }
   ]
 }

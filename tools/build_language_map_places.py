@@ -109,6 +109,13 @@ PLACE_NAME_CORRECTIONS = {
             "zht": "布魯塞爾",
         },
     },
+    "Eindhoven": {
+        # Natural Earth's Hindi field names Amsterdam here. Use the attested
+        # Eindhoven form as both the Hindi label and the Devanagari fallback.
+        "localized_names": {
+            "hi": "आइंडहोवन",
+        },
+    },
     "Seoul": {
         "localized_names": {
             "ja": "ソウル",
