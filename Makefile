@@ -15,7 +15,7 @@ PUBLICATION_MANIFEST ?=
 OUTPUT ?= $(ROOT)/build/site
 ACCESS_RUNTIME ?= $(ROOT)/dist/language-atlas-access.js
 
-.PHONY: help test atlas-test access-runtime coverage build serve clean
+.PHONY: help test atlas-test access-runtime coverage build serve clean place-pronunciations place-scripts
 
 help:
 	@printf '%s\n' \
@@ -23,6 +23,8 @@ help:
 		'' \
 		'  make build                        # coverage site → build/site' \
 		'  make access-runtime               # embeddable resolver → dist/' \
+		'  make place-pronunciations          # source-language + IPA review catalog' \
+		'  make place-scripts                 # refresh generated script fallbacks' \
 		'  make serve                        # http://127.0.0.1:$(PORT)/' \
 		'  make test' \
 		'' \
@@ -33,6 +35,12 @@ help:
 
 access-runtime:
 	$(PY) $(ROOT)/tools/atlas_access.py --output "$(ACCESS_RUNTIME)"
+
+place-pronunciations:
+	$(PY) $(ROOT)/tools/build_place_pronunciations.py
+
+place-scripts: place-pronunciations
+	$(PY) $(ROOT)/tools/enrich_language_map_place_scripts.py
 
 coverage build: access-runtime
 	$(PY) $(ROOT)/tools/language_coverage.py \

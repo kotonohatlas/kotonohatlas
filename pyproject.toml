@@ -7,6 +7,14 @@ requires-python = ">=3.11"
 license = { text = "GPL-3.0-or-later" }
 dependencies = ["jsmin==3.0.1"]
 
+[project.optional-dependencies]
+place-generation = [
+  "aksharamukha==2.3",
+  "epitran==1.35.2",
+  "espeakng-loader==0.2.4",
+  "phonemizer==3.4.0",
+]
+
 [tool.setuptools]
 py-modules = []
 package-dir = { "" = "tools" }

@@ -234,6 +234,155 @@ PLACE_NAME_CORRECTIONS_BY_NE_ID = {
         "localized_names": {"en": "Maradi"},
         "script_names": {"Latn": "Maradi"},
     },
+    # Natural Earth retains Loubomo, the 1975-1991 name, in a few fields.
+    1159143017: {
+        "name": "Dolisie",
+        "localized_names": {
+            "hu": "Dolisie",
+            "he": "דוליזי",
+            "fa": "دولیسی",
+            "ru": "Долизи",
+        },
+        "script_names": {"Latn": "Dolisie"},
+    },
+    # Puerto San José and nearby Puerto Quetzal are distinct places.
+    1159141559: {
+        "name": "Puerto San José",
+        "localized_names": {"es": "Puerto San José"},
+        "script_names": {"Latn": "Puerto San José"},
+    },
+    # NAME_ES contains an unrelated locality in the same province.
+    1159118621: {
+        "localized_names": {"es": "Puerto Plata"},
+    },
+    # NAME_AR/NAME_EN contain the governorate rather than the city.
+    1159140381: {
+        "name": "Mansoura",
+        "localized_names": {"ar": "المنصورة", "en": "Mansoura"},
+        "script_names": {"Latn": "Mansoura"},
+    },
+    # NAME_AR contains the generic word "city"; the shared script label should
+    # stay at the same scope as Giza in the other writing systems.
+    1159146947: {"localized_names": {"ar": "الجيزة"}},
+    # The city reverted from Barrow to its Iñupiaq name in 2016. Localized
+    # exonyms may retain Barrow where it remains established usage.
+    1159150549: {
+        "script_names": {"Latn": "Utqiaġvik"},
+    },
+    # The Japanese source still carries the former colonial-era city name.
+    1159144719: {
+        "localized_names": {"ja": "ソヨ"},
+    },
+    # The following Indic source labels name another place (or are corrupt).
+    # Correcting the Deva/Beng parents also prevents that error propagating to
+    # the additional scripts generated from them when no IPA row is available.
+    1159116339: {
+        "script_names": {"Deva": "इलाम", "Beng": "ইলাম"},
+    },
+    1159144521: {
+        "script_names": {"Deva": "न्गाउंडेरे"},
+    },
+    # Natural Earth localizes the surrounding district rather than the city in
+    # several scripts (for example Japanese 県 and Bengali জেলা). This point is
+    # the city of Jamalpur, so keep every shared fallback at city-name scope.
+    1159144679: {
+        "name": "Jamalpur",
+        "replace_source_names": True,
+        "script_names": {
+            "Latn": "Jamalpur",
+            "Jpan": "ジャマルプル",
+            "Hans": "杰马勒布尔",
+            "Hant": "傑馬勒布爾",
+            "Kore": "자말푸르",
+            "Cyrl": "Джамалпур",
+            "Arab": "جمالبور",
+            "Deva": "जमालपुर",
+            "Beng": "জামালপুর",
+            "Grek": "Τζαμαλπούρ",
+            "Hebr": "ג'מאלפור",
+        },
+    },
+    1159145061: {
+        "name": "Veliko Tarnovo",
+        "script_names": {"Latn": "Veliko Tarnovo", "Deva": "वेलिको तर्नोवो"},
+    },
+    # Natural Earth mixes the island/old city names into rows whose point and
+    # administrative role are the present-day cities below.
+    1159118935: {
+        "name": "Janjanbureh",
+        "localized_names": {
+            "es": "Janjanbureh",
+            "id": "Janjanbureh",
+            "sv": "Janjanbureh",
+            "vi": "Janjanbureh",
+            "uk": "Джанджанбуре",
+        },
+        "script_names": {
+            "Latn": "Janjanbureh",
+            "Arab": "جانجانبوره",
+            "Deva": "जंजनबुरे",
+            "Beng": "জানজানবুরে",
+            "Grek": "Τζαντζανμπουρέ",
+            "Hebr": "ג'נג'נבורה",
+        },
+    },
+    1159146035: {
+        "name": "Cockburn Town",
+        "script_names": {
+            "Latn": "Cockburn Town",
+            "Deva": "कॉकबर्न टाउन",
+            "Beng": "ককবার্ন টাউন",
+        },
+    },
+    # Mbombela is the current official name. Retain established Nelspruit
+    # locale exonyms, but do not manufacture new-script forms from that old
+    # Hindi/Bengali source label.
+    1159136731: {
+        "script_names": {"Deva": "म्बोम्बेला", "Beng": "ম্বোম্বেলা"},
+    },
+    # A few Natural Earth/Wikidata localized fields contain a neighboring city,
+    # a country name, or unrelated text rather than a translation of the row.
+    1159113331: {"localized_names": {"fr": "Port-de-Paix"}},
+    1159118801: {"localized_names": {"tr": "Higüey"}},
+    1159122929: {"localized_names": {"en": "Tacuarembó"}},
+    1159136215: {"localized_names": {"en": "Ha'il"}},
+    1159146487: {"localized_names": {"en": "Colón"}},
+    1159149507: {"localized_names": {"en": "Oujda"}},
+    1159150757: {"localized_names": {"en": "Tampico"}},
+    # Natural Earth has the surrounding Kufra district in NAME_AR, while this
+    # point and the other language fields identify the district capital Al Jawf.
+    1159150075: {"localized_names": {"ar": "الجوف"}},
+    # These Natural Earth Arabic labels identify the enclosing wilayat. The
+    # point features are towns, so omit ولاية just as the other scripts do.
+    1159137881: {"localized_names": {"ar": "مرباط"}},
+    1159146591: {"localized_names": {"ar": "صحار"}},
+    1159146593: {"localized_names": {"ar": "السيب"}},
+    1159148149: {"localized_names": {"ar": "نزوى"}},
+    1159148153: {"localized_names": {"ar": "صور"}},
+    # These points represent the cities, not the identically named Saudi
+    # governorates carried in Natural Earth's Arabic fields.
+    1159128287: {"localized_names": {"ar": "القطيف"}},
+    1159136385: {"localized_names": {"ar": "الخرج"}},
+    # Natural Earth has merged the wilayat prefix with the town name and then
+    # attached an unrelated Arabic personal name. Omani government sources use
+    # simply Samail / سمائل for this place.
+    1159128941: {
+        "name": "Samail",
+        "replace_source_names": True,
+        "script_names": {
+            "Latn": "Samail",
+            "Jpan": "サマイル",
+            "Hans": "萨迈勒",
+            "Hant": "薩邁勒",
+            "Kore": "사마일",
+            "Cyrl": "Самаиль",
+            "Arab": "سمائل",
+            "Deva": "समाइल",
+            "Beng": "সামাইল",
+            "Grek": "Σαμάιλ",
+            "Hebr": "סמאיל",
+        },
+    },
 }
 
 
@@ -382,6 +531,35 @@ def build(source: Path) -> dict:
             continue
         grouped[code].append(feature)
 
+    locale_name_fields = dict(LOCALE_NAME_FIELDS)
+    locale_name_fields.update({
+        locale: field for locale, field in SCRIPT_NAME_FIELDS.values()
+    })
+    for code, country_override in (overrides.get("countries") or {}).items():
+        for place in country_override.get("additional_places") or []:
+            name = str(place.get("name") or "").strip()
+            if len(code) != 2 or not name:
+                continue
+            properties = {
+                "ISO_A2": code,
+                "ADM0_A3": map_config["iso2_to_iso3"].get(code, ""),
+                "NAME": name,
+                "MIN_ZOOM": place.get("minimum_zoom", 9),
+                "POP_MAX": place.get("population", 0),
+                "ADM0CAP": 0,
+            }
+            for locale, localized_name in (place.get("names") or {}).items():
+                field = locale_name_fields.get(locale)
+                if field and str(localized_name).strip():
+                    properties[field] = str(localized_name).strip()
+            grouped[code].append({
+                "properties": properties,
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [place.get("longitude"), place.get("latitude")],
+                },
+            })
+
     countries = {}
     for code, features in sorted(grouped.items()):
         country_override = (overrides.get("countries") or {}).get(code) or {}
@@ -422,10 +600,6 @@ def build(source: Path) -> dict:
             corrected_names = name_correction.get("localized_names") or {}
             script_name_overrides = name_correction.get("script_names") or {}
             use_source_names = not name_correction.get("replace_source_names")
-            country_name = str(properties.get("ADM0NAME") or "").strip()
-            # Monaco / San Marino style duplicates add no information to the map.
-            if default_name.casefold() == country_name.casefold():
-                continue
             script_fallbacks = {
                 "Latn": _latin_script_fallback(
                     code,
@@ -484,6 +658,19 @@ def build(source: Path) -> dict:
                 names,
             ])
         if places:
+            # ISO 3166-1 and CLDR region codes cover countries and territories,
+            # not only sovereign states. For atlas display, an explicitly named
+            # administrative center is treated as the capital. Otherwise, a
+            # coded region without a Natural Earth ADM0 capital uses its
+            # highest-ranked place as a display fallback.
+            administrative_center = str(
+                country_override.get("administrative_center") or ""
+            ).strip()
+            if administrative_center:
+                for row in places:
+                    row[3] = int(row[5] == administrative_center)
+            elif not any(row[3] for row in places):
+                places[0][3] = 1
             budget = country_override.get("budget")
             country_payload = {
                 "budget": min(len(places), int(budget)) if budget is not None else min(len(places), _label_budget(ranked)),
@@ -504,7 +691,7 @@ def build(source: Path) -> dict:
 
     return {
         "schema": 3,
-        "description": "Deferred capital and major-city labels. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
+        "description": "Deferred capital and major-city labels by ISO 3166-1 and CLDR region code. A coded region's administrative center is treated as its capital. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
         "source": {
             "title": "Natural Earth 1:10m Populated Places",
             "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/",

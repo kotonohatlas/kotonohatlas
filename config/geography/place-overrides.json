@@ -66,6 +66,35 @@
       "priority": ["London", "Edinburgh", "Belfast", "Cardiff", "Manchester", "Birmingham", "Glasgow", "Liverpool"],
       "minimum_zoom": {"Edinburgh": 3.7, "Belfast": 4.0, "Cardiff": 4.2}
     },
+    "GQ": {
+      "administrative_center": "Ciudad de la Paz",
+      "additional_places": [
+        {
+          "name": "Ciudad de la Paz",
+          "longitude": 10.823611,
+          "latitude": 1.5925,
+          "minimum_zoom": 5.0,
+          "population": 2000,
+          "names": {
+            "en": "Ciudad de la Paz",
+            "es": "Ciudad de la Paz",
+            "fr": "Ciudad de la Paz",
+            "pt": "Cidade da Paz",
+            "ja": "シウダ・デ・ラ・パス",
+            "zh": "拉帕斯",
+            "zht": "拉巴斯",
+            "ko": "시우다드데라파스",
+            "ru": "Сьюдад-де-ла-Пас",
+            "ar": "سيوداد دي لا باز",
+            "hi": "स्यूदाद दे ला पास",
+            "bn": "সিউদাদ দে লা পাস",
+            "el": "Σιουδάδ δε λα Πας",
+            "he": "סיודאד דה לה פאס"
+          },
+          "source_url": "https://www.guineaecuatorialpress.com/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial"
+        }
+      ]
+    },
     "IT": {
       "budget": 8,
       "priority": ["Rome", "Milan", "Naples", "Venice", "Florence", "Turin", "Bologna", "Bari"],
@@ -122,6 +151,10 @@
       "priority": ["Warsaw", "Kraków", "Gdańsk", "Wrocław", "Poznań", "Łódź", "Szczecin"],
       "minimum_zoom": {"Wrocław": 4.3, "Poznań": 4.3, "Łódź": 4.5, "Szczecin": 4.5}
     },
+    "PS": {
+      "administrative_center": "Ramallah",
+      "minimum_zoom": {"Ramallah": 5.6}
+    },
     "RU": {
       "candidate_limit": 40,
       "budget": 18,
@@ -146,6 +179,9 @@
       "budget": 10,
       "priority": ["Istanbul", "Ankara", "İzmir", "Bursa", "Antalya", "Adana", "Gaziantep", "Diyarbakır", "Trabzon", "Erzurum"],
       "minimum_zoom": {"Antalya": 4.5, "Gaziantep": 4.7, "Diyarbakır": 4.8, "Trabzon": 4.8, "Erzurum": 5.0}
+    },
+    "TH": {
+      "minimum_zoom": {"Bangkok": 2.7}
     },
     "US": {
       "candidate_limit": 70,

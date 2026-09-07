@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """Fill missing abugida/alphabet script forms on place labels.
 
-Natural Earth already supplies Latn/Jpan/Hans/Hant/Kore/Cyrl/Arab/Deva/Beng/Grek/Hebr.
-This enrichment adds the remaining scripts declared in legacy_script_profiles.
+Natural Earth supplies Latn/Jpan/Hans/Hant/Kore/Cyrl/Arab/Deva/Beng/Grek/Hebr.
+This enrichment preserves those established forms and adds the remaining
+scripts declared in legacy_script_profiles. Missing Deva/Beng forms may also be
+filled from pronunciation data.
 
 Policy:
 - One shared phonetic form per script, not per-locale readings.
 - Most places have no native-speaker written form in these scripts; for those,
   approximate from sound rather than leaving the script absent.
-- Indic and mainland SE Asian scripts are derived from the existing Devanagari
-  form (already a phonetic reading of the place).
-- Armenian / Georgian / Ethiopic are derived from the Latin display form.
+- Missing Indic and mainland SE Asian scripts are generated independently from
+  reviewed source-language pronunciation data. Existing upstream or reviewed
+  Devanagari and Bengali forms are not replaced by machine transcription.
+- Armenian / Georgian / Ethiopic use reviewed source-language IPA when
+  available, then fall back to the Latin display form.
 - Sparse endonym overrides cover only well-attested local forms.
 - Amharic vs Tigrinya reading differences stay out of scope except as optional
   locale overrides for Horn-of-Africa places.
@@ -29,6 +33,7 @@ from atlas_paths import ATLAS_ROOT, GEOGRAPHY_DIR
 ROOT = ATLAS_ROOT
 PLACES_PATH = GEOGRAPHY_DIR / "places.json"
 MAP_CONFIG_PATH = GEOGRAPHY_DIR / "map.json"
+PRONUNCIATIONS_PATH = GEOGRAPHY_DIR / "place-pronunciations.json"
 
 AKSHARA_TARGETS = {
     "Guru": "Gurmukhi",
@@ -44,23 +49,31 @@ AKSHARA_TARGETS = {
     "Khmr": "Khmer",
 }
 
+PHONETIC_AKSHARA_TARGETS = {
+    "Deva": "Devanagari",
+    "Beng": "Bengali",
+    **AKSHARA_TARGETS,
+}
+
 NEW_SCRIPTS = tuple(AKSHARA_TARGETS) + ("Armn", "Geor", "Ethi")
 
 SCRIPT_SOURCES = {
-    "Guru": "pa / Devanagari-bridged phonetic",
-    "Gujr": "gu / Devanagari-bridged phonetic",
-    "Orya": "or / Devanagari-bridged phonetic",
-    "Taml": "ta / Devanagari-bridged phonetic",
-    "Telu": "te / Devanagari-bridged phonetic",
-    "Knda": "kn / Devanagari-bridged phonetic",
-    "Mlym": "ml / Devanagari-bridged phonetic",
-    "Thai": "th / Devanagari-bridged phonetic",
-    "Laoo": "lo / Devanagari-bridged phonetic",
-    "Mymr": "my / Devanagari-bridged phonetic",
-    "Khmr": "km / Devanagari-bridged phonetic",
-    "Armn": "hy / Latin-bridged phonetic",
-    "Geor": "ka / Latin-bridged phonetic",
-    "Ethi": "am / Latin-bridged phonetic",
+    "Deva": "hi / Natural Earth or reviewed form, with source-language IPA fallback",
+    "Beng": "bn / Natural Earth or reviewed form, with source-language IPA fallback",
+    "Guru": "pa / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Gujr": "gu / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Orya": "or / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Taml": "ta / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Telu": "te / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Knda": "kn / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Mlym": "ml / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Thai": "th / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Laoo": "lo / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Mymr": "my / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Khmr": "km / source-language IPA-bridged phonetic, with Devanagari fallback",
+    "Armn": "hy / source-language IPA-bridged phonetic, with Latin fallback",
+    "Geor": "ka / source-language IPA-bridged phonetic, with Latin fallback",
+    "Ethi": "am / source-language IPA-bridged phonetic, with Latin fallback",
 }
 
 # Sparse endonyms / established encyclopedia forms. Keyed by places `name`.
@@ -78,6 +91,18 @@ SCRIPT_OVERRIDES = {
     "New York": {"Thai": "นิวยอร์ก", "Armn": "Նյու Յորք", "Geor": "ნიუ-იორკი", "Ethi": "ኒውዮርክ"},
     "Moskva": {"Thai": "มอสโก", "Armn": "Մոսկվա", "Geor": "მოსკოვი", "Ethi": "ሞስኮ"},
     "Kabul": {"Ethi": "ካቡል", "Armn": "Քաբուլ", "Geor": "ქაბული", "Thai": "คาบูล"},
+    "São Paulo": {
+        "Armn": "Սան Պաուլու",
+        "Geor": "სან-პაულუ",
+        "Ethi": "ሳኦ ፓውሎ",
+    },
+    # Preserve the Spanish reading; generic Latin transliteration would read
+    # the initial C as /k/ in these fallback generators.
+    "Ciudad de la Paz": {
+        "Armn": "Սյուդադ դե լա Պաս",
+        "Geor": "სიუდად დე ლა პას",
+        "Ethi": "ሲዩዳድ ዴ ላ ፓስ",
+    },
 }
 
 
@@ -91,12 +116,135 @@ def _clean_aksharamukha(text: str) -> str:
 def _fold_latin(value: str) -> str:
     import unicodedata
 
+    value = value.translate(str.maketrans({
+        "æ": "ae", "Æ": "Ae", "œ": "oe", "Œ": "Oe",
+        "ø": "o", "Ø": "O", "ł": "l", "Ł": "L",
+        "ð": "d", "Ð": "D", "þ": "th", "Þ": "Th",
+        "đ": "d", "Đ": "D", "ı": "i", "Ə": "E", "ə": "e",
+        "ŋ": "ng", "Ŋ": "Ng", "ß": "ss",
+        "ʻ": "'", "ʼ": "'", "ʹ": "'", "′": "'",
+    }))
     folded = []
     for character in unicodedata.normalize("NFKD", value):
         if unicodedata.combining(character):
             continue
         folded.append(character)
     return "".join(folded)
+
+
+_IPA_BRIDGE_REPLACEMENTS = (
+    ("t͡ɕ", "ch"), ("d͡ʑ", "j"), ("tɕ", "ch"), ("dʑ", "j"),
+    ("t͡ʃ", "ch"), ("d͡ʒ", "j"), ("t͡s", "ts"), ("d͡z", "dz"),
+    ("tʃ", "ch"), ("dʒ", "j"), ("ts", "ts"), ("dz", "dz"),
+    ("ʃ", "sh"), ("ʂ", "sh"), ("ɕ", "sh"),
+    ("ʒ", "zh"), ("ʐ", "zh"), ("ʑ", "zh"),
+    ("x", "kh"), ("χ", "kh"), ("ɣ", "gh"), ("ç", "h"), ("c", "k"),
+    ("θ", "s"), ("ð", "d"), ("ɲ", "ny"), ("ŋ", "ng"),
+    ("ɳ", "n"), ("ɭ", "l"), ("ɫ", "l"), ("ʎ", "ly"),
+    ("ʁ", "r"), ("ʀ", "r"), ("ɾ", "r"), ("ɹ", "r"), ("ɽ", "r"),
+    # Glottal stop and pharyngeal ʕ have no stable shared equivalent across the
+    # target scripts. An ASCII apostrophe becomes an Indic avagraha (ऽ), which
+    # is a grammatical elision mark rather than a useful place-name letter.
+    # Leave these consonants unmarked in the coarse cross-script fallback.
+    ("ʔ", ""), ("ʕ", ""), ("ħ", "h"),
+    ("ɡ", "g"), ("ɟ", "j"), ("ʝ", "y"),
+    ("β", "b"), ("ʋ", "v"), ("ɸ", "f"),
+    ("ʈ", "t"), ("ɖ", "d"), ("ɗ", "d"),
+    ("ʲ", "y"), ("ʰ", "h"), ("ˤ", ""),
+    ("y", "u"), ("j", "y"),
+    ("ɑ", "a"), ("ɐ", "a"), ("ɒ", "a"), ("ʌ", "a"),
+    ("æ", "a"), ("ɛ", "e"), ("ə", "e"), ("ɜ", "e"),
+    ("ɪ", "i"), ("ᵻ", "i"), ("ɨ", "i"), ("ɯ", "u"), ("ʏ", "u"),
+    ("ɚ", "er"),
+    ("ɔ", "o"), ("ø", "o"), ("œ", "o"), ("ɵ", "o"),
+    ("ʊ", "u"), ("ʉ", "u"),
+)
+
+
+def _ipa_to_latin_bridge(value: str, language: str = "") -> str:
+    """Reduce IPA to the conservative phonetic alphabet used by converters."""
+
+    import unicodedata
+
+    # U+00E7 is an IPA consonant here, not an orthographic c with an accent.
+    # Preserve that distinction before canonical decomposition removes it.
+    text = unicodedata.normalize("NFD", value.casefold().replace("ç", "h"))
+    # Preserve consonant length as a doubled consonant before dropping IPA
+    # length marks. This matters for names such as Sapporo /sapːoɾo/. Vowel
+    # length remains script-convention dependent and is not forced here.
+    consonants = "bcdfghklmnpqrstvwxyzɡɟɣɲŋɳɭɫɾɹɽʁʀʃʂɕʒʐʑχθðβʋɸʈɖɗħʔʕ"
+    text = re.sub(rf"([{consonants}])ː", r"\1\1", text)
+    # Keep word boundaries, but discard stress, remaining length and combining marks.
+    text = re.sub(r"[ˈˌː._]", "", text)
+    # Scripts without a productive nasal-vowel notation need a visible nasal
+    # consonant approximation. Preserve nasal diphthongs first: otherwise São
+    # /sɐ̃w/ collapses to `sav`, while Portimão /...mɐ̃w̃/ becomes `...manun`.
+    nasal_vowels = {
+        "a": "an", "ɑ": "an", "ɐ": "an", "æ": "an",
+        "e": "en", "ɛ": "en", "ə": "en",
+        "i": "in", "ɪ": "in",
+        "o": "on", "ɔ": "on", "œ": "on",
+        "u": "un", "ʊ": "un", "y": "un",
+    }
+    nasal_bases = {key: value[0] for key, value in nasal_vowels.items()}
+    text = re.sub(
+        r"([aɑɐæeɛəiɪoɔœuʊy])\u0303(?:w|ʊ)\u0303?",
+        lambda match: nasal_bases[match.group(1)] + "un",
+        text,
+    )
+    text = re.sub(
+        r"([aɑɐæeɛəiɪoɔœuʊy])\u0303(?:j|ɪ)\u0303?",
+        lambda match: nasal_bases[match.group(1)] + "in",
+        text,
+    )
+    text = re.sub(
+        r"([aɑɐæeɛəiɪoɔœuʊy])\u0303(?![jwmnɲŋ])",
+        lambda match: nasal_vowels[match.group(1)],
+        text,
+    )
+    text = "".join(character for character in text if not unicodedata.combining(character))
+    replacements = dict(_IPA_BRIDGE_REPLACEMENTS)
+    if language == "pt":
+        # Brazilian /x/ is an r-family realization, and eSpeak writes some
+        # unstressed /i/ vowels as /y/. Neither should become kh or u here.
+        replacements.update({"x": "r", "y": "i"})
+    elif language in {"el", "es"}:
+        # In these engines, /ɣ/ is the regular fricative realization of an
+        # underlying gamma/g. Feeding it to an Indic converter as `gh` creates
+        # a spurious aspirated consonant (for example Zaragoza -> Zaraghoza).
+        replacements["ɣ"] = "g"
+    elif language == "en":
+        # American intervocalic /t/ is commonly surfaced as [ɾ]. Preserve the
+        # underlying consonant expected by cross-script place-name spellings.
+        replacements["ɾ"] = "t"
+    pattern = "|".join(
+        re.escape(source)
+        for source in sorted(replacements, key=len, reverse=True)
+    )
+    text = re.sub(pattern, lambda match: replacements[match.group(0)], text)
+    text = re.sub(r"[^a-z' -]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _aksharamukha_phonetic_input(value: str, language: str = "") -> str:
+    """Adapt the bridge alphabet to Aksharamukha's IAST semantics."""
+
+    # IAST gives plain `n` its expected dental value. RomanReadable interprets
+    # it as retroflex ṇ, which produced forms such as Nantes -> णण्त्. Convert
+    # the bridge's portable digraphs to unambiguous IAST letters before calling
+    # Aksharamukha. /ʒ/ uses z rather than j so it remains distinct from /dʒ/.
+    adapted = (
+        value.replace("zh", "z")
+        .replace("sh", "ś")
+        .replace("ch", "c")
+        .replace("ny", "ñ")
+        .replace("ng", "ṅ")
+    )
+    # Portuguese /w/ is normally the second element of a diphthong; `u`
+    # preserves that relation. In the other supported voices it is ordinarily
+    # consonantal, for which Indic व and its cognates (`v`) are the closest
+    # portable approximation.
+    return adapted.replace("w", "u" if language == "pt" else "v")
 
 
 def _latin_to_armenian(value: str) -> str:
@@ -349,13 +497,51 @@ def _format_payload(payload: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _enrich_scripts(scripts: dict, name: str, process) -> dict:
+def _enrich_scripts(
+    scripts: dict,
+    name: str,
+    process,
+    pronunciation: dict | None = None,
+) -> dict:
     updated = dict(scripts)
     overrides = SCRIPT_OVERRIDES.get(name) or {}
     deva = str(scripts.get("Deva") or "").strip()
     latn = str(scripts.get("Latn") or name).strip()
+    ipa = str((pronunciation or {}).get("ipa") or "").strip()
+    language = str((pronunciation or {}).get("language") or "")
+    phonetic_latn = _ipa_to_latin_bridge(
+        ipa,
+        language,
+    ) or latn
+    if (
+        language in {"ar", "fa", "he", "ur"}
+        and not re.search(r"[aeiou]", phonetic_latn)
+    ):
+        # Unvocalized abjads occasionally make both engines return little more
+        # than a consonant skeleton (for example Marzuq -> `mrzq`). The map's
+        # reviewed Latin spelling is a more useful pronunciation fallback than
+        # propagating an unreadable cluster into eleven additional scripts.
+        phonetic_latn = _fold_latin(latn).lower() or latn
 
-    if deva:
+    if ipa and phonetic_latn:
+        native_script = {"bn": "Beng", "hi": "Deva"}.get(language)
+        akshara_input = _aksharamukha_phonetic_input(phonetic_latn, language)
+        for code, akshara_name in PHONETIC_AKSHARA_TARGETS.items():
+            if (
+                code == native_script
+                or code in overrides
+                or (code in {"Deva", "Beng"} and str(scripts.get(code) or "").strip())
+            ):
+                continue
+            try:
+                value = _clean_aksharamukha(
+                    process("IAST", akshara_name, akshara_input, nativize=True)
+                )
+            except Exception:
+                value = ""
+            if value:
+                updated[code] = value
+    elif deva:
         for code, akshara_name in AKSHARA_TARGETS.items():
             if code in overrides:
                 continue
@@ -368,9 +554,9 @@ def _enrich_scripts(scripts: dict, name: str, process) -> dict:
             if value:
                 updated[code] = value
 
-    updated["Armn"] = overrides.get("Armn") or _latin_to_armenian(latn)
-    updated["Geor"] = overrides.get("Geor") or _latin_to_georgian(latn)
-    updated["Ethi"] = overrides.get("Ethi") or _latin_to_ethiopic(latn)
+    updated["Armn"] = overrides.get("Armn") or _latin_to_armenian(phonetic_latn)
+    updated["Geor"] = overrides.get("Geor") or _latin_to_georgian(phonetic_latn)
+    updated["Ethi"] = overrides.get("Ethi") or _latin_to_ethiopic(phonetic_latn)
 
     for code, value in overrides.items():
         if value:
@@ -378,13 +564,16 @@ def _enrich_scripts(scripts: dict, name: str, process) -> dict:
     return updated
 
 
-def enrich_places(payload: dict, process) -> tuple[dict, int]:
+def enrich_places(payload: dict, process, pronunciations: dict | None = None) -> tuple[dict, int]:
     changed = 0
-    for country in payload.get("countries", {}).values():
+    pronunciation_countries = (pronunciations or {}).get("countries") or {}
+    for country_code, country in payload.get("countries", {}).items():
         for row in country.get("places") or []:
             names = row[6]
             scripts = names.get("scripts") or {}
-            enriched = _enrich_scripts(scripts, str(row[5]), process)
+            name = str(row[5])
+            pronunciation = (pronunciation_countries.get(country_code) or {}).get(name)
+            enriched = _enrich_scripts(scripts, name, process, pronunciation)
             if enriched != scripts:
                 names["scripts"] = enriched
                 # Keep a stable key order: existing first, then new scripts.
@@ -411,7 +600,9 @@ def update_map_config(path: Path) -> None:
         flags=re.DOTALL,
     )
     if not match:
-        raise ValueError(f"script_sources block not found in {path}")
+        # Older compact configs carried this provenance block. The generated
+        # place catalog is self-describing now, so its absence is valid.
+        return
     block = match.group(2)
     for script, note in SCRIPT_SOURCES.items():
         pattern = rf'("{re.escape(script)}"\s*:\s*)(.*?)(,|\n)'
@@ -449,6 +640,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--places", type=Path, default=PLACES_PATH)
     parser.add_argument("--map-config", type=Path, default=MAP_CONFIG_PATH)
+    parser.add_argument("--pronunciations", type=Path, default=PRONUNCIATIONS_PATH)
     parser.add_argument("--skip-map-config", action="store_true")
     args = parser.parse_args()
 
@@ -462,7 +654,12 @@ def main() -> int:
         return 1
 
     payload = json.loads(args.places.read_text(encoding="utf-8"))
-    payload, changed = enrich_places(payload, transliterate.process)
+    pronunciations = (
+        json.loads(args.pronunciations.read_text(encoding="utf-8"))
+        if args.pronunciations.exists()
+        else {}
+    )
+    payload, changed = enrich_places(payload, transliterate.process, pronunciations)
     args.places.write_text(_format_payload(payload), encoding="utf-8")
     if not args.skip_map_config:
         update_map_config(args.map_config)

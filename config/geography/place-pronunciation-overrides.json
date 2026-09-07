@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "description": "Reviewed pronunciation inputs and IPA overrides for source-language place names. These are build-time hints, not browser payload.",
+  "countries": {
+    "BR": {
+      "Belém": "beˈlẽj̃",
+      "Belo Horizonte": "bɛlu oɾizõtʃi",
+      "Brasília": "bɾaziljɐ",
+      "Campinas": "kɐ̃ˈpĩnɐs",
+      "Curitiba": "kuɾiˈtʃibɐ",
+      "Florianópolis": "floɾiaˈnɔpolis",
+      "Fortaleza": "foɾtaˈlezɐ",
+      "Goiânia": "ɡojˈɐ̃njɐ",
+      "Maceió": "masejˈɔ",
+      "Manaus": "maˈnaws",
+      "Natal": "naˈtaw",
+      "Porto Alegre": "ˈpoɾtu aˈlɛɡɾi",
+      "Recife": "ʁesifi",
+      "Rio de Janeiro": "ʁiu dʒi ʒanejɾu",
+      "Salvador": "sawvadɔʁ",
+      "Santos": "ˈsɐ̃tus",
+      "São Paulo": "sɐ̃w pawlu",
+      "Vila Velha": "ˈvilɐ ˈvɛʎɐ",
+      "Vitória": "viˈtɔɾjɐ"
+    },
+    "AT": {
+      "Klagenfurt": {"input": "Klagenfurt"}
+    },
+    "BD": {
+      "Jamalpur": {"input": "জামালপুর"}
+    },
+    "CL": {
+      "Santiago": {"input": "Santiago"}
+    },
+    "CO": {
+      "Cartagena": {"input": "Cartagena"},
+      "Pasto": {"input": "Pasto"}
+    },
+    "CU": {
+      "Havana": {"input": "Habana"}
+    },
+    "DO": {
+      "Barahona": {"input": "Barahona"},
+      "Puerto Plata": {"input": "Puerto Plata", "ipa": "ˈpweɾto ˈplata"}
+    },
+    "EG": {
+      "Mansoura": {"input": "المنصورة", "ipa": "al manˈsˤuːra"}
+    },
+    "FR": {
+      "Bordeaux": "bɔʁdo",
+      "Clermont-Ferrand": "klɛʁmɔ̃ fɛʁɑ̃",
+      "Grenoble": "ɡʁənɔbl",
+      "Le Havre": "lə avʁ",
+      "Lille": "lil",
+      "Lyon": "ljɔ̃",
+      "Marseille": "maʁsɛj",
+      "Metz": "mɛs",
+      "Montpellier": "mɔ̃pəlje",
+      "Mulhouse": "myluz",
+      "Nancy": "nɑ̃si",
+      "Nantes": "nɑ̃t",
+      "Nice": "nis",
+      "Paris": "paʁi",
+      "Rouen": "ʁuɑ̃",
+      "Saint-Étienne": "sɛ̃tetjɛn",
+      "Strasbourg": "stʁazbuʁ",
+      "Toulon": "tulɔ̃",
+      "Toulouse": "tuluz",
+      "Tours": "tuʁ"
+    },
+    "GQ": {
+      "Ciudad de la Paz": "sjuˈðað ðe la ˈpas"
+    },
+    "GT": {
+      "Puerto San José": {"input": "Puerto San José", "ipa": "ˈpweɾto saŋ xoˈse"}
+    },
+    "JP": {
+      "Akita": {"input": "あきた", "ipa": "akita"},
+      "Fukuoka": {"input": "ふくおか", "ipa": "ɸɯkɯoka"},
+      "Hamamatsu": {"input": "はままつ", "ipa": "hamamatsɯ"},
+      "Hiroshima": {"input": "ひろしま", "ipa": "çiɾoɕima"},
+      "Kagoshima": {"input": "かごしま", "ipa": "kaɡoɕima"},
+      "Kanazawa": {"input": "かなざわ", "ipa": "kanazawa"},
+      "Kumamoto": {"input": "くまもと", "ipa": "kɯmamoto"},
+      "Kyoto": {"input": "きょうと", "ipa": "kʲoːto"},
+      "Kōbe": {"input": "こうべ", "ipa": "koːbe"},
+      "Miyazaki": {"input": "みやざき", "ipa": "mijazaki"},
+      "Nagoya": {"input": "なごや", "ipa": "naɡoja"},
+      "Naha": {"input": "なは", "ipa": "naha"},
+      "Niigata": {"input": "にいがた", "ipa": "niːɡata"},
+      "Okayama": {"input": "おかやま", "ipa": "okajama"},
+      "Sapporo": {"input": "さっぽろ", "ipa": "sapːoɾo"},
+      "Sendai": {"input": "せんだい", "ipa": "sendai"},
+      "Shizuoka": {"input": "しずおか", "ipa": "ɕizɯoka"},
+      "Tokyo": {"input": "とうきょう", "ipa": "toːkʲoː"},
+      "Yokohama": {"input": "よこはま", "ipa": "jokohama"},
+      "Ōsaka": {"input": "おおさか", "ipa": "oːsaka"}
+    },
+    "IL": {
+      "Beer Sheva": "beˈeʁ ˈʃeva",
+      "Haifa": "ˈxajfa",
+      "Jerusalem": "jeʁuʃaˈlajim",
+      "Nazareth": "naˈtsʁat",
+      "Ramla": "ˈʁamla",
+      "Tel Aviv": {"input": "תל אביב", "ipa": "tel aˈviv"}
+    },
+    "ID": {
+      "Yogyakarta": {"input": "Yogyakarta"}
+    },
+    "MX": {
+      "Acapulco": {"input": "Acapulco"},
+      "León": {"input": "León"},
+      "Puebla": {"input": "Puebla"},
+      "Toluca": {"input": "Toluca"}
+    },
+    "OM": {
+      "Samail": {"input": "سمائل", "ipa": "samaːʔil"}
+    },
+    "PA": {
+      "Colón": {"input": "Colón"},
+      "David": {"input": "David"}
+    },
+    "GB": {
+      "Edinburgh": "ɛdɪnbərə",
+      "Leicester": "lɛstə"
+    },
+    "PL": {
+      "Bydgoszcz": "bɨdɡɔʂtʂ",
+      "Gdańsk": "ɡdaj̃sk",
+      "Gdynia": "ɡdɨɲa",
+      "Rzeszów": "ʐɛʂuf"
+    },
+    "PT": {
+      "Aveiro": "aˈvɐjɾu",
+      "Bragança": "bɾɐˈɡɐ̃sɐ",
+      "Castelo Branco": "kɐʃˈtɛlu ˈbɾɐ̃ku",
+      "Coimbra": "ˈkwĩbɾɐ",
+      "Covilhã": "kuviˈʎɐ̃",
+      "Évora": "ˈɛvuɾɐ",
+      "Faro": "ˈfaɾu",
+      "Funchal": "fũʃal",
+      "Guarda": "ˈɡwaɾdɐ",
+      "Leiria": "lɐjˈɾiɐ",
+      "Lisbon": "liʒˈboɐ",
+      "Ponta Delgada": "ˈpõtɐ dɛlˈɡadɐ",
+      "Portimão": "puɾtiˈmɐ̃w̃",
+      "Porto": "ˈpoɾtu",
+      "Santarém": "sɐ̃tɐˈɾɐ̃j̃",
+      "Vila Real": "ˈvilɐ ˈʁjal",
+      "Viseu": "viˈzew"
+    },
+    "TW": {
+      "Kaohsiung": {"input": "高雄", "ipa": "kau˥ ɕjʊŋ˧˥"},
+      "Pingzhen": {"input": "平鎮"},
+      "Taoyuan": {"input": "桃園"},
+      "Yangmei": {"input": "楊梅"},
+      "Zhongli": {"input": "中壢"}
+    },
+    "US": {
+      "Chicago": "ʃɪkɑɡo",
+      "Louisville": "luəvəl",
+      "New York": {"input": "New York"},
+      "Washington,  D.C.": "wɑʃɪŋtən di si"
+    },
+    "VN": {
+      "Ho Chi Minh City": {"input": "Hồ Chí Minh"}
+    }
+  }
+}

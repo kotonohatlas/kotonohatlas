@@ -69,7 +69,7 @@ licenses or terms. See
 
 | Path | Role |
 |---|---|
-| `config/geography/` | Map policy, geometry, places, and overlays |
+| `config/geography/` | Map policy, geometry, places, pronunciation hints, and overlays |
 | `config/linguistics/` | Language metadata, names, and speaker estimates |
 | `config/copy/` | Map descriptions and interface strings |
 | `tools/` | Site builder and map helpers |
@@ -103,6 +103,23 @@ deployment:
 No host Python module is imported, and Atlas does not scan documentation, translation status, review history, or host
 wave configuration. The localization-registry and publication-manifest contracts are documented in
 [`deploy/HOST_EXTENSIONS.md`](deploy/HOST_EXTENSIONS.md#choosing-the-atlas-localization-set).
+
+## Place-name generation
+
+The checked-in place catalog includes shared fallbacks for each supported writing system. To refresh the build-time
+pronunciation catalog and those fallbacks, install the optional tools and run:
+
+```text
+python3 -m pip install -e '.[place-generation]'
+make place-scripts
+```
+
+`config/geography/place-pronunciations.json` records the source spelling, inferred language, IPA candidate, and review
+status used during generation. `engine-consensus` means only that two engines agreed; it is not a human assertion that
+the result is correct. Reviewed readings and IPA corrections belong in
+`config/geography/place-pronunciation-overrides.json`. Review compares local pronunciation with established
+target-script usage; an established map label may be preferable to an unfamiliar, overly phonetic rendering. IPA data
+is not included in the browser payload.
 
 ## Tests
 

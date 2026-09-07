@@ -22,3 +22,9 @@ The complete notices are stored alongside those components. See
 
 Source attribution recorded in Kotonohatlas configuration, including attribution for map geometry derived from
 Natural Earth, remains applicable to the corresponding data.
+
+## Optional place-name generation tools
+
+The optional `place-generation` dependency group uses Aksharamukha (AGPL-3.0), Epitran (MIT Modern Variant),
+Phonemizer (GPL-3.0-or-later), and eSpeak NG data and libraries distributed by `espeakng-loader` (GPL-3.0-or-later).
+These tools generate the reviewable pronunciation catalog and script fallbacks; they are not loaded by the browser.

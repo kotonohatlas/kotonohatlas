@@ -2467,6 +2467,7 @@ function createMap(root, data, initialOptions) {
   let placeLoadGeneration = 0;
   let placeLoadLanguage = "";
   const placeLanguageLoads = new Map();
+  const placeRandomRanks = new Map();
   let activeProjection = null;
   let planarProjection = null;
   let fittedProjectionScale = 1;
@@ -3373,7 +3374,7 @@ function createMap(root, data, initialOptions) {
       );
       const selectedFloor = isSelected ? selectedLabelFloor : broadLabelFloor;
       const limit = Math.min(budget, Math.max(selectedFloor, projectedCapacity));
-      const areaVisibilityBoost = Math.min(2, Math.max(0, projectedCapacity - 1) * 0.35);
+      const areaVisibilityBoost = Math.min(1, Math.max(0, projectedCapacity - 1) * 0.18);
       const detailVisibilityBoost = zoomLevel >= 4.5 ? 0.75 : zoomLevel >= 3.8 ? 0.35 : 0;
       const visibilityBoost = isSelected
         ? 2.25
@@ -3393,30 +3394,65 @@ function createMap(root, data, initialOptions) {
           ? index === country.representative_place_index
           : Boolean(country.representative_place && row[5] === country.representative_place);
         const population = Math.max(0, Number(row[4]) || 0);
-        const prominenceBoost = capital
-          ? 0.35
-          : population >= 5_000_000 ? 0.45
-            : population >= 1_500_000 ? 0.25 : 0;
+        const capitalBoost = capital ? 0.15 : 0;
+        // Promote metropolitan scale continuously instead of giving cities
+        // just over a population threshold a disproportionate advantage.
+        const populationBoost = population < 1_500_000 ? 0 : Math.min(
+          1.9,
+          0.3 + (
+            Math.log10(population / 1_500_000)
+            / Math.log10(10_000_000 / 1_500_000)
+          ) * 1.6
+        );
+        const prominenceBoost = capitalBoost + populationBoost;
         if (!point || zoomLevel + visibilityBoost + prominenceBoost < minimumZoom) return;
-        visible.push({countryCode, row, point, capital, representative, isSelected, index, countryLimit: limit});
+        const randomKey = `${countryCode}|${row[0]}|${row[1]}|${row[5]}`;
+        if (!placeRandomRanks.has(randomKey)) placeRandomRanks.set(randomKey, Math.random());
+        visible.push({
+          countryCode,
+          row,
+          point,
+          capital,
+          representative,
+          isSelected,
+          index,
+          countryLimit: limit,
+          populationTier: population >= 10_000_000 ? 3 : population >= 5_000_000 ? 2 : population >= 1_500_000 ? 1 : 0,
+          randomRank: placeRandomRanks.get(randomKey)
+        });
       });
       // Do not slice here.  A capital can collide with its country label; later
       // cities must remain available to fill the country's projected capacity.
       candidates.push(...visible);
     });
+    const prioritizePopulation = zoomLevel <= 2.5;
+    const randomizeBroadPlaces = zoomLevel <= 1.25;
     candidates.sort((left, right) => (
       Number(right.isSelected) - Number(left.isSelected)
       || Number(right.representative) - Number(left.representative)
+      || (prioritizePopulation ? right.populationTier - left.populationTier : 0)
+      || (randomizeBroadPlaces ? right.randomRank - left.randomRank : 0)
       || Number(right.capital) - Number(left.capital)
       || left.index - right.index
     ));
     canvas.append(group);
     const offsets = [[6, -4], [6, 4], [-6, -4], [-6, 4], [0, -7], [0, 7]];
     const renderedByCountry = new Map();
+    const broadPlaceClusters = [];
+    const broadClusterRadius = randomizeBroadPlaces
+      ? Math.max(60, Math.min(width, height) * 0.075)
+      : 0;
     let rendered = 0;
     candidates.some((item) => {
       if (rendered >= 80) return true;
       if ((renderedByCountry.get(item.countryCode) || 0) >= item.countryLimit) return false;
+      const broadCluster = broadClusterRadius && !item.isSelected
+        ? broadPlaceClusters.find((cluster) => Math.hypot(
+            item.point[0] - cluster.point[0],
+            item.point[1] - cluster.point[1]
+          ) <= broadClusterRadius)
+        : null;
+      if (broadCluster && broadCluster.count >= 2) return false;
       const markerScale = placeMarkerProfile(item.row).scale;
       // Move an always-on capital anchor into the label's paint position.  If
       // the pre-pass clipped it, create it here.  Either way an accepted
@@ -3458,6 +3494,17 @@ function createMap(root, data, initialOptions) {
           accepted = true;
           rendered += 1;
           renderedByCountry.set(item.countryCode, (renderedByCountry.get(item.countryCode) || 0) + 1);
+          if (randomizeBroadPlaces && !item.isSelected) {
+            if (broadCluster) {
+              broadCluster.point = [
+                (broadCluster.point[0] * broadCluster.count + item.point[0]) / (broadCluster.count + 1),
+                (broadCluster.point[1] * broadCluster.count + item.point[1]) / (broadCluster.count + 1)
+              ];
+              broadCluster.count += 1;
+            } else {
+              broadPlaceClusters.push({point: item.point.slice(), count: 1});
+            }
+          }
           break;
         }
       }
