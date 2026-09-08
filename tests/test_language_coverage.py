@@ -27,6 +27,12 @@ ADMIN1_SPEC = importlib.util.spec_from_file_location(
 ADMIN1_BUILDER = importlib.util.module_from_spec(ADMIN1_SPEC)
 assert ADMIN1_SPEC.loader is not None
 ADMIN1_SPEC.loader.exec_module(ADMIN1_BUILDER)
+PLACES_SPEC = importlib.util.spec_from_file_location(
+    "build_language_map_places", ATLAS_ROOT / "tools" / "build_language_map_places.py"
+)
+PLACES_BUILDER = importlib.util.module_from_spec(PLACES_SPEC)
+assert PLACES_SPEC.loader is not None
+PLACES_SPEC.loader.exec_module(PLACES_BUILDER)
 
 
 @lru_cache(maxsize=1)
@@ -88,6 +94,62 @@ def localized_language(locale, code):
 
 
 class LanguageCoverageTest(unittest.TestCase):
+    def test_places_builder_distinguishes_no_center_from_added_center(self):
+        source_payload = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "ISO_A2": "AA",
+                        "ADM0_A3": "AAA",
+                        "NAME": "Research Station",
+                        "NAME_EN": "Research Station",
+                        "MIN_ZOOM": 3,
+                        "POP_MAX": 10,
+                        "ADM0CAP": 1,
+                    },
+                    "geometry": {"type": "Point", "coordinates": [1, 2]},
+                }
+            ],
+        }
+        map_payload = {
+            "iso2_to_iso3": {"AA": "AAA", "BB": "BBB"},
+            "feature_code_aliases": {},
+        }
+        overrides_payload = {
+            "countries": {
+                "AA": {"administrative_center": None},
+                "BB": {
+                    "administrative_center": "Added Center",
+                    "additional_places": [
+                        {
+                            "name": "Added Center",
+                            "longitude": 3,
+                            "latitude": 4,
+                            "names": {"en": "Added Center"},
+                        }
+                    ],
+                },
+            }
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "places.geojson"
+            map_config = root / "map.json"
+            overrides = root / "overrides.json"
+            source.write_text(json.dumps(source_payload), encoding="utf-8")
+            map_config.write_text(json.dumps(map_payload), encoding="utf-8")
+            overrides.write_text(json.dumps(overrides_payload), encoding="utf-8")
+            with (
+                patch.object(PLACES_BUILDER, "MAP_CONFIG", map_config),
+                patch.object(PLACES_BUILDER, "OVERRIDES", overrides),
+            ):
+                countries = PLACES_BUILDER.build(source)["countries"]
+
+        self.assertEqual(countries["AA"]["places"][0][3], 0)
+        self.assertEqual(countries["BB"]["places"][0][3], 1)
+
     def test_access_language_resolution_puts_http_preferences_before_country_suggestions(self):
         runtime = (
             ROOT / "tools" / "browser" / "language-atlas-access.js"

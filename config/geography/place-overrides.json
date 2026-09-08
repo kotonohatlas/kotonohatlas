@@ -2,6 +2,751 @@
   "schema": 1,
   "description": "Country-specific label priorities used when Natural Earth display ranks do not match the intended map reading order.",
   "countries": {
+      "AI": {
+        "administrative_center": "The Valley",
+        "additional_places": [
+          {
+            "name": "The Valley",
+            "longitude": -63.051667,
+            "latitude": 18.220833,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "The Valley",
+              "ja": "バレー",
+              "zh": "瓦利",
+              "zht": "瓦利",
+              "ko": "더밸리",
+              "ru": "Валли",
+              "ar": "ذا فالي",
+              "hi": "द वैली",
+              "bn": "দ্য ভ্যালি",
+              "el": "Δε Βάλεϊ",
+              "he": "הוואלי"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30994"
+          }
+        ]
+      },
+      "BL": {
+        "administrative_center": "Gustavia",
+        "additional_places": [
+          {
+            "name": "Gustavia",
+            "longitude": -62.849167,
+            "latitude": 17.898611,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Gustavia",
+              "ja": "グスタビア",
+              "zh": "古斯塔维亚",
+              "zht": "居斯塔維亞",
+              "ko": "귀스타비아",
+              "ru": "Густавия",
+              "ar": "غوستافيا",
+              "hi": "गुस्ताविया",
+              "bn": "গুস্তভিয়া",
+              "el": "Γουσταβία",
+              "he": "גוסטביה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q34112"
+          }
+        ]
+      },
+      "BQ": {
+        "administrative_center": null,
+        "budget": 3,
+        "priority": [
+          "Kralendijk",
+          "Oranjestad",
+          "The Bottom"
+        ],
+        "additional_places": [
+          {
+            "name": "Kralendijk",
+            "longitude": -68.276667,
+            "latitude": 12.150833,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Kralendijk",
+              "ja": "クラレンダイク",
+              "zh": "克拉伦代克",
+              "zht": "克拉倫代克",
+              "ko": "크랄렌데이크",
+              "ru": "Кралендейк",
+              "ar": "كراليندايك",
+              "hi": "क्रालनडेइक",
+              "bn": "ক্রালেনডাইক",
+              "el": "Κράλεντικ",
+              "he": "קרלנדייק"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q331584"
+          },
+          {
+            "name": "Oranjestad",
+            "longitude": -62.983333,
+            "latitude": 17.483333,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Oranjestad",
+              "ja": "オラニエスタッド",
+              "zh": "奥腊涅斯塔德",
+              "zht": "奧臘涅斯塔德",
+              "ko": "오라녜스타트",
+              "ru": "Ораньестад",
+              "ar": "أورانياستاد",
+              "hi": "ओरान्यस्टाट",
+              "bn": "অরানিয়েস্তাদ",
+              "el": "Οράνιεστατ",
+              "he": "אורנייסטאד"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q217610"
+          },
+          {
+            "name": "The Bottom",
+            "longitude": -63.249167,
+            "latitude": 17.626111,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "The Bottom",
+              "ja": "ボトム",
+              "zh": "博托姆",
+              "zht": "博坦",
+              "ko": "보텀",
+              "ru": "Боттом",
+              "ar": "ذي بوتوم",
+              "hi": "द बॉटम",
+              "bn": "দ্য বটম",
+              "el": "Δε Μπότομ",
+              "he": "ד'ה בוטום"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q475718"
+          }
+        ]
+      },
+      "CC": {
+        "administrative_center": "West Island",
+        "additional_places": [
+          {
+            "name": "West Island",
+            "longitude": 96.828333,
+            "latitude": -12.186944,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "West Island",
+              "ja": "ウェスト島",
+              "zh": "西岛",
+              "zht": "西島",
+              "ko": "웨스트섬",
+              "ru": "Уэст-Айленд",
+              "ar": "ويست آيلند",
+              "hi": "पश्चिम द्वीप",
+              "bn": "ওয়েস্ট আইল্যান্ড",
+              "el": "Γουέστ Άιλαντ",
+              "he": "וסט איילנד"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q48675"
+          }
+        ]
+      },
+      "CX": {
+        "administrative_center": "Flying Fish Cove",
+        "additional_places": [
+          {
+            "name": "Flying Fish Cove",
+            "longitude": 105.678056,
+            "latitude": -10.421667,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Flying Fish Cove",
+              "ja": "フライング・フィッシュ・コーブ",
+              "zh": "飞鱼湾",
+              "zht": "飛魚灣",
+              "ko": "플라잉피시코브",
+              "ru": "Флайинг-Фиш-Коув",
+              "ar": "فلاينغ فيش كوف",
+              "hi": "फ्लाइंग फिश कोव",
+              "bn": "ফ্লাইং ফিশ কোভ",
+              "el": "Φλάινγκ Φις Κόουβ",
+              "he": "פלאיינג פיש קואוב"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30980"
+          }
+        ]
+      },
+      "EA": {
+        "administrative_center": null,
+        "budget": 2,
+        "priority": [
+          "Ceuta",
+          "Melilla"
+        ],
+        "additional_places": [
+          {
+            "name": "Ceuta",
+            "longitude": -5.3,
+            "latitude": 35.886667,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Ceuta",
+              "ja": "セウタ",
+              "zh": "休达",
+              "zht": "休達",
+              "ko": "세우타",
+              "ru": "Сеута",
+              "ar": "سبتة",
+              "hi": "सेउता",
+              "bn": "সেউতা",
+              "el": "Θέουτα",
+              "he": "סאוטה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q5823"
+          },
+          {
+            "name": "Melilla",
+            "longitude": -2.9475,
+            "latitude": 35.2825,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Melilla",
+              "ja": "メリリャ",
+              "zh": "梅利利亚",
+              "zht": "麥里亞",
+              "ko": "멜리야",
+              "ru": "Мелилья",
+              "ar": "مليلية",
+              "hi": "मेलिया",
+              "bn": "মেলিলা",
+              "el": "Μελίγια",
+              "he": "מלייה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q5831"
+          }
+        ]
+      },
+      "GG": {
+        "administrative_center": "Saint Peter Port",
+        "additional_places": [
+          {
+            "name": "Saint Peter Port",
+            "longitude": -2.55194,
+            "latitude": 49.46,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Saint Peter Port",
+              "ja": "セント・ピーター・ポート",
+              "zh": "圣彼得港",
+              "zht": "聖彼得港",
+              "ko": "세인트피터포트",
+              "ru": "Сент-Питер-Порт",
+              "ar": "سان بيتر بورت",
+              "hi": "सेंट पीटर पोर्ट",
+              "bn": "সেন্ট পিটার পোর্ট",
+              "el": "Σεντ Πίτερ Πορτ",
+              "he": "סנט פיטר פורט"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q174262"
+          }
+        ]
+      },
+      "IO": {
+        "administrative_center": null,
+        "additional_places": [
+          {
+            "name": "Diego Garcia",
+            "longitude": 72.411111,
+            "latitude": -7.313333,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Diego Garcia",
+              "ja": "ディエゴガルシア島",
+              "zh": "迪戈加西亚岛",
+              "zht": "迪亞哥加西亞島",
+              "ko": "디에고가르시아섬",
+              "ru": "Диего-Гарсия",
+              "ar": "دييغو غارسيا",
+              "hi": "डिएगो गार्सिया",
+              "bn": "দিয়েগো গার্সিয়া",
+              "el": "Ντιέγκο Γκαρσία",
+              "he": "דייגו גרסיה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q184851"
+          }
+        ]
+      },
+      "JE": {
+        "administrative_center": "Saint Helier",
+        "additional_places": [
+          {
+            "name": "Saint Helier",
+            "longitude": -2.11,
+            "latitude": 49.185833,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Saint Helier",
+              "ja": "セント・ヘリア",
+              "zh": "圣赫利尔",
+              "zht": "聖赫利爾",
+              "ko": "세인트헬리어",
+              "ru": "Сент-Хелиер",
+              "ar": "ساينت هيلير",
+              "hi": "सेंट हेलियर",
+              "bn": "সেন্ট হেলিয়ার",
+              "el": "Σεντ Χέλιερ",
+              "he": "סנט הלייר"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q147738"
+          }
+        ]
+      },
+      "MF": {
+        "administrative_center": "Marigot",
+        "additional_places": [
+          {
+            "name": "Marigot",
+            "longitude": -63.084722,
+            "latitude": 18.066667,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Marigot",
+              "ja": "マリゴ",
+              "zh": "马里戈特",
+              "zht": "馬里戈特",
+              "ko": "마리고",
+              "ru": "Мариго",
+              "ar": "ماريغو",
+              "hi": "मेरीगौट",
+              "bn": "মারিগট",
+              "el": "Μαριγκό",
+              "he": "מריגו"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q200605"
+          }
+        ]
+      },
+      "MS": {
+        "administrative_center": "Brades",
+        "budget": 2,
+        "priority": [
+          "Brades",
+          "Plymouth"
+        ],
+        "additional_places": [
+          {
+            "name": "Brades",
+            "longitude": -62.210556,
+            "latitude": 16.792778,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Brades",
+              "ja": "ブレイズ",
+              "zh": "布莱兹",
+              "zht": "布萊茲",
+              "ko": "브레이즈",
+              "ru": "Брейдс",
+              "ar": "بريدز",
+              "hi": "ब्रेड्स",
+              "bn": "ব্রেডস",
+              "el": "Μπρέιντς",
+              "he": "בראדס"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q31006"
+          },
+          {
+            "name": "Plymouth",
+            "longitude": -62.215839,
+            "latitude": 16.706417,
+            "minimum_zoom": 5,
+            "population": 0,
+            "names": {
+              "en": "Plymouth",
+              "ja": "プリマス",
+              "zh": "普利茅斯",
+              "zht": "普利茅斯",
+              "ko": "플리머스",
+              "ru": "Плимут",
+              "ar": "بليموث",
+              "hi": "प्लायमाउथ",
+              "bn": "প্লাইমাউথ",
+              "el": "Πλίμουθ",
+              "he": "פלימות'"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30990"
+          }
+        ]
+      },
+      "NF": {
+        "administrative_center": "Kingston",
+        "additional_places": [
+          {
+            "name": "Kingston",
+            "longitude": 167.966667,
+            "latitude": -29.05,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Kingston",
+              "ja": "キングストン",
+              "zh": "金斯敦",
+              "zht": "金斯敦",
+              "ko": "킹스턴",
+              "ru": "Кингстон",
+              "ar": "كينغستون",
+              "hi": "किंग्स्टन",
+              "bn": "কিংসটন",
+              "el": "Κίνγκστον",
+              "he": "קינגסטון"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30963"
+          }
+        ]
+      },
+      "NR": {
+        "administrative_center": null,
+        "additional_places": [
+          {
+            "name": "Yaren",
+            "longitude": 166.920867,
+            "latitude": -0.5477,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Yaren",
+              "ja": "ヤレン",
+              "zh": "亚伦",
+              "zht": "亞倫",
+              "ko": "야렌",
+              "ru": "Ярен",
+              "ar": "يارين",
+              "hi": "यारेन",
+              "bn": "ইয়ারেন",
+              "el": "Γιαρέν",
+              "he": "יארן"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q31026"
+          }
+        ]
+      },
+      "NU": {
+        "administrative_center": "Alofi",
+        "additional_places": [
+          {
+            "name": "Alofi",
+            "longitude": -169.921,
+            "latitude": -19.056,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Alofi",
+              "ja": "アロフィ",
+              "zh": "阿洛菲",
+              "zht": "阿洛菲",
+              "ko": "알로피",
+              "ru": "Алофи",
+              "ar": "الوفي",
+              "hi": "अलोफी",
+              "bn": "আলোফি",
+              "el": "Αλόφι",
+              "he": "אלופי"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30966"
+          }
+        ]
+      },
+      "PM": {
+        "administrative_center": "Saint-Pierre",
+        "additional_places": [
+          {
+            "name": "Saint-Pierre",
+            "longitude": -56.177778,
+            "latitude": 46.777778,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Saint-Pierre",
+              "ja": "サン＝ピエール",
+              "zh": "圣皮埃尔",
+              "zht": "聖皮埃爾",
+              "ko": "생피에르",
+              "ru": "Сен-Пьер",
+              "ar": "سان بيير",
+              "hi": "सेंट-पियरे",
+              "bn": "সাঁ-পিয়ের",
+              "el": "Σαιν-Πιερ",
+              "he": "סן-פייר"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q185678"
+          }
+        ]
+      },
+      "PN": {
+        "administrative_center": "Adamstown",
+        "additional_places": [
+          {
+            "name": "Adamstown",
+            "longitude": -130.1,
+            "latitude": -25.066667,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Adamstown",
+              "ja": "アダムスタウン",
+              "zh": "亚当斯敦",
+              "zht": "亞當斯敦",
+              "ko": "애덤스타운",
+              "ru": "Адамстаун",
+              "ar": "آدمزتاون",
+              "hi": "एडम्सटाउन",
+              "bn": "অ্যাডামসটাউন",
+              "el": "Άνταμσταουν",
+              "he": "אדמסטאון"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q48273"
+          }
+        ]
+      },
+      "SX": {
+        "administrative_center": "Philipsburg",
+        "additional_places": [
+          {
+            "name": "Philipsburg",
+            "longitude": -63.043333,
+            "latitude": 18.024167,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Philipsburg",
+              "ja": "フィリップスブルフ",
+              "zh": "菲利普斯堡",
+              "zht": "菲利普斯堡",
+              "ko": "필립스뷔르흐",
+              "ru": "Филипсбург",
+              "ar": "فيليبسبورغ",
+              "hi": "फ़िलिप्सबर्ग",
+              "bn": "ফিলিপসবার্গ",
+              "el": "Φίλιπσμπουργκ",
+              "he": "פיליפסבורג"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q30958"
+          }
+        ]
+      },
+      "VG": {
+        "administrative_center": "Road Town",
+        "additional_places": [
+          {
+            "name": "Road Town",
+            "longitude": -64.616667,
+            "latitude": 18.433333,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Road Town",
+              "ja": "ロードタウン",
+              "zh": "罗德城",
+              "zht": "羅德城",
+              "ko": "로드타운",
+              "ru": "Род-Таун",
+              "ar": "رود تاون",
+              "hi": "रोड टाउन",
+              "bn": "রোড টাউন",
+              "el": "Ρόουντ Τάουν",
+              "he": "רואוד טאון"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q179431"
+          }
+        ]
+      },
+      "WF": {
+        "administrative_center": "Mata-Utu",
+        "additional_places": [
+          {
+            "name": "Mata-Utu",
+            "longitude": -176.1737,
+            "latitude": -13.2827,
+            "minimum_zoom": 3,
+            "population": 0,
+            "names": {
+              "en": "Mata-Utu",
+              "ja": "マタウトゥ",
+              "zh": "马塔乌图",
+              "zht": "馬塔烏圖",
+              "ko": "마타우투",
+              "ru": "Мата-Уту",
+              "ar": "ماتا-أوتو",
+              "hi": "माता उतु",
+              "bn": "মাতা-উতু",
+              "el": "Ματά-Ουτού",
+              "he": "מאטה אוטו"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q31002"
+          }
+        ]
+      },
+      "TF": {
+        "administrative_center": null,
+        "budget": 3,
+        "priority": [
+          "Port-aux-Français",
+          "Alfred Faure",
+          "Martin-de-Viviès"
+        ],
+        "additional_places": [
+          {
+            "name": "Port-aux-Français",
+            "longitude": 70.216667,
+            "latitude": -49.35,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Port-aux-Français",
+              "ja": "ポルトーフランセ",
+              "zh": "法兰西港",
+              "zht": "法蘭西港",
+              "ko": "포르토프랑세",
+              "ru": "Порт-о-Франсэ",
+              "ar": "بورت أو فرانسيه",
+              "hi": "पोर्ट-ओ-फ़्रांसे",
+              "bn": "পোর্ত-ও-ফ্রঁসে",
+              "el": "Πορ-ο-Φρανσέ",
+              "he": "פורט-או-פרנסה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q839559"
+          },
+          {
+            "name": "Alfred Faure",
+            "longitude": 51.8582,
+            "latitude": -46.4323,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Alfred Faure",
+              "ja": "アルフレッド・フォール基地",
+              "zh": "阿尔弗雷德·福尔",
+              "zht": "阿爾弗雷德·福爾",
+              "ko": "알프레드 포르",
+              "ru": "Альфред Фор",
+              "ar": "ألفريد فور",
+              "hi": "अल्फ्रेड फोर",
+              "bn": "আলফ্রেড ফোর",
+              "el": "Αλφρέντ Φορ",
+              "he": "אלפרד פור"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q940837"
+          },
+          {
+            "name": "Martin-de-Viviès",
+            "longitude": 77.566667,
+            "latitude": -37.8,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Martin-de-Viviès",
+              "ja": "マルティン・デ・ヴィヴ",
+              "zh": "马丁-德维维耶",
+              "zht": "馬丁-德維維耶",
+              "ko": "마르탱드비비에",
+              "ru": "Мартин-де-Вивье",
+              "ar": "مارتن دي فيفييس",
+              "hi": "मार्टिन-दे-विविए",
+              "bn": "মার্তাঁ-দ্য-ভিভিয়ে",
+              "el": "Μαρτέν-ντε-Βιβιές",
+              "he": "מרטן-דה-ויוויה"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q1118318"
+          }
+        ]
+      },
+      "TK": {
+        "administrative_center": null,
+        "budget": 3,
+        "priority": [
+          "Atafu",
+          "Nukunonu",
+          "Fakaofo"
+        ],
+        "additional_places": [
+          {
+            "name": "Atafu",
+            "longitude": -172.517,
+            "latitude": -8.53833,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Atafu",
+              "ja": "アタフ",
+              "zh": "阿塔富",
+              "zht": "阿塔富",
+              "ko": "아타푸",
+              "ru": "Атафу",
+              "ar": "أتافو",
+              "hi": "अताफू",
+              "bn": "আতাফু",
+              "el": "Ατάφου",
+              "he": "אטאפו"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q2800256"
+          },
+          {
+            "name": "Nukunonu",
+            "longitude": -171.855311,
+            "latitude": -9.19425,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Nukunonu",
+              "ja": "ヌクノヌ",
+              "zh": "努库诺努",
+              "zht": "努庫諾努",
+              "ko": "누쿠노누",
+              "ru": "Нукунону",
+              "ar": "نوكونونو",
+              "hi": "नुकुनोनु",
+              "bn": "নুকুনোনু",
+              "el": "Νουκουνόνου",
+              "he": "נוקונונו"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q3046990"
+          },
+          {
+            "name": "Fakaofo",
+            "longitude": -171.264616,
+            "latitude": -9.373944,
+            "minimum_zoom": 4,
+            "population": 0,
+            "names": {
+              "en": "Fakaofo",
+              "ja": "ファカオフォ",
+              "zh": "法考福",
+              "zht": "法考福",
+              "ko": "파카오포",
+              "ru": "Факаофо",
+              "ar": "فاكاوفو",
+              "hi": "फ़काओफ़ो",
+              "bn": "ফাকাওফো",
+              "el": "Φακαόφο",
+              "he": "פקאופו"
+            },
+            "source_url": "https://www.wikidata.org/wiki/Q2140263"
+          }
+        ]
+      },
+    "AQ": {
+      "administrative_center": null
+    },
     "AR": {
       "budget": 8,
       "broad_label_floor": 2,
@@ -171,6 +916,32 @@
       "budget": 3,
       "administrative_center": "Mogadishu",
       "priority": ["Mogadishu", "Hargeisa", "Kismaayo"]
+    },
+    "SH": {
+      "administrative_center": "Jamestown",
+      "additional_places": [
+        {
+          "name": "Jamestown",
+          "longitude": -5.717639,
+          "latitude": -15.923427,
+          "minimum_zoom": 3.0,
+          "population": 0,
+          "names": {
+            "en": "Jamestown",
+            "ja": "ジェームズタウン",
+            "zh": "詹姆斯敦",
+            "zht": "詹姆斯敦",
+            "ko": "제임스타운",
+            "ru": "Джеймстаун",
+            "ar": "جيمس تاون",
+            "hi": "जेम्सटाउन",
+            "bn": "জেমসটাউন",
+            "el": "Τζέιμσταουν",
+            "he": "ג'יימסטאון"
+          },
+          "source_url": "https://www.sainthelena.gov.sh/documents/geodetic_datum_modernisation_for_st-helena_v3-final/"
+        }
+      ]
     },
     "SK": {
       "budget": 2,

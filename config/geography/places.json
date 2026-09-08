@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "description": "Deferred capital and major-city labels by ISO 3166-1 and CLDR region code. A coded region's administrative center is treated as its capital. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
+  "description": "Deferred administrative-center and major-place labels by ISO 3166-1 and CLDR region code. A configured administrative center is treated as the region's capital marker; regions explicitly configured without one keep all places as ordinary labels. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
   "source": {"title": "Natural Earth 1:10m Populated Places", "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/", "version": "5.1.2"},
   "fields": ["longitude", "latitude", "minimum_zoom", "capital", "population", "name", "localized_names"],
   "countries": {
@@ -117,10 +117,144 @@
         [19.900015, -11.790044, 6.0, 0, 21115, "Luena", {"scripts": {"Latn": "Luena", "Jpan": "ルエナ", "Hans": "卢埃纳", "Hant": "盧埃納", "Kore": "루에나", "Cyrl": "Луена", "Arab": "وينا", "Deva": "लूयेन", "Beng": "লুয়েনা", "Grek": "Λουένα", "Hebr": "לואנה", "Guru": "ਲੁਏਨ", "Gujr": "લુએન", "Orya": "ଲୁଏନ", "Taml": "லுஏன", "Telu": "లుఏన", "Knda": "ಲುಏನ", "Mlym": "ലുഏന", "Thai": "ลุเอน", "Laoo": "ລຸເອນະ", "Mymr": "လုဧန", "Khmr": "លុឯន", "Armn": "լուենա", "Geor": "ლუენა", "Ethi": "ሉእና"}, "locales": {"fa": "لونا", "ur": "لوئنا"}}]
       ]
     },
+    "AI": {
+      "budget": 1,
+      "places": [
+        [-63.051667, 18.220833, 3.0, 1, 0, "The Valley", {"scripts": {"Latn": "The Valley", "Jpan": "バレー", "Hans": "瓦利", "Hant": "瓦利", "Kore": "더밸리", "Cyrl": "Валли", "Arab": "ذا فالي", "Deva": "द वैली", "Beng": "দ্য ভ্যালি", "Grek": "Δε Βάλεϊ", "Hebr": "הוואלי", "Guru": "ਦ ਵੈਲੀ", "Gujr": "દ વૈલી", "Orya": "ଦ ବୈଲୀ", "Taml": "த வைலீ", "Telu": "ద వైలీ", "Knda": "ದ ವೈಲೀ", "Mlym": "ദ വൈലീ", "Thai": "ท ไวลี", "Laoo": "ທະ ໄວລີ", "Mymr": "ဒ ဝဲလီ", "Khmr": "ទ វៃលី", "Armn": "թե վալլեի", "Geor": "თე ვალლეი", "Ethi": "ጠ ቫልለይ"}}]
+      ]
+    },
+    "BL": {
+      "budget": 1,
+      "places": [
+        [-62.849167, 17.898611, 3.0, 1, 0, "Gustavia", {"scripts": {"Latn": "Gustavia", "Jpan": "グスタビア", "Hans": "古斯塔维亚", "Hant": "居斯塔維亞", "Kore": "귀스타비아", "Cyrl": "Густавия", "Arab": "غوستافيا", "Deva": "गुस्ताविया", "Beng": "গুস্তভিয়া", "Grek": "Γουσταβία", "Hebr": "גוסטביה", "Guru": "ਗੁਸ੍ਤਾਵਿਯਾ", "Gujr": "ગુસ્તાવિયા", "Orya": "ଗୁସ୍ତାବିୟା", "Taml": "குஸ்தாவியா", "Telu": "గుస్తావియా", "Knda": "ಗುಸ್ತಾವಿಯಾ", "Mlym": "ഗുസ്താവിയാ", "Thai": "คุสฺตาวิยา", "Laoo": "ຄຸສຕາວິຢາ", "Mymr": "ဂုသ္တာဝိယာ", "Khmr": "គុស្តាវិយា", "Armn": "գուստավիա", "Geor": "გუსტავია", "Ethi": "ጉስታቪአ"}}]
+      ]
+    },
+    "BQ": {
+      "budget": 3,
+      "places": [
+        [-68.276667, 12.150833, 4.0, 0, 0, "Kralendijk", {"scripts": {"Latn": "Kralendijk", "Jpan": "クラレンダイク", "Hans": "克拉伦代克", "Hant": "克拉倫代克", "Kore": "크랄렌데이크", "Cyrl": "Кралендейк", "Arab": "كراليندايك", "Deva": "क्रालनडेइक", "Beng": "ক্রালেনডাইক", "Grek": "Κράλεντικ", "Hebr": "קרלנדייק", "Guru": "ਕ੍ਰਾਲਨਡੇਇਕ", "Gujr": "ક્રાલનડેઇક", "Orya": "କ୍ରାଲନଡେଇକ", "Taml": "க்ராலனடேஇக", "Telu": "క్రాలనడేఇక", "Knda": "ಕ್ರಾಲನಡೇಇಕ", "Mlym": "ക്രാലനഡേഇക", "Thai": "กฺราลนเฑอิก", "Laoo": "ກຣາລະນະເທອິກະ", "Mymr": "ကြာလနဍေဣက", "Khmr": "ក្រាលនឌេឥក", "Armn": "կրալենդիջկ", "Geor": "კრალენდიჯკ", "Ethi": "ክራለንዲጅክ"}}],
+        [-62.983333, 17.483333, 4.0, 0, 0, "Oranjestad", {"scripts": {"Latn": "Oranjestad", "Jpan": "オラニエスタッド", "Hans": "奥腊涅斯塔德", "Hant": "奧臘涅斯塔德", "Kore": "오라녜스타트", "Cyrl": "Ораньестад", "Arab": "أورانياستاد", "Deva": "ओरान्यस्टाट", "Beng": "অরানিয়েস্তাদ", "Grek": "Οράνιεστατ", "Hebr": "אורנייסטאד", "Guru": "ਓਰਾਨ੍ਯਸ੍ਟਾਟ", "Gujr": "ઓરાન્યસ્ટાટ", "Orya": "ଓରାନ୍ୟସ୍ଟାଟ", "Taml": "ஓரான்யஸ்டாட", "Telu": "ఓరాన్యస్టాట", "Knda": "ಓರಾನ್ಯಸ್ಟಾಟ", "Mlym": "ഓരാന്യസ്ടാട", "Thai": "โอรานฺยสฺฏาฏ", "Laoo": "ໂອຣານຢັສຕາຕະ", "Mymr": "ဩရာနျသ္ဋာဋ", "Khmr": "ឱរាន្យស្ដាដ", "Armn": "որանջեստադ", "Geor": "ორანჯესტად", "Ethi": "ኦራንጀስታድ"}}],
+        [-63.249167, 17.626111, 4.0, 0, 0, "The Bottom", {"scripts": {"Latn": "The Bottom", "Jpan": "ボトム", "Hans": "博托姆", "Hant": "博坦", "Kore": "보텀", "Cyrl": "Боттом", "Arab": "ذي بوتوم", "Deva": "द बॉटम", "Beng": "দ্য বটম", "Grek": "Δε Μπότομ", "Hebr": "ד'ה בוטום", "Guru": "ਦ ਬਾਟਮ", "Gujr": "દ બૉટમ", "Orya": "ଦ ବାଟମ", "Taml": "த பாடம", "Telu": "ద బొటమ", "Knda": "ದ ಬಾಟಮ", "Mlym": "ദ ബാടമ", "Thai": "ท เาะพฏม", "Laoo": "ທະ ເາະພະຕະມະ", "Mymr": "ဒ ဗာဋမ", "Khmr": "ទ ពាដម", "Armn": "թե բոտտոմ", "Geor": "თე ბოტტომ", "Ethi": "ጠ ቦትቶም"}}]
+      ]
+    },
+    "CC": {
+      "budget": 1,
+      "places": [
+        [96.828333, -12.186944, 3.0, 1, 0, "West Island", {"scripts": {"Latn": "West Island", "Jpan": "ウェスト島", "Hans": "西岛", "Hant": "西島", "Kore": "웨스트섬", "Cyrl": "Уэст-Айленд", "Arab": "ويست آيلند", "Deva": "पश्चिम द्वीप", "Beng": "ওয়েস্ট আইল্যান্ড", "Grek": "Γουέστ Άιλαντ", "Hebr": "וסט איילנד", "Guru": "ਪਸ਼੍ਚਿਮ ਦ੍ਵੀਪ", "Gujr": "પશ્ચિમ દ્વીપ", "Orya": "ପଶ୍ଚିମ ଦ୍ୱୀପ", "Taml": "பஶ்சிம த்வீப", "Telu": "పశ్చిమ ద్వీప", "Knda": "ಪಶ್ಚಿಮ ದ್ವೀಪ", "Mlym": "പശ്ചിമ ദ്വീപ", "Thai": "ปศฺจิม ทฺวีป", "Laoo": "ປັສຈິມະ ທວີປະ", "Mymr": "ပၐ္စိမ ဒွီပ", "Khmr": "បឝ្ចិម ទ្វីប", "Armn": "վեստ իսլանդ", "Geor": "ვესტ ისლანდ", "Ethi": "ወስት ኢስላንድ"}}]
+      ]
+    },
+    "CX": {
+      "budget": 1,
+      "places": [
+        [105.678056, -10.421667, 3.0, 1, 0, "Flying Fish Cove", {"scripts": {"Latn": "Flying Fish Cove", "Jpan": "フライング・フィッシュ・コーブ", "Hans": "飞鱼湾", "Hant": "飛魚灣", "Kore": "플라잉피시코브", "Cyrl": "Флайинг-Фиш-Коув", "Arab": "فلاينغ فيش كوف", "Deva": "फ्लाइंग फिश कोव", "Beng": "ফ্লাইং ফিশ কোভ", "Grek": "Φλάινγκ Φις Κόουβ", "Hebr": "פלאיינג פיש קואוב", "Guru": "ਫ੍ਲਾਇੰਗ ਫਿਸ਼ ਕੋਵ", "Gujr": "ફ્લાઇંગ ફિશ કોવ", "Orya": "ଫ୍ଲାଇଙ୍ଗ ଫିଶ କୋବ", "Taml": "ப்லாஇங்க பிஶ கோவ", "Telu": "ఫ్లాఇంగ ఫిశ కోవ", "Knda": "ಫ್ಲಾಇಂಗ ಫಿಶ ಕೋವ", "Mlym": "ഫ്ലാഇംഗ ഫിശ കോവ", "Thai": "ผฺลาอึค ผิศ โกว", "Laoo": "ຜລາອິງຄະ ຜິສະ ໂກວະ", "Mymr": "ဖ္လာဣံဂ ဖိၐ ကောဝ", "Khmr": "ផ្លាឥំគ ផិឝ កោវ", "Armn": "ֆլիինգ ֆիշ կովե", "Geor": "ფლიინგ ფიშ კოვე", "Ethi": "ፍልዪንግ ፊሽ ጮቨ"}}]
+      ]
+    },
+    "EA": {
+      "budget": 2,
+      "places": [
+        [-5.3, 35.886667, 4.0, 0, 0, "Ceuta", {"scripts": {"Latn": "Ceuta", "Jpan": "セウタ", "Hans": "休达", "Hant": "休達", "Kore": "세우타", "Cyrl": "Сеута", "Arab": "سبتة", "Deva": "सेउता", "Beng": "সেউতা", "Grek": "Θέουτα", "Hebr": "סאוטה", "Guru": "ਸੇਉਤਾ", "Gujr": "સેઉતા", "Orya": "ସେଉତା", "Taml": "ஸேஉதா", "Telu": "సేఉతా", "Knda": "ಸೇಉತಾ", "Mlym": "സേഉതാ", "Thai": "เสอุตา", "Laoo": "ເສອຸຕາ", "Mymr": "သေဥတာ", "Khmr": "សេឧតា", "Armn": "կեուտա", "Geor": "კეუტა", "Ethi": "ጨኡታ"}}],
+        [-2.9475, 35.2825, 4.0, 0, 0, "Melilla", {"scripts": {"Latn": "Melilla", "Jpan": "メリリャ", "Hans": "梅利利亚", "Hant": "麥里亞", "Kore": "멜리야", "Cyrl": "Мелилья", "Arab": "مليلية", "Deva": "मेलिया", "Beng": "মেলিলা", "Grek": "Μελίγια", "Hebr": "מלייה", "Guru": "ਮੇਲਿਯਾ", "Gujr": "મેલિયા", "Orya": "ମେଲିୟା", "Taml": "மேலியா", "Telu": "మేలియా", "Knda": "ಮೇಲಿಯಾ", "Mlym": "മേലിയാ", "Thai": "เมลิยา", "Laoo": "ເມລິຢາ", "Mymr": "မေလိယာ", "Khmr": "មេលិយា", "Armn": "մելիլլա", "Geor": "მელილლა", "Ethi": "መሊልላ"}}]
+      ]
+    },
+    "GG": {
+      "budget": 1,
+      "places": [
+        [-2.55194, 49.46, 3.0, 1, 0, "Saint Peter Port", {"scripts": {"Latn": "Saint Peter Port", "Jpan": "セント・ピーター・ポート", "Hans": "圣彼得港", "Hant": "聖彼得港", "Kore": "세인트피터포트", "Cyrl": "Сент-Питер-Порт", "Arab": "سان بيتر بورت", "Deva": "सेंट पीटर पोर्ट", "Beng": "সেন্ট পিটার পোর্ট", "Grek": "Σεντ Πίτερ Πορτ", "Hebr": "סנט פיטר פורט", "Guru": "ਸੇਂਟ ਪੀਟਰ ਪੋਰ੍ਟ", "Gujr": "સેંટ પીટર પોર્ટ", "Orya": "ସେଣ୍ଟ ପୀଟର ପୋର୍ଟ", "Taml": "ஸேண்ட பீடர போர்ட", "Telu": "సేంట పీటర పోర్ట", "Knda": "ಸೇಂಟ ಪೀಟರ ಪೋರ್ಟ", "Mlym": "സേണ്ട പീടര പോർട", "Thai": "เสํฏ ปีฏร โปรฺฏ", "Laoo": "ເສນຕະ ປີຕະຣະ ໂປຣຕະ", "Mymr": "သေံဋ ပီဋရ ပေါရ်္ဋ", "Khmr": "សេំដ បីដរ បោដ៌", "Armn": "սաինտ պետեր պորտ", "Geor": "საინტ პეტერ პორტ", "Ethi": "ሳኢንት ጰተር ጶርት"}}]
+      ]
+    },
+    "IO": {
+      "budget": 1,
+      "places": [
+        [72.411111, -7.313333, 4.0, 0, 0, "Diego Garcia", {"scripts": {"Latn": "Diego Garcia", "Jpan": "ディエゴガルシア島", "Hans": "迪戈加西亚岛", "Hant": "迪亞哥加西亞島", "Kore": "디에고가르시아섬", "Cyrl": "Диего-Гарсия", "Arab": "دييغو غارسيا", "Deva": "डिएगो गार्सिया", "Beng": "দিয়েগো গার্সিয়া", "Grek": "Ντιέγκο Γκαρσία", "Hebr": "דייגו גרסיה", "Guru": "ਡਿਏਗੋ ਗਾਰ੍ਸਿਯਾ", "Gujr": "ડિએગો ગાર્સિયા", "Orya": "ଡିଏଗୋ ଗାର୍ସିୟା", "Taml": "டிஏகோ கார்ஸியா", "Telu": "డిఏగో గార్సియా", "Knda": "ಡಿಏಗೋ ಗಾರ್ಸಿಯಾ", "Mlym": "ഡിഏഗോ ഗാർസിയാ", "Thai": "ฑิเอโค คารฺสิยา", "Laoo": "ທິເອໂຄ ຄາຣສິຢາ", "Mymr": "ဍိဧဂေါ ဂါရ်္သိယာ", "Khmr": "ឌិឯគោ គាស៌ិយា", "Armn": "դիեգո գարկիա", "Geor": "დიეგო გარკია", "Ethi": "ዲእጎ ጋርጪአ"}}]
+      ]
+    },
+    "JE": {
+      "budget": 1,
+      "places": [
+        [-2.11, 49.185833, 3.0, 1, 0, "Saint Helier", {"scripts": {"Latn": "Saint Helier", "Jpan": "セント・ヘリア", "Hans": "圣赫利尔", "Hant": "聖赫利爾", "Kore": "세인트헬리어", "Cyrl": "Сент-Хелиер", "Arab": "ساينت هيلير", "Deva": "सेंट हेलियर", "Beng": "সেন্ট হেলিয়ার", "Grek": "Σεντ Χέλιερ", "Hebr": "סנט הלייר", "Guru": "ਸੇਂਟ ਹੇਲਿਯਰ", "Gujr": "સેંટ હેલિયર", "Orya": "ସେଣ୍ଟ ହେଲିୟର", "Taml": "ஸேண்ட ஹேலியர", "Telu": "సేంట హేలియర", "Knda": "ಸೇಂಟ ಹೇಲಿಯರ", "Mlym": "സേണ്ട ഹേലിയര", "Thai": "เสํฏ เหลิยร", "Laoo": "ເສນຕະ ເຫລິຢະຣະ", "Mymr": "သေံဋ ဟေလိယရ", "Khmr": "សេំដ ហេលិយរ", "Armn": "սաինտ հելիեր", "Geor": "საინტ ჰელიერ", "Ethi": "ሳኢንት ሀሊእር"}}]
+      ]
+    },
+    "MF": {
+      "budget": 1,
+      "places": [
+        [-63.084722, 18.066667, 3.0, 1, 0, "Marigot", {"scripts": {"Latn": "Marigot", "Jpan": "マリゴ", "Hans": "马里戈特", "Hant": "馬里戈特", "Kore": "마리고", "Cyrl": "Мариго", "Arab": "ماريغو", "Deva": "मेरीगौट", "Beng": "মারিগট", "Grek": "Μαριγκό", "Hebr": "מריגו", "Guru": "ਮੇਰੀਗੌਟ", "Gujr": "મેરીગૌટ", "Orya": "ମେରୀଗୌଟ", "Taml": "மேரீகௌட", "Telu": "మేరీగౌట", "Knda": "ಮೇರೀಗೌಟ", "Mlym": "മേരീഗൗട", "Thai": "เมรีเคาฏ", "Laoo": "ເມຣີເຄົາຕະ", "Mymr": "မေရီဂေါ်ဋ", "Khmr": "មេរីគៅដ", "Armn": "մարիգոտ", "Geor": "მარიგოტ", "Ethi": "ማሪጎት"}}]
+      ]
+    },
+    "MS": {
+      "budget": 2,
+      "places": [
+        [-62.210556, 16.792778, 3.0, 1, 0, "Brades", {"scripts": {"Latn": "Brades", "Jpan": "ブレイズ", "Hans": "布莱兹", "Hant": "布萊茲", "Kore": "브레이즈", "Cyrl": "Брейдс", "Arab": "بريدز", "Deva": "ब्रेड्स", "Beng": "ব্রেডস", "Grek": "Μπρέιντς", "Hebr": "בראדס", "Guru": "ਬ੍ਰੇਡ੍ਸ", "Gujr": "બ્રેડ્સ", "Orya": "ବ୍ରେଡ୍ସ", "Taml": "ப்ரேட்ஸ", "Telu": "బ్రేడ్స", "Knda": "ಬ್ರೇಡ್ಸ", "Mlym": "ബ്രേഡ്സ", "Thai": "เพฺรฑฺส", "Laoo": "ພເຣທສະ", "Mymr": "ဗြေဍ္သ", "Khmr": "ព្រេឌ្ស", "Armn": "բրադես", "Geor": "ბრადეს", "Ethi": "ብራደስ"}}],
+        [-62.215839, 16.706417, 5.0, 0, 0, "Plymouth", {"scripts": {"Latn": "Plymouth", "Jpan": "プリマス", "Hans": "普利茅斯", "Hant": "普利茅斯", "Kore": "플리머스", "Cyrl": "Плимут", "Arab": "بليموث", "Deva": "प्लायमाउथ", "Beng": "প্লাইমাউথ", "Grek": "Πλίμουθ", "Hebr": "פלימות'", "Guru": "ਪ੍ਲਾਯਮਾਉਥ", "Gujr": "પ્લાયમાઉથ", "Orya": "ପ୍ଲାୟମାଉଥ", "Taml": "ப்லாயமாஉத", "Telu": "ప్లాయమాఉథ", "Knda": "ಪ್ಲಾಯಮಾಉಥ", "Mlym": "പ്ലായമാഉഥ", "Thai": "ปฺลายมาอุถ", "Laoo": "ປລາຢະມາອຸຖະ", "Mymr": "ပ္လါယမာဥထ", "Khmr": "ប្លាយមាឧថ", "Armn": "պլիմոութ", "Geor": "პლიმოუთ", "Ethi": "ጵልይሞኡጥ"}}]
+      ]
+    },
+    "NF": {
+      "budget": 1,
+      "places": [
+        [167.966667, -29.05, 3.0, 1, 0, "Kingston", {"scripts": {"Latn": "Kingston", "Jpan": "キングストン", "Hans": "金斯敦", "Hant": "金斯敦", "Kore": "킹스턴", "Cyrl": "Кингстон", "Arab": "كينغستون", "Deva": "किंग्स्टन", "Beng": "কিংসটন", "Grek": "Κίνγκστον", "Hebr": "קינגסטון", "Guru": "ਕਿੰਗ੍ਸ੍ਟਨ", "Gujr": "કિંગ્સ્ટન", "Orya": "କିଙ୍ଗ୍ସ୍ଟନ", "Taml": "கிங்க்ஸ்டன", "Telu": "కింగ్స్టన", "Knda": "ಕಿಂಗ್ಸ್ಟನ", "Mlym": "കിംഗ്സ്ടന", "Thai": "กึคฺสฺฏน", "Laoo": "ກິງຄສຕະນະ", "Mymr": "ကိံဂ္သ္ဋန", "Khmr": "កឹគ្ស្ដន", "Armn": "կինգստոն", "Geor": "კინგსტონ", "Ethi": "ኪንግስቶን"}}]
+      ]
+    },
+    "NR": {
+      "budget": 1,
+      "places": [
+        [166.920867, -0.5477, 3.0, 0, 0, "Yaren", {"scripts": {"Latn": "Yaren", "Jpan": "ヤレン", "Hans": "亚伦", "Hant": "亞倫", "Kore": "야렌", "Cyrl": "Ярен", "Arab": "يارين", "Deva": "यारेन", "Beng": "ইয়ারেন", "Grek": "Γιαρέν", "Hebr": "יארן", "Guru": "ਯਾਰੇਨ", "Gujr": "યારેન", "Orya": "ଯାରେନ", "Taml": "யாரேன", "Telu": "యారేన", "Knda": "ಯಾರೇನ", "Mlym": "യാരേന", "Thai": "ยาเรน", "Laoo": "ຢາເຣນະ", "Mymr": "ယာရေန", "Khmr": "យារេន", "Armn": "յարեն", "Geor": "იარენ", "Ethi": "ያረን"}}]
+      ]
+    },
+    "NU": {
+      "budget": 1,
+      "places": [
+        [-169.921, -19.056, 3.0, 1, 0, "Alofi", {"scripts": {"Latn": "Alofi", "Jpan": "アロフィ", "Hans": "阿洛菲", "Hant": "阿洛菲", "Kore": "알로피", "Cyrl": "Алофи", "Arab": "الوفي", "Deva": "अलोफी", "Beng": "আলোফি", "Grek": "Αλόφι", "Hebr": "אלופי", "Guru": "ਅਲੋਫੀ", "Gujr": "અલોફી", "Orya": "ଅଲୋଫୀ", "Taml": "அலோபீ", "Telu": "అలోఫీ", "Knda": "ಅಲೋಫೀ", "Mlym": "അലോഫീ", "Thai": "อโลผี", "Laoo": "ອະໂລຜີ", "Mymr": "အလောဖီ", "Khmr": "អលោផី", "Armn": "ալոֆի", "Geor": "ალოფი", "Ethi": "አሎፊ"}}]
+      ]
+    },
+    "PM": {
+      "budget": 1,
+      "places": [
+        [-56.177778, 46.777778, 3.0, 1, 0, "Saint-Pierre", {"scripts": {"Latn": "Saint-Pierre", "Jpan": "サン＝ピエール", "Hans": "圣皮埃尔", "Hant": "聖皮埃爾", "Kore": "생피에르", "Cyrl": "Сен-Пьер", "Arab": "سان بيير", "Deva": "सेंट-पियरे", "Beng": "সাঁ-পিয়ের", "Grek": "Σαιν-Πιερ", "Hebr": "סן-פייר", "Guru": "ਸੇਂਟ-ਪਿਯਰੇ", "Gujr": "સેંટ-પિયરે", "Orya": "ସେଣ୍ଟ-ପିୟରେ", "Taml": "ஸேண்ட-பியரே", "Telu": "సేంట-పియరే", "Knda": "ಸೇಂಟ-ಪಿಯರೇ", "Mlym": "സേണ്ട-പിയരേ", "Thai": "เสํฏ-ปิยเร", "Laoo": "ເສນຕະ-ປິຢະເຣ", "Mymr": "သေံဋ-ပိယရေ", "Khmr": "សេំដ-បិយរេ", "Armn": "սաինտ պիերրե", "Geor": "საინტ-პიერრე", "Ethi": "ሳኢንት ጲእርረ"}}]
+      ]
+    },
+    "PN": {
+      "budget": 1,
+      "places": [
+        [-130.1, -25.066667, 3.0, 1, 0, "Adamstown", {"scripts": {"Latn": "Adamstown", "Jpan": "アダムスタウン", "Hans": "亚当斯敦", "Hant": "亞當斯敦", "Kore": "애덤스타운", "Cyrl": "Адамстаун", "Arab": "آدمزتاون", "Deva": "एडम्सटाउन", "Beng": "অ্যাডামসটাউন", "Grek": "Άνταμσταουν", "Hebr": "אדמסטאון", "Guru": "ਏਡਮ੍ਸਟਾਉਨ", "Gujr": "એડમ્સટાઉન", "Orya": "ଏଡମ୍ସଟାଉନ", "Taml": "ஏடம்ஸடாஉன", "Telu": "ఏడమ్సటాఉన", "Knda": "ಏಡಮ್ಸಟಾಉನ", "Mlym": "ഏഡമ്സടാഉന", "Thai": "เอฑมฺสฏาอุน", "Laoo": "ເອທັມສະຕາອຸນະ", "Mymr": "ဧဍမ္သဋာဥန", "Khmr": "ឯឌម្សដាឧន", "Armn": "ադամստովն", "Geor": "ადამსტოვნ", "Ethi": "አዳምስቶውን"}}]
+      ]
+    },
+    "SX": {
+      "budget": 1,
+      "places": [
+        [-63.043333, 18.024167, 3.0, 1, 0, "Philipsburg", {"scripts": {"Latn": "Philipsburg", "Jpan": "フィリップスブルフ", "Hans": "菲利普斯堡", "Hant": "菲利普斯堡", "Kore": "필립스뷔르흐", "Cyrl": "Филипсбург", "Arab": "فيليبسبورغ", "Deva": "फ़िलिप्सबर्ग", "Beng": "ফিলিপসবার্গ", "Grek": "Φίλιπσμπουργκ", "Hebr": "פיליפסבורג", "Guru": "ਫ਼ਿਲਿਪ੍ਸਬਰ੍ਗ", "Gujr": "ફ઼િલિપ્સબર્ગ", "Orya": "ଫ଼ିଲିପ୍ସବର୍ଗ", "Taml": "ஃபிலிப்ஸபர்க", "Telu": "ఫిలిప్సబర్గ", "Knda": "ಫ಼ಿಲಿಪ್ಸಬರ್ಗ", "Mlym": "ഫിലിപ്സബർഗ", "Thai": "ฟิลิปฺสพรฺค", "Laoo": "ຝິລິປສະພັຣຄະ", "Mymr": "ဖိလိပ္သဗရ်္ဂ", "Khmr": "ផិលិប្សពគ៌", "Armn": "փիլիպսբուրգ", "Geor": "ფილიპსბურგ", "Ethi": "ጵሂሊጵስቡርግ"}}]
+      ]
+    },
+    "TF": {
+      "budget": 3,
+      "places": [
+        [70.216667, -49.35, 4.0, 0, 0, "Port-aux-Français", {"scripts": {"Latn": "Port-aux-Français", "Jpan": "ポルトーフランセ", "Hans": "法兰西港", "Hant": "法蘭西港", "Kore": "포르토프랑세", "Cyrl": "Порт-о-Франсэ", "Arab": "بورت أو فرانسيه", "Deva": "पोर्ट-ओ-फ़्रांसे", "Beng": "পোর্ত-ও-ফ্রঁসে", "Grek": "Πορ-ο-Φρανσέ", "Hebr": "פורט-או-פרנסה", "Guru": "ਪੋਰ੍ਟ-ਓ-ਫ਼੍ਰਾਂਸੇ", "Gujr": "પોર્ટ-ઓ-ફ઼્રાંસે", "Orya": "ପୋର୍ଟ-ଓ-ଫ଼୍ରାଂସେ", "Taml": "போர்ட-ஓ-ஃப்ராம்ஸே", "Telu": "పోర్ట-ఓ-ఫ్రాంసే", "Knda": "ಪೋರ್ಟ-ಓ-ಫ಼್ರಾಂಸೇ", "Mlym": "പോർട-ഓ-ഫ്രാംസേ", "Thai": "โปรฺฏ-โอ-ฟฺรำเส", "Laoo": "ໂປຣຕະ-ໂອ-ຝຣາງເສ", "Mymr": "ပေါရ်္ဋ-ဩ-ဖြာံသေ", "Khmr": "បោដ៌-ឱ-ផ្រាំសេ", "Armn": "պորտ աուքս ֆրանկաիս", "Geor": "პორტ-აუქს-ფრანკაის", "Ethi": "ጶርት አኡ ፍራንጫኢስ"}}],
+        [51.8582, -46.4323, 4.0, 0, 0, "Alfred Faure", {"scripts": {"Latn": "Alfred Faure", "Jpan": "アルフレッド・フォール基地", "Hans": "阿尔弗雷德·福尔", "Hant": "阿爾弗雷德·福爾", "Kore": "알프레드 포르", "Cyrl": "Альфред Фор", "Arab": "ألفريد فور", "Deva": "अल्फ्रेड फोर", "Beng": "আলফ্রেড ফোর", "Grek": "Αλφρέντ Φορ", "Hebr": "אלפרד פור", "Guru": "ਅਲ੍ਫ੍ਰੇਡ ਫੋਰ", "Gujr": "અલ્ફ્રેડ ફોર", "Orya": "ଅଲ୍ଫ୍ରେଡ ଫୋର", "Taml": "அல்ப்ரேட போர", "Telu": "అల్ఫ్రేడ ఫోర", "Knda": "ಅಲ್ಫ್ರೇಡ ಫೋರ", "Mlym": "അൽഫ്രേഡ ഫോര", "Thai": "อลฺเผฺรฑ โผร", "Laoo": "ອັລຜເຣທະ ໂຜຣະ", "Mymr": "အလ္ဖြေဍ ဖောရ", "Khmr": "អល្ផ្រេឌ ផោរ", "Armn": "ալֆրեդ ֆաուրե", "Geor": "ალფრედ ფაურე", "Ethi": "አልፍረድ ፋኡረ"}}],
+        [77.566667, -37.8, 4.0, 0, 0, "Martin-de-Viviès", {"scripts": {"Latn": "Martin-de-Viviès", "Jpan": "マルティン・デ・ヴィヴ", "Hans": "马丁-德维维耶", "Hant": "馬丁-德維維耶", "Kore": "마르탱드비비에", "Cyrl": "Мартин-де-Вивье", "Arab": "مارتن دي فيفييس", "Deva": "मार्टिन-दे-विविए", "Beng": "মার্তাঁ-দ্য-ভিভিয়ে", "Grek": "Μαρτέν-ντε-Βιβιές", "Hebr": "מרטן-דה-ויוויה", "Guru": "ਮਾਰ੍ਟਿਨ-ਦੇ-ਵਿਵਿਏ", "Gujr": "માર્ટિન-દે-વિવિએ", "Orya": "ମାର୍ଟିନ-ଦେ-ବିବିଏ", "Taml": "மார்டின-தே-விவிஏ", "Telu": "మార్టిన-దే-వివిఏ", "Knda": "ಮಾರ್ಟಿನ-ದೇ-ವಿವಿಏ", "Mlym": "മാർടിന-ദേ-വിവിഏ", "Thai": "มารฺฏิน-เท-วิวิเอ", "Laoo": "ມາຣຕິນະ-ເທ-ວິວິເອ", "Mymr": "မာရ်္ဋိန-ဒေ-ဝိဝိဧ", "Khmr": "មាដ៌ិន-ទេ-វិវិឯ", "Armn": "մարտին դե վիվիես", "Geor": "მარტინ-დე-ვივიეს", "Ethi": "ማርቲን ደ ቪቪእስ"}}]
+      ]
+    },
+    "TK": {
+      "budget": 3,
+      "places": [
+        [-172.517, -8.53833, 4.0, 0, 0, "Atafu", {"scripts": {"Latn": "Atafu", "Jpan": "アタフ", "Hans": "阿塔富", "Hant": "阿塔富", "Kore": "아타푸", "Cyrl": "Атафу", "Arab": "أتافو", "Deva": "अताफू", "Beng": "আতাফু", "Grek": "Ατάφου", "Hebr": "אטאפו", "Guru": "ਅਤਾਫੂ", "Gujr": "અતાફૂ", "Orya": "ଅତାଫୂ", "Taml": "அதாபூ", "Telu": "అతాఫూ", "Knda": "ಅತಾಫೂ", "Mlym": "അതാഫൂ", "Thai": "อตาผู", "Laoo": "ອະຕາຜູ", "Mymr": "အတာဖူ", "Khmr": "អតាផូ", "Armn": "ատաֆու", "Geor": "ატაფუ", "Ethi": "አታፉ"}}],
+        [-171.855311, -9.19425, 4.0, 0, 0, "Nukunonu", {"scripts": {"Latn": "Nukunonu", "Jpan": "ヌクノヌ", "Hans": "努库诺努", "Hant": "努庫諾努", "Kore": "누쿠노누", "Cyrl": "Нукунону", "Arab": "نوكونونو", "Deva": "नुकुनोनु", "Beng": "নুকুনোনু", "Grek": "Νουκουνόνου", "Hebr": "נוקונונו", "Guru": "ਨੁਕੁਨੋਨੁ", "Gujr": "નુકુનોનુ", "Orya": "ନୁକୁନୋନୁ", "Taml": "நுகுனோனு", "Telu": "నుకునోను", "Knda": "ನುಕುನೋನು", "Mlym": "നുകുനോനു", "Thai": "นุกุโนนุ", "Laoo": "ນຸກຸໂນນຸ", "Mymr": "နုကုနောနု", "Khmr": "នុកុនោនុ", "Armn": "նուկունոնու", "Geor": "ნუკუნონუ", "Ethi": "ኑኩኖኑ"}}],
+        [-171.264616, -9.373944, 4.0, 0, 0, "Fakaofo", {"scripts": {"Latn": "Fakaofo", "Jpan": "ファカオフォ", "Hans": "法考福", "Hant": "法考福", "Kore": "파카오포", "Cyrl": "Факаофо", "Arab": "فاكاوفو", "Deva": "फ़काओफ़ो", "Beng": "ফাকাওফো", "Grek": "Φακαόφο", "Hebr": "פקאופו", "Guru": "ਫ਼ਕਾਓਫ਼ੋ", "Gujr": "ફ઼કાઓફ઼ો", "Orya": "ଫ଼କାଓଫ଼ୋ", "Taml": "ஃபகாஓஃபோ", "Telu": "ఫకాఓఫో", "Knda": "ಫ಼ಕಾಓಫ಼ೋ", "Mlym": "ഫകാഓഫോ", "Thai": "ฟกาโอโฟ", "Laoo": "ຝະກາໂອໂຝ", "Mymr": "ဖကာဩဖော", "Khmr": "ផកាឱផោ", "Armn": "ֆակաոֆո", "Geor": "ფაკაოფო", "Ethi": "ፋካኦፎ"}}]
+      ]
+    },
+    "VG": {
+      "budget": 1,
+      "places": [
+        [-64.616667, 18.433333, 3.0, 1, 0, "Road Town", {"scripts": {"Latn": "Road Town", "Jpan": "ロードタウン", "Hans": "罗德城", "Hant": "羅德城", "Kore": "로드타운", "Cyrl": "Род-Таун", "Arab": "رود تاون", "Deva": "रोड टाउन", "Beng": "রোড টাউন", "Grek": "Ρόουντ Τάουν", "Hebr": "רואוד טאון", "Guru": "ਰੋਡ ਟਾਉਨ", "Gujr": "રોડ ટાઉન", "Orya": "ରୋଡ ଟାଉନ", "Taml": "ரோட டாஉன", "Telu": "రోడ టాఉన", "Knda": "ರೋಡ ಟಾಉನ", "Mlym": "രോഡ ടാഉന", "Thai": "โรฑ ฏาอุน", "Laoo": "ໂຣທະ ຕາອຸນະ", "Mymr": "ရောဍ ဋာဥန", "Khmr": "រោឌ ដាឧន", "Armn": "րոադ տովն", "Geor": "როად ტოვნ", "Ethi": "ሮአድ ቶውን"}}]
+      ]
+    },
+    "WF": {
+      "budget": 1,
+      "places": [
+        [-176.1737, -13.2827, 3.0, 1, 0, "Mata-Utu", {"scripts": {"Latn": "Mata-Utu", "Jpan": "マタウトゥ", "Hans": "马塔乌图", "Hant": "馬塔烏圖", "Kore": "마타우투", "Cyrl": "Мата-Уту", "Arab": "ماتا-أوتو", "Deva": "माता उतु", "Beng": "মাতা-উতু", "Grek": "Ματά-Ουτού", "Hebr": "מאטה אוטו", "Guru": "ਮਾਤਾ ਉਤੁ", "Gujr": "માતા ઉતુ", "Orya": "ମାତା ଉତୁ", "Taml": "மாதா உது", "Telu": "మాతా ఉతు", "Knda": "ಮಾತಾ ಉತು", "Mlym": "മാതാ ഉതു", "Thai": "มาตา อุตุ", "Laoo": "ມາຕາ ອຸຕຸ", "Mymr": "မာတာ ဥတု", "Khmr": "មាតា ឧតុ", "Armn": "մատա ուտու", "Geor": "მატა-უტუ", "Ethi": "ማታ ኡቱ"}}]
+      ]
+    },
     "AQ": {
       "budget": 7,
       "places": [
-        [166.869416, -77.732282, 3.0, 1, 1000, "McMurdo Station", {"scripts": {"Latn": "McMurdo Station", "Jpan": "マクマード基地", "Hans": "麦克默多站", "Hant": "麥克默多站", "Kore": "맥머도 기지", "Cyrl": "Мак-Мёрдо", "Arab": "قاعدة ماك موردو", "Deva": "मैकमर्डो स्टेशन", "Beng": "ম্যাকমুর্দো স্টেশন", "Grek": "Βάση ΜακΜούρντο", "Hebr": "תחנת מק-מרדו", "Guru": "ਮੈਕਮਰ੍ਡੋ ਸ੍ਟੇਸ਼ਨ", "Gujr": "મૈકમર્ડો સ્ટેશન", "Orya": "ମୈକମର୍ଡୋ ସ୍ଟେଶନ", "Taml": "மைகமர்டோ ஸ்டேஶன", "Telu": "మైకమర్డో స్టేశన", "Knda": "ಮೈಕಮರ್ಡೋ ಸ್ಟೇಶನ", "Mlym": "മൈകമർഡോ സ്ടേശന", "Thai": "ไมกมรฺโฑ เสฺฏศน", "Laoo": "ໄມກະມັຣໂທ ສເຕສະນະ", "Mymr": "မဲကမရ်္ဍော သ္ဋေၐန", "Khmr": "មៃកមឌ៌ោ ស្ដេឝន", "Armn": "մկմուրդո ստատիոն", "Geor": "მკმურდო სტატიონ", "Ethi": "ምጭሙርዶ ስታቲኦን"}, "locales": {"de": "McMurdo-Station", "fr": "base antarctique McMurdo", "es": "Base McMurdo", "pt": "Estação McMurdo", "it": "Stazione McMurdo", "hu": "McMurdo kutatóállomás", "id": "Stasiun McMurdo", "nl": "Station McMurdo", "pl": "McMurdo", "tr": "McMurdo Üssü", "vi": "Trạm McMurdo", "fa": "پایگاه مکموردو", "uk": "Мак-Мердо", "ur": "مکمردو اسٹیشن"}}],
+        [166.869416, -77.732282, 3.0, 0, 1000, "McMurdo Station", {"scripts": {"Latn": "McMurdo Station", "Jpan": "マクマード基地", "Hans": "麦克默多站", "Hant": "麥克默多站", "Kore": "맥머도 기지", "Cyrl": "Мак-Мёрдо", "Arab": "قاعدة ماك موردو", "Deva": "मैकमर्डो स्टेशन", "Beng": "ম্যাকমুর্দো স্টেশন", "Grek": "Βάση ΜακΜούρντο", "Hebr": "תחנת מק-מרדו", "Guru": "ਮੈਕਮਰ੍ਡੋ ਸ੍ਟੇਸ਼ਨ", "Gujr": "મૈકમર્ડો સ્ટેશન", "Orya": "ମୈକମର୍ଡୋ ସ୍ଟେଶନ", "Taml": "மைகமர்டோ ஸ்டேஶன", "Telu": "మైకమర్డో స్టేశన", "Knda": "ಮೈಕಮರ್ಡೋ ಸ್ಟೇಶನ", "Mlym": "മൈകമർഡോ സ്ടേശന", "Thai": "ไมกมรฺโฑ เสฺฏศน", "Laoo": "ໄມກະມັຣໂທ ສເຕສະນະ", "Mymr": "မဲကမရ်္ဍော သ္ဋေၐန", "Khmr": "មៃកមឌ៌ោ ស្ដេឝន", "Armn": "մկմուրդո ստատիոն", "Geor": "მკმურდო სტატიონ", "Ethi": "ምጭሙርዶ ስታቲኦን"}, "locales": {"de": "McMurdo-Station", "fr": "base antarctique McMurdo", "es": "Base McMurdo", "pt": "Estação McMurdo", "it": "Stazione McMurdo", "hu": "McMurdo kutatóállomás", "id": "Stasiun McMurdo", "nl": "Station McMurdo", "pl": "McMurdo", "tr": "McMurdo Üssü", "vi": "Trạm McMurdo", "fa": "پایگاه مکموردو", "uk": "Мак-Мердо", "ur": "مکمردو اسٹیشن"}}],
         [-57.025902, -63.375329, 3.0, 0, 250, "Esperanza Base", {"scripts": {"Latn": "Base Esperanza", "Jpan": "エスペランサ基地", "Hans": "埃斯佩兰萨站", "Hant": "埃斯佩蘭薩站", "Kore": "에스페란사 기지", "Cyrl": "Эсперанса", "Arab": "قاعدة ايسبيرانزا", "Deva": "एसपरांजा स्टेशन", "Beng": "এস্পারাঞ্জা স্টেশন", "Grek": "Βάση Εσπεράνζα", "Hebr": "בסיס אספרנסה", "Guru": "ਏਸਪਰਾਂਜਾ ਸ੍ਟੇਸ਼ਨ", "Gujr": "એસપરાંજા સ્ટેશન", "Orya": "ଏସପରାଞ୍ଜା ସ୍ଟେଶନ", "Taml": "ஏஸபராஞ்ஜா ஸ்டேஶன", "Telu": "ఏసపరాంజా స్టేశన", "Knda": "ಏಸಪರಾಂಜಾ ಸ್ಟೇಶನ", "Mlym": "ഏസപരാഞ്ജാ സ്ടേശന", "Thai": "เอสปรำชา เสฺฏศน", "Laoo": "ເອສະປະຣາຍຊາ ສເຕສະນະ", "Mymr": "ဧသပရာံဇာ သ္ဋေၐန", "Khmr": "ឯសបរាំជា ស្ដេឝន", "Armn": "բասե եսպերանզա", "Geor": "ბასე ესპერანზა", "Ethi": "ባሰ እስጰራንዛ"}, "locales": {"en": "Esperanza Base", "de": "Esperanza-Station", "fr": "base antarctique Esperanza", "hu": "Esperanza kutatóállomás", "id": "Stasiun Esperanza", "nl": "Esperanza Basis", "pl": "Esperanza", "sv": "Esperanza", "tr": "Esperanza Üssü", "vi": "Trạm Esperanza", "fa": "ایستگاه اسپرانزا", "uk": "Есперанса", "ur": "ایسپرینزا اسٹیشن"}}],
         [110.536214, -66.286086, 3.0, 0, 200, "Casey Station", {"scripts": {"Latn": "Casey Station", "Jpan": "ケーシー基地", "Hans": "凯西站", "Hant": "凯西站", "Kore": "케이시 스테이션", "Cyrl": "Кейси", "Arab": "محطة كاسي", "Deva": "केसी स्टेशन", "Beng": "ক্যাসে স্টেশন", "Grek": "Κέισι Στέισιον", "Hebr": "תחנת קייסי", "Guru": "ਕੇਸੀ ਸ੍ਟੇਸ਼ਨ", "Gujr": "કેસી સ્ટેશન", "Orya": "କେସୀ ସ୍ଟେଶନ", "Taml": "கேஸீ ஸ்டேஶன", "Telu": "కేసీ స్టేశన", "Knda": "ಕೇಸೀ ಸ್ಟೇಶನ", "Mlym": "കേസീ സ്ടേശന", "Thai": "เกสี เสฺฏศน", "Laoo": "ເກສີ ສເຕສະນະ", "Mymr": "ကေသီ သ္ဋေၐန", "Khmr": "កេសី ស្ដេឝន", "Armn": "կասեի ստատիոն", "Geor": "კასეი სტატიონ", "Ethi": "ጫሰይ ስታቲኦን"}, "locales": {"de": "Casey-Station", "fr": "base antarctique Casey", "es": "Base Casey", "pt": "Base Casey", "it": "Stazione Casey", "id": "Stasiun Casey", "pl": "Casey", "sv": "Casey", "tr": "Casey İstasyonu", "vi": "Trạm Casey", "fa": "ایستگاه کیسی", "uk": "Кейсі", "ur": "کیسی اسٹیشن"}}],
         [93.006288, -66.57553, 3.0, 0, 169, "Mirny Station", {"scripts": {"Latn": "Mirnyj", "Jpan": "ミールヌイ基地", "Hans": "米爾尼站", "Hant": "米爾尼站", "Kore": "미르니 스테이션", "Cyrl": "Мирный", "Arab": "محطة ميرني", "Deva": "मर्नी स्टेशन", "Beng": "মির্নি স্টেশন", "Grek": "Μίρνι Στέισιον", "Hebr": "תחנת מירני", "Guru": "ਮਰ੍ਨੀ ਸ੍ਟੇਸ਼ਨ", "Gujr": "મર્ની સ્ટેશન", "Orya": "ମର୍ନୀ ସ୍ଟେଶନ", "Taml": "மர்னீ ஸ்டேஶன", "Telu": "మర్నీ స్టేశన", "Knda": "ಮರ್ನೀ ಸ್ಟೇಶನ", "Mlym": "മർനീ സ്ടേശന", "Thai": "มรฺนี เสฺฏศน", "Laoo": "ມັຣນີ ສເຕສະນະ", "Mymr": "မရ်္နီ သ္ဋေၐန", "Khmr": "មន៌ី ស្ដេឝន", "Armn": "միրնիջ", "Geor": "მირნიჯ", "Ethi": "ሚርኝጅ"}, "locales": {"en": "Mirny Station", "de": "Mirny-Station", "fr": "base antarctique Mirny", "es": "Base Mirni", "pt": "Estação Mirny", "hu": "Mirnij kutatóállomás", "id": "Stasiun Mirny", "nl": "Mirniy", "tr": "Mirnıy İstasyonu", "vi": "Trạm Mirny", "fa": "ایستگاه میرنی", "uk": "Мирний", "ur": "میرنی اسٹیشن"}}],
@@ -135,7 +269,7 @@
         [166.749102, -77.846938, 6.7, 0, 85, "Scott Base", {"scripts": {"Latn": "Scott Base", "Jpan": "スコット基地", "Hans": "斯科特基地", "Hant": "斯科特基地", "Kore": "스콧 베이스", "Cyrl": "Скотт-Бейс", "Arab": "قاعدة سكوت", "Deva": "स्कॉट बेस", "Beng": "স্কট বেস", "Grek": "Σκοτ Μπέις", "Hebr": "בסיס סקוט", "Guru": "ਸ੍ਕਾਟ ਬੇਸ", "Gujr": "સ્કૉટ બેસ", "Orya": "ସ୍କାଟ ବେସ", "Taml": "ஸ்காட பேஸ", "Telu": "స్కొట బేస", "Knda": "ಸ್ಕಾಟ ಬೇಸ", "Mlym": "സ്കാട ബേസ", "Thai": "สฺเาะกฏ เพส", "Laoo": "ສເາະກະຕະ ເພສະ", "Mymr": "သ္ကာဋ ဗေသ", "Khmr": "ស្កាដ ពេស", "Armn": "սկոտտ բասե", "Geor": "სკოტტ ბასე", "Ethi": "ስጮትት ባሰ"}, "locales": {"fr": "base antarctique Scott", "es": "Base Scott", "pt": "Base Scott", "it": "Base Scott", "hu": "Scott kutatóállomás", "id": "Pangkalan Scott", "nl": "Basis Scott", "tr": "Scott Üssü", "vi": "Căn cứ Scott", "fa": "پایگاه اسکات", "uk": "Скотт", "ur": "اسکاٹ بیس"}}],
         [78.140735, -68.777674, 6.1, 0, 70, "Davis Station", {"scripts": {"Latn": "Davis Station", "Jpan": "デービス基地", "Hans": "戴维斯站", "Hant": "戴维斯站", "Kore": "데이비스 스테이션", "Cyrl": "Дейвис", "Arab": "محطة ديفيس", "Deva": "डेविस स्टेशन", "Beng": "ডেভিস স্টেশন", "Grek": "Ντέιβις Στέισιον", "Hebr": "תחנת דיוויס", "Guru": "ਡੇਵਿਸ ਸ੍ਟੇਸ਼ਨ", "Gujr": "ડેવિસ સ્ટેશન", "Orya": "ଡେବିସ ସ୍ଟେଶନ", "Taml": "டேவிஸ ஸ்டேஶன", "Telu": "డేవిస స్టేశన", "Knda": "ಡೇವಿಸ ಸ್ಟೇಶನ", "Mlym": "ഡേവിസ സ്ടേശന", "Thai": "เฑวิส เสฺฏศน", "Laoo": "ເທວິສະ ສເຕສະນະ", "Mymr": "ဍေဝိသ သ္ဋေၐန", "Khmr": "ឌេវិស ស្ដេឝន", "Armn": "դավիս ստատիոն", "Geor": "დავის სტატიონ", "Ethi": "ዳቪስ ስታቲኦን"}, "locales": {"de": "Davis-Station", "fr": "base antarctique Davis", "es": "Base Davis", "pt": "Base Davis", "it": "Stazione Davis", "id": "Stasiun Davis", "pl": "Davis", "tr": "Davis İstasyonu", "vi": "Trạm Davis", "fa": "ایستگاه دیویس", "uk": "Девіс", "ur": "ڈیوس اسٹیشن"}}],
         [-26.474157, -76.092263, 6.1, 0, 70, "Halley Station", {"scripts": {"Latn": "Halley Research Station", "Jpan": "ハリー基地", "Hans": "哈雷研究站", "Hant": "哈雷研究站", "Kore": "핼리 스테이션", "Cyrl": "Халли", "Arab": "محطة هالي", "Deva": "हेली स्टेशन", "Beng": "হ্যালি স্টেশন", "Grek": "Χάλεϊ Στέισιον", "Hebr": "תחנת מחקר היילי", "Guru": "ਹੇਲੀ ਸ੍ਟੇਸ਼ਨ", "Gujr": "હેલી સ્ટેશન", "Orya": "ହେଲୀ ସ୍ଟେଶନ", "Taml": "ஹேலீ ஸ்டேஶன", "Telu": "హేలీ స్టేశన", "Knda": "ಹೇಲೀ ಸ್ಟೇಶನ", "Mlym": "ഹേലീ സ്ടേശന", "Thai": "เหลี เสฺฏศน", "Laoo": "ເຫລີ ສເຕສະນະ", "Mymr": "ဟေလီ သ္ဋေၐန", "Khmr": "ហេលី ស្ដេឝន", "Armn": "հալլեի րեսեարչ ստատիոն", "Geor": "ჰალლეი რესეარჩ სტატიონ", "Ethi": "ሃልለይ ረሰአርች ስታቲኦን"}, "locales": {"de": "Halley-Station", "fr": "base antarctique Halley", "es": "Base Halley", "pt": "Estação Halley", "it": "Stazione Halley", "hu": "Halley Station", "id": "Stasiun Halley", "pl": "Halley", "tr": "Halley Araştırma İstasyonu", "vi": "Trạm Halley", "fa": "ایستگاه پژوهشی هالی", "uk": "Галлей", "ur": "ہیلی اسٹیشن"}}],
-        [-11.850213, -71.301235, 6.1, 0, 70, "Novolazarevskaya Station", {"scripts": {"Latn": "Novolazarevskaya Station", "Jpan": "ノボラザレフスカヤ駅", "Hans": "诺沃拉扎列夫斯卡亚站", "Hant": "諾沃拉扎列夫斯卡亞研究站", "Kore": "노볼라자렙스카야 스테이션", "Cyrl": "Новолазаревская", "Arab": "محطة نوفولازاريفسكايا", "Deva": "नोवोलाज़ारेवस्काया स्टेशन", "Beng": "নোভোলাজারেভস্কায়া স্টেশন", "Grek": "Νοβολαζαρέφσκαγια Στέισιον", "Hebr": "תחנת נובוזלנדסקיה", "Guru": "ਨੋਵੋਲਾਜ਼ਾਰੇਵਸ੍ਕਾਯਾ ਸ੍ਟੇਸ਼ਨ", "Gujr": "નોવોલાજ઼ારેવસ્કાયા સ્ટેશન", "Orya": "ନୋବୋଲାଜ଼ାରେବସ୍କାୟା ସ୍ଟେଶନ", "Taml": "நோவோலாஃஜாரேவஸ்காயா ஸ்டேஶன", "Telu": "నోవోలాజారేవస్కాయా స్టేశన", "Knda": "ನೋವೋಲಾಜ಼ಾರೇವಸ್ಕಾಯಾ ಸ್ಟೇಶನ", "Mlym": "നോവോലാജാരേവസ്കായാ സ്ടേശന", "Thai": "โนโวลาซาเรวสฺกายา เสฺฏศน", "Laoo": "ໂນໂວລາຊາເຣວັສກາຢາ ສເຕສະນະ", "Mymr": "နောဝေါလာဇာရေဝသ္ကာယာ သ္ဋေၐန", "Khmr": "នោវោលាជារេវស្កាយា ស្ដេឝន", "Armn": "նովոլազարեվսկայա ստատիոն", "Geor": "ნოვოლაზარევსკაია სტატიონ", "Ethi": "ኖቮላዛረቭስካያ ስታቲኦን"}, "locales": {"de": "Nowolasarewskaja-Station", "es": "Base Novolazarevskaya", "pt": "Base Novolazarevskaya", "it": "Stazione di ricerca Novolazarevskaja", "id": "Stasiun Novolazarevskaya", "pl": "Stacja Nowołazariewskaja", "sv": "Novolazarevskajastationen", "tr": "Novolazarevskaya İstasyonu", "vi": "Trạm Novolazarevskaya", "fa": "ایستگاه نووولازاروسکایا", "uk": "Станція Новолазаревська", "ur": "نورولازاریوسکایا اسٹیشن"}}],
+        [-11.850213, -71.301235, 6.1, 0, 70, "Novolazarevskaya Station", {"scripts": {"Latn": "Novolazarevskaya Station", "Jpan": "ノボラザレフスカヤ基地", "Hans": "诺沃拉扎列夫斯卡亚站", "Hant": "諾沃拉扎列夫斯卡亞研究站", "Kore": "노볼라자렙스카야 스테이션", "Cyrl": "Новолазаревская", "Arab": "محطة نوفولازاريفسكايا", "Deva": "नोवोलाज़ारेवस्काया स्टेशन", "Beng": "নোভোলাজারেভস্কায়া স্টেশন", "Grek": "Νοβολαζαρέφσκαγια Στέισιον", "Hebr": "תחנת נובוזלנדסקיה", "Guru": "ਨੋਵੋਲਾਜ਼ਾਰੇਵਸ੍ਕਾਯਾ ਸ੍ਟੇਸ਼ਨ", "Gujr": "નોવોલાજ઼ારેવસ્કાયા સ્ટેશન", "Orya": "ନୋବୋଲାଜ଼ାରେବସ୍କାୟା ସ୍ଟେଶନ", "Taml": "நோவோலாஃஜாரேவஸ்காயா ஸ்டேஶன", "Telu": "నోవోలాజారేవస్కాయా స్టేశన", "Knda": "ನೋವೋಲಾಜ಼ಾರೇವಸ್ಕಾಯಾ ಸ್ಟೇಶನ", "Mlym": "നോവോലാജാരേവസ്കായാ സ്ടേശന", "Thai": "โนโวลาซาเรวสฺกายา เสฺฏศน", "Laoo": "ໂນໂວລາຊາເຣວັສກາຢາ ສເຕສະນະ", "Mymr": "နောဝေါလာဇာရေဝသ္ကာယာ သ္ဋေၐန", "Khmr": "នោវោលាជារេវស្កាយា ស្ដេឝន", "Armn": "նովոլազարեվսկայա ստատիոն", "Geor": "ნოვოლაზარევსკაია სტატიონ", "Ethi": "ኖቮላዛረቭስካያ ስታቲኦን"}, "locales": {"de": "Nowolasarewskaja-Station", "es": "Base Novolazarevskaya", "pt": "Base Novolazarevskaya", "it": "Stazione di ricerca Novolazarevskaja", "id": "Stasiun Novolazarevskaya", "pl": "Stacja Nowołazariewskaja", "sv": "Novolazarevskajastationen", "tr": "Novolazarevskaya İstasyonu", "vi": "Trạm Novolazarevskaya", "fa": "ایستگاه نووولازاروسکایا", "uk": "Станція Новолазаревська", "ur": "نورولازاریوسکایا اسٹیشن"}}],
         [164.219027, -74.619193, 6.7, 0, 80, "Zucchelli Station", {"scripts": {"Latn": "Zucchelli Station", "Jpan": "マリオ・ズッケリ基地", "Hans": "马里奥·祖切利站", "Hant": "馬里奧·祖切利站", "Kore": "주첼리 스테이션", "Cyrl": "Жучелли", "Arab": "محطة زوشيلي", "Deva": "ज़ुकेली स्टेशन", "Beng": "জুকচেল্লি স্টেশন", "Grek": "Ζουκέλι Στέισιον", "Hebr": "תחנת זוצ'לי", "Guru": "ਜ਼ੁਕੇਲੀ ਸ੍ਟੇਸ਼ਨ", "Gujr": "જ઼ુકેલી સ્ટેશન", "Orya": "ଜ଼ୁକେଲୀ ସ୍ଟେଶନ", "Taml": "ஃஜுகேலீ ஸ்டேஶன", "Telu": "జుకేలీ స్టేశన", "Knda": "ಜ಼ುಕೇಲೀ ಸ್ಟೇಶನ", "Mlym": "ജുകേലീ സ്ടേശന", "Thai": "ซุเกลี เสฺฏศน", "Laoo": "ຊຸເກລີ ສເຕສະນະ", "Mymr": "ဇုကေလီ သ္ဋေၐန", "Khmr": "ជុកេលី ស្ដេឝន", "Armn": "զուկչելլի ստատիոն", "Geor": "ზუკჩელლი სტატიონ", "Ethi": "ዙጭቸልሊ ስታቲኦን"}, "locales": {"de": "Mario-Zucchelli-Station", "fr": "Base antarctique Mario-Zucchelli", "es": "Base Mario Zucchelli", "pt": "Estação Zucchelli", "it": "Stazione Mario Zucchelli", "id": "Stasiun Zucchelli", "pl": "Zucchelli", "sv": "Mario Zucchelli", "tr": "Zucchelli İstasyonu", "vi": "Trạm Zucchelli", "fa": "ایستگاه زوچلی", "uk": "Станція Зуккели", "ur": "زوکیلی اسٹیشن"}}],
         [11.730458, -70.78218, 6.1, 0, 65, "Maitri Station", {"scripts": {"Latn": "Maitri Station", "Jpan": "マイトリステーション", "Hans": "迈特里站", "Hant": "邁特里站", "Kore": "마이트리 스테이션", "Cyrl": "Маитри", "Arab": "محطة مايتري", "Deva": "मैत्री अनुसंधान केन्द्र", "Beng": "মৈত্রী অনুসন্ধান কেন্দ্র", "Grek": "Μαΐτρι Στέισιον", "Hebr": "תחנת מייטרי", "Guru": "ਮੈਤ੍ਰੀ ਅਨੁਸੰਧਾਨ ਕੇਨ੍ਦ੍ਰ", "Gujr": "મૈત્રી અનુસંધાન કેન્દ્ર", "Orya": "ମୈତ୍ରୀ ଅନୁସନ୍ଧାନ କେନ୍ଦ୍ର", "Taml": "மைத்ரீ அனுஸந்தான கேந்த்ர", "Telu": "మైత్రీ అనుసంధాన కేంద్ర", "Knda": "ಮೈತ್ರೀ ಅನುಸಂಧಾನ ಕೇಂದ್ರ", "Mlym": "മൈത്രീ അനുസന്ധാന കേന്ദ്ര", "Thai": "ไมตฺรี อนุสํธาน เกนฺทฺร", "Laoo": "ໄມຕຣີ ອະນຸສັນທານະ ເກນທຣະ", "Mymr": "မဲတြီ အနုသံဓာန ကေန္ဒြ", "Khmr": "មៃត្រី អនុសំធាន កេន្ទ្រ", "Armn": "մաիտրի ստատիոն", "Geor": "მაიტრი სტატიონ", "Ethi": "ማኢትሪ ስታቲኦን"}, "locales": {"en": "Maitri", "fr": "base antarctique Maitri", "es": "Base Maitri", "pt": "Estação Maitri", "it": "Stazione di ricerca Maitri", "id": "Stasiun Maitri", "pl": "Maitri", "sv": "Maitri", "tr": "Maitri İstasyonu", "vi": "Trạm Maitri", "fa": "ایستگاه مایتری", "uk": "Майтрі", "ur": "میٹری اسٹیشن"}}],
         [-58.650476, -62.224144, 6.1, 0, 60, "Carlini Base", {"scripts": {"Latn": "Carlini Station", "Jpan": "カルリーニ基地", "Hans": "卡里尼站", "Hant": "卡里尼站", "Kore": "칼리니 베이스", "Cyrl": "Карлини", "Arab": "قاعدة كارليني", "Deva": "कार्लिनी बेस", "Beng": "কারলিনি বেস", "Grek": "Καρλίνι Μπέις", "Hebr": "בסיס קלריני", "Guru": "ਕਾਰ੍ਲਿਨੀ ਬੇਸ", "Gujr": "કાર્લિની બેસ", "Orya": "କାର୍ଲିନୀ ବେସ", "Taml": "கார்லினீ பேஸ", "Telu": "కార్లినీ బేస", "Knda": "ಕಾರ್ಲಿನೀ ಬೇಸ", "Mlym": "കാർലിനീ ബേസ", "Thai": "การฺลินี เพส", "Laoo": "ກາຣລິນີ ເພສະ", "Mymr": "ကာရ်္လိနီ ဗေသ", "Khmr": "កាល៌ិនី ពេស", "Armn": "կարլինի ստատիոն", "Geor": "კარლინი სტატიონ", "Ethi": "ጫርሊኒ ስታቲኦን"}, "locales": {"de": "Carlini-Station", "fr": "base antarctique Carlini", "es": "Base Carlini", "pt": "Jubany", "it": "Base Jubany", "hu": "Carlini kutatóállomás", "id": "Pangkalan Carlini", "pl": "Stacja Carlini", "sv": "Carlini", "tr": "Carlini Üssü", "vi": "Căn cứ Carlini", "fa": "کارلینی بیس", "uk": "База Карліні", "ur": "کارلینی بیس"}}],
@@ -3087,6 +3221,12 @@
         [103.853875, 1.294979, 2.1, 1, 5183700, "Singapore", {"scripts": {"Latn": "Singapore", "Jpan": "シンガポール", "Hans": "新加坡", "Hant": "新加坡", "Kore": "싱가포르", "Cyrl": "Сингапур", "Arab": "سنغافورة", "Deva": "सिंगापुर", "Beng": "সিঙ্গাপুর", "Grek": "Σιγκαπούρη", "Hebr": "סינגפור", "Guru": "ਸਿੰਗਾਪੁਰ", "Gujr": "સિંગાપુર", "Orya": "ସିଙ୍ଗାପୁର", "Taml": "ஸிங்காபுர", "Telu": "సింగాపుర", "Knda": "ಸಿಂಗಾಪುರ", "Mlym": "സിംഗാപുര", "Thai": "สึคาปุร", "Laoo": "ສິງຄາປຸຣະ", "Mymr": "သိံဂါပုရ", "Khmr": "សឹគាបុរ", "Armn": "սինգապորե", "Geor": "სინგაპორე", "Ethi": "ሲንጋጶረ"}, "locales": {"de": "Singapur", "fr": "Singapour", "es": "Singapur", "pt": "Singapura", "hu": "Szingapúr", "id": "Singapura", "pl": "Singapur", "tr": "Singapur", "fa": "سنگاپور", "uk": "Сінгапур", "ur": "سنگاپور"}}]
       ]
     },
+    "SH": {
+      "budget": 1,
+      "places": [
+        [-5.717639, -15.923427, 3.0, 1, 0, "Jamestown", {"scripts": {"Latn": "Jamestown", "Jpan": "ジェームズタウン", "Hans": "詹姆斯敦", "Hant": "詹姆斯敦", "Kore": "제임스타운", "Cyrl": "Джеймстаун", "Arab": "جيمس تاون", "Deva": "जेम्सटाउन", "Beng": "জেমসটাউন", "Grek": "Τζέιμσταουν", "Hebr": "ג'יימסטאון", "Guru": "ਜੇਮਸਟਾਊਨ", "Gujr": "જેમ્સટાઉન", "Orya": "ଜେମ୍ସଟାଉନ", "Taml": "ஜேம்ஸ்டவுன்", "Telu": "జేమ్స్‌టౌన్", "Knda": "ಜೇಮ್ಸ್‌ಟೌನ್", "Mlym": "ജെയിംസ്റ്റൗൺ", "Thai": "เจมส์ทาวน์", "Laoo": "ເຈມສ໌ທາວນ໌", "Mymr": "ဂျိမ်းစ်တောင်း", "Khmr": "ជេមស៍ថោន", "Armn": "Ջեյմսթաուն", "Geor": "ჯეიმსტაუნი", "Ethi": "ጄምስታውን"}}]
+      ]
+    },
     "SI": {
       "budget": 2,
       "places": [
@@ -3439,7 +3579,7 @@
     "TV": {
       "budget": 1,
       "places": [
-        [179.216647, -8.516652, 6.0, 1, 4749, "Funafuti", {"scripts": {"Latn": "Funafuti", "Jpan": "フナフティ島", "Hans": "富纳富提", "Hant": "富纳富提", "Kore": "푸나푸티", "Cyrl": "Фунафути", "Arab": "فونافوتي", "Deva": "फुनाफुति", "Beng": "ফুনাফুতি", "Grek": "Φουναφούτι", "Hebr": "פנאפוטי", "Guru": "ਫੁਨਾਫੁਤਿ", "Gujr": "ફુનાફુતિ", "Orya": "ଫୁନାଫୁତି", "Taml": "புனாபுதி", "Telu": "ఫునాఫుతి", "Knda": "ಫುನಾಫುತಿ", "Mlym": "ഫുനാഫുതി", "Thai": "ผุนาผุติ", "Laoo": "ຜຸນາຜຸຕິ", "Mymr": "ဖုနာဖုတိ", "Khmr": "ផុនាផុតិ", "Armn": "ֆունաֆուտի", "Geor": "ფუნაფუტი", "Ethi": "ፉናፉቲ"}, "locales": {"fa": "فونافوتی", "uk": "Фунафуті", "ur": "فونافوتی"}}]
+        [179.216647, -8.516652, 6.0, 1, 4749, "Funafuti", {"scripts": {"Latn": "Funafuti", "Jpan": "フナフティ", "Hans": "富纳富提", "Hant": "富纳富提", "Kore": "푸나푸티", "Cyrl": "Фунафути", "Arab": "فونافوتي", "Deva": "फुनाफुति", "Beng": "ফুনাফুতি", "Grek": "Φουναφούτι", "Hebr": "פנאפוטי", "Guru": "ਫੁਨਾਫੁਤਿ", "Gujr": "ફુનાફુતિ", "Orya": "ଫୁନାଫୁତି", "Taml": "புனாபுதி", "Telu": "ఫునాఫుతి", "Knda": "ಫುನಾಫುತಿ", "Mlym": "ഫുനാഫുതി", "Thai": "ผุนาผุติ", "Laoo": "ຜຸນາຜຸຕິ", "Mymr": "ဖုနာဖုတိ", "Khmr": "ផុនាផុតិ", "Armn": "ֆունաֆուտի", "Geor": "ფუნაფუტი", "Ethi": "ፉናፉቲ"}, "locales": {"fa": "فونافوتی", "uk": "Фунафуті", "ur": "فونافوتی"}}]
       ]
     },
     "TW": {

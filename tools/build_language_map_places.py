@@ -99,6 +99,20 @@ PLACE_NAME_CORRECTIONS = {
             "sv": "Tokyo",
         },
     },
+    "Funafuti": {
+        # Japan's Ministry of Foreign Affairs uses フナフティ for the capital;
+        # フナフティ島 refers to the island rather than the place label.
+        "localized_names": {
+            "ja": "フナフティ",
+        },
+    },
+    "Novolazarevskaya Station": {
+        # Japanese polar-research sources call the Russian research station a
+        # 基地; Natural Earth's 駅 is the railway sense of “station”.
+        "localized_names": {
+            "ja": "ノボラザレフスカヤ基地",
+        },
+    },
     "Brussels": {
         "localized_names": {
             "ar": "بروكسل",
@@ -666,16 +680,23 @@ def build(source: Path) -> dict:
             ])
         if places:
             # ISO 3166-1 and CLDR region codes cover countries and territories,
-            # not only sovereign states. For atlas display, an explicitly named
-            # administrative center is treated as the capital. Otherwise, a
-            # coded region without a Natural Earth ADM0 capital uses its
-            # highest-ranked place as a display fallback.
-            administrative_center = str(
-                country_override.get("administrative_center") or ""
-            ).strip()
-            if administrative_center:
-                for row in places:
-                    row[3] = int(row[5] == administrative_center)
+            # not only sovereign states. An explicit null means that the region
+            # has no administrative center, while an explicit name selects its
+            # marker. Otherwise, a coded region without a Natural Earth ADM0
+            # capital uses its highest-ranked place as a display fallback.
+            if "administrative_center" in country_override:
+                configured_center = country_override["administrative_center"]
+                if configured_center is None:
+                    for row in places:
+                        row[3] = 0
+                else:
+                    administrative_center = str(configured_center).strip()
+                    if not administrative_center:
+                        raise ValueError(
+                            f"{code}: administrative_center must be a place name or null"
+                        )
+                    for row in places:
+                        row[3] = int(row[5] == administrative_center)
             elif not any(row[3] for row in places):
                 places[0][3] = 1
             budget = country_override.get("budget")
@@ -698,7 +719,7 @@ def build(source: Path) -> dict:
 
     return {
         "schema": 3,
-        "description": "Deferred capital and major-city labels by ISO 3166-1 and CLDR region code. A coded region's administrative center is treated as its capital. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
+        "description": "Deferred administrative-center and major-place labels by ISO 3166-1 and CLDR region code. A configured administrative center is treated as the region's capital marker; regions explicitly configured without one keep all places as ordinary labels. Each place has reusable script fallbacks plus sparse locale-specific overrides; English is an ordinary override.",
         "source": {
             "title": "Natural Earth 1:10m Populated Places",
             "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/",
