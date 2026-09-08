@@ -6,7 +6,7 @@
   <meta name="robots" content="index,follow">
   <meta name="description" content="An embeddable language atlas and navigation bridge for multilingual websites.">
   <link rel="canonical" href="/">
-  <title>Kotonohatlas — Atlas Linguarum Mundi</title>
+  <title data-atlas-page-title data-atlas-page-brand="Kotonohatlas" data-atlas-default-title="Kotonohatlas — Atlas Linguarum Mundi">Kotonohatlas — Atlas Linguarum Mundi</title>
   <link rel="stylesheet" href="./assets/stylesheets/atlas-ui.css?v=__ATLAS_UI_CSS_VERSION__">
   <link id="language-map-runtime-preload" rel="modulepreload" fetchpriority="high" href="./assets/javascripts/language-distribution-map.js?v=__LANGUAGE_MAP_RUNTIME_VERSION__">
   <link id="language-map-data-preload" rel="preload" as="fetch" crossorigin="anonymous" fetchpriority="high" href="./language-map.json?v=__LANGUAGE_MAP_VERSION__">
@@ -1499,7 +1499,12 @@
     function updateStaticText() {
       updateUiLanguageIdentity();
       var countryTitle = t("countryTitle");
-      document.title = countryTitle ? (countryTitle + " | Kotonohatlas") : "Kotonohatlas — Atlas Linguarum Mundi";
+      var pageTitleNode = document.querySelector("title[data-atlas-page-title]");
+      var pageBrand = pageTitleNode ? pageTitleNode.dataset.atlasPageBrand : "Kotonohatlas";
+      var defaultPageTitle = pageTitleNode
+        ? pageTitleNode.dataset.atlasDefaultTitle
+        : "Kotonohatlas — Atlas Linguarum Mundi";
+      document.title = countryTitle ? (countryTitle + " | " + pageBrand) : defaultPageTitle;
       var descriptionMeta = document.querySelector('meta[name="description"]');
       if (descriptionMeta) descriptionMeta.content = t("countryCopy") || "";
       document.querySelectorAll("[data-i18n]").forEach(function (node) {

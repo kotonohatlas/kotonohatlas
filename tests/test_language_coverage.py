@@ -3060,6 +3060,9 @@ global.fetch = async () => ({
         self.assertNotIn("ATLAS_COVERAGE", html)
         self.assertEqual(html.count('id="atlas-host-after-catalog"'), 1)
         self.assertIn("data-atlas-host-language-labels", html)
+        self.assertEqual(html.count("data-atlas-page-title"), 2)
+        self.assertIn('data-atlas-page-brand="Kotonohatlas"', html)
+        self.assertIn("pageTitleNode.dataset.atlasPageBrand", html)
         self.assertRegex(html, r'fetch\("\./coverage\.json\?v=[0-9a-f]{12}"')
         self.assertEqual(map_payload["schema"], 1)
         self.assertEqual(
