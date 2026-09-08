@@ -572,12 +572,12 @@ function updateBorders(data) {
   );
 }
 
-function applyTerritoryExtracts(data) {
+export function applyTerritoryExtracts(data, featureSource = features) {
   let movedCount = 0;
   (data.territory_extracts || []).forEach((rule) => {
     const moved = [];
     (Array.isArray(rule.from) ? rule.from : [rule.from]).forEach((sourceId) => {
-      const source = features.find((item) => item.properties.id === sourceId);
+      const source = featureSource.find((item) => item.properties.id === sourceId);
       if (!source || !Array.isArray(rule.bounds) || rule.bounds.length < 1) return;
       const boundsList = Array.isArray(rule.bounds[0][0]) ? rule.bounds : [rule.bounds];
       const retained = geometryPolygons(source).filter((polygon) => {
@@ -591,18 +591,25 @@ function applyTerritoryExtracts(data) {
       });
       source.geometry = {type: "MultiPolygon", coordinates: retained};
     });
-    if (!moved.length) return;
-    const existing = features.find((item) => item.properties.id === rule.id);
+    // Some small regions are absent from Natural Earth's 110m topology. A
+    // checked-in overview geometry keeps those selections present on the first
+    // frame and while navigating; the extracted 10m polygons still replace it
+    // as soon as the detailed topology is available.
+    const selected = moved.length
+      ? moved
+      : geometryPolygons({geometry: rule.overview_geometry});
+    if (!selected.length) return;
+    const existing = featureSource.find((item) => item.properties.id === rule.id);
     if (existing) {
-      existing.geometry = {type: "MultiPolygon", coordinates: geometryPolygons(existing).concat(moved)};
+      existing.geometry = {type: "MultiPolygon", coordinates: geometryPolygons(existing).concat(selected)};
     } else {
-      features.push({
+      featureSource.push({
         type: "Feature",
         properties: {id: rule.id, name: rule.name_en || rule.id, name_long: rule.name_en || rule.id},
-        geometry: {type: "MultiPolygon", coordinates: moved}
+        geometry: {type: "MultiPolygon", coordinates: selected}
       });
     }
-    movedCount += moved.length;
+    movedCount += selected.length;
   });
   return movedCount;
 }

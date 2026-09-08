@@ -8,6 +8,51 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class MapToponymResolutionTests(unittest.TestCase):
+    def test_territory_extract_uses_overview_geometry_only_when_source_is_absent(self):
+        runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
+        script = f"""
+          import {{applyTerritoryExtracts}} from {json.dumps(runtime)};
+          const polygon = (west, south, east, north) => [[
+            [west, south], [west, north], [east, north], [east, south], [west, south]
+          ]];
+          const rule = {{
+            from:'AAA', id:'BBB', bounds:[[5,5],[7,7]],
+            overview_geometry:{{type:'Polygon', coordinates:polygon(5.5,5.5,6.5,6.5)}}
+          }};
+          const overviewSource = [{{
+            type:'Feature', properties:{{id:'AAA'}},
+            geometry:{{type:'Polygon', coordinates:polygon(0,0,1,1)}}
+          }}];
+          const detailedSource = [{{
+            type:'Feature', properties:{{id:'AAA'}},
+            geometry:{{type:'MultiPolygon', coordinates:[polygon(5.25,5.25,6.75,6.75)]}}
+          }}];
+          const overviewCount = applyTerritoryExtracts({{territory_extracts:[rule]}}, overviewSource);
+          const detailedCount = applyTerritoryExtracts({{territory_extracts:[rule]}}, detailedSource);
+          console.log(JSON.stringify({{
+            overviewCount,
+            overviewTarget: overviewSource.find((item) => item.properties.id === 'BBB').geometry,
+            overviewSourcePolygons: overviewSource[0].geometry.coordinates.length,
+            detailedCount,
+            detailedTarget: detailedSource.find((item) => item.properties.id === 'BBB').geometry,
+            detailedSourcePolygons: detailedSource[0].geometry.coordinates.length
+          }}));
+        """
+        completed = subprocess.run(
+            ["node", "--input-type=module", "--eval", script],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        result = json.loads(completed.stdout)
+        self.assertEqual(result["overviewCount"], 1)
+        self.assertEqual(result["overviewSourcePolygons"], 1)
+        self.assertEqual(result["overviewTarget"]["coordinates"][0][0][0], [5.5, 5.5])
+        self.assertEqual(result["detailedCount"], 1)
+        self.assertEqual(result["detailedSourcePolygons"], 0)
+        self.assertEqual(result["detailedTarget"]["coordinates"][0][0][0], [5.25, 5.25])
+
     def test_motion_preview_uses_only_eligible_overview_geometry(self):
         runtime = (ROOT / "tools" / "browser" / "language-distribution-map.js").as_uri()
         script = f"""

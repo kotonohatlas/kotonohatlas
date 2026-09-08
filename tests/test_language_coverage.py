@@ -1766,6 +1766,13 @@ global.fetch = async () => ({
         self.assertEqual(len(extracts["SJM"]["bounds"]), 2)
         self.assertEqual(extracts["CCK"]["from"], "IOA")
         self.assertEqual(extracts["CXR"]["from"], "IOA")
+        # IC is CLDR's stable exceptional region code for the Canary Islands;
+        # ICN is Atlas's internal feature id because Natural Earth has no IC row.
+        self.assertEqual(data["iso2_to_iso3"]["IC"], "ICN")
+        canary_islands = extracts["ICN"]
+        self.assertEqual(canary_islands["from"], "ESP")
+        self.assertTrue(canary_islands["overview_geometry"]["coordinates"])
+        self.assertTrue(canary_islands["overview_source_url"].startswith("https://"))
         self.assertNotIn("IOA", data["feature_code_aliases"])
         regions = {item["id"]: item for item in data["feature_regions"]}
         self.assertEqual(regions["HIC"]["selection_rule"]["countries"], ["CA"])
